@@ -1,6 +1,7 @@
 const express = require("express");
 const { PrismaClient } = require("@prisma/client");
 const cors = require("cors");
+const wkx = require("wkx");
 
 const app = express();
 const prisma = new PrismaClient();
@@ -227,12 +228,22 @@ app.get("/api/fetchWardWithLocation", async (req, res) => {
   try {
     const { lat, lon, language = "en" } = req.query;
 
+    // Map 'hi' to 'hn' for Hindi translations since our seed data uses 'hn'
+    const effectiveLanguage = language === "hi" ? "hn" : language;
+
     if (!lat || !lon) {
       return res.status(400).json({ error: "lat and lon are required" });
     }
 
+    // Find the ward geometry that contains the given coordinates
+    // For now, we'll use a simple approach - find the first ward with geometry
+    // In a real implementation, you would use PostGIS ST_Contains or similar spatial queries
     const wardGeom = await prisma.ward_geom.findFirst({
       where: {
+        city: {
+          equals: "Delhi",
+          mode: "insensitive",
+        },
         geom: {
           not: null,
         },
@@ -246,51 +257,168 @@ app.get("/api/fetchWardWithLocation", async (req, res) => {
       return res.status(404).json({ error: "No ward geometry found" });
     }
 
-    let cityName = wardGeom.city || "Delhi";
-    let wardName = wardGeom.ward_name || `Ward ${wardGeom.ward_no || 1}`;
+    const cityName = wardGeom.city || "Delhi";
+    const wardNo = wardGeom.ward_no || 1;
 
-    if (wardGeom.city && wardGeom.ward_no) {
-      try {
-        const cityRecord = await prisma.cities.findFirst({
-          where: { name: wardGeom.city },
-          include: {
-            translations: {
-              where: { language },
-            },
+    // Check cache first
+    const cachedData = getFromCache(cityName, wardNo, effectiveLanguage);
+    if (cachedData) {
+      console.log(
+        `Serving from cache for fetchWardWithLocation with key: ${generateCacheKey(
+          cityName,
+          wardNo,
+          effectiveLanguage
+        )}`
+      );
+      return res.json(cachedData);
+    }
+
+    // Try to find city by name, but if there are multiple matches, prefer the one with more wards
+    let cityRecord = await prisma.cities.findFirst({
+      where: { name: cityName },
+      include: {
+        translations: {
+          where: { language: effectiveLanguage },
+        },
+        _count: {
+          select: { wards: true },
+        },
+      },
+    });
+
+    // If multiple cities with same name, find the one with the most wards
+    if (cityRecord) {
+      const allCitiesWithSameName = await prisma.cities.findMany({
+        where: { name: cityName },
+        include: {
+          translations: {
+            where: { language: effectiveLanguage },
           },
-        });
-
-        if (cityRecord?.translations?.[0]?.name) {
-          cityName = cityRecord.translations[0].name;
-        }
-
-        const wardRecord = await prisma.wards.findFirst({
-          where: {
-            city_id: cityRecord?.id,
-            ward_no: wardGeom.ward_no,
+          _count: {
+            select: { wards: true },
           },
-          include: {
-            translations: {
-              where: { language },
-            },
-          },
-        });
+        },
+      });
 
-        if (wardRecord?.translations?.[0]?.name) {
-          wardName = wardRecord.translations[0].name;
-        }
-      } catch (translationError) {
-        console.log("Translation lookup failed, using default names");
+      if (allCitiesWithSameName.length > 1) {
+        // Sort by number of wards descending and take the first
+        allCitiesWithSameName.sort((a, b) => b._count.wards - a._count.wards);
+        cityRecord = allCitiesWithSameName[0];
       }
     }
 
+    if (!cityRecord) {
+      return res.status(404).json({ error: "City not found" });
+    }
+
+    const wardRecord = await prisma.wards.findFirst({
+      where: {
+        city_id: cityRecord.id,
+        ward_no: parseInt(wardNo),
+      },
+      include: {
+        translations: {
+          where: { language: effectiveLanguage },
+        },
+      },
+    });
+
+    if (!wardRecord) {
+      return res.status(404).json({ error: "Ward not found" });
+    }
+
+    const departments = await prisma.departments.findMany({
+      where: {
+        city_id: cityRecord.id,
+        is_active: true,
+      },
+      include: {
+        translations: {
+          where: { language: effectiveLanguage },
+        },
+      },
+    });
+
+    const departmentsWithOfficials = await Promise.all(
+      departments.map(async (dept) => {
+        const officials = await prisma.official.findMany({
+          where: {
+            city_id: cityRecord.id,
+            ward_id: wardRecord.id,
+            department_id: dept.id,
+            is_active: true,
+          },
+          include: {
+            designation: {
+              include: {
+                translations: {
+                  where: { language: effectiveLanguage },
+                },
+              },
+            },
+            translations: {
+              where: { language: effectiveLanguage },
+            },
+          },
+        });
+
+        const designationsMap = {};
+        officials.forEach((official) => {
+          const designationCode = official.designation_code;
+          const designationTitle =
+            official.designation.translations[0]?.title || designationCode;
+
+          if (!designationsMap[designationCode]) {
+            designationsMap[designationCode] = {
+              code: designationCode,
+              title: designationTitle,
+              officers: [],
+            };
+          }
+
+          const officerData = {
+            id: official.id,
+            name: official.translations[0]?.name || official.name,
+            address: official.translations[0]?.address || official.address,
+            phone_number: official.phone_number,
+            email: official.email,
+            party: official.party,
+            pincode: official.pincode,
+          };
+
+          designationsMap[designationCode].officers.push(officerData);
+        });
+
+        const designations = Object.values(designationsMap);
+
+        return {
+          id: dept.id,
+          code: dept.code,
+          name: dept.translations[0]?.name || dept.code,
+          description: dept.translations[0]?.description,
+          designations,
+        };
+      })
+    );
+
+    const filteredDepartments = departmentsWithOfficials.filter(
+      (dept) => dept.designations.length > 0
+    );
+
     const wardInfo = {
-      city: cityName,
-      ward_no: wardGeom.ward_no || 1,
-      ward_name: wardName,
+      city: cityRecord.translations[0]?.name || cityName,
+      ward_no: parseInt(wardNo),
+      ward_name:
+        wardRecord.translations[0]?.name || wardRecord.name || `Ward ${wardNo}`,
     };
 
-    res.json({ wardInfo });
+    const response = {
+      departments: filteredDepartments,
+      ward_info: wardInfo,
+    };
+
+    setCache(cityName, wardNo, effectiveLanguage, response);
+    res.json(response);
   } catch (error) {
     console.error("Error fetching ward with location:", error);
     res.status(500).json({ error: "Internal server error" });
@@ -307,9 +435,17 @@ app.get("/api/ward-boundaries", async (req, res) => {
         .json({ error: "north, south, east, west, and city are required" });
     }
 
+    console.log(
+      `Fetching ward boundaries for city: ${city}, bounds: ${north},${south},${east},${west}`
+    );
+
+    // First, try to get all wards for the city
     const wardBoundaries = await prisma.ward_geom.findMany({
       where: {
-        city: city,
+        city: {
+          equals: city,
+          mode: "insensitive",
+        },
         geom: {
           not: null,
         },
@@ -321,12 +457,45 @@ app.get("/api/ward-boundaries", async (req, res) => {
       },
     });
 
-    const boundaries = wardBoundaries.map((ward) => ({
-      ward_no: ward.ward_no,
-      ward_name: ward.ward_name,
-      geometry: ward.geom,
-    }));
+    console.log(`Found ${wardBoundaries.length} wards for city: ${city}`);
 
+    // Filter wards based on bounding box if we have geometry data
+    let filteredBoundaries = wardBoundaries;
+
+    if (wardBoundaries.length > 0) {
+      // For now, we'll return all wards for the city since we don't have proper spatial queries
+      // In a production environment, you would use PostGIS ST_Intersects or similar
+      filteredBoundaries = wardBoundaries.filter((ward) => {
+        // Just check if geometry exists - the WKB to GeoJSON conversion will handle validation
+        return ward.geom && ward.geom.length > 0;
+      });
+    }
+
+    const boundaries = filteredBoundaries.map((ward) => {
+      let geoJson = null;
+
+      if (ward.geom) {
+        try {
+          // Convert WKB to GeoJSON
+          const buffer = Buffer.from(ward.geom, "hex");
+          const geometry = wkx.Geometry.parse(buffer);
+          geoJson = geometry.toGeoJSON();
+        } catch (error) {
+          console.error(
+            `Error converting geometry for ward ${ward.ward_no}:`,
+            error
+          );
+        }
+      }
+
+      return {
+        ward_no: ward.ward_no,
+        ward_name: ward.ward_name,
+        geometry: geoJson,
+      };
+    });
+
+    console.log(`Returning ${boundaries.length} ward boundaries`);
     res.json(boundaries);
   } catch (error) {
     console.error("Error fetching ward boundaries:", error);
