@@ -6,6 +6,42 @@ const app = express();
 const prisma = new PrismaClient();
 const PORT = process.env.PORT || 3000;
 
+// CORS configuration - MUST be first!
+app.use(
+  cors({
+    origin: true, // Allow all origins in development
+    credentials: true,
+    methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+    allowedHeaders: ["Content-Type", "Authorization", "X-Requested-With"],
+  })
+);
+
+// Handle preflight requests
+app.options("*", cors());
+
+// Add CORS headers to all responses
+app.use((req, res, next) => {
+  res.header("Access-Control-Allow-Origin", "*");
+  res.header("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE, OPTIONS");
+  res.header(
+    "Access-Control-Allow-Headers",
+    "Content-Type, Authorization, X-Requested-With"
+  );
+
+  if (req.method === "OPTIONS") {
+    res.sendStatus(200);
+  } else {
+    next();
+  }
+});
+
+// Parse JSON bodies
+app.use(express.json());
+
+app.get("/", (req, res) => {
+  res.json({ message: "Express backend running" });
+});
+
 const wardCache = new Map();
 
 const CACHE_TTL = 5 * 60 * 1000;
@@ -185,19 +221,6 @@ app.post("/api/cache/clear-expired", (req, res) => {
     entries_removed: removed,
     remaining_entries: afterSize,
   });
-});
-
-app.use(
-  cors({
-    origin: ["http://localhost:5173", "http://localhost:3000"],
-    credentials: true,
-  })
-);
-
-app.use(express.json());
-
-app.get("/", (req, res) => {
-  res.json({ message: "Express backend running" });
 });
 
 app.get("/api/fetchWardWithLocation", async (req, res) => {
@@ -889,30 +912,58 @@ app.get("/api/fetchWard", async (req, res) => {
   try {
     const { ward_no, city, language = "en" } = req.query;
 
+    // Map 'hi' to 'hn' for Hindi translations since our seed data uses 'hn'
+    const effectiveLanguage = language === "hi" ? "hn" : language;
+
     if (!ward_no || !city) {
       return res.status(400).json({ error: "ward_no and city are required" });
     }
 
-    const cachedData = getFromCache(city, ward_no, language);
+    const cachedData = getFromCache(city, ward_no, effectiveLanguage);
     if (cachedData) {
       console.log(
         `Serving from cache for fetchWard with key: ${generateCacheKey(
           city,
           ward_no,
-          language
+          effectiveLanguage
         )}`
       );
       return res.json(cachedData);
     }
 
-    const cityRecord = await prisma.cities.findFirst({
+    // Try to find city by name, but if there are multiple matches, prefer the one with more wards
+    let cityRecord = await prisma.cities.findFirst({
       where: { name: city },
       include: {
         translations: {
-          where: { language },
+          where: { language: effectiveLanguage },
+        },
+        _count: {
+          select: { wards: true },
         },
       },
     });
+
+    // If multiple cities with same name, find the one with the most wards
+    if (cityRecord) {
+      const allCitiesWithSameName = await prisma.cities.findMany({
+        where: { name: city },
+        include: {
+          translations: {
+            where: { language: effectiveLanguage },
+          },
+          _count: {
+            select: { wards: true },
+          },
+        },
+      });
+
+      if (allCitiesWithSameName.length > 1) {
+        // Sort by number of wards descending and take the first
+        allCitiesWithSameName.sort((a, b) => b._count.wards - a._count.wards);
+        cityRecord = allCitiesWithSameName[0];
+      }
+    }
 
     if (!cityRecord) {
       return res.status(404).json({ error: "City not found" });
@@ -925,7 +976,7 @@ app.get("/api/fetchWard", async (req, res) => {
       },
       include: {
         translations: {
-          where: { language },
+          where: { language: effectiveLanguage },
         },
       },
     });
@@ -941,7 +992,7 @@ app.get("/api/fetchWard", async (req, res) => {
       },
       include: {
         translations: {
-          where: { language },
+          where: { language: effectiveLanguage },
         },
       },
     });
@@ -959,12 +1010,12 @@ app.get("/api/fetchWard", async (req, res) => {
             designation: {
               include: {
                 translations: {
-                  where: { language },
+                  where: { language: effectiveLanguage },
                 },
               },
             },
             translations: {
-              where: { language },
+              where: { language: effectiveLanguage },
             },
           },
         });
@@ -1026,7 +1077,7 @@ app.get("/api/fetchWard", async (req, res) => {
       ward_info: wardInfo,
     };
 
-    setCache(city, ward_no, language, response);
+    setCache(city, ward_no, effectiveLanguage, response);
     res.json(response);
   } catch (error) {
     console.error("Error fetching ward data:", error);

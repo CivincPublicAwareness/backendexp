@@ -1,0 +1,7939 @@
+{
+  "state": {
+    "code": "KA",
+    "name": "Karnataka"
+  },
+  "city": {
+    "code": "nanj",
+    "name": "Nanjangud"
+  },
+  "wards": [
+    {
+      "ward_no": 1,
+      "name": "Ward 1"
+    },
+    {
+      "ward_no": 2,
+      "name": "Ward 2"
+    },
+    {
+      "ward_no": 3,
+      "name": "Ward 3"
+    },
+    {
+      "ward_no": 4,
+      "name": "Ward 4"
+    },
+    {
+      "ward_no": 5,
+      "name": "Ward 5"
+    },
+    {
+      "ward_no": 6,
+      "name": "Ward 6"
+    },
+    {
+      "ward_no": 7,
+      "name": "Ward 7"
+    },
+    {
+      "ward_no": 8,
+      "name": "Ward 8"
+    },
+    {
+      "ward_no": 9,
+      "name": "Ward 9"
+    },
+    {
+      "ward_no": 10,
+      "name": "Ward 10"
+    },
+    {
+      "ward_no": 11,
+      "name": "Ward 11"
+    },
+    {
+      "ward_no": 12,
+      "name": "Ward 12"
+    },
+    {
+      "ward_no": 13,
+      "name": "Ward 13"
+    },
+    {
+      "ward_no": 14,
+      "name": "Ward 14"
+    },
+    {
+      "ward_no": 15,
+      "name": "Ward 15"
+    },
+    {
+      "ward_no": 16,
+      "name": "Ward 16"
+    },
+    {
+      "ward_no": 17,
+      "name": "Ward 17"
+    },
+    {
+      "ward_no": 18,
+      "name": "Ward 18"
+    },
+    {
+      "ward_no": 19,
+      "name": "Ward 19"
+    },
+    {
+      "ward_no": 20,
+      "name": "Ward 20"
+    },
+    {
+      "ward_no": 21,
+      "name": "Ward 21"
+    },
+    {
+      "ward_no": 22,
+      "name": "Ward 22"
+    },
+    {
+      "ward_no": 23,
+      "name": "Ward 23"
+    },
+    {
+      "ward_no": 24,
+      "name": "Ward 24"
+    },
+    {
+      "ward_no": 25,
+      "name": "Ward 25"
+    },
+    {
+      "ward_no": 26,
+      "name": "Ward 26"
+    },
+    {
+      "ward_no": 27,
+      "name": "Ward 27"
+    },
+    {
+      "ward_no": 28,
+      "name": "Ward 28"
+    },
+    {
+      "ward_no": 29,
+      "name": "Ward 29"
+    },
+    {
+      "ward_no": 30,
+      "name": "Ward 30"
+    },
+    {
+      "ward_no": 31,
+      "name": "Ward 31"
+    }
+  ],
+  "departments": [
+    {
+      "code": "accounts",
+      "name": "Accounts"
+    },
+    {
+      "code": "administration",
+      "name": "Administration"
+    },
+    {
+      "code": "councillor",
+      "name": "Councillor"
+    },
+    {
+      "code": "day_nulm_section",
+      "name": "DAY NULM Section"
+    },
+    {
+      "code": "health_section",
+      "name": "Health Section"
+    },
+    {
+      "code": "it",
+      "name": "IT"
+    },
+    {
+      "code": "revenue_section",
+      "name": "Revenue Section"
+    },
+    {
+      "code": "technical_section",
+      "name": "Technical Section"
+    }
+  ],
+  "designations": [
+    {
+      "code": "assistant_engineer",
+      "title": "Assistant Engineer"
+    },
+    {
+      "code": "bill_collector",
+      "title": "Bill Collector"
+    },
+    {
+      "code": "community_resource_person",
+      "title": "Community Resource Person"
+    },
+    {
+      "code": "councillor",
+      "title": "Councillor"
+    },
+    {
+      "code": "first_division_assistant",
+      "title": "First Division Assistant"
+    },
+    {
+      "code": "junior_engineer",
+      "title": "Junior Engineer"
+    },
+    {
+      "code": "junior_health_inspector",
+      "title": "Junior Health Inspector"
+    },
+    {
+      "code": "revenue_inspector",
+      "title": "Revenue Inspector"
+    },
+    {
+      "code": "s_d_a_incharge_bill_collector",
+      "title": "S.D.A - incharge Bill Collector"
+    },
+    {
+      "code": "sanitary_supervisor",
+      "title": "Sanitary Supervisor"
+    },
+    {
+      "code": "senior_health_inspector",
+      "title": "Senior Health Inspector"
+    }
+  ],
+  "officials": [
+    {
+      "ward_no": 1,
+      "department_code": "health_section",
+      "designation_code": "sanitary_supervisor",
+      "name": "Madaiah.N",
+      "address": null,
+      "phone_number": "9448750407",
+      "email": null,
+      "party": null,
+      "is_active": true
+    },
+    {
+      "ward_no": 2,
+      "department_code": "health_section",
+      "designation_code": "sanitary_supervisor",
+      "name": "Madaiah.N",
+      "address": null,
+      "phone_number": "9448750407",
+      "email": null,
+      "party": null,
+      "is_active": true
+    },
+    {
+      "ward_no": 3,
+      "department_code": "health_section",
+      "designation_code": "sanitary_supervisor",
+      "name": "Madaiah.N",
+      "address": null,
+      "phone_number": "9448750407",
+      "email": null,
+      "party": null,
+      "is_active": true
+    },
+    {
+      "ward_no": 4,
+      "department_code": "health_section",
+      "designation_code": "sanitary_supervisor",
+      "name": "Madaiah.N",
+      "address": null,
+      "phone_number": "9448750407",
+      "email": null,
+      "party": null,
+      "is_active": true
+    },
+    {
+      "ward_no": 5,
+      "department_code": "health_section",
+      "designation_code": "sanitary_supervisor",
+      "name": "Madaiah.N",
+      "address": null,
+      "phone_number": "9448750407",
+      "email": null,
+      "party": null,
+      "is_active": true
+    },
+    {
+      "ward_no": 6,
+      "department_code": "health_section",
+      "designation_code": "sanitary_supervisor",
+      "name": "Madaiah.N",
+      "address": null,
+      "phone_number": "9448750407",
+      "email": null,
+      "party": null,
+      "is_active": true
+    },
+    {
+      "ward_no": 7,
+      "department_code": "health_section",
+      "designation_code": "sanitary_supervisor",
+      "name": "Madaiah.N",
+      "address": null,
+      "phone_number": "9448750407",
+      "email": null,
+      "party": null,
+      "is_active": true
+    },
+    {
+      "ward_no": 8,
+      "department_code": "health_section",
+      "designation_code": "sanitary_supervisor",
+      "name": "Madaiah.N",
+      "address": null,
+      "phone_number": "9448750407",
+      "email": null,
+      "party": null,
+      "is_active": true
+    },
+    {
+      "ward_no": 9,
+      "department_code": "health_section",
+      "designation_code": "sanitary_supervisor",
+      "name": "Madaiah.N",
+      "address": null,
+      "phone_number": "9448750407",
+      "email": null,
+      "party": null,
+      "is_active": true
+    },
+    {
+      "ward_no": 10,
+      "department_code": "health_section",
+      "designation_code": "sanitary_supervisor",
+      "name": "Madaiah.N",
+      "address": null,
+      "phone_number": "9448750407",
+      "email": null,
+      "party": null,
+      "is_active": true
+    },
+    {
+      "ward_no": 1,
+      "department_code": "health_section",
+      "designation_code": "senior_health_inspector",
+      "name": "Paramesha E",
+      "address": null,
+      "phone_number": "9611050046",
+      "email": null,
+      "party": null,
+      "is_active": true
+    },
+    {
+      "ward_no": 2,
+      "department_code": "health_section",
+      "designation_code": "senior_health_inspector",
+      "name": "Paramesha E",
+      "address": null,
+      "phone_number": "9611050046",
+      "email": null,
+      "party": null,
+      "is_active": true
+    },
+    {
+      "ward_no": 3,
+      "department_code": "health_section",
+      "designation_code": "senior_health_inspector",
+      "name": "Paramesha E",
+      "address": null,
+      "phone_number": "9611050046",
+      "email": null,
+      "party": null,
+      "is_active": true
+    },
+    {
+      "ward_no": 4,
+      "department_code": "health_section",
+      "designation_code": "senior_health_inspector",
+      "name": "Paramesha E",
+      "address": null,
+      "phone_number": "9611050046",
+      "email": null,
+      "party": null,
+      "is_active": true
+    },
+    {
+      "ward_no": 5,
+      "department_code": "health_section",
+      "designation_code": "senior_health_inspector",
+      "name": "Paramesha E",
+      "address": null,
+      "phone_number": "9611050046",
+      "email": null,
+      "party": null,
+      "is_active": true
+    },
+    {
+      "ward_no": 6,
+      "department_code": "health_section",
+      "designation_code": "senior_health_inspector",
+      "name": "Paramesha E",
+      "address": null,
+      "phone_number": "9611050046",
+      "email": null,
+      "party": null,
+      "is_active": true
+    },
+    {
+      "ward_no": 7,
+      "department_code": "health_section",
+      "designation_code": "senior_health_inspector",
+      "name": "Paramesha E",
+      "address": null,
+      "phone_number": "9611050046",
+      "email": null,
+      "party": null,
+      "is_active": true
+    },
+    {
+      "ward_no": 8,
+      "department_code": "health_section",
+      "designation_code": "senior_health_inspector",
+      "name": "Paramesha E",
+      "address": null,
+      "phone_number": "9611050046",
+      "email": null,
+      "party": null,
+      "is_active": true
+    },
+    {
+      "ward_no": 9,
+      "department_code": "health_section",
+      "designation_code": "senior_health_inspector",
+      "name": "Paramesha E",
+      "address": null,
+      "phone_number": "9611050046",
+      "email": null,
+      "party": null,
+      "is_active": true
+    },
+    {
+      "ward_no": 10,
+      "department_code": "health_section",
+      "designation_code": "senior_health_inspector",
+      "name": "Paramesha E",
+      "address": null,
+      "phone_number": "9611050046",
+      "email": null,
+      "party": null,
+      "is_active": true
+    },
+    {
+      "ward_no": 11,
+      "department_code": "health_section",
+      "designation_code": "sanitary_supervisor",
+      "name": "Raghuvarna",
+      "address": null,
+      "phone_number": "6366154125",
+      "email": null,
+      "party": null,
+      "is_active": true
+    },
+    {
+      "ward_no": 12,
+      "department_code": "health_section",
+      "designation_code": "sanitary_supervisor",
+      "name": "Raghuvarna",
+      "address": null,
+      "phone_number": "6366154125",
+      "email": null,
+      "party": null,
+      "is_active": true
+    },
+    {
+      "ward_no": 13,
+      "department_code": "health_section",
+      "designation_code": "sanitary_supervisor",
+      "name": "Raghuvarna",
+      "address": null,
+      "phone_number": "6366154125",
+      "email": null,
+      "party": null,
+      "is_active": true
+    },
+    {
+      "ward_no": 14,
+      "department_code": "health_section",
+      "designation_code": "sanitary_supervisor",
+      "name": "Raghuvarna",
+      "address": null,
+      "phone_number": "6366154125",
+      "email": null,
+      "party": null,
+      "is_active": true
+    },
+    {
+      "ward_no": 15,
+      "department_code": "health_section",
+      "designation_code": "sanitary_supervisor",
+      "name": "Raghuvarna",
+      "address": null,
+      "phone_number": "6366154125",
+      "email": null,
+      "party": null,
+      "is_active": true
+    },
+    {
+      "ward_no": 16,
+      "department_code": "health_section",
+      "designation_code": "sanitary_supervisor",
+      "name": "Raghuvarna",
+      "address": null,
+      "phone_number": "6366154125",
+      "email": null,
+      "party": null,
+      "is_active": true
+    },
+    {
+      "ward_no": 17,
+      "department_code": "health_section",
+      "designation_code": "sanitary_supervisor",
+      "name": "Raghuvarna",
+      "address": null,
+      "phone_number": "6366154125",
+      "email": null,
+      "party": null,
+      "is_active": true
+    },
+    {
+      "ward_no": 18,
+      "department_code": "health_section",
+      "designation_code": "sanitary_supervisor",
+      "name": "Raghuvarna",
+      "address": null,
+      "phone_number": "6366154125",
+      "email": null,
+      "party": null,
+      "is_active": true
+    },
+    {
+      "ward_no": 19,
+      "department_code": "health_section",
+      "designation_code": "sanitary_supervisor",
+      "name": "Raghuvarna",
+      "address": null,
+      "phone_number": "6366154125",
+      "email": null,
+      "party": null,
+      "is_active": true
+    },
+    {
+      "ward_no": 20,
+      "department_code": "health_section",
+      "designation_code": "sanitary_supervisor",
+      "name": "Raghuvarna",
+      "address": null,
+      "phone_number": "6366154125",
+      "email": null,
+      "party": null,
+      "is_active": true
+    },
+    {
+      "ward_no": 11,
+      "department_code": "health_section",
+      "designation_code": "senior_health_inspector",
+      "name": "Adarsha M",
+      "address": null,
+      "phone_number": "9241522455",
+      "email": null,
+      "party": null,
+      "is_active": true
+    },
+    {
+      "ward_no": 12,
+      "department_code": "health_section",
+      "designation_code": "senior_health_inspector",
+      "name": "Adarsha M",
+      "address": null,
+      "phone_number": "9241522455",
+      "email": null,
+      "party": null,
+      "is_active": true
+    },
+    {
+      "ward_no": 13,
+      "department_code": "health_section",
+      "designation_code": "senior_health_inspector",
+      "name": "Adarsha M",
+      "address": null,
+      "phone_number": "9241522455",
+      "email": null,
+      "party": null,
+      "is_active": true
+    },
+    {
+      "ward_no": 14,
+      "department_code": "health_section",
+      "designation_code": "senior_health_inspector",
+      "name": "Adarsha M",
+      "address": null,
+      "phone_number": "9241522455",
+      "email": null,
+      "party": null,
+      "is_active": true
+    },
+    {
+      "ward_no": 15,
+      "department_code": "health_section",
+      "designation_code": "senior_health_inspector",
+      "name": "Adarsha M",
+      "address": null,
+      "phone_number": "9241522455",
+      "email": null,
+      "party": null,
+      "is_active": true
+    },
+    {
+      "ward_no": 16,
+      "department_code": "health_section",
+      "designation_code": "senior_health_inspector",
+      "name": "Adarsha M",
+      "address": null,
+      "phone_number": "9241522455",
+      "email": null,
+      "party": null,
+      "is_active": true
+    },
+    {
+      "ward_no": 17,
+      "department_code": "health_section",
+      "designation_code": "senior_health_inspector",
+      "name": "Adarsha M",
+      "address": null,
+      "phone_number": "9241522455",
+      "email": null,
+      "party": null,
+      "is_active": true
+    },
+    {
+      "ward_no": 18,
+      "department_code": "health_section",
+      "designation_code": "senior_health_inspector",
+      "name": "Adarsha M",
+      "address": null,
+      "phone_number": "9241522455",
+      "email": null,
+      "party": null,
+      "is_active": true
+    },
+    {
+      "ward_no": 19,
+      "department_code": "health_section",
+      "designation_code": "senior_health_inspector",
+      "name": "Adarsha M",
+      "address": null,
+      "phone_number": "9241522455",
+      "email": null,
+      "party": null,
+      "is_active": true
+    },
+    {
+      "ward_no": 20,
+      "department_code": "health_section",
+      "designation_code": "senior_health_inspector",
+      "name": "Adarsha M",
+      "address": null,
+      "phone_number": "9241522455",
+      "email": null,
+      "party": null,
+      "is_active": true
+    },
+    {
+      "ward_no": 21,
+      "department_code": "health_section",
+      "designation_code": "sanitary_supervisor",
+      "name": "Ranga",
+      "address": null,
+      "phone_number": "9535724941",
+      "email": null,
+      "party": null,
+      "is_active": true
+    },
+    {
+      "ward_no": 22,
+      "department_code": "health_section",
+      "designation_code": "sanitary_supervisor",
+      "name": "Ranga",
+      "address": null,
+      "phone_number": "9535724941",
+      "email": null,
+      "party": null,
+      "is_active": true
+    },
+    {
+      "ward_no": 23,
+      "department_code": "health_section",
+      "designation_code": "sanitary_supervisor",
+      "name": "Ranga",
+      "address": null,
+      "phone_number": "9535724941",
+      "email": null,
+      "party": null,
+      "is_active": true
+    },
+    {
+      "ward_no": 24,
+      "department_code": "health_section",
+      "designation_code": "sanitary_supervisor",
+      "name": "Ranga",
+      "address": null,
+      "phone_number": "9535724941",
+      "email": null,
+      "party": null,
+      "is_active": true
+    },
+    {
+      "ward_no": 21,
+      "department_code": "health_section",
+      "designation_code": "senior_health_inspector",
+      "name": "Rekha R",
+      "address": null,
+      "phone_number": "9740023696",
+      "email": null,
+      "party": null,
+      "is_active": true
+    },
+    {
+      "ward_no": 22,
+      "department_code": "health_section",
+      "designation_code": "senior_health_inspector",
+      "name": "Rekha R",
+      "address": null,
+      "phone_number": "9740023696",
+      "email": null,
+      "party": null,
+      "is_active": true
+    },
+    {
+      "ward_no": 23,
+      "department_code": "health_section",
+      "designation_code": "senior_health_inspector",
+      "name": "Rekha R",
+      "address": null,
+      "phone_number": "9740023696",
+      "email": null,
+      "party": null,
+      "is_active": true
+    },
+    {
+      "ward_no": 24,
+      "department_code": "health_section",
+      "designation_code": "senior_health_inspector",
+      "name": "Rekha R",
+      "address": null,
+      "phone_number": "9740023696",
+      "email": null,
+      "party": null,
+      "is_active": true
+    },
+    {
+      "ward_no": 25,
+      "department_code": "health_section",
+      "designation_code": "sanitary_supervisor",
+      "name": "Shivanna",
+      "address": null,
+      "phone_number": "7411026132",
+      "email": null,
+      "party": null,
+      "is_active": true
+    },
+    {
+      "ward_no": 26,
+      "department_code": "health_section",
+      "designation_code": "sanitary_supervisor",
+      "name": "Shivanna",
+      "address": null,
+      "phone_number": "7411026132",
+      "email": null,
+      "party": null,
+      "is_active": true
+    },
+    {
+      "ward_no": 27,
+      "department_code": "health_section",
+      "designation_code": "sanitary_supervisor",
+      "name": "Shivanna",
+      "address": null,
+      "phone_number": "7411026132",
+      "email": null,
+      "party": null,
+      "is_active": true
+    },
+    {
+      "ward_no": 28,
+      "department_code": "health_section",
+      "designation_code": "sanitary_supervisor",
+      "name": "Shivanna",
+      "address": null,
+      "phone_number": "7411026132",
+      "email": null,
+      "party": null,
+      "is_active": true
+    },
+    {
+      "ward_no": 29,
+      "department_code": "health_section",
+      "designation_code": "sanitary_supervisor",
+      "name": "Shivanna",
+      "address": null,
+      "phone_number": "7411026132",
+      "email": null,
+      "party": null,
+      "is_active": true
+    },
+    {
+      "ward_no": 30,
+      "department_code": "health_section",
+      "designation_code": "sanitary_supervisor",
+      "name": "Shivanna",
+      "address": null,
+      "phone_number": "7411026132",
+      "email": null,
+      "party": null,
+      "is_active": true
+    },
+    {
+      "ward_no": 31,
+      "department_code": "health_section",
+      "designation_code": "sanitary_supervisor",
+      "name": "Shivanna",
+      "address": null,
+      "phone_number": "7411026132",
+      "email": null,
+      "party": null,
+      "is_active": true
+    },
+    {
+      "ward_no": 25,
+      "department_code": "health_section",
+      "designation_code": "junior_health_inspector",
+      "name": "Vasanth Kumar G",
+      "address": null,
+      "phone_number": "8660563613",
+      "email": null,
+      "party": null,
+      "is_active": true
+    },
+    {
+      "ward_no": 26,
+      "department_code": "health_section",
+      "designation_code": "junior_health_inspector",
+      "name": "Vasanth Kumar G",
+      "address": null,
+      "phone_number": "8660563613",
+      "email": null,
+      "party": null,
+      "is_active": true
+    },
+    {
+      "ward_no": 27,
+      "department_code": "health_section",
+      "designation_code": "junior_health_inspector",
+      "name": "Vasanth Kumar G",
+      "address": null,
+      "phone_number": "8660563613",
+      "email": null,
+      "party": null,
+      "is_active": true
+    },
+    {
+      "ward_no": 28,
+      "department_code": "health_section",
+      "designation_code": "junior_health_inspector",
+      "name": "Vasanth Kumar G",
+      "address": null,
+      "phone_number": "8660563613",
+      "email": null,
+      "party": null,
+      "is_active": true
+    },
+    {
+      "ward_no": 29,
+      "department_code": "health_section",
+      "designation_code": "junior_health_inspector",
+      "name": "Vasanth Kumar G",
+      "address": null,
+      "phone_number": "8660563613",
+      "email": null,
+      "party": null,
+      "is_active": true
+    },
+    {
+      "ward_no": 30,
+      "department_code": "health_section",
+      "designation_code": "junior_health_inspector",
+      "name": "Vasanth Kumar G",
+      "address": null,
+      "phone_number": "8660563613",
+      "email": null,
+      "party": null,
+      "is_active": true
+    },
+    {
+      "ward_no": 31,
+      "department_code": "health_section",
+      "designation_code": "junior_health_inspector",
+      "name": "Vasanth Kumar G",
+      "address": null,
+      "phone_number": "8660563613",
+      "email": null,
+      "party": null,
+      "is_active": true
+    },
+    {
+      "ward_no": 1,
+      "department_code": "revenue_section",
+      "designation_code": "s_d_a_incharge_bill_collector",
+      "name": "Manju",
+      "address": null,
+      "phone_number": "9380880264",
+      "email": null,
+      "party": null,
+      "is_active": true
+    },
+    {
+      "ward_no": 2,
+      "department_code": "revenue_section",
+      "designation_code": "s_d_a_incharge_bill_collector",
+      "name": "Manju",
+      "address": null,
+      "phone_number": "9380880264",
+      "email": null,
+      "party": null,
+      "is_active": true
+    },
+    {
+      "ward_no": 3,
+      "department_code": "revenue_section",
+      "designation_code": "s_d_a_incharge_bill_collector",
+      "name": "Manju",
+      "address": null,
+      "phone_number": "9380880264",
+      "email": null,
+      "party": null,
+      "is_active": true
+    },
+    {
+      "ward_no": 4,
+      "department_code": "revenue_section",
+      "designation_code": "s_d_a_incharge_bill_collector",
+      "name": "Manju",
+      "address": null,
+      "phone_number": "9380880264",
+      "email": null,
+      "party": null,
+      "is_active": true
+    },
+    {
+      "ward_no": 5,
+      "department_code": "revenue_section",
+      "designation_code": "s_d_a_incharge_bill_collector",
+      "name": "Manju",
+      "address": null,
+      "phone_number": "9380880264",
+      "email": null,
+      "party": null,
+      "is_active": true
+    },
+    {
+      "ward_no": 6,
+      "department_code": "revenue_section",
+      "designation_code": "s_d_a_incharge_bill_collector",
+      "name": "Manju",
+      "address": null,
+      "phone_number": "9380880264",
+      "email": null,
+      "party": null,
+      "is_active": true
+    },
+    {
+      "ward_no": 7,
+      "department_code": "revenue_section",
+      "designation_code": "s_d_a_incharge_bill_collector",
+      "name": "Manju",
+      "address": null,
+      "phone_number": "9380880264",
+      "email": null,
+      "party": null,
+      "is_active": true
+    },
+    {
+      "ward_no": 8,
+      "department_code": "revenue_section",
+      "designation_code": "s_d_a_incharge_bill_collector",
+      "name": "Manju",
+      "address": null,
+      "phone_number": "9380880264",
+      "email": null,
+      "party": null,
+      "is_active": true
+    },
+    {
+      "ward_no": 9,
+      "department_code": "revenue_section",
+      "designation_code": "s_d_a_incharge_bill_collector",
+      "name": "Manju",
+      "address": null,
+      "phone_number": "9380880264",
+      "email": null,
+      "party": null,
+      "is_active": true
+    },
+    {
+      "ward_no": 10,
+      "department_code": "revenue_section",
+      "designation_code": "s_d_a_incharge_bill_collector",
+      "name": "Manju",
+      "address": null,
+      "phone_number": "9380880264",
+      "email": null,
+      "party": null,
+      "is_active": true
+    },
+    {
+      "ward_no": 1,
+      "department_code": "revenue_section",
+      "designation_code": "revenue_inspector",
+      "name": "Mahesha C",
+      "address": null,
+      "phone_number": "8880299993",
+      "email": null,
+      "party": null,
+      "is_active": true
+    },
+    {
+      "ward_no": 2,
+      "department_code": "revenue_section",
+      "designation_code": "revenue_inspector",
+      "name": "Mahesha C",
+      "address": null,
+      "phone_number": "8880299993",
+      "email": null,
+      "party": null,
+      "is_active": true
+    },
+    {
+      "ward_no": 3,
+      "department_code": "revenue_section",
+      "designation_code": "revenue_inspector",
+      "name": "Mahesha C",
+      "address": null,
+      "phone_number": "8880299993",
+      "email": null,
+      "party": null,
+      "is_active": true
+    },
+    {
+      "ward_no": 4,
+      "department_code": "revenue_section",
+      "designation_code": "revenue_inspector",
+      "name": "Mahesha C",
+      "address": null,
+      "phone_number": "8880299993",
+      "email": null,
+      "party": null,
+      "is_active": true
+    },
+    {
+      "ward_no": 5,
+      "department_code": "revenue_section",
+      "designation_code": "revenue_inspector",
+      "name": "Mahesha C",
+      "address": null,
+      "phone_number": "8880299993",
+      "email": null,
+      "party": null,
+      "is_active": true
+    },
+    {
+      "ward_no": 6,
+      "department_code": "revenue_section",
+      "designation_code": "revenue_inspector",
+      "name": "Mahesha C",
+      "address": null,
+      "phone_number": "8880299993",
+      "email": null,
+      "party": null,
+      "is_active": true
+    },
+    {
+      "ward_no": 7,
+      "department_code": "revenue_section",
+      "designation_code": "revenue_inspector",
+      "name": "Mahesha C",
+      "address": null,
+      "phone_number": "8880299993",
+      "email": null,
+      "party": null,
+      "is_active": true
+    },
+    {
+      "ward_no": 8,
+      "department_code": "revenue_section",
+      "designation_code": "revenue_inspector",
+      "name": "Mahesha C",
+      "address": null,
+      "phone_number": "8880299993",
+      "email": null,
+      "party": null,
+      "is_active": true
+    },
+    {
+      "ward_no": 9,
+      "department_code": "revenue_section",
+      "designation_code": "revenue_inspector",
+      "name": "Mahesha C",
+      "address": null,
+      "phone_number": "8880299993",
+      "email": null,
+      "party": null,
+      "is_active": true
+    },
+    {
+      "ward_no": 10,
+      "department_code": "revenue_section",
+      "designation_code": "revenue_inspector",
+      "name": "Mahesha C",
+      "address": null,
+      "phone_number": "8880299993",
+      "email": null,
+      "party": null,
+      "is_active": true
+    },
+    {
+      "ward_no": 11,
+      "department_code": "revenue_section",
+      "designation_code": "s_d_a_incharge_bill_collector",
+      "name": "Taradevi M",
+      "address": null,
+      "phone_number": "7204675048",
+      "email": null,
+      "party": null,
+      "is_active": true
+    },
+    {
+      "ward_no": 12,
+      "department_code": "revenue_section",
+      "designation_code": "s_d_a_incharge_bill_collector",
+      "name": "Taradevi M",
+      "address": null,
+      "phone_number": "7204675048",
+      "email": null,
+      "party": null,
+      "is_active": true
+    },
+    {
+      "ward_no": 13,
+      "department_code": "revenue_section",
+      "designation_code": "s_d_a_incharge_bill_collector",
+      "name": "Taradevi M",
+      "address": null,
+      "phone_number": "7204675048",
+      "email": null,
+      "party": null,
+      "is_active": true
+    },
+    {
+      "ward_no": 14,
+      "department_code": "revenue_section",
+      "designation_code": "s_d_a_incharge_bill_collector",
+      "name": "Taradevi M",
+      "address": null,
+      "phone_number": "7204675048",
+      "email": null,
+      "party": null,
+      "is_active": true
+    },
+    {
+      "ward_no": 15,
+      "department_code": "revenue_section",
+      "designation_code": "s_d_a_incharge_bill_collector",
+      "name": "Taradevi M",
+      "address": null,
+      "phone_number": "7204675048",
+      "email": null,
+      "party": null,
+      "is_active": true
+    },
+    {
+      "ward_no": 16,
+      "department_code": "revenue_section",
+      "designation_code": "s_d_a_incharge_bill_collector",
+      "name": "Taradevi M",
+      "address": null,
+      "phone_number": "7204675048",
+      "email": null,
+      "party": null,
+      "is_active": true
+    },
+    {
+      "ward_no": 17,
+      "department_code": "revenue_section",
+      "designation_code": "s_d_a_incharge_bill_collector",
+      "name": "Taradevi M",
+      "address": null,
+      "phone_number": "7204675048",
+      "email": null,
+      "party": null,
+      "is_active": true
+    },
+    {
+      "ward_no": 18,
+      "department_code": "revenue_section",
+      "designation_code": "s_d_a_incharge_bill_collector",
+      "name": "Taradevi M",
+      "address": null,
+      "phone_number": "7204675048",
+      "email": null,
+      "party": null,
+      "is_active": true
+    },
+    {
+      "ward_no": 19,
+      "department_code": "revenue_section",
+      "designation_code": "s_d_a_incharge_bill_collector",
+      "name": "Taradevi M",
+      "address": null,
+      "phone_number": "7204675048",
+      "email": null,
+      "party": null,
+      "is_active": true
+    },
+    {
+      "ward_no": 20,
+      "department_code": "revenue_section",
+      "designation_code": "s_d_a_incharge_bill_collector",
+      "name": "Taradevi M",
+      "address": null,
+      "phone_number": "7204675048",
+      "email": null,
+      "party": null,
+      "is_active": true
+    },
+    {
+      "ward_no": 16,
+      "department_code": "revenue_section",
+      "designation_code": "revenue_inspector",
+      "name": "Preetham Gowda.B",
+      "address": null,
+      "phone_number": "8123477124",
+      "email": null,
+      "party": null,
+      "is_active": true
+    },
+    {
+      "ward_no": 17,
+      "department_code": "revenue_section",
+      "designation_code": "revenue_inspector",
+      "name": "Preetham Gowda.B",
+      "address": null,
+      "phone_number": "8123477124",
+      "email": null,
+      "party": null,
+      "is_active": true
+    },
+    {
+      "ward_no": 18,
+      "department_code": "revenue_section",
+      "designation_code": "revenue_inspector",
+      "name": "Preetham Gowda.B",
+      "address": null,
+      "phone_number": "8123477124",
+      "email": null,
+      "party": null,
+      "is_active": true
+    },
+    {
+      "ward_no": 19,
+      "department_code": "revenue_section",
+      "designation_code": "revenue_inspector",
+      "name": "Preetham Gowda.B",
+      "address": null,
+      "phone_number": "8123477124",
+      "email": null,
+      "party": null,
+      "is_active": true
+    },
+    {
+      "ward_no": 20,
+      "department_code": "revenue_section",
+      "designation_code": "revenue_inspector",
+      "name": "Preetham Gowda.B",
+      "address": null,
+      "phone_number": "8123477124",
+      "email": null,
+      "party": null,
+      "is_active": true
+    },
+    {
+      "ward_no": 21,
+      "department_code": "revenue_section",
+      "designation_code": "bill_collector",
+      "name": "Raghavendra.R",
+      "address": null,
+      "phone_number": "7760161036",
+      "email": null,
+      "party": null,
+      "is_active": true
+    },
+    {
+      "ward_no": 22,
+      "department_code": "revenue_section",
+      "designation_code": "bill_collector",
+      "name": "Raghavendra.R",
+      "address": null,
+      "phone_number": "7760161036",
+      "email": null,
+      "party": null,
+      "is_active": true
+    },
+    {
+      "ward_no": 23,
+      "department_code": "revenue_section",
+      "designation_code": "bill_collector",
+      "name": "Raghavendra.R",
+      "address": null,
+      "phone_number": "7760161036",
+      "email": null,
+      "party": null,
+      "is_active": true
+    },
+    {
+      "ward_no": 24,
+      "department_code": "revenue_section",
+      "designation_code": "bill_collector",
+      "name": "Raghavendra.R",
+      "address": null,
+      "phone_number": "7760161036",
+      "email": null,
+      "party": null,
+      "is_active": true
+    },
+    {
+      "ward_no": 25,
+      "department_code": "revenue_section",
+      "designation_code": "bill_collector",
+      "name": "Raghavendra.R",
+      "address": null,
+      "phone_number": "7760161036",
+      "email": null,
+      "party": null,
+      "is_active": true
+    },
+    {
+      "ward_no": 26,
+      "department_code": "revenue_section",
+      "designation_code": "bill_collector",
+      "name": "Raghavendra.R",
+      "address": null,
+      "phone_number": "7760161036",
+      "email": null,
+      "party": null,
+      "is_active": true
+    },
+    {
+      "ward_no": 27,
+      "department_code": "revenue_section",
+      "designation_code": "bill_collector",
+      "name": "Raghavendra.R",
+      "address": null,
+      "phone_number": "7760161036",
+      "email": null,
+      "party": null,
+      "is_active": true
+    },
+    {
+      "ward_no": 28,
+      "department_code": "revenue_section",
+      "designation_code": "bill_collector",
+      "name": "Raghavendra.R",
+      "address": null,
+      "phone_number": "7760161036",
+      "email": null,
+      "party": null,
+      "is_active": true
+    },
+    {
+      "ward_no": 29,
+      "department_code": "revenue_section",
+      "designation_code": "bill_collector",
+      "name": "Raghavendra.R",
+      "address": null,
+      "phone_number": "7760161036",
+      "email": null,
+      "party": null,
+      "is_active": true
+    },
+    {
+      "ward_no": 30,
+      "department_code": "revenue_section",
+      "designation_code": "bill_collector",
+      "name": "Raghavendra.R",
+      "address": null,
+      "phone_number": "7760161036",
+      "email": null,
+      "party": null,
+      "is_active": true
+    },
+    {
+      "ward_no": 31,
+      "department_code": "revenue_section",
+      "designation_code": "bill_collector",
+      "name": "Raghavendra.R",
+      "address": null,
+      "phone_number": "7760161036",
+      "email": null,
+      "party": null,
+      "is_active": true
+    },
+    {
+      "ward_no": 1,
+      "department_code": "technical_section",
+      "designation_code": "junior_engineer",
+      "name": "Prathima M",
+      "address": null,
+      "phone_number": "9019389887",
+      "email": null,
+      "party": null,
+      "is_active": true
+    },
+    {
+      "ward_no": 2,
+      "department_code": "technical_section",
+      "designation_code": "junior_engineer",
+      "name": "Prathima M",
+      "address": null,
+      "phone_number": "9019389887",
+      "email": null,
+      "party": null,
+      "is_active": true
+    },
+    {
+      "ward_no": 3,
+      "department_code": "technical_section",
+      "designation_code": "junior_engineer",
+      "name": "Prathima M",
+      "address": null,
+      "phone_number": "9019389887",
+      "email": null,
+      "party": null,
+      "is_active": true
+    },
+    {
+      "ward_no": 4,
+      "department_code": "technical_section",
+      "designation_code": "junior_engineer",
+      "name": "Prathima M",
+      "address": null,
+      "phone_number": "9019389887",
+      "email": null,
+      "party": null,
+      "is_active": true
+    },
+    {
+      "ward_no": 5,
+      "department_code": "technical_section",
+      "designation_code": "junior_engineer",
+      "name": "Prathima M",
+      "address": null,
+      "phone_number": "9019389887",
+      "email": null,
+      "party": null,
+      "is_active": true
+    },
+    {
+      "ward_no": 6,
+      "department_code": "technical_section",
+      "designation_code": "junior_engineer",
+      "name": "Prathima M",
+      "address": null,
+      "phone_number": "9019389887",
+      "email": null,
+      "party": null,
+      "is_active": true
+    },
+    {
+      "ward_no": 7,
+      "department_code": "technical_section",
+      "designation_code": "junior_engineer",
+      "name": "Prathima M",
+      "address": null,
+      "phone_number": "9019389887",
+      "email": null,
+      "party": null,
+      "is_active": true
+    },
+    {
+      "ward_no": 8,
+      "department_code": "technical_section",
+      "designation_code": "junior_engineer",
+      "name": "Prathima M",
+      "address": null,
+      "phone_number": "9019389887",
+      "email": null,
+      "party": null,
+      "is_active": true
+    },
+    {
+      "ward_no": 9,
+      "department_code": "technical_section",
+      "designation_code": "junior_engineer",
+      "name": "Prathima M",
+      "address": null,
+      "phone_number": "9019389887",
+      "email": null,
+      "party": null,
+      "is_active": true
+    },
+    {
+      "ward_no": 10,
+      "department_code": "technical_section",
+      "designation_code": "junior_engineer",
+      "name": "Prathima M",
+      "address": null,
+      "phone_number": "9019389887",
+      "email": null,
+      "party": null,
+      "is_active": true
+    },
+    {
+      "ward_no": 11,
+      "department_code": "technical_section",
+      "designation_code": "junior_engineer",
+      "name": "Prathima M",
+      "address": null,
+      "phone_number": "9019389887",
+      "email": null,
+      "party": null,
+      "is_active": true
+    },
+    {
+      "ward_no": 12,
+      "department_code": "technical_section",
+      "designation_code": "junior_engineer",
+      "name": "Prathima M",
+      "address": null,
+      "phone_number": "9019389887",
+      "email": null,
+      "party": null,
+      "is_active": true
+    },
+    {
+      "ward_no": 13,
+      "department_code": "technical_section",
+      "designation_code": "junior_engineer",
+      "name": "Prathima M",
+      "address": null,
+      "phone_number": "9019389887",
+      "email": null,
+      "party": null,
+      "is_active": true
+    },
+    {
+      "ward_no": 14,
+      "department_code": "technical_section",
+      "designation_code": "junior_engineer",
+      "name": "Prathima M",
+      "address": null,
+      "phone_number": "9019389887",
+      "email": null,
+      "party": null,
+      "is_active": true
+    },
+    {
+      "ward_no": 15,
+      "department_code": "technical_section",
+      "designation_code": "junior_engineer",
+      "name": "Prathima M",
+      "address": null,
+      "phone_number": "9019389887",
+      "email": null,
+      "party": null,
+      "is_active": true
+    },
+    {
+      "ward_no": 16,
+      "department_code": "technical_section",
+      "designation_code": "junior_engineer",
+      "name": "Prathima M",
+      "address": null,
+      "phone_number": "9019389887",
+      "email": null,
+      "party": null,
+      "is_active": true
+    },
+    {
+      "ward_no": 17,
+      "department_code": "technical_section",
+      "designation_code": "junior_engineer",
+      "name": "Prathima M",
+      "address": null,
+      "phone_number": "9019389887",
+      "email": null,
+      "party": null,
+      "is_active": true
+    },
+    {
+      "ward_no": 18,
+      "department_code": "technical_section",
+      "designation_code": "junior_engineer",
+      "name": "Prathima M",
+      "address": null,
+      "phone_number": "9019389887",
+      "email": null,
+      "party": null,
+      "is_active": true
+    },
+    {
+      "ward_no": 19,
+      "department_code": "technical_section",
+      "designation_code": "junior_engineer",
+      "name": "Prathima M",
+      "address": null,
+      "phone_number": "9019389887",
+      "email": null,
+      "party": null,
+      "is_active": true
+    },
+    {
+      "ward_no": 20,
+      "department_code": "technical_section",
+      "designation_code": "junior_engineer",
+      "name": "Prathima M",
+      "address": null,
+      "phone_number": "9019389887",
+      "email": null,
+      "party": null,
+      "is_active": true
+    },
+    {
+      "ward_no": 21,
+      "department_code": "technical_section",
+      "designation_code": "junior_engineer",
+      "name": "Prathima M",
+      "address": null,
+      "phone_number": "9019389887",
+      "email": null,
+      "party": null,
+      "is_active": true
+    },
+    {
+      "ward_no": 22,
+      "department_code": "technical_section",
+      "designation_code": "junior_engineer",
+      "name": "Prathima M",
+      "address": null,
+      "phone_number": "9019389887",
+      "email": null,
+      "party": null,
+      "is_active": true
+    },
+    {
+      "ward_no": 23,
+      "department_code": "technical_section",
+      "designation_code": "junior_engineer",
+      "name": "Prathima M",
+      "address": null,
+      "phone_number": "9019389887",
+      "email": null,
+      "party": null,
+      "is_active": true
+    },
+    {
+      "ward_no": 24,
+      "department_code": "technical_section",
+      "designation_code": "junior_engineer",
+      "name": "Prathima M",
+      "address": null,
+      "phone_number": "9019389887",
+      "email": null,
+      "party": null,
+      "is_active": true
+    },
+    {
+      "ward_no": 25,
+      "department_code": "technical_section",
+      "designation_code": "junior_engineer",
+      "name": "Prathima M",
+      "address": null,
+      "phone_number": "9019389887",
+      "email": null,
+      "party": null,
+      "is_active": true
+    },
+    {
+      "ward_no": 26,
+      "department_code": "technical_section",
+      "designation_code": "junior_engineer",
+      "name": "Prathima M",
+      "address": null,
+      "phone_number": "9019389887",
+      "email": null,
+      "party": null,
+      "is_active": true
+    },
+    {
+      "ward_no": 27,
+      "department_code": "technical_section",
+      "designation_code": "junior_engineer",
+      "name": "Prathima M",
+      "address": null,
+      "phone_number": "9019389887",
+      "email": null,
+      "party": null,
+      "is_active": true
+    },
+    {
+      "ward_no": 28,
+      "department_code": "technical_section",
+      "designation_code": "junior_engineer",
+      "name": "Prathima M",
+      "address": null,
+      "phone_number": "9019389887",
+      "email": null,
+      "party": null,
+      "is_active": true
+    },
+    {
+      "ward_no": 29,
+      "department_code": "technical_section",
+      "designation_code": "junior_engineer",
+      "name": "Prathima M",
+      "address": null,
+      "phone_number": "9019389887",
+      "email": null,
+      "party": null,
+      "is_active": true
+    },
+    {
+      "ward_no": 30,
+      "department_code": "technical_section",
+      "designation_code": "junior_engineer",
+      "name": "Prathima M",
+      "address": null,
+      "phone_number": "9019389887",
+      "email": null,
+      "party": null,
+      "is_active": true
+    },
+    {
+      "ward_no": 31,
+      "department_code": "technical_section",
+      "designation_code": "junior_engineer",
+      "name": "Prathima M",
+      "address": null,
+      "phone_number": "9019389887",
+      "email": null,
+      "party": null,
+      "is_active": true
+    },
+    {
+      "ward_no": 1,
+      "department_code": "technical_section",
+      "designation_code": "assistant_engineer",
+      "name": "Shamanth Kumar H R",
+      "address": null,
+      "phone_number": "8904616043",
+      "email": null,
+      "party": null,
+      "is_active": true
+    },
+    {
+      "ward_no": 2,
+      "department_code": "technical_section",
+      "designation_code": "assistant_engineer",
+      "name": "Shamanth Kumar H R",
+      "address": null,
+      "phone_number": "8904616043",
+      "email": null,
+      "party": null,
+      "is_active": true
+    },
+    {
+      "ward_no": 3,
+      "department_code": "technical_section",
+      "designation_code": "assistant_engineer",
+      "name": "Shamanth Kumar H R",
+      "address": null,
+      "phone_number": "8904616043",
+      "email": null,
+      "party": null,
+      "is_active": true
+    },
+    {
+      "ward_no": 4,
+      "department_code": "technical_section",
+      "designation_code": "assistant_engineer",
+      "name": "Shamanth Kumar H R",
+      "address": null,
+      "phone_number": "8904616043",
+      "email": null,
+      "party": null,
+      "is_active": true
+    },
+    {
+      "ward_no": 5,
+      "department_code": "technical_section",
+      "designation_code": "assistant_engineer",
+      "name": "Shamanth Kumar H R",
+      "address": null,
+      "phone_number": "8904616043",
+      "email": null,
+      "party": null,
+      "is_active": true
+    },
+    {
+      "ward_no": 6,
+      "department_code": "technical_section",
+      "designation_code": "assistant_engineer",
+      "name": "Shamanth Kumar H R",
+      "address": null,
+      "phone_number": "8904616043",
+      "email": null,
+      "party": null,
+      "is_active": true
+    },
+    {
+      "ward_no": 7,
+      "department_code": "technical_section",
+      "designation_code": "assistant_engineer",
+      "name": "Shamanth Kumar H R",
+      "address": null,
+      "phone_number": "8904616043",
+      "email": null,
+      "party": null,
+      "is_active": true
+    },
+    {
+      "ward_no": 8,
+      "department_code": "technical_section",
+      "designation_code": "assistant_engineer",
+      "name": "Shamanth Kumar H R",
+      "address": null,
+      "phone_number": "8904616043",
+      "email": null,
+      "party": null,
+      "is_active": true
+    },
+    {
+      "ward_no": 9,
+      "department_code": "technical_section",
+      "designation_code": "assistant_engineer",
+      "name": "Shamanth Kumar H R",
+      "address": null,
+      "phone_number": "8904616043",
+      "email": null,
+      "party": null,
+      "is_active": true
+    },
+    {
+      "ward_no": 10,
+      "department_code": "technical_section",
+      "designation_code": "assistant_engineer",
+      "name": "Shamanth Kumar H R",
+      "address": null,
+      "phone_number": "8904616043",
+      "email": null,
+      "party": null,
+      "is_active": true
+    },
+    {
+      "ward_no": 11,
+      "department_code": "technical_section",
+      "designation_code": "assistant_engineer",
+      "name": "Shamanth Kumar H R",
+      "address": null,
+      "phone_number": "8904616043",
+      "email": null,
+      "party": null,
+      "is_active": true
+    },
+    {
+      "ward_no": 12,
+      "department_code": "technical_section",
+      "designation_code": "assistant_engineer",
+      "name": "Shamanth Kumar H R",
+      "address": null,
+      "phone_number": "8904616043",
+      "email": null,
+      "party": null,
+      "is_active": true
+    },
+    {
+      "ward_no": 13,
+      "department_code": "technical_section",
+      "designation_code": "assistant_engineer",
+      "name": "Shamanth Kumar H R",
+      "address": null,
+      "phone_number": "8904616043",
+      "email": null,
+      "party": null,
+      "is_active": true
+    },
+    {
+      "ward_no": 14,
+      "department_code": "technical_section",
+      "designation_code": "assistant_engineer",
+      "name": "Shamanth Kumar H R",
+      "address": null,
+      "phone_number": "8904616043",
+      "email": null,
+      "party": null,
+      "is_active": true
+    },
+    {
+      "ward_no": 15,
+      "department_code": "technical_section",
+      "designation_code": "assistant_engineer",
+      "name": "Shamanth Kumar H R",
+      "address": null,
+      "phone_number": "8904616043",
+      "email": null,
+      "party": null,
+      "is_active": true
+    },
+    {
+      "ward_no": 16,
+      "department_code": "technical_section",
+      "designation_code": "assistant_engineer",
+      "name": "Shamanth Kumar H R",
+      "address": null,
+      "phone_number": "8904616043",
+      "email": null,
+      "party": null,
+      "is_active": true
+    },
+    {
+      "ward_no": 17,
+      "department_code": "technical_section",
+      "designation_code": "assistant_engineer",
+      "name": "Shamanth Kumar H R",
+      "address": null,
+      "phone_number": "8904616043",
+      "email": null,
+      "party": null,
+      "is_active": true
+    },
+    {
+      "ward_no": 18,
+      "department_code": "technical_section",
+      "designation_code": "assistant_engineer",
+      "name": "Shamanth Kumar H R",
+      "address": null,
+      "phone_number": "8904616043",
+      "email": null,
+      "party": null,
+      "is_active": true
+    },
+    {
+      "ward_no": 19,
+      "department_code": "technical_section",
+      "designation_code": "assistant_engineer",
+      "name": "Shamanth Kumar H R",
+      "address": null,
+      "phone_number": "8904616043",
+      "email": null,
+      "party": null,
+      "is_active": true
+    },
+    {
+      "ward_no": 20,
+      "department_code": "technical_section",
+      "designation_code": "assistant_engineer",
+      "name": "Shamanth Kumar H R",
+      "address": null,
+      "phone_number": "8904616043",
+      "email": null,
+      "party": null,
+      "is_active": true
+    },
+    {
+      "ward_no": 21,
+      "department_code": "technical_section",
+      "designation_code": "assistant_engineer",
+      "name": "Shamanth Kumar H R",
+      "address": null,
+      "phone_number": "8904616043",
+      "email": null,
+      "party": null,
+      "is_active": true
+    },
+    {
+      "ward_no": 22,
+      "department_code": "technical_section",
+      "designation_code": "assistant_engineer",
+      "name": "Shamanth Kumar H R",
+      "address": null,
+      "phone_number": "8904616043",
+      "email": null,
+      "party": null,
+      "is_active": true
+    },
+    {
+      "ward_no": 23,
+      "department_code": "technical_section",
+      "designation_code": "assistant_engineer",
+      "name": "Shamanth Kumar H R",
+      "address": null,
+      "phone_number": "8904616043",
+      "email": null,
+      "party": null,
+      "is_active": true
+    },
+    {
+      "ward_no": 24,
+      "department_code": "technical_section",
+      "designation_code": "assistant_engineer",
+      "name": "Shamanth Kumar H R",
+      "address": null,
+      "phone_number": "8904616043",
+      "email": null,
+      "party": null,
+      "is_active": true
+    },
+    {
+      "ward_no": 25,
+      "department_code": "technical_section",
+      "designation_code": "assistant_engineer",
+      "name": "Shamanth Kumar H R",
+      "address": null,
+      "phone_number": "8904616043",
+      "email": null,
+      "party": null,
+      "is_active": true
+    },
+    {
+      "ward_no": 26,
+      "department_code": "technical_section",
+      "designation_code": "assistant_engineer",
+      "name": "Shamanth Kumar H R",
+      "address": null,
+      "phone_number": "8904616043",
+      "email": null,
+      "party": null,
+      "is_active": true
+    },
+    {
+      "ward_no": 27,
+      "department_code": "technical_section",
+      "designation_code": "assistant_engineer",
+      "name": "Shamanth Kumar H R",
+      "address": null,
+      "phone_number": "8904616043",
+      "email": null,
+      "party": null,
+      "is_active": true
+    },
+    {
+      "ward_no": 28,
+      "department_code": "technical_section",
+      "designation_code": "assistant_engineer",
+      "name": "Shamanth Kumar H R",
+      "address": null,
+      "phone_number": "8904616043",
+      "email": null,
+      "party": null,
+      "is_active": true
+    },
+    {
+      "ward_no": 29,
+      "department_code": "technical_section",
+      "designation_code": "assistant_engineer",
+      "name": "Shamanth Kumar H R",
+      "address": null,
+      "phone_number": "8904616043",
+      "email": null,
+      "party": null,
+      "is_active": true
+    },
+    {
+      "ward_no": 30,
+      "department_code": "technical_section",
+      "designation_code": "assistant_engineer",
+      "name": "Shamanth Kumar H R",
+      "address": null,
+      "phone_number": "8904616043",
+      "email": null,
+      "party": null,
+      "is_active": true
+    },
+    {
+      "ward_no": 31,
+      "department_code": "technical_section",
+      "designation_code": "assistant_engineer",
+      "name": "Shamanth Kumar H R",
+      "address": null,
+      "phone_number": "8904616043",
+      "email": null,
+      "party": null,
+      "is_active": true
+    },
+    {
+      "ward_no": 1,
+      "department_code": "day_nulm_section",
+      "designation_code": "community_resource_person",
+      "name": "Suvarnamma",
+      "address": null,
+      "phone_number": "9164973538",
+      "email": null,
+      "party": null,
+      "is_active": true
+    },
+    {
+      "ward_no": 2,
+      "department_code": "day_nulm_section",
+      "designation_code": "community_resource_person",
+      "name": "Suvarnamma",
+      "address": null,
+      "phone_number": "9164973538",
+      "email": null,
+      "party": null,
+      "is_active": true
+    },
+    {
+      "ward_no": 3,
+      "department_code": "day_nulm_section",
+      "designation_code": "community_resource_person",
+      "name": "Suvarnamma",
+      "address": null,
+      "phone_number": "9164973538",
+      "email": null,
+      "party": null,
+      "is_active": true
+    },
+    {
+      "ward_no": 4,
+      "department_code": "day_nulm_section",
+      "designation_code": "community_resource_person",
+      "name": "Suvarnamma",
+      "address": null,
+      "phone_number": "9164973538",
+      "email": null,
+      "party": null,
+      "is_active": true
+    },
+    {
+      "ward_no": 5,
+      "department_code": "day_nulm_section",
+      "designation_code": "community_resource_person",
+      "name": "Suvarnamma",
+      "address": null,
+      "phone_number": "9164973538",
+      "email": null,
+      "party": null,
+      "is_active": true
+    },
+    {
+      "ward_no": 6,
+      "department_code": "day_nulm_section",
+      "designation_code": "community_resource_person",
+      "name": "Suvarnamma",
+      "address": null,
+      "phone_number": "9164973538",
+      "email": null,
+      "party": null,
+      "is_active": true
+    },
+    {
+      "ward_no": 7,
+      "department_code": "day_nulm_section",
+      "designation_code": "community_resource_person",
+      "name": "Suvarnamma",
+      "address": null,
+      "phone_number": "9164973538",
+      "email": null,
+      "party": null,
+      "is_active": true
+    },
+    {
+      "ward_no": 8,
+      "department_code": "day_nulm_section",
+      "designation_code": "community_resource_person",
+      "name": "Suvarnamma",
+      "address": null,
+      "phone_number": "9164973538",
+      "email": null,
+      "party": null,
+      "is_active": true
+    },
+    {
+      "ward_no": 9,
+      "department_code": "day_nulm_section",
+      "designation_code": "community_resource_person",
+      "name": "Suvarnamma",
+      "address": null,
+      "phone_number": "9164973538",
+      "email": null,
+      "party": null,
+      "is_active": true
+    },
+    {
+      "ward_no": 10,
+      "department_code": "day_nulm_section",
+      "designation_code": "community_resource_person",
+      "name": "Suvarnamma",
+      "address": null,
+      "phone_number": "9164973538",
+      "email": null,
+      "party": null,
+      "is_active": true
+    },
+    {
+      "ward_no": 1,
+      "department_code": "day_nulm_section",
+      "designation_code": "first_division_assistant",
+      "name": "Shafiulla",
+      "address": null,
+      "phone_number": "9886069239",
+      "email": null,
+      "party": null,
+      "is_active": true
+    },
+    {
+      "ward_no": 2,
+      "department_code": "day_nulm_section",
+      "designation_code": "first_division_assistant",
+      "name": "Shafiulla",
+      "address": null,
+      "phone_number": "9886069239",
+      "email": null,
+      "party": null,
+      "is_active": true
+    },
+    {
+      "ward_no": 3,
+      "department_code": "day_nulm_section",
+      "designation_code": "first_division_assistant",
+      "name": "Shafiulla",
+      "address": null,
+      "phone_number": "9886069239",
+      "email": null,
+      "party": null,
+      "is_active": true
+    },
+    {
+      "ward_no": 4,
+      "department_code": "day_nulm_section",
+      "designation_code": "first_division_assistant",
+      "name": "Shafiulla",
+      "address": null,
+      "phone_number": "9886069239",
+      "email": null,
+      "party": null,
+      "is_active": true
+    },
+    {
+      "ward_no": 5,
+      "department_code": "day_nulm_section",
+      "designation_code": "first_division_assistant",
+      "name": "Shafiulla",
+      "address": null,
+      "phone_number": "9886069239",
+      "email": null,
+      "party": null,
+      "is_active": true
+    },
+    {
+      "ward_no": 6,
+      "department_code": "day_nulm_section",
+      "designation_code": "first_division_assistant",
+      "name": "Shafiulla",
+      "address": null,
+      "phone_number": "9886069239",
+      "email": null,
+      "party": null,
+      "is_active": true
+    },
+    {
+      "ward_no": 7,
+      "department_code": "day_nulm_section",
+      "designation_code": "first_division_assistant",
+      "name": "Shafiulla",
+      "address": null,
+      "phone_number": "9886069239",
+      "email": null,
+      "party": null,
+      "is_active": true
+    },
+    {
+      "ward_no": 8,
+      "department_code": "day_nulm_section",
+      "designation_code": "first_division_assistant",
+      "name": "Shafiulla",
+      "address": null,
+      "phone_number": "9886069239",
+      "email": null,
+      "party": null,
+      "is_active": true
+    },
+    {
+      "ward_no": 9,
+      "department_code": "day_nulm_section",
+      "designation_code": "first_division_assistant",
+      "name": "Shafiulla",
+      "address": null,
+      "phone_number": "9886069239",
+      "email": null,
+      "party": null,
+      "is_active": true
+    },
+    {
+      "ward_no": 10,
+      "department_code": "day_nulm_section",
+      "designation_code": "first_division_assistant",
+      "name": "Shafiulla",
+      "address": null,
+      "phone_number": "9886069239",
+      "email": null,
+      "party": null,
+      "is_active": true
+    },
+    {
+      "ward_no": 11,
+      "department_code": "day_nulm_section",
+      "designation_code": "community_resource_person",
+      "name": "Lokeswari",
+      "address": null,
+      "phone_number": "9035170546",
+      "email": null,
+      "party": null,
+      "is_active": true
+    },
+    {
+      "ward_no": 12,
+      "department_code": "day_nulm_section",
+      "designation_code": "community_resource_person",
+      "name": "Lokeswari",
+      "address": null,
+      "phone_number": "9035170546",
+      "email": null,
+      "party": null,
+      "is_active": true
+    },
+    {
+      "ward_no": 13,
+      "department_code": "day_nulm_section",
+      "designation_code": "community_resource_person",
+      "name": "Lokeswari",
+      "address": null,
+      "phone_number": "9035170546",
+      "email": null,
+      "party": null,
+      "is_active": true
+    },
+    {
+      "ward_no": 14,
+      "department_code": "day_nulm_section",
+      "designation_code": "community_resource_person",
+      "name": "Lokeswari",
+      "address": null,
+      "phone_number": "9035170546",
+      "email": null,
+      "party": null,
+      "is_active": true
+    },
+    {
+      "ward_no": 15,
+      "department_code": "day_nulm_section",
+      "designation_code": "community_resource_person",
+      "name": "Lokeswari",
+      "address": null,
+      "phone_number": "9035170546",
+      "email": null,
+      "party": null,
+      "is_active": true
+    },
+    {
+      "ward_no": 16,
+      "department_code": "day_nulm_section",
+      "designation_code": "community_resource_person",
+      "name": "Lokeswari",
+      "address": null,
+      "phone_number": "9035170546",
+      "email": null,
+      "party": null,
+      "is_active": true
+    },
+    {
+      "ward_no": 17,
+      "department_code": "day_nulm_section",
+      "designation_code": "community_resource_person",
+      "name": "Lokeswari",
+      "address": null,
+      "phone_number": "9035170546",
+      "email": null,
+      "party": null,
+      "is_active": true
+    },
+    {
+      "ward_no": 18,
+      "department_code": "day_nulm_section",
+      "designation_code": "community_resource_person",
+      "name": "Lokeswari",
+      "address": null,
+      "phone_number": "9035170546",
+      "email": null,
+      "party": null,
+      "is_active": true
+    },
+    {
+      "ward_no": 19,
+      "department_code": "day_nulm_section",
+      "designation_code": "community_resource_person",
+      "name": "Lokeswari",
+      "address": null,
+      "phone_number": "9035170546",
+      "email": null,
+      "party": null,
+      "is_active": true
+    },
+    {
+      "ward_no": 20,
+      "department_code": "day_nulm_section",
+      "designation_code": "community_resource_person",
+      "name": "Lokeswari",
+      "address": null,
+      "phone_number": "9035170546",
+      "email": null,
+      "party": null,
+      "is_active": true
+    },
+    {
+      "ward_no": 21,
+      "department_code": "day_nulm_section",
+      "designation_code": "community_resource_person",
+      "name": "Vatsala",
+      "address": null,
+      "phone_number": "6361542682",
+      "email": null,
+      "party": null,
+      "is_active": true
+    },
+    {
+      "ward_no": 22,
+      "department_code": "day_nulm_section",
+      "designation_code": "community_resource_person",
+      "name": "Vatsala",
+      "address": null,
+      "phone_number": "6361542682",
+      "email": null,
+      "party": null,
+      "is_active": true
+    },
+    {
+      "ward_no": 23,
+      "department_code": "day_nulm_section",
+      "designation_code": "community_resource_person",
+      "name": "Vatsala",
+      "address": null,
+      "phone_number": "6361542682",
+      "email": null,
+      "party": null,
+      "is_active": true
+    },
+    {
+      "ward_no": 24,
+      "department_code": "day_nulm_section",
+      "designation_code": "community_resource_person",
+      "name": "Vatsala",
+      "address": null,
+      "phone_number": "6361542682",
+      "email": null,
+      "party": null,
+      "is_active": true
+    },
+    {
+      "ward_no": 25,
+      "department_code": "day_nulm_section",
+      "designation_code": "community_resource_person",
+      "name": "Vatsala",
+      "address": null,
+      "phone_number": "6361542682",
+      "email": null,
+      "party": null,
+      "is_active": true
+    },
+    {
+      "ward_no": 26,
+      "department_code": "day_nulm_section",
+      "designation_code": "community_resource_person",
+      "name": "Vatsala",
+      "address": null,
+      "phone_number": "6361542682",
+      "email": null,
+      "party": null,
+      "is_active": true
+    },
+    {
+      "ward_no": 27,
+      "department_code": "day_nulm_section",
+      "designation_code": "community_resource_person",
+      "name": "Vatsala",
+      "address": null,
+      "phone_number": "6361542682",
+      "email": null,
+      "party": null,
+      "is_active": true
+    },
+    {
+      "ward_no": 28,
+      "department_code": "day_nulm_section",
+      "designation_code": "community_resource_person",
+      "name": "Vatsala",
+      "address": null,
+      "phone_number": "6361542682",
+      "email": null,
+      "party": null,
+      "is_active": true
+    },
+    {
+      "ward_no": 29,
+      "department_code": "day_nulm_section",
+      "designation_code": "community_resource_person",
+      "name": "Vatsala",
+      "address": null,
+      "phone_number": "6361542682",
+      "email": null,
+      "party": null,
+      "is_active": true
+    },
+    {
+      "ward_no": 30,
+      "department_code": "day_nulm_section",
+      "designation_code": "community_resource_person",
+      "name": "Vatsala",
+      "address": null,
+      "phone_number": "6361542682",
+      "email": null,
+      "party": null,
+      "is_active": true
+    },
+    {
+      "ward_no": 31,
+      "department_code": "day_nulm_section",
+      "designation_code": "community_resource_person",
+      "name": "Vatsala",
+      "address": null,
+      "phone_number": "6361542682",
+      "email": null,
+      "party": null,
+      "is_active": true
+    },
+    {
+      "ward_no": 16,
+      "department_code": "councillor",
+      "designation_code": "councillor",
+      "name": "Sri. Srikanta N",
+      "address": "Nanjangud",
+      "phone_number": "9986220359",
+      "email": null,
+      "party": null,
+      "is_active": true
+    },
+    {
+      "ward_no": 18,
+      "department_code": "councillor",
+      "designation_code": "councillor",
+      "name": "Smt. Riyana Banu",
+      "address": "Nanjangud",
+      "phone_number": "9141122739 9632767186",
+      "email": null,
+      "party": null,
+      "is_active": true
+    },
+    {
+      "ward_no": 1,
+      "department_code": "councillor",
+      "designation_code": "councillor",
+      "name": "Sri. Girish Kumar T M",
+      "address": "Nanjangud",
+      "phone_number": "8904267831",
+      "email": null,
+      "party": null,
+      "is_active": true
+    },
+    {
+      "ward_no": 2,
+      "department_code": "councillor",
+      "designation_code": "councillor",
+      "name": "Smt. Nandini H C",
+      "address": "Nanjangud",
+      "phone_number": "8904549899",
+      "email": null,
+      "party": null,
+      "is_active": true
+    },
+    {
+      "ward_no": 3,
+      "department_code": "councillor",
+      "designation_code": "councillor",
+      "name": "Sri. B Khalid Ahamed",
+      "address": "Nanjangud",
+      "phone_number": "9886325061",
+      "email": null,
+      "party": null,
+      "is_active": true
+    },
+    {
+      "ward_no": 4,
+      "department_code": "councillor",
+      "designation_code": "councillor",
+      "name": "Sri. E S Kapilesh",
+      "address": "Nanjangud",
+      "phone_number": "9986020983",
+      "email": null,
+      "party": null,
+      "is_active": true
+    },
+    {
+      "ward_no": 5,
+      "department_code": "councillor",
+      "designation_code": "councillor",
+      "name": "Sri. Yogesha N",
+      "address": "Nanjangud",
+      "phone_number": "9743206873",
+      "email": null,
+      "party": null,
+      "is_active": true
+    },
+    {
+      "ward_no": 6,
+      "department_code": "councillor",
+      "designation_code": "councillor",
+      "name": "Smt. Gayithri Mohan",
+      "address": "Nanjangud",
+      "phone_number": "9980974109",
+      "email": null,
+      "party": null,
+      "is_active": true
+    },
+    {
+      "ward_no": 7,
+      "department_code": "councillor",
+      "designation_code": "councillor",
+      "name": "Sri. Mahadevaprasad G",
+      "address": "Nanjangud",
+      "phone_number": "9945747453",
+      "email": null,
+      "party": null,
+      "is_active": true
+    },
+    {
+      "ward_no": 8,
+      "department_code": "councillor",
+      "designation_code": "councillor",
+      "name": "Smt. Vasantha",
+      "address": "Nanjangud",
+      "phone_number": "7760354058",
+      "email": null,
+      "party": null,
+      "is_active": true
+    },
+    {
+      "ward_no": 9,
+      "department_code": "councillor",
+      "designation_code": "councillor",
+      "name": "Smt. Rehanabanu",
+      "address": "Nanjangud",
+      "phone_number": "9972414702",
+      "email": null,
+      "party": null,
+      "is_active": true
+    },
+    {
+      "ward_no": 10,
+      "department_code": "councillor",
+      "designation_code": "councillor",
+      "name": "Sri. Deva P",
+      "address": "Nanjangud",
+      "phone_number": "8123992797 8861992797 9449194748",
+      "email": null,
+      "party": null,
+      "is_active": true
+    },
+    {
+      "ward_no": 11,
+      "department_code": "councillor",
+      "designation_code": "councillor",
+      "name": "Sri. S Gangadhar",
+      "address": "Nanjangud",
+      "phone_number": "9845564305",
+      "email": null,
+      "party": null,
+      "is_active": true
+    },
+    {
+      "ward_no": 12,
+      "department_code": "councillor",
+      "designation_code": "councillor",
+      "name": "Smt. Gayithri",
+      "address": "Nanjangud",
+      "phone_number": "8861153700 6364655878",
+      "email": null,
+      "party": null,
+      "is_active": true
+    },
+    {
+      "ward_no": 13,
+      "department_code": "councillor",
+      "designation_code": "councillor",
+      "name": "Smt. SwethaLakshmi S",
+      "address": "Nanjangud",
+      "phone_number": "9035912280",
+      "email": null,
+      "party": null,
+      "is_active": true
+    },
+    {
+      "ward_no": 14,
+      "department_code": "councillor",
+      "designation_code": "councillor",
+      "name": "Sri. M Pradeep",
+      "address": "Nanjangud",
+      "phone_number": "9886030172",
+      "email": null,
+      "party": null,
+      "is_active": true
+    },
+    {
+      "ward_no": 15,
+      "department_code": "councillor",
+      "designation_code": "councillor",
+      "name": "Smt. Mahadevamma",
+      "address": "Nanjangud",
+      "phone_number": "9980617301",
+      "email": null,
+      "party": null,
+      "is_active": true
+    },
+    {
+      "ward_no": 17,
+      "department_code": "councillor",
+      "designation_code": "councillor",
+      "name": "Sri. Siddiq",
+      "address": "Nanjangud",
+      "phone_number": "9880409158",
+      "email": null,
+      "party": null,
+      "is_active": true
+    },
+    {
+      "ward_no": 19,
+      "department_code": "councillor",
+      "designation_code": "councillor",
+      "name": "Smt. Manjula",
+      "address": "Nanjangud",
+      "phone_number": "8762856117 9980108793",
+      "email": null,
+      "party": null,
+      "is_active": true
+    },
+    {
+      "ward_no": 20,
+      "department_code": "councillor",
+      "designation_code": "councillor",
+      "name": "Sri. Mahesh Hattikhane",
+      "address": "Nanjangud",
+      "phone_number": "9845276568",
+      "email": null,
+      "party": null,
+      "is_active": true
+    },
+    {
+      "ward_no": 21,
+      "department_code": "councillor",
+      "designation_code": "councillor",
+      "name": "Sri. S P Mahesh",
+      "address": "Nanjangud",
+      "phone_number": "9964330218 9035213456",
+      "email": null,
+      "party": null,
+      "is_active": true
+    },
+    {
+      "ward_no": 22,
+      "department_code": "councillor",
+      "designation_code": "councillor",
+      "name": "Smt. R Meenakshi",
+      "address": "Nanjangud",
+      "phone_number": "7411622905",
+      "email": null,
+      "party": null,
+      "is_active": true
+    },
+    {
+      "ward_no": 23,
+      "department_code": "councillor",
+      "designation_code": "councillor",
+      "name": "Sri. N S Yogesh",
+      "address": "Nanjangud",
+      "phone_number": "9620676333",
+      "email": null,
+      "party": null,
+      "is_active": true
+    },
+    {
+      "ward_no": 24,
+      "department_code": "councillor",
+      "designation_code": "councillor",
+      "name": "Sri. H S Mahadevaswamy",
+      "address": "Nanjangud",
+      "phone_number": "9108324590",
+      "email": null,
+      "party": null,
+      "is_active": true
+    },
+    {
+      "ward_no": 25,
+      "department_code": "councillor",
+      "designation_code": "councillor",
+      "name": "Smt. Mangalamma",
+      "address": "Nanjangud",
+      "phone_number": "9880107743",
+      "email": null,
+      "party": null,
+      "is_active": true
+    },
+    {
+      "ward_no": 26,
+      "department_code": "councillor",
+      "designation_code": "councillor",
+      "name": "Sri. K Girish Babu",
+      "address": "Nanjangud",
+      "phone_number": "9901599435",
+      "email": null,
+      "party": null,
+      "is_active": true
+    },
+    {
+      "ward_no": 27,
+      "department_code": "councillor",
+      "designation_code": "councillor",
+      "name": "Smt.VijayaLakshmi S",
+      "address": "Nanjangud",
+      "phone_number": "9620557177",
+      "email": null,
+      "party": null,
+      "is_active": true
+    },
+    {
+      "ward_no": 28,
+      "department_code": "councillor",
+      "designation_code": "councillor",
+      "name": "Sri. Siddaraju S",
+      "address": "Nanjangud",
+      "phone_number": "9972141961",
+      "email": null,
+      "party": null,
+      "is_active": true
+    },
+    {
+      "ward_no": 29,
+      "department_code": "councillor",
+      "designation_code": "councillor",
+      "name": "Smt. Shashikala",
+      "address": "Nanjangud",
+      "phone_number": "9980390029",
+      "email": null,
+      "party": null,
+      "is_active": true
+    },
+    {
+      "ward_no": 30,
+      "department_code": "councillor",
+      "designation_code": "councillor",
+      "name": "Smt. Sowmy Rangaswamy",
+      "address": "Nanjangud",
+      "phone_number": "9972471074",
+      "email": null,
+      "party": null,
+      "is_active": true
+    },
+    {
+      "ward_no": 31,
+      "department_code": "councillor",
+      "designation_code": "councillor",
+      "name": "Smt. Nagamani",
+      "address": "Nanjangud",
+      "phone_number": "9900353067 9900379484",
+      "email": null,
+      "party": null,
+      "is_active": true
+    },
+    {
+      "ward_no": 1,
+      "department_code": "councillor",
+      "designation_code": "councillor",
+      "name": "Smt Sowbhagya",
+      "address": "Nanjangud",
+      "phone_number": "9880394464",
+      "email": null,
+      "party": null,
+      "is_active": true
+    },
+    {
+      "ward_no": 2,
+      "department_code": "councillor",
+      "designation_code": "councillor",
+      "name": "Sri Basavaraju",
+      "address": "Nanjangud",
+      "phone_number": "9632529244",
+      "email": null,
+      "party": null,
+      "is_active": true
+    },
+    {
+      "ward_no": 3,
+      "department_code": "councillor",
+      "designation_code": "councillor",
+      "name": "Sri Ravi S",
+      "address": "Nanjangud",
+      "phone_number": "9113045463",
+      "email": null,
+      "party": null,
+      "is_active": true
+    },
+    {
+      "ward_no": 4,
+      "department_code": "councillor",
+      "designation_code": "councillor",
+      "name": "Sri Ramesh",
+      "address": "Nanjangud",
+      "phone_number": "9986859939",
+      "email": null,
+      "party": null,
+      "is_active": true
+    },
+    {
+      "ward_no": 5,
+      "department_code": "councillor",
+      "designation_code": "councillor",
+      "name": "Sri Deepu S",
+      "address": "Nanjangud",
+      "phone_number": "8904084159",
+      "email": null,
+      "party": null,
+      "is_active": true
+    }
+  ],
+  "supported_languages": [
+    {
+      "code": "hn",
+      "name": "Hindi",
+      "native_name": "हिन्दी",
+      "is_active": true
+    },
+    {
+      "code": "kn",
+      "name": "Kannada",
+      "native_name": "ಕನ್ನಡ",
+      "is_active": true
+    }
+  ],
+  "state_translations": [
+    {
+      "language": "hn",
+      "name": "कर्नाटक"
+    },
+    {
+      "language": "kn",
+      "name": "ಕರ್ನಾಟಕ"
+    }
+  ],
+  "city_translations": [
+    {
+      "language": "hn",
+      "name": "नंजनगुड"
+    },
+    {
+      "language": "kn",
+      "name": "ನಂಜನಗೂಡು"
+    }
+  ],
+  "department_translations": [
+    {
+      "department_code": "accounts",
+      "language": "hn",
+      "name": "लेखा",
+      "description": null
+    },
+    {
+      "department_code": "accounts",
+      "language": "kn",
+      "name": "ಲೆಕ್ಕಪತ್ರ",
+      "description": null
+    },
+    {
+      "department_code": "administration",
+      "language": "hn",
+      "name": "प्रशासन",
+      "description": null
+    },
+    {
+      "department_code": "administration",
+      "language": "kn",
+      "name": "ಆಡಳಿತ",
+      "description": null
+    },
+    {
+      "department_code": "councillor",
+      "language": "hn",
+      "name": "पार्षद",
+      "description": null
+    },
+    {
+      "department_code": "councillor",
+      "language": "kn",
+      "name": "ಸಭಾಸದ",
+      "description": null
+    },
+    {
+      "department_code": "day_nulm_section",
+      "language": "hn",
+      "name": "DAY NULM अनुभाग",
+      "description": null
+    },
+    {
+      "department_code": "day_nulm_section",
+      "language": "kn",
+      "name": "DAY NULM ವಿಭಾಗ",
+      "description": null
+    },
+    {
+      "department_code": "health_section",
+      "language": "hn",
+      "name": "स्वास्थ्य अनुभाग",
+      "description": null
+    },
+    {
+      "department_code": "health_section",
+      "language": "kn",
+      "name": "ಆರೋಗ್ಯ ವಿಭಾಗ",
+      "description": null
+    },
+    {
+      "department_code": "it",
+      "language": "hn",
+      "name": "आईटी",
+      "description": null
+    },
+    {
+      "department_code": "it",
+      "language": "kn",
+      "name": "ಐಟಿ",
+      "description": null
+    },
+    {
+      "department_code": "revenue_section",
+      "language": "hn",
+      "name": "राजस्व अनुभाग",
+      "description": null
+    },
+    {
+      "department_code": "revenue_section",
+      "language": "kn",
+      "name": "ಆದಾಯ ವಿಭಾಗ",
+      "description": null
+    },
+    {
+      "department_code": "technical_section",
+      "language": "hn",
+      "name": "तकनीकी अनुभाग",
+      "description": null
+    },
+    {
+      "department_code": "technical_section",
+      "language": "kn",
+      "name": "ತಾಂತ್ರಿಕ ವಿಭಾಗ",
+      "description": null
+    }
+  ],
+  "designation_translations": [
+    {
+      "code": "assistant_engineer",
+      "language": "hn",
+      "title": "सहायक अभियंता"
+    },
+    {
+      "code": "assistant_engineer",
+      "language": "kn",
+      "title": "ಸಹಾಯಕ ಇಂಜಿನಿಯರ್"
+    },
+    {
+      "code": "bill_collector",
+      "language": "hn",
+      "title": "बिल कलेक्टर"
+    },
+    {
+      "code": "bill_collector",
+      "language": "kn",
+      "title": "ಬಿಲ್ ಸಂಗ್ರಾಹಕ"
+    },
+    {
+      "code": "community_resource_person",
+      "language": "hn",
+      "title": "समुदाय संसाधन व्यक्ति"
+    },
+    {
+      "code": "community_resource_person",
+      "language": "kn",
+      "title": "ಸಮುದಾಯ ಸಂಪನ್ಮೂಲ ವ್ಯಕ್ತಿ"
+    },
+    {
+      "code": "councillor",
+      "language": "hn",
+      "title": "पार्षद"
+    },
+    {
+      "code": "councillor",
+      "language": "kn",
+      "title": "ಸಭಾಸದ"
+    },
+    {
+      "code": "first_division_assistant",
+      "language": "hn",
+      "title": "प्रथम श्रेणी सहायक"
+    },
+    {
+      "code": "first_division_assistant",
+      "language": "kn",
+      "title": "ಪ್ರಥಮ ದರ್ಜೆ ಸಹಾಯಕ"
+    },
+    {
+      "code": "junior_engineer",
+      "language": "hn",
+      "title": "कनिष्ठ अभियंता"
+    },
+    {
+      "code": "junior_engineer",
+      "language": "kn",
+      "title": "ಕಿರಿಯ ಇಂಜಿನಿಯರ್"
+    },
+    {
+      "code": "junior_health_inspector",
+      "language": "hn",
+      "title": "कनिष्ठ स्वास्थ्य निरीक्षक"
+    },
+    {
+      "code": "junior_health_inspector",
+      "language": "kn",
+      "title": "ಕಿರಿಯ ಆರೋಗ್ಯ ಪರಿಶೀಲಕ"
+    },
+    {
+      "code": "revenue_inspector",
+      "language": "hn",
+      "title": "राजस्व निरीक्षक"
+    },
+    {
+      "code": "revenue_inspector",
+      "language": "kn",
+      "title": "ಆದಾಯ ಪರಿಶೀಲಕ"
+    },
+    {
+      "code": "s_d_a_incharge_bill_collector",
+      "language": "hn",
+      "title": "द्वितीय श्रेणी सहायक - प्रभार बिल कलेक्टर"
+    },
+    {
+      "code": "s_d_a_incharge_bill_collector",
+      "language": "kn",
+      "title": "ದ್ವಿತೀಯ ದರ್ಜೆ ಸಹಾಯಕ - ಇನ್‌ಚಾರ್ಜ್ ಬಿಲ್ ಸಂಗ್ರಾಹಕ"
+    },
+    {
+      "code": "sanitary_supervisor",
+      "language": "hn",
+      "title": "स्वच्छता पर्यवेक्षक"
+    },
+    {
+      "code": "sanitary_supervisor",
+      "language": "kn",
+      "title": "ಸ್ವಚ್ಛತಾ ಮೇಲ್ವಿಚಾರಕ"
+    },
+    {
+      "code": "senior_health_inspector",
+      "language": "hn",
+      "title": "वरिष्ठ स्वास्थ्य निरीक्षक"
+    },
+    {
+      "code": "senior_health_inspector",
+      "language": "kn",
+      "title": "ಹಿರಿಯ ಆರೋಗ್ಯ ಪರಿಶೀಲಕ"
+    }
+  ],
+  "ward_translations": [
+    {
+      "ward_no": 1,
+      "language": "hn",
+      "name": "वार्ड 1"
+    },
+    {
+      "ward_no": 1,
+      "language": "kn",
+      "name": "ವಾರ್ಡ್ 1"
+    },
+    {
+      "ward_no": 2,
+      "language": "hn",
+      "name": "वार्ड 2"
+    },
+    {
+      "ward_no": 2,
+      "language": "kn",
+      "name": "ವಾರ್ಡ್ 2"
+    },
+    {
+      "ward_no": 3,
+      "language": "hn",
+      "name": "वार्ड 3"
+    },
+    {
+      "ward_no": 3,
+      "language": "kn",
+      "name": "ವಾರ್ಡ್ 3"
+    },
+    {
+      "ward_no": 4,
+      "language": "hn",
+      "name": "वार्ड 4"
+    },
+    {
+      "ward_no": 4,
+      "language": "kn",
+      "name": "ವಾರ್ಡ್ 4"
+    },
+    {
+      "ward_no": 5,
+      "language": "hn",
+      "name": "वार्ड 5"
+    },
+    {
+      "ward_no": 5,
+      "language": "kn",
+      "name": "ವಾರ್ಡ್ 5"
+    },
+    {
+      "ward_no": 6,
+      "language": "hn",
+      "name": "वार्ड 6"
+    },
+    {
+      "ward_no": 6,
+      "language": "kn",
+      "name": "ವಾರ್ಡ್ 6"
+    },
+    {
+      "ward_no": 7,
+      "language": "hn",
+      "name": "वार्ड 7"
+    },
+    {
+      "ward_no": 7,
+      "language": "kn",
+      "name": "ವಾರ್ಡ್ 7"
+    },
+    {
+      "ward_no": 8,
+      "language": "hn",
+      "name": "वार्ड 8"
+    },
+    {
+      "ward_no": 8,
+      "language": "kn",
+      "name": "ವಾರ್ಡ್ 8"
+    },
+    {
+      "ward_no": 9,
+      "language": "hn",
+      "name": "वार्ड 9"
+    },
+    {
+      "ward_no": 9,
+      "language": "kn",
+      "name": "ವಾರ್ಡ್ 9"
+    },
+    {
+      "ward_no": 10,
+      "language": "hn",
+      "name": "वार्ड 10"
+    },
+    {
+      "ward_no": 10,
+      "language": "kn",
+      "name": "ವಾರ್ಡ್ 10"
+    },
+    {
+      "ward_no": 11,
+      "language": "hn",
+      "name": "वार्ड 11"
+    },
+    {
+      "ward_no": 11,
+      "language": "kn",
+      "name": "ವಾರ್ಡ್ 11"
+    },
+    {
+      "ward_no": 12,
+      "language": "hn",
+      "name": "वार्ड 12"
+    },
+    {
+      "ward_no": 12,
+      "language": "kn",
+      "name": "ವಾರ್ಡ್ 12"
+    },
+    {
+      "ward_no": 13,
+      "language": "hn",
+      "name": "वार्ड 13"
+    },
+    {
+      "ward_no": 13,
+      "language": "kn",
+      "name": "ವಾರ್ಡ್ 13"
+    },
+    {
+      "ward_no": 14,
+      "language": "hn",
+      "name": "वार्ड 14"
+    },
+    {
+      "ward_no": 14,
+      "language": "kn",
+      "name": "ವಾರ್ಡ್ 14"
+    },
+    {
+      "ward_no": 15,
+      "language": "hn",
+      "name": "वार्ड 15"
+    },
+    {
+      "ward_no": 15,
+      "language": "kn",
+      "name": "ವಾರ್ಡ್ 15"
+    },
+    {
+      "ward_no": 16,
+      "language": "hn",
+      "name": "वार्ड 16"
+    },
+    {
+      "ward_no": 16,
+      "language": "kn",
+      "name": "ವಾರ್ಡ್ 16"
+    },
+    {
+      "ward_no": 17,
+      "language": "hn",
+      "name": "वार्ड 17"
+    },
+    {
+      "ward_no": 17,
+      "language": "kn",
+      "name": "ವಾರ್ಡ್ 17"
+    },
+    {
+      "ward_no": 18,
+      "language": "hn",
+      "name": "वार्ड 18"
+    },
+    {
+      "ward_no": 18,
+      "language": "kn",
+      "name": "ವಾರ್ಡ್ 18"
+    },
+    {
+      "ward_no": 19,
+      "language": "hn",
+      "name": "वार्ड 19"
+    },
+    {
+      "ward_no": 19,
+      "language": "kn",
+      "name": "ವಾರ್ಡ್ 19"
+    },
+    {
+      "ward_no": 20,
+      "language": "hn",
+      "name": "वार्ड 20"
+    },
+    {
+      "ward_no": 20,
+      "language": "kn",
+      "name": "ವಾರ್ಡ್ 20"
+    },
+    {
+      "ward_no": 21,
+      "language": "hn",
+      "name": "वार्ड 21"
+    },
+    {
+      "ward_no": 21,
+      "language": "kn",
+      "name": "ವಾರ್ಡ್ 21"
+    },
+    {
+      "ward_no": 22,
+      "language": "hn",
+      "name": "वार्ड 22"
+    },
+    {
+      "ward_no": 22,
+      "language": "kn",
+      "name": "ವಾರ್ಡ್ 22"
+    },
+    {
+      "ward_no": 23,
+      "language": "hn",
+      "name": "वार्ड 23"
+    },
+    {
+      "ward_no": 23,
+      "language": "kn",
+      "name": "ವಾರ್ಡ್ 23"
+    },
+    {
+      "ward_no": 24,
+      "language": "hn",
+      "name": "वार्ड 24"
+    },
+    {
+      "ward_no": 24,
+      "language": "kn",
+      "name": "ವಾರ್ಡ್ 24"
+    },
+    {
+      "ward_no": 25,
+      "language": "hn",
+      "name": "वार्ड 25"
+    },
+    {
+      "ward_no": 25,
+      "language": "kn",
+      "name": "ವಾರ್ಡ್ 25"
+    },
+    {
+      "ward_no": 26,
+      "language": "hn",
+      "name": "वार्ड 26"
+    },
+    {
+      "ward_no": 26,
+      "language": "kn",
+      "name": "ವಾರ್ಡ್ 26"
+    },
+    {
+      "ward_no": 27,
+      "language": "hn",
+      "name": "वार्ड 27"
+    },
+    {
+      "ward_no": 27,
+      "language": "kn",
+      "name": "ವಾರ್ಡ್ 27"
+    },
+    {
+      "ward_no": 28,
+      "language": "hn",
+      "name": "वार्ड 28"
+    },
+    {
+      "ward_no": 28,
+      "language": "kn",
+      "name": "ವಾರ್ಡ್ 28"
+    },
+    {
+      "ward_no": 29,
+      "language": "hn",
+      "name": "वार्ड 29"
+    },
+    {
+      "ward_no": 29,
+      "language": "kn",
+      "name": "ವಾರ್ಡ್ 29"
+    },
+    {
+      "ward_no": 30,
+      "language": "hn",
+      "name": "वार्ड 30"
+    },
+    {
+      "ward_no": 30,
+      "language": "kn",
+      "name": "ವಾರ್ಡ್ 30"
+    },
+    {
+      "ward_no": 31,
+      "language": "hn",
+      "name": "वार्ड 31"
+    },
+    {
+      "ward_no": 31,
+      "language": "kn",
+      "name": "ವಾರ್ಡ್ 31"
+    }
+  ],
+  "official_translations": [
+    {
+      "ward_no": 1,
+      "designation_code": "sanitary_supervisor",
+      "department_code": "health_section",
+      "language": "hn",
+      "name": "मडैया एन",
+      "designation": "स्वच्छता पर्यवेक्षक",
+      "address": null
+    },
+    {
+      "ward_no": 1,
+      "designation_code": "sanitary_supervisor",
+      "department_code": "health_section",
+      "language": "kn",
+      "name": "ಮಡಯ್ಯ ಎನ್",
+      "designation": "ಸ್ವಚ್ಛತಾ ಮೇಲ್ವಿಚಾರಕ",
+      "address": null
+    },
+    {
+      "ward_no": 2,
+      "designation_code": "sanitary_supervisor",
+      "department_code": "health_section",
+      "language": "hn",
+      "name": "मडैया एन",
+      "designation": "स्वच्छता पर्यवेक्षक",
+      "address": null
+    },
+    {
+      "ward_no": 2,
+      "designation_code": "sanitary_supervisor",
+      "department_code": "health_section",
+      "language": "kn",
+      "name": "ಮಡಯ್ಯ ಎನ್",
+      "designation": "ಸ್ವಚ್ಛತಾ ಮೇಲ್ವಿಚಾರಕ",
+      "address": null
+    },
+    {
+      "ward_no": 3,
+      "designation_code": "sanitary_supervisor",
+      "department_code": "health_section",
+      "language": "hn",
+      "name": "मडैया एन",
+      "designation": "स्वच्छता पर्यवेक्षक",
+      "address": null
+    },
+    {
+      "ward_no": 3,
+      "designation_code": "sanitary_supervisor",
+      "department_code": "health_section",
+      "language": "kn",
+      "name": "ಮಡಯ್ಯ ಎನ್",
+      "designation": "ಸ್ವಚ್ಛತಾ ಮೇಲ್ವಿಚಾರಕ",
+      "address": null
+    },
+    {
+      "ward_no": 4,
+      "designation_code": "sanitary_supervisor",
+      "department_code": "health_section",
+      "language": "hn",
+      "name": "मडैया एन",
+      "designation": "स्वच्छता पर्यवेक्षक",
+      "address": null
+    },
+    {
+      "ward_no": 4,
+      "designation_code": "sanitary_supervisor",
+      "department_code": "health_section",
+      "language": "kn",
+      "name": "ಮಡಯ್ಯ ಎನ್",
+      "designation": "ಸ್ವಚ್ಛತಾ ಮೇಲ್ವಿಚಾರಕ",
+      "address": null
+    },
+    {
+      "ward_no": 5,
+      "designation_code": "sanitary_supervisor",
+      "department_code": "health_section",
+      "language": "hn",
+      "name": "मडैया एन",
+      "designation": "स्वच्छता पर्यवेक्षक",
+      "address": null
+    },
+    {
+      "ward_no": 5,
+      "designation_code": "sanitary_supervisor",
+      "department_code": "health_section",
+      "language": "kn",
+      "name": "ಮಡಯ್ಯ ಎನ್",
+      "designation": "ಸ್ವಚ್ಛತಾ ಮೇಲ್ವಿಚಾರಕ",
+      "address": null
+    },
+    {
+      "ward_no": 6,
+      "designation_code": "sanitary_supervisor",
+      "department_code": "health_section",
+      "language": "hn",
+      "name": "मडैया एन",
+      "designation": "स्वच्छता पर्यवेक्षक",
+      "address": null
+    },
+    {
+      "ward_no": 6,
+      "designation_code": "sanitary_supervisor",
+      "department_code": "health_section",
+      "language": "kn",
+      "name": "ಮಡಯ್ಯ ಎನ್",
+      "designation": "ಸ್ವಚ್ಛತಾ ಮೇಲ್ವಿಚಾರಕ",
+      "address": null
+    },
+    {
+      "ward_no": 7,
+      "designation_code": "sanitary_supervisor",
+      "department_code": "health_section",
+      "language": "hn",
+      "name": "मडैया एन",
+      "designation": "स्वच्छता पर्यवेक्षक",
+      "address": null
+    },
+    {
+      "ward_no": 7,
+      "designation_code": "sanitary_supervisor",
+      "department_code": "health_section",
+      "language": "kn",
+      "name": "ಮಡಯ್ಯ ಎನ್",
+      "designation": "ಸ್ವಚ್ಛತಾ ಮೇಲ್ವಿಚಾರಕ",
+      "address": null
+    },
+    {
+      "ward_no": 8,
+      "designation_code": "sanitary_supervisor",
+      "department_code": "health_section",
+      "language": "hn",
+      "name": "मडैया एन",
+      "designation": "स्वच्छता पर्यवेक्षक",
+      "address": null
+    },
+    {
+      "ward_no": 8,
+      "designation_code": "sanitary_supervisor",
+      "department_code": "health_section",
+      "language": "kn",
+      "name": "ಮಡಯ್ಯ ಎನ್",
+      "designation": "ಸ್ವಚ್ಛತಾ ಮೇಲ್ವಿಚಾರಕ",
+      "address": null
+    },
+    {
+      "ward_no": 9,
+      "designation_code": "sanitary_supervisor",
+      "department_code": "health_section",
+      "language": "hn",
+      "name": "मडैया एन",
+      "designation": "स्वच्छता पर्यवेक्षक",
+      "address": null
+    },
+    {
+      "ward_no": 9,
+      "designation_code": "sanitary_supervisor",
+      "department_code": "health_section",
+      "language": "kn",
+      "name": "ಮಡಯ್ಯ ಎನ್",
+      "designation": "ಸ್ವಚ್ಛತಾ ಮೇಲ್ವಿಚಾರಕ",
+      "address": null
+    },
+    {
+      "ward_no": 10,
+      "designation_code": "sanitary_supervisor",
+      "department_code": "health_section",
+      "language": "hn",
+      "name": "मडैया एन",
+      "designation": "स्वच्छता पर्यवेक्षक",
+      "address": null
+    },
+    {
+      "ward_no": 10,
+      "designation_code": "sanitary_supervisor",
+      "department_code": "health_section",
+      "language": "kn",
+      "name": "ಮಡಯ್ಯ ಎನ್",
+      "designation": "ಸ್ವಚ್ಛತಾ ಮೇಲ್ವಿಚಾರಕ",
+      "address": null
+    },
+    {
+      "ward_no": 1,
+      "designation_code": "senior_health_inspector",
+      "department_code": "health_section",
+      "language": "hn",
+      "name": "परमेश ई",
+      "designation": "वरिष्ठ स्वास्थ्य निरीक्षक",
+      "address": null
+    },
+    {
+      "ward_no": 1,
+      "designation_code": "senior_health_inspector",
+      "department_code": "health_section",
+      "language": "kn",
+      "name": "ಪರಮೇಶ ಇ",
+      "designation": "ಹಿರಿಯ ಆರೋಗ್ಯ ಪರಿಶೀಲಕ",
+      "address": null
+    },
+    {
+      "ward_no": 2,
+      "designation_code": "senior_health_inspector",
+      "department_code": "health_section",
+      "language": "hn",
+      "name": "परमेश ई",
+      "designation": "वरिष्ठ स्वास्थ्य निरीक्षक",
+      "address": null
+    },
+    {
+      "ward_no": 2,
+      "designation_code": "senior_health_inspector",
+      "department_code": "health_section",
+      "language": "kn",
+      "name": "ಪರಮೇಶ ಇ",
+      "designation": "ಹಿರಿಯ ಆರೋಗ್ಯ ಪರಿಶೀಲಕ",
+      "address": null
+    },
+    {
+      "ward_no": 3,
+      "designation_code": "senior_health_inspector",
+      "department_code": "health_section",
+      "language": "hn",
+      "name": "परमेश ई",
+      "designation": "वरिष्ठ स्वास्थ्य निरीक्षक",
+      "address": null
+    },
+    {
+      "ward_no": 3,
+      "designation_code": "senior_health_inspector",
+      "department_code": "health_section",
+      "language": "kn",
+      "name": "ಪರಮೇಶ ಇ",
+      "designation": "ಹಿರಿಯ ಆರೋಗ್ಯ ಪರಿಶೀಲಕ",
+      "address": null
+    },
+    {
+      "ward_no": 4,
+      "designation_code": "senior_health_inspector",
+      "department_code": "health_section",
+      "language": "hn",
+      "name": "परमेश ई",
+      "designation": "वरिष्ठ स्वास्थ्य निरीक्षक",
+      "address": null
+    },
+    {
+      "ward_no": 4,
+      "designation_code": "senior_health_inspector",
+      "department_code": "health_section",
+      "language": "kn",
+      "name": "ಪರಮೇಶ ಇ",
+      "designation": "ಹಿರಿಯ ಆರೋಗ್ಯ ಪರಿಶೀಲಕ",
+      "address": null
+    },
+    {
+      "ward_no": 5,
+      "designation_code": "senior_health_inspector",
+      "department_code": "health_section",
+      "language": "hn",
+      "name": "परमेश ई",
+      "designation": "वरिष्ठ स्वास्थ्य निरीक्षक",
+      "address": null
+    },
+    {
+      "ward_no": 5,
+      "designation_code": "senior_health_inspector",
+      "department_code": "health_section",
+      "language": "kn",
+      "name": "ಪರಮೇಶ ಇ",
+      "designation": "ಹಿರಿಯ ಆರೋಗ್ಯ ಪರಿಶೀಲಕ",
+      "address": null
+    },
+    {
+      "ward_no": 6,
+      "designation_code": "senior_health_inspector",
+      "department_code": "health_section",
+      "language": "hn",
+      "name": "परमेश ई",
+      "designation": "वरिष्ठ स्वास्थ्य निरीक्षक",
+      "address": null
+    },
+    {
+      "ward_no": 6,
+      "designation_code": "senior_health_inspector",
+      "department_code": "health_section",
+      "language": "kn",
+      "name": "ಪರಮೇಶ ಇ",
+      "designation": "ಹಿರಿಯ ಆರೋಗ್ಯ ಪರಿಶೀಲಕ",
+      "address": null
+    },
+    {
+      "ward_no": 7,
+      "designation_code": "senior_health_inspector",
+      "department_code": "health_section",
+      "language": "hn",
+      "name": "परमेश ई",
+      "designation": "वरिष्ठ स्वास्थ्य निरीक्षक",
+      "address": null
+    },
+    {
+      "ward_no": 7,
+      "designation_code": "senior_health_inspector",
+      "department_code": "health_section",
+      "language": "kn",
+      "name": "ಪರಮೇಶ ಇ",
+      "designation": "ಹಿರಿಯ ಆರೋಗ್ಯ ಪರಿಶೀಲಕ",
+      "address": null
+    },
+    {
+      "ward_no": 8,
+      "designation_code": "senior_health_inspector",
+      "department_code": "health_section",
+      "language": "hn",
+      "name": "परमेश ई",
+      "designation": "वरिष्ठ स्वास्थ्य निरीक्षक",
+      "address": null
+    },
+    {
+      "ward_no": 8,
+      "designation_code": "senior_health_inspector",
+      "department_code": "health_section",
+      "language": "kn",
+      "name": "ಪರಮೇಶ ಇ",
+      "designation": "ಹಿರಿಯ ಆರೋಗ್ಯ ಪರಿಶೀಲಕ",
+      "address": null
+    },
+    {
+      "ward_no": 9,
+      "designation_code": "senior_health_inspector",
+      "department_code": "health_section",
+      "language": "hn",
+      "name": "परमेश ई",
+      "designation": "वरिष्ठ स्वास्थ्य निरीक्षक",
+      "address": null
+    },
+    {
+      "ward_no": 9,
+      "designation_code": "senior_health_inspector",
+      "department_code": "health_section",
+      "language": "kn",
+      "name": "ಪರಮೇಶ ಇ",
+      "designation": "ಹಿರಿಯ ಆರೋಗ್ಯ ಪರಿಶೀಲಕ",
+      "address": null
+    },
+    {
+      "ward_no": 10,
+      "designation_code": "senior_health_inspector",
+      "department_code": "health_section",
+      "language": "hn",
+      "name": "परमेश ई",
+      "designation": "वरिष्ठ स्वास्थ्य निरीक्षक",
+      "address": null
+    },
+    {
+      "ward_no": 10,
+      "designation_code": "senior_health_inspector",
+      "department_code": "health_section",
+      "language": "kn",
+      "name": "ಪರಮೇಶ ಇ",
+      "designation": "ಹಿರಿಯ ಆರೋಗ್ಯ ಪರಿಶೀಲಕ",
+      "address": null
+    },
+    {
+      "ward_no": 11,
+      "designation_code": "sanitary_supervisor",
+      "department_code": "health_section",
+      "language": "hn",
+      "name": "रघुवर्ण",
+      "designation": "स्वच्छता पर्यवेक्षक",
+      "address": null
+    },
+    {
+      "ward_no": 11,
+      "designation_code": "sanitary_supervisor",
+      "department_code": "health_section",
+      "language": "kn",
+      "name": "ರಘುವರ್ಣ",
+      "designation": "ಸ್ವಚ್ಛತಾ ಮೇಲ್ವಿಚಾರಕ",
+      "address": null
+    },
+    {
+      "ward_no": 12,
+      "designation_code": "sanitary_supervisor",
+      "department_code": "health_section",
+      "language": "hn",
+      "name": "रघुवर्ण",
+      "designation": "स्वच्छता पर्यवेक्षक",
+      "address": null
+    },
+    {
+      "ward_no": 12,
+      "designation_code": "sanitary_supervisor",
+      "department_code": "health_section",
+      "language": "kn",
+      "name": "ರಘುವರ್ಣ",
+      "designation": "ಸ್ವಚ್ಛತಾ ಮೇಲ್ವಿಚಾರಕ",
+      "address": null
+    },
+    {
+      "ward_no": 13,
+      "designation_code": "sanitary_supervisor",
+      "department_code": "health_section",
+      "language": "hn",
+      "name": "रघुवर्ण",
+      "designation": "स्वच्छता पर्यवेक्षक",
+      "address": null
+    },
+    {
+      "ward_no": 13,
+      "designation_code": "sanitary_supervisor",
+      "department_code": "health_section",
+      "language": "kn",
+      "name": "ರಘುವರ್ಣ",
+      "designation": "ಸ್ವಚ್ಛತಾ ಮೇಲ್ವಿಚಾರಕ",
+      "address": null
+    },
+    {
+      "ward_no": 14,
+      "designation_code": "sanitary_supervisor",
+      "department_code": "health_section",
+      "language": "hn",
+      "name": "रघुवर्ण",
+      "designation": "स्वच्छता पर्यवेक्षक",
+      "address": null
+    },
+    {
+      "ward_no": 14,
+      "designation_code": "sanitary_supervisor",
+      "department_code": "health_section",
+      "language": "kn",
+      "name": "ರಘುವರ್ಣ",
+      "designation": "ಸ್ವಚ್ಛತಾ ಮೇಲ್ವಿಚಾರಕ",
+      "address": null
+    },
+    {
+      "ward_no": 15,
+      "designation_code": "sanitary_supervisor",
+      "department_code": "health_section",
+      "language": "hn",
+      "name": "रघुवर्ण",
+      "designation": "स्वच्छता पर्यवेक्षक",
+      "address": null
+    },
+    {
+      "ward_no": 15,
+      "designation_code": "sanitary_supervisor",
+      "department_code": "health_section",
+      "language": "kn",
+      "name": "ರಘುವರ್ಣ",
+      "designation": "ಸ್ವಚ್ಛತಾ ಮೇಲ್ವಿಚಾರಕ",
+      "address": null
+    },
+    {
+      "ward_no": 16,
+      "designation_code": "sanitary_supervisor",
+      "department_code": "health_section",
+      "language": "hn",
+      "name": "रघुवर्ण",
+      "designation": "स्वच्छता पर्यवेक्षक",
+      "address": null
+    },
+    {
+      "ward_no": 16,
+      "designation_code": "sanitary_supervisor",
+      "department_code": "health_section",
+      "language": "kn",
+      "name": "ರಘುವರ್ಣ",
+      "designation": "ಸ್ವಚ್ಛತಾ ಮೇಲ್ವಿಚಾರಕ",
+      "address": null
+    },
+    {
+      "ward_no": 17,
+      "designation_code": "sanitary_supervisor",
+      "department_code": "health_section",
+      "language": "hn",
+      "name": "रघुवर्ण",
+      "designation": "स्वच्छता पर्यवेक्षक",
+      "address": null
+    },
+    {
+      "ward_no": 17,
+      "designation_code": "sanitary_supervisor",
+      "department_code": "health_section",
+      "language": "kn",
+      "name": "ರಘುವರ್ಣ",
+      "designation": "ಸ್ವಚ್ಛತಾ ಮೇಲ್ವಿಚಾರಕ",
+      "address": null
+    },
+    {
+      "ward_no": 18,
+      "designation_code": "sanitary_supervisor",
+      "department_code": "health_section",
+      "language": "hn",
+      "name": "रघुवर्ण",
+      "designation": "स्वच्छता पर्यवेक्षक",
+      "address": null
+    },
+    {
+      "ward_no": 18,
+      "designation_code": "sanitary_supervisor",
+      "department_code": "health_section",
+      "language": "kn",
+      "name": "ರಘುವರ್ಣ",
+      "designation": "ಸ್ವಚ್ಛತಾ ಮೇಲ್ವಿಚಾರಕ",
+      "address": null
+    },
+    {
+      "ward_no": 19,
+      "designation_code": "sanitary_supervisor",
+      "department_code": "health_section",
+      "language": "hn",
+      "name": "रघुवर्ण",
+      "designation": "स्वच्छता पर्यवेक्षक",
+      "address": null
+    },
+    {
+      "ward_no": 19,
+      "designation_code": "sanitary_supervisor",
+      "department_code": "health_section",
+      "language": "kn",
+      "name": "ರಘುವರ್ಣ",
+      "designation": "ಸ್ವಚ್ಛತಾ ಮೇಲ್ವಿಚಾರಕ",
+      "address": null
+    },
+    {
+      "ward_no": 20,
+      "designation_code": "sanitary_supervisor",
+      "department_code": "health_section",
+      "language": "hn",
+      "name": "रघुवर्ण",
+      "designation": "स्वच्छता पर्यवेक्षक",
+      "address": null
+    },
+    {
+      "ward_no": 20,
+      "designation_code": "sanitary_supervisor",
+      "department_code": "health_section",
+      "language": "kn",
+      "name": "ರಘುವರ್ಣ",
+      "designation": "ಸ್ವಚ್ಛತಾ ಮೇಲ್ವಿಚಾರಕ",
+      "address": null
+    },
+    {
+      "ward_no": 11,
+      "designation_code": "senior_health_inspector",
+      "department_code": "health_section",
+      "language": "hn",
+      "name": "आदर्श एम",
+      "designation": "वरिष्ठ स्वास्थ्य निरीक्षक",
+      "address": null
+    },
+    {
+      "ward_no": 11,
+      "designation_code": "senior_health_inspector",
+      "department_code": "health_section",
+      "language": "kn",
+      "name": "ಆದರ್ಶ ಎಂ",
+      "designation": "ಹಿರಿಯ ಆರೋಗ್ಯ ಪರಿಶೀಲಕ",
+      "address": null
+    },
+    {
+      "ward_no": 12,
+      "designation_code": "senior_health_inspector",
+      "department_code": "health_section",
+      "language": "hn",
+      "name": "आदर्श एम",
+      "designation": "वरिष्ठ स्वास्थ्य निरीक्षक",
+      "address": null
+    },
+    {
+      "ward_no": 12,
+      "designation_code": "senior_health_inspector",
+      "department_code": "health_section",
+      "language": "kn",
+      "name": "ಆದರ್ಶ ಎಂ",
+      "designation": "ಹಿರಿಯ ಆರೋಗ್ಯ ಪರಿಶೀಲಕ",
+      "address": null
+    },
+    {
+      "ward_no": 13,
+      "designation_code": "senior_health_inspector",
+      "department_code": "health_section",
+      "language": "hn",
+      "name": "आदर्श एम",
+      "designation": "वरिष्ठ स्वास्थ्य निरीक्षक",
+      "address": null
+    },
+    {
+      "ward_no": 13,
+      "designation_code": "senior_health_inspector",
+      "department_code": "health_section",
+      "language": "kn",
+      "name": "ಆದರ್ಶ ಎಂ",
+      "designation": "ಹಿರಿಯ ಆರೋಗ್ಯ ಪರಿಶೀಲಕ",
+      "address": null
+    },
+    {
+      "ward_no": 14,
+      "designation_code": "senior_health_inspector",
+      "department_code": "health_section",
+      "language": "hn",
+      "name": "आदर्श एम",
+      "designation": "वरिष्ठ स्वास्थ्य निरीक्षक",
+      "address": null
+    },
+    {
+      "ward_no": 14,
+      "designation_code": "senior_health_inspector",
+      "department_code": "health_section",
+      "language": "kn",
+      "name": "ಆದರ್ಶ ಎಂ",
+      "designation": "ಹಿರಿಯ ಆರೋಗ್ಯ ಪರಿಶೀಲಕ",
+      "address": null
+    },
+    {
+      "ward_no": 15,
+      "designation_code": "senior_health_inspector",
+      "department_code": "health_section",
+      "language": "hn",
+      "name": "आदर्श एम",
+      "designation": "वरिष्ठ स्वास्थ्य निरीक्षक",
+      "address": null
+    },
+    {
+      "ward_no": 15,
+      "designation_code": "senior_health_inspector",
+      "department_code": "health_section",
+      "language": "kn",
+      "name": "ಆದರ್ಶ ಎಂ",
+      "designation": "ಹಿರಿಯ ಆರೋಗ್ಯ ಪರಿಶೀಲಕ",
+      "address": null
+    },
+    {
+      "ward_no": 16,
+      "designation_code": "senior_health_inspector",
+      "department_code": "health_section",
+      "language": "hn",
+      "name": "आदर्श एम",
+      "designation": "वरिष्ठ स्वास्थ्य निरीक्षक",
+      "address": null
+    },
+    {
+      "ward_no": 16,
+      "designation_code": "senior_health_inspector",
+      "department_code": "health_section",
+      "language": "kn",
+      "name": "ಆದರ್ಶ ಎಂ",
+      "designation": "ಹಿರಿಯ ಆರೋಗ್ಯ ಪರಿಶೀಲಕ",
+      "address": null
+    },
+    {
+      "ward_no": 17,
+      "designation_code": "senior_health_inspector",
+      "department_code": "health_section",
+      "language": "hn",
+      "name": "आदर्श एम",
+      "designation": "वरिष्ठ स्वास्थ्य निरीक्षक",
+      "address": null
+    },
+    {
+      "ward_no": 17,
+      "designation_code": "senior_health_inspector",
+      "department_code": "health_section",
+      "language": "kn",
+      "name": "ಆದರ್ಶ ಎಂ",
+      "designation": "ಹಿರಿಯ ಆರೋಗ್ಯ ಪರಿಶೀಲಕ",
+      "address": null
+    },
+    {
+      "ward_no": 18,
+      "designation_code": "senior_health_inspector",
+      "department_code": "health_section",
+      "language": "hn",
+      "name": "आदर्श एम",
+      "designation": "वरिष्ठ स्वास्थ्य निरीक्षक",
+      "address": null
+    },
+    {
+      "ward_no": 18,
+      "designation_code": "senior_health_inspector",
+      "department_code": "health_section",
+      "language": "kn",
+      "name": "ಆದರ್ಶ ಎಂ",
+      "designation": "ಹಿರಿಯ ಆರೋಗ್ಯ ಪರಿಶೀಲಕ",
+      "address": null
+    },
+    {
+      "ward_no": 19,
+      "designation_code": "senior_health_inspector",
+      "department_code": "health_section",
+      "language": "hn",
+      "name": "आदर्श एम",
+      "designation": "वरिष्ठ स्वास्थ्य निरीक्षक",
+      "address": null
+    },
+    {
+      "ward_no": 19,
+      "designation_code": "senior_health_inspector",
+      "department_code": "health_section",
+      "language": "kn",
+      "name": "ಆದರ್ಶ ಎಂ",
+      "designation": "ಹಿರಿಯ ಆರೋಗ್ಯ ಪರಿಶೀಲಕ",
+      "address": null
+    },
+    {
+      "ward_no": 20,
+      "designation_code": "senior_health_inspector",
+      "department_code": "health_section",
+      "language": "hn",
+      "name": "आदर्श एम",
+      "designation": "वरिष्ठ स्वास्थ्य निरीक्षक",
+      "address": null
+    },
+    {
+      "ward_no": 20,
+      "designation_code": "senior_health_inspector",
+      "department_code": "health_section",
+      "language": "kn",
+      "name": "ಆದರ್ಶ ಎಂ",
+      "designation": "ಹಿರಿಯ ಆರೋಗ್ಯ ಪರಿಶೀಲಕ",
+      "address": null
+    },
+    {
+      "ward_no": 21,
+      "designation_code": "sanitary_supervisor",
+      "department_code": "health_section",
+      "language": "hn",
+      "name": "रंगा",
+      "designation": "स्वच्छता पर्यवेक्षक",
+      "address": null
+    },
+    {
+      "ward_no": 21,
+      "designation_code": "sanitary_supervisor",
+      "department_code": "health_section",
+      "language": "kn",
+      "name": "ರಂಗ",
+      "designation": "ಸ್ವಚ್ಛತಾ ಮೇಲ್ವಿಚಾರಕ",
+      "address": null
+    },
+    {
+      "ward_no": 22,
+      "designation_code": "sanitary_supervisor",
+      "department_code": "health_section",
+      "language": "hn",
+      "name": "रंगा",
+      "designation": "स्वच्छता पर्यवेक्षक",
+      "address": null
+    },
+    {
+      "ward_no": 22,
+      "designation_code": "sanitary_supervisor",
+      "department_code": "health_section",
+      "language": "kn",
+      "name": "ರಂಗ",
+      "designation": "ಸ್ವಚ್ಛತಾ ಮೇಲ್ವಿಚಾರಕ",
+      "address": null
+    },
+    {
+      "ward_no": 23,
+      "designation_code": "sanitary_supervisor",
+      "department_code": "health_section",
+      "language": "hn",
+      "name": "रंगा",
+      "designation": "स्वच्छता पर्यवेक्षक",
+      "address": null
+    },
+    {
+      "ward_no": 23,
+      "designation_code": "sanitary_supervisor",
+      "department_code": "health_section",
+      "language": "kn",
+      "name": "ರಂಗ",
+      "designation": "ಸ್ವಚ್ಛತಾ ಮೇಲ್ವಿಚಾರಕ",
+      "address": null
+    },
+    {
+      "ward_no": 24,
+      "designation_code": "sanitary_supervisor",
+      "department_code": "health_section",
+      "language": "hn",
+      "name": "रंगा",
+      "designation": "स्वच्छता पर्यवेक्षक",
+      "address": null
+    },
+    {
+      "ward_no": 24,
+      "designation_code": "sanitary_supervisor",
+      "department_code": "health_section",
+      "language": "kn",
+      "name": "ರಂಗ",
+      "designation": "ಸ್ವಚ್ಛತಾ ಮೇಲ್ವಿಚಾರಕ",
+      "address": null
+    },
+    {
+      "ward_no": 21,
+      "designation_code": "senior_health_inspector",
+      "department_code": "health_section",
+      "language": "hn",
+      "name": "रेखा आर",
+      "designation": "वरिष्ठ स्वास्थ्य निरीक्षक",
+      "address": null
+    },
+    {
+      "ward_no": 21,
+      "designation_code": "senior_health_inspector",
+      "department_code": "health_section",
+      "language": "kn",
+      "name": "ರೇಖಾ ಆರ್",
+      "designation": "ಹಿರಿಯ ಆರೋಗ್ಯ ಪರಿಶೀಲಕ",
+      "address": null
+    },
+    {
+      "ward_no": 22,
+      "designation_code": "senior_health_inspector",
+      "department_code": "health_section",
+      "language": "hn",
+      "name": "रेखा आर",
+      "designation": "वरिष्ठ स्वास्थ्य निरीक्षक",
+      "address": null
+    },
+    {
+      "ward_no": 22,
+      "designation_code": "senior_health_inspector",
+      "department_code": "health_section",
+      "language": "kn",
+      "name": "ರೇಖಾ ಆರ್",
+      "designation": "ಹಿರಿಯ ಆರೋಗ್ಯ ಪರಿಶೀಲಕ",
+      "address": null
+    },
+    {
+      "ward_no": 23,
+      "designation_code": "senior_health_inspector",
+      "department_code": "health_section",
+      "language": "hn",
+      "name": "रेखा आर",
+      "designation": "वरिष्ठ स्वास्थ्य निरीक्षक",
+      "address": null
+    },
+    {
+      "ward_no": 23,
+      "designation_code": "senior_health_inspector",
+      "department_code": "health_section",
+      "language": "kn",
+      "name": "ರೇಖಾ ಆರ್",
+      "designation": "ಹಿರಿಯ ಆರೋಗ್ಯ ಪರಿಶೀಲಕ",
+      "address": null
+    },
+    {
+      "ward_no": 24,
+      "designation_code": "senior_health_inspector",
+      "department_code": "health_section",
+      "language": "hn",
+      "name": "रेखा आर",
+      "designation": "वरिष्ठ स्वास्थ्य निरीक्षक",
+      "address": null
+    },
+    {
+      "ward_no": 24,
+      "designation_code": "senior_health_inspector",
+      "department_code": "health_section",
+      "language": "kn",
+      "name": "ರೇಖಾ ಆರ್",
+      "designation": "ಹಿರಿಯ ಆರೋಗ್ಯ ಪರಿಶೀಲಕ",
+      "address": null
+    },
+    {
+      "ward_no": 25,
+      "designation_code": "sanitary_supervisor",
+      "department_code": "health_section",
+      "language": "hn",
+      "name": "शिवन्ना",
+      "designation": "स्वच्छता पर्यवेक्षक",
+      "address": null
+    },
+    {
+      "ward_no": 25,
+      "designation_code": "sanitary_supervisor",
+      "department_code": "health_section",
+      "language": "kn",
+      "name": "ಶಿವಣ್ಣ",
+      "designation": "ಸ್ವಚ್ಛತಾ ಮೇಲ್ವಿಚಾರಕ",
+      "address": null
+    },
+    {
+      "ward_no": 26,
+      "designation_code": "sanitary_supervisor",
+      "department_code": "health_section",
+      "language": "hn",
+      "name": "शिवन्ना",
+      "designation": "स्वच्छता पर्यवेक्षक",
+      "address": null
+    },
+    {
+      "ward_no": 26,
+      "designation_code": "sanitary_supervisor",
+      "department_code": "health_section",
+      "language": "kn",
+      "name": "ಶಿವಣ್ಣ",
+      "designation": "ಸ್ವಚ್ಛತಾ ಮೇಲ್ವಿಚಾರಕ",
+      "address": null
+    },
+    {
+      "ward_no": 27,
+      "designation_code": "sanitary_supervisor",
+      "department_code": "health_section",
+      "language": "hn",
+      "name": "शिवन्ना",
+      "designation": "स्वच्छता पर्यवेक्षक",
+      "address": null
+    },
+    {
+      "ward_no": 27,
+      "designation_code": "sanitary_supervisor",
+      "department_code": "health_section",
+      "language": "kn",
+      "name": "ಶಿವಣ್ಣ",
+      "designation": "ಸ್ವಚ್ಛತಾ ಮೇಲ್ವಿಚಾರಕ",
+      "address": null
+    },
+    {
+      "ward_no": 28,
+      "designation_code": "sanitary_supervisor",
+      "department_code": "health_section",
+      "language": "hn",
+      "name": "शिवन्ना",
+      "designation": "स्वच्छता पर्यवेक्षक",
+      "address": null
+    },
+    {
+      "ward_no": 28,
+      "designation_code": "sanitary_supervisor",
+      "department_code": "health_section",
+      "language": "kn",
+      "name": "ಶಿವಣ್ಣ",
+      "designation": "ಸ್ವಚ್ಛತಾ ಮೇಲ್ವಿಚಾರಕ",
+      "address": null
+    },
+    {
+      "ward_no": 29,
+      "designation_code": "sanitary_supervisor",
+      "department_code": "health_section",
+      "language": "hn",
+      "name": "शिवन्ना",
+      "designation": "स्वच्छता पर्यवेक्षक",
+      "address": null
+    },
+    {
+      "ward_no": 29,
+      "designation_code": "sanitary_supervisor",
+      "department_code": "health_section",
+      "language": "kn",
+      "name": "ಶಿವಣ್ಣ",
+      "designation": "ಸ್ವಚ್ಛತಾ ಮೇಲ್ವಿಚಾರಕ",
+      "address": null
+    },
+    {
+      "ward_no": 30,
+      "designation_code": "sanitary_supervisor",
+      "department_code": "health_section",
+      "language": "hn",
+      "name": "शिवन्ना",
+      "designation": "स्वच्छता पर्यवेक्षक",
+      "address": null
+    },
+    {
+      "ward_no": 30,
+      "designation_code": "sanitary_supervisor",
+      "department_code": "health_section",
+      "language": "kn",
+      "name": "ಶಿವಣ್ಣ",
+      "designation": "ಸ್ವಚ್ಛತಾ ಮೇಲ್ವಿಚಾರಕ",
+      "address": null
+    },
+    {
+      "ward_no": 31,
+      "designation_code": "sanitary_supervisor",
+      "department_code": "health_section",
+      "language": "hn",
+      "name": "शिवन्ना",
+      "designation": "स्वच्छता पर्यवेक्षक",
+      "address": null
+    },
+    {
+      "ward_no": 31,
+      "designation_code": "sanitary_supervisor",
+      "department_code": "health_section",
+      "language": "kn",
+      "name": "ಶಿವಣ್ಣ",
+      "designation": "ಸ್ವಚ್ಛತಾ ಮೇಲ್ವಿಚಾರಕ",
+      "address": null
+    },
+    {
+      "ward_no": 25,
+      "designation_code": "junior_health_inspector",
+      "department_code": "health_section",
+      "language": "hn",
+      "name": "वसंत कुमार जी",
+      "designation": "कनिष्ठ स्वास्थ्य निरीक्षक",
+      "address": null
+    },
+    {
+      "ward_no": 25,
+      "designation_code": "junior_health_inspector",
+      "department_code": "health_section",
+      "language": "kn",
+      "name": "ವಸಂತ ಕುಮಾರ ಜಿ",
+      "designation": "ಕಿರಿಯ ಆರೋಗ್ಯ ಪರಿಶೀಲಕ",
+      "address": null
+    },
+    {
+      "ward_no": 26,
+      "designation_code": "junior_health_inspector",
+      "department_code": "health_section",
+      "language": "hn",
+      "name": "वसंत कुमार जी",
+      "designation": "कनिष्ठ स्वास्थ्य निरीक्षक",
+      "address": null
+    },
+    {
+      "ward_no": 26,
+      "designation_code": "junior_health_inspector",
+      "department_code": "health_section",
+      "language": "kn",
+      "name": "ವಸಂತ ಕುಮಾರ ಜಿ",
+      "designation": "ಕಿರಿಯ ಆರೋಗ್ಯ ಪರಿಶೀಲಕ",
+      "address": null
+    },
+    {
+      "ward_no": 27,
+      "designation_code": "junior_health_inspector",
+      "department_code": "health_section",
+      "language": "hn",
+      "name": "वसंत कुमार जी",
+      "designation": "कनिष्ठ स्वास्थ्य निरीक्षक",
+      "address": null
+    },
+    {
+      "ward_no": 27,
+      "designation_code": "junior_health_inspector",
+      "department_code": "health_section",
+      "language": "kn",
+      "name": "ವಸಂತ ಕುಮಾರ ಜಿ",
+      "designation": "ಕಿರಿಯ ಆರೋಗ್ಯ ಪರಿಶೀಲಕ",
+      "address": null
+    },
+    {
+      "ward_no": 28,
+      "designation_code": "junior_health_inspector",
+      "department_code": "health_section",
+      "language": "hn",
+      "name": "वसंत कुमार जी",
+      "designation": "कनिष्ठ स्वास्थ्य निरीक्षक",
+      "address": null
+    },
+    {
+      "ward_no": 28,
+      "designation_code": "junior_health_inspector",
+      "department_code": "health_section",
+      "language": "kn",
+      "name": "ವಸಂತ ಕುಮಾರ ಜಿ",
+      "designation": "ಕಿರಿಯ ಆರೋಗ್ಯ ಪರಿಶೀಲಕ",
+      "address": null
+    },
+    {
+      "ward_no": 29,
+      "designation_code": "junior_health_inspector",
+      "department_code": "health_section",
+      "language": "hn",
+      "name": "वसंत कुमार जी",
+      "designation": "कनिष्ठ स्वास्थ्य निरीक्षक",
+      "address": null
+    },
+    {
+      "ward_no": 29,
+      "designation_code": "junior_health_inspector",
+      "department_code": "health_section",
+      "language": "kn",
+      "name": "ವಸಂತ ಕುಮಾರ ಜಿ",
+      "designation": "ಕಿರಿಯ ಆರೋಗ್ಯ ಪರಿಶೀಲಕ",
+      "address": null
+    },
+    {
+      "ward_no": 30,
+      "designation_code": "junior_health_inspector",
+      "department_code": "health_section",
+      "language": "hn",
+      "name": "वसंत कुमार जी",
+      "designation": "कनिष्ठ स्वास्थ्य निरीक्षक",
+      "address": null
+    },
+    {
+      "ward_no": 30,
+      "designation_code": "junior_health_inspector",
+      "department_code": "health_section",
+      "language": "kn",
+      "name": "ವಸಂತ ಕುಮಾರ ಜಿ",
+      "designation": "ಕಿರಿಯ ಆರೋಗ್ಯ ಪರಿಶೀಲಕ",
+      "address": null
+    },
+    {
+      "ward_no": 31,
+      "designation_code": "junior_health_inspector",
+      "department_code": "health_section",
+      "language": "hn",
+      "name": "वसंत कुमार जी",
+      "designation": "कनिष्ठ स्वास्थ्य निरीक्षक",
+      "address": null
+    },
+    {
+      "ward_no": 31,
+      "designation_code": "junior_health_inspector",
+      "department_code": "health_section",
+      "language": "kn",
+      "name": "ವಸಂತ ಕುಮಾರ ಜಿ",
+      "designation": "ಕಿರಿಯ ಆರೋಗ್ಯ ಪರಿಶೀಲಕ",
+      "address": null
+    },
+    {
+      "ward_no": 1,
+      "designation_code": "s_d_a_incharge_bill_collector",
+      "department_code": "revenue_section",
+      "language": "hn",
+      "name": "मंजू",
+      "designation": "द्वितीय श्रेणी सहायक - प्रभार बिल कलेक्टर",
+      "address": null
+    },
+    {
+      "ward_no": 1,
+      "designation_code": "s_d_a_incharge_bill_collector",
+      "department_code": "revenue_section",
+      "language": "kn",
+      "name": "ಮಂಜು",
+      "designation": "ದ್ವಿತೀಯ ದರ್ಜೆ ಸಹಾಯಕ - ಇನ್‌ಚಾರ್ಜ್ ಬಿಲ್ ಸಂಗ್ರಾಹಕ",
+      "address": null
+    },
+    {
+      "ward_no": 2,
+      "designation_code": "s_d_a_incharge_bill_collector",
+      "department_code": "revenue_section",
+      "language": "hn",
+      "name": "मंजू",
+      "designation": "द्वितीय श्रेणी सहायक - प्रभार बिल कलेक्टर",
+      "address": null
+    },
+    {
+      "ward_no": 2,
+      "designation_code": "s_d_a_incharge_bill_collector",
+      "department_code": "revenue_section",
+      "language": "kn",
+      "name": "ಮಂಜು",
+      "designation": "ದ್ವಿತೀಯ ದರ್ಜೆ ಸಹಾಯಕ - ಇನ್‌ಚಾರ್ಜ್ ಬಿಲ್ ಸಂಗ್ರಾಹಕ",
+      "address": null
+    },
+    {
+      "ward_no": 3,
+      "designation_code": "s_d_a_incharge_bill_collector",
+      "department_code": "revenue_section",
+      "language": "hn",
+      "name": "मंजू",
+      "designation": "द्वितीय श्रेणी सहायक - प्रभार बिल कलेक्टर",
+      "address": null
+    },
+    {
+      "ward_no": 3,
+      "designation_code": "s_d_a_incharge_bill_collector",
+      "department_code": "revenue_section",
+      "language": "kn",
+      "name": "ಮಂಜು",
+      "designation": "ದ್ವಿತೀಯ ದರ್ಜೆ ಸಹಾಯಕ - ಇನ್‌ಚಾರ್ಜ್ ಬಿಲ್ ಸಂಗ್ರಾಹಕ",
+      "address": null
+    },
+    {
+      "ward_no": 4,
+      "designation_code": "s_d_a_incharge_bill_collector",
+      "department_code": "revenue_section",
+      "language": "hn",
+      "name": "मंजू",
+      "designation": "द्वितीय श्रेणी सहायक - प्रभार बिल कलेक्टर",
+      "address": null
+    },
+    {
+      "ward_no": 4,
+      "designation_code": "s_d_a_incharge_bill_collector",
+      "department_code": "revenue_section",
+      "language": "kn",
+      "name": "ಮಂಜು",
+      "designation": "ದ್ವಿತೀಯ ದರ್ಜೆ ಸಹಾಯಕ - ಇನ್‌ಚಾರ್ಜ್ ಬಿಲ್ ಸಂಗ್ರಾಹಕ",
+      "address": null
+    },
+    {
+      "ward_no": 5,
+      "designation_code": "s_d_a_incharge_bill_collector",
+      "department_code": "revenue_section",
+      "language": "hn",
+      "name": "मंजू",
+      "designation": "द्वितीय श्रेणी सहायक - प्रभार बिल कलेक्टर",
+      "address": null
+    },
+    {
+      "ward_no": 5,
+      "designation_code": "s_d_a_incharge_bill_collector",
+      "department_code": "revenue_section",
+      "language": "kn",
+      "name": "ಮಂಜು",
+      "designation": "ದ್ವಿತೀಯ ದರ್ಜೆ ಸಹಾಯಕ - ಇನ್‌ಚಾರ್ಜ್ ಬಿಲ್ ಸಂಗ್ರಾಹಕ",
+      "address": null
+    },
+    {
+      "ward_no": 6,
+      "designation_code": "s_d_a_incharge_bill_collector",
+      "department_code": "revenue_section",
+      "language": "hn",
+      "name": "मंजू",
+      "designation": "द्वितीय श्रेणी सहायक - प्रभार बिल कलेक्टर",
+      "address": null
+    },
+    {
+      "ward_no": 6,
+      "designation_code": "s_d_a_incharge_bill_collector",
+      "department_code": "revenue_section",
+      "language": "kn",
+      "name": "ಮಂಜು",
+      "designation": "ದ್ವಿತೀಯ ದರ್ಜೆ ಸಹಾಯಕ - ಇನ್‌ಚಾರ್ಜ್ ಬಿಲ್ ಸಂಗ್ರಾಹಕ",
+      "address": null
+    },
+    {
+      "ward_no": 7,
+      "designation_code": "s_d_a_incharge_bill_collector",
+      "department_code": "revenue_section",
+      "language": "hn",
+      "name": "मंजू",
+      "designation": "द्वितीय श्रेणी सहायक - प्रभार बिल कलेक्टर",
+      "address": null
+    },
+    {
+      "ward_no": 7,
+      "designation_code": "s_d_a_incharge_bill_collector",
+      "department_code": "revenue_section",
+      "language": "kn",
+      "name": "ಮಂಜು",
+      "designation": "ದ್ವಿತೀಯ ದರ್ಜೆ ಸಹಾಯಕ - ಇನ್‌ಚಾರ್ಜ್ ಬಿಲ್ ಸಂಗ್ರಾಹಕ",
+      "address": null
+    },
+    {
+      "ward_no": 8,
+      "designation_code": "s_d_a_incharge_bill_collector",
+      "department_code": "revenue_section",
+      "language": "hn",
+      "name": "मंजू",
+      "designation": "द्वितीय श्रेणी सहायक - प्रभार बिल कलेक्टर",
+      "address": null
+    },
+    {
+      "ward_no": 8,
+      "designation_code": "s_d_a_incharge_bill_collector",
+      "department_code": "revenue_section",
+      "language": "kn",
+      "name": "ಮಂಜು",
+      "designation": "ದ್ವಿತೀಯ ದರ್ಜೆ ಸಹಾಯಕ - ಇನ್‌ಚಾರ್ಜ್ ಬಿಲ್ ಸಂಗ್ರಾಹಕ",
+      "address": null
+    },
+    {
+      "ward_no": 9,
+      "designation_code": "s_d_a_incharge_bill_collector",
+      "department_code": "revenue_section",
+      "language": "hn",
+      "name": "मंजू",
+      "designation": "द्वितीय श्रेणी सहायक - प्रभार बिल कलेक्टर",
+      "address": null
+    },
+    {
+      "ward_no": 9,
+      "designation_code": "s_d_a_incharge_bill_collector",
+      "department_code": "revenue_section",
+      "language": "kn",
+      "name": "ಮಂಜು",
+      "designation": "ದ್ವಿತೀಯ ದರ್ಜೆ ಸಹಾಯಕ - ಇನ್‌ಚಾರ್ಜ್ ಬಿಲ್ ಸಂಗ್ರಾಹಕ",
+      "address": null
+    },
+    {
+      "ward_no": 10,
+      "designation_code": "s_d_a_incharge_bill_collector",
+      "department_code": "revenue_section",
+      "language": "hn",
+      "name": "मंजू",
+      "designation": "द्वितीय श्रेणी सहायक - प्रभार बिल कलेक्टर",
+      "address": null
+    },
+    {
+      "ward_no": 10,
+      "designation_code": "s_d_a_incharge_bill_collector",
+      "department_code": "revenue_section",
+      "language": "kn",
+      "name": "ಮಂಜು",
+      "designation": "ದ್ವಿತೀಯ ದರ್ಜೆ ಸಹಾಯಕ - ಇನ್‌ಚಾರ್ಜ್ ಬಿಲ್ ಸಂಗ್ರಾಹಕ",
+      "address": null
+    },
+    {
+      "ward_no": 1,
+      "designation_code": "revenue_inspector",
+      "department_code": "revenue_section",
+      "language": "hn",
+      "name": "महेश सी",
+      "designation": "राजस्व निरीक्षक",
+      "address": null
+    },
+    {
+      "ward_no": 1,
+      "designation_code": "revenue_inspector",
+      "department_code": "revenue_section",
+      "language": "kn",
+      "name": "ಮಹೇಶ್ ಸಿ",
+      "designation": "ಆದಾಯ ಪರಿಶೀಲಕ",
+      "address": null
+    },
+    {
+      "ward_no": 2,
+      "designation_code": "revenue_inspector",
+      "department_code": "revenue_section",
+      "language": "hn",
+      "name": "महेश सी",
+      "designation": "राजस्व निरीक्षक",
+      "address": null
+    },
+    {
+      "ward_no": 2,
+      "designation_code": "revenue_inspector",
+      "department_code": "revenue_section",
+      "language": "kn",
+      "name": "ಮಹೇಶ್ ಸಿ",
+      "designation": "ಆದಾಯ ಪರಿಶೀಲಕ",
+      "address": null
+    },
+    {
+      "ward_no": 3,
+      "designation_code": "revenue_inspector",
+      "department_code": "revenue_section",
+      "language": "hn",
+      "name": "महेश सी",
+      "designation": "राजस्व निरीक्षक",
+      "address": null
+    },
+    {
+      "ward_no": 3,
+      "designation_code": "revenue_inspector",
+      "department_code": "revenue_section",
+      "language": "kn",
+      "name": "ಮಹೇಶ್ ಸಿ",
+      "designation": "ಆದಾಯ ಪರಿಶೀಲಕ",
+      "address": null
+    },
+    {
+      "ward_no": 4,
+      "designation_code": "revenue_inspector",
+      "department_code": "revenue_section",
+      "language": "hn",
+      "name": "महेश सी",
+      "designation": "राजस्व निरीक्षक",
+      "address": null
+    },
+    {
+      "ward_no": 4,
+      "designation_code": "revenue_inspector",
+      "department_code": "revenue_section",
+      "language": "kn",
+      "name": "ಮಹೇಶ್ ಸಿ",
+      "designation": "ಆದಾಯ ಪರಿಶೀಲಕ",
+      "address": null
+    },
+    {
+      "ward_no": 5,
+      "designation_code": "revenue_inspector",
+      "department_code": "revenue_section",
+      "language": "hn",
+      "name": "महेश सी",
+      "designation": "राजस्व निरीक्षक",
+      "address": null
+    },
+    {
+      "ward_no": 5,
+      "designation_code": "revenue_inspector",
+      "department_code": "revenue_section",
+      "language": "kn",
+      "name": "ಮಹೇಶ್ ಸಿ",
+      "designation": "ಆದಾಯ ಪರಿಶೀಲಕ",
+      "address": null
+    },
+    {
+      "ward_no": 6,
+      "designation_code": "revenue_inspector",
+      "department_code": "revenue_section",
+      "language": "hn",
+      "name": "महेश सी",
+      "designation": "राजस्व निरीक्षक",
+      "address": null
+    },
+    {
+      "ward_no": 6,
+      "designation_code": "revenue_inspector",
+      "department_code": "revenue_section",
+      "language": "kn",
+      "name": "ಮಹೇಶ್ ಸಿ",
+      "designation": "ಆದಾಯ ಪರಿಶೀಲಕ",
+      "address": null
+    },
+    {
+      "ward_no": 7,
+      "designation_code": "revenue_inspector",
+      "department_code": "revenue_section",
+      "language": "hn",
+      "name": "महेश सी",
+      "designation": "राजस्व निरीक्षक",
+      "address": null
+    },
+    {
+      "ward_no": 7,
+      "designation_code": "revenue_inspector",
+      "department_code": "revenue_section",
+      "language": "kn",
+      "name": "ಮಹೇಶ್ ಸಿ",
+      "designation": "ಆದಾಯ ಪರಿಶೀಲಕ",
+      "address": null
+    },
+    {
+      "ward_no": 8,
+      "designation_code": "revenue_inspector",
+      "department_code": "revenue_section",
+      "language": "hn",
+      "name": "महेश सी",
+      "designation": "राजस्व निरीक्षक",
+      "address": null
+    },
+    {
+      "ward_no": 8,
+      "designation_code": "revenue_inspector",
+      "department_code": "revenue_section",
+      "language": "kn",
+      "name": "ಮಹೇಶ್ ಸಿ",
+      "designation": "ಆದಾಯ ಪರಿಶೀಲಕ",
+      "address": null
+    },
+    {
+      "ward_no": 9,
+      "designation_code": "revenue_inspector",
+      "department_code": "revenue_section",
+      "language": "hn",
+      "name": "महेश सी",
+      "designation": "राजस्व निरीक्षक",
+      "address": null
+    },
+    {
+      "ward_no": 9,
+      "designation_code": "revenue_inspector",
+      "department_code": "revenue_section",
+      "language": "kn",
+      "name": "ಮಹೇಶ್ ಸಿ",
+      "designation": "ಆದಾಯ ಪರಿಶೀಲಕ",
+      "address": null
+    },
+    {
+      "ward_no": 10,
+      "designation_code": "revenue_inspector",
+      "department_code": "revenue_section",
+      "language": "hn",
+      "name": "महेश सी",
+      "designation": "राजस्व निरीक्षक",
+      "address": null
+    },
+    {
+      "ward_no": 10,
+      "designation_code": "revenue_inspector",
+      "department_code": "revenue_section",
+      "language": "kn",
+      "name": "ಮಹೇಶ್ ಸಿ",
+      "designation": "ಆದಾಯ ಪರಿಶೀಲಕ",
+      "address": null
+    },
+    {
+      "ward_no": 11,
+      "designation_code": "s_d_a_incharge_bill_collector",
+      "department_code": "revenue_section",
+      "language": "hn",
+      "name": "तारादेवी एम",
+      "designation": "द्वितीय श्रेणी सहायक - प्रभार बिल कलेक्टर",
+      "address": null
+    },
+    {
+      "ward_no": 11,
+      "designation_code": "s_d_a_incharge_bill_collector",
+      "department_code": "revenue_section",
+      "language": "kn",
+      "name": "ತರಾದೇವಿ ಎಂ",
+      "designation": "ದ್ವಿತೀಯ ದರ್ಜೆ ಸಹಾಯಕ - ಇನ್‌ಚಾರ್ಜ್ ಬಿಲ್ ಸಂಗ್ರಾಹಕ",
+      "address": null
+    },
+    {
+      "ward_no": 12,
+      "designation_code": "s_d_a_incharge_bill_collector",
+      "department_code": "revenue_section",
+      "language": "hn",
+      "name": "तारादेवी एम",
+      "designation": "द्वितीय श्रेणी सहायक - प्रभार बिल कलेक्टर",
+      "address": null
+    },
+    {
+      "ward_no": 12,
+      "designation_code": "s_d_a_incharge_bill_collector",
+      "department_code": "revenue_section",
+      "language": "kn",
+      "name": "ತರಾದೇವಿ ಎಂ",
+      "designation": "ದ್ವಿತೀಯ ದರ್ಜೆ ಸಹಾಯಕ - ಇನ್‌ಚಾರ್ಜ್ ಬಿಲ್ ಸಂಗ್ರಾಹಕ",
+      "address": null
+    },
+    {
+      "ward_no": 13,
+      "designation_code": "s_d_a_incharge_bill_collector",
+      "department_code": "revenue_section",
+      "language": "hn",
+      "name": "तारादेवी एम",
+      "designation": "द्वितीय श्रेणी सहायक - प्रभार बिल कलेक्टर",
+      "address": null
+    },
+    {
+      "ward_no": 13,
+      "designation_code": "s_d_a_incharge_bill_collector",
+      "department_code": "revenue_section",
+      "language": "kn",
+      "name": "ತರಾದೇವಿ ಎಂ",
+      "designation": "ದ್ವಿತೀಯ ದರ್ಜೆ ಸಹಾಯಕ - ಇನ್‌ಚಾರ್ಜ್ ಬಿಲ್ ಸಂಗ್ರಾಹಕ",
+      "address": null
+    },
+    {
+      "ward_no": 14,
+      "designation_code": "s_d_a_incharge_bill_collector",
+      "department_code": "revenue_section",
+      "language": "hn",
+      "name": "तारादेवी एम",
+      "designation": "द्वितीय श्रेणी सहायक - प्रभार बिल कलेक्टर",
+      "address": null
+    },
+    {
+      "ward_no": 14,
+      "designation_code": "s_d_a_incharge_bill_collector",
+      "department_code": "revenue_section",
+      "language": "kn",
+      "name": "ತರಾದೇವಿ ಎಂ",
+      "designation": "ದ್ವಿತೀಯ ದರ್ಜೆ ಸಹಾಯಕ - ಇನ್‌ಚಾರ್ಜ್ ಬಿಲ್ ಸಂಗ್ರಾಹಕ",
+      "address": null
+    },
+    {
+      "ward_no": 15,
+      "designation_code": "s_d_a_incharge_bill_collector",
+      "department_code": "revenue_section",
+      "language": "hn",
+      "name": "तारादेवी एम",
+      "designation": "द्वितीय श्रेणी सहायक - प्रभार बिल कलेक्टर",
+      "address": null
+    },
+    {
+      "ward_no": 15,
+      "designation_code": "s_d_a_incharge_bill_collector",
+      "department_code": "revenue_section",
+      "language": "kn",
+      "name": "ತರಾದೇವಿ ಎಂ",
+      "designation": "ದ್ವಿತೀಯ ದರ್ಜೆ ಸಹಾಯಕ - ಇನ್‌ಚಾರ್ಜ್ ಬಿಲ್ ಸಂಗ್ರಾಹಕ",
+      "address": null
+    },
+    {
+      "ward_no": 16,
+      "designation_code": "s_d_a_incharge_bill_collector",
+      "department_code": "revenue_section",
+      "language": "hn",
+      "name": "तारादेवी एम",
+      "designation": "द्वितीय श्रेणी सहायक - प्रभार बिल कलेक्टर",
+      "address": null
+    },
+    {
+      "ward_no": 16,
+      "designation_code": "s_d_a_incharge_bill_collector",
+      "department_code": "revenue_section",
+      "language": "kn",
+      "name": "ತರಾದೇವಿ ಎಂ",
+      "designation": "ದ್ವಿತೀಯ ದರ್ಜೆ ಸಹಾಯಕ - ಇನ್‌ಚಾರ್ಜ್ ಬಿಲ್ ಸಂಗ್ರಾಹಕ",
+      "address": null
+    },
+    {
+      "ward_no": 17,
+      "designation_code": "s_d_a_incharge_bill_collector",
+      "department_code": "revenue_section",
+      "language": "hn",
+      "name": "तारादेवी एम",
+      "designation": "द्वितीय श्रेणी सहायक - प्रभार बिल कलेक्टर",
+      "address": null
+    },
+    {
+      "ward_no": 17,
+      "designation_code": "s_d_a_incharge_bill_collector",
+      "department_code": "revenue_section",
+      "language": "kn",
+      "name": "ತರಾದೇವಿ ಎಂ",
+      "designation": "ದ್ವಿತೀಯ ದರ್ಜೆ ಸಹಾಯಕ - ಇನ್‌ಚಾರ್ಜ್ ಬಿಲ್ ಸಂಗ್ರಾಹಕ",
+      "address": null
+    },
+    {
+      "ward_no": 18,
+      "designation_code": "s_d_a_incharge_bill_collector",
+      "department_code": "revenue_section",
+      "language": "hn",
+      "name": "तारादेवी एम",
+      "designation": "द्वितीय श्रेणी सहायक - प्रभार बिल कलेक्टर",
+      "address": null
+    },
+    {
+      "ward_no": 18,
+      "designation_code": "s_d_a_incharge_bill_collector",
+      "department_code": "revenue_section",
+      "language": "kn",
+      "name": "ತರಾದೇವಿ ಎಂ",
+      "designation": "ದ್ವಿತೀಯ ದರ್ಜೆ ಸಹಾಯಕ - ಇನ್‌ಚಾರ್ಜ್ ಬಿಲ್ ಸಂಗ್ರಾಹಕ",
+      "address": null
+    },
+    {
+      "ward_no": 19,
+      "designation_code": "s_d_a_incharge_bill_collector",
+      "department_code": "revenue_section",
+      "language": "hn",
+      "name": "तारादेवी एम",
+      "designation": "द्वितीय श्रेणी सहायक - प्रभार बिल कलेक्टर",
+      "address": null
+    },
+    {
+      "ward_no": 19,
+      "designation_code": "s_d_a_incharge_bill_collector",
+      "department_code": "revenue_section",
+      "language": "kn",
+      "name": "ತರಾದೇವಿ ಎಂ",
+      "designation": "ದ್ವಿತೀಯ ದರ್ಜೆ ಸಹಾಯಕ - ಇನ್‌ಚಾರ್ಜ್ ಬಿಲ್ ಸಂಗ್ರಾಹಕ",
+      "address": null
+    },
+    {
+      "ward_no": 20,
+      "designation_code": "s_d_a_incharge_bill_collector",
+      "department_code": "revenue_section",
+      "language": "hn",
+      "name": "तारादेवी एम",
+      "designation": "द्वितीय श्रेणी सहायक - प्रभार बिल कलेक्टर",
+      "address": null
+    },
+    {
+      "ward_no": 20,
+      "designation_code": "s_d_a_incharge_bill_collector",
+      "department_code": "revenue_section",
+      "language": "kn",
+      "name": "ತರಾದೇವಿ ಎಂ",
+      "designation": "ದ್ವಿತೀಯ ದರ್ಜೆ ಸಹಾಯಕ - ಇನ್‌ಚಾರ್ಜ್ ಬಿಲ್ ಸಂಗ್ರಾಹಕ",
+      "address": null
+    },
+    {
+      "ward_no": 16,
+      "designation_code": "revenue_inspector",
+      "department_code": "revenue_section",
+      "language": "hn",
+      "name": "प्रीतम गौड़ा बी",
+      "designation": "राजस्व निरीक्षक",
+      "address": null
+    },
+    {
+      "ward_no": 16,
+      "designation_code": "revenue_inspector",
+      "department_code": "revenue_section",
+      "language": "kn",
+      "name": "ಪ್ರೀಥಮ್ ಗೌಡ ಬಿ",
+      "designation": "ಆದಾಯ ಪರಿಶೀಲಕ",
+      "address": null
+    },
+    {
+      "ward_no": 17,
+      "designation_code": "revenue_inspector",
+      "department_code": "revenue_section",
+      "language": "hn",
+      "name": "प्रीतम गौड़ा बी",
+      "designation": "राजस्व निरीक्षक",
+      "address": null
+    },
+    {
+      "ward_no": 17,
+      "designation_code": "revenue_inspector",
+      "department_code": "revenue_section",
+      "language": "kn",
+      "name": "ಪ್ರೀಥಮ್ ಗೌಡ ಬಿ",
+      "designation": "ಆದಾಯ ಪರಿಶೀಲಕ",
+      "address": null
+    },
+    {
+      "ward_no": 18,
+      "designation_code": "revenue_inspector",
+      "department_code": "revenue_section",
+      "language": "hn",
+      "name": "प्रीतम गौड़ा बी",
+      "designation": "राजस्व निरीक्षक",
+      "address": null
+    },
+    {
+      "ward_no": 18,
+      "designation_code": "revenue_inspector",
+      "department_code": "revenue_section",
+      "language": "kn",
+      "name": "ಪ್ರೀಥಮ್ ಗೌಡ ಬಿ",
+      "designation": "ಆದಾಯ ಪರಿಶೀಲಕ",
+      "address": null
+    },
+    {
+      "ward_no": 19,
+      "designation_code": "revenue_inspector",
+      "department_code": "revenue_section",
+      "language": "hn",
+      "name": "प्रीतम गौड़ा बी",
+      "designation": "राजस्व निरीक्षक",
+      "address": null
+    },
+    {
+      "ward_no": 19,
+      "designation_code": "revenue_inspector",
+      "department_code": "revenue_section",
+      "language": "kn",
+      "name": "ಪ್ರೀಥಮ್ ಗೌಡ ಬಿ",
+      "designation": "ಆದಾಯ ಪರಿಶೀಲಕ",
+      "address": null
+    },
+    {
+      "ward_no": 20,
+      "designation_code": "revenue_inspector",
+      "department_code": "revenue_section",
+      "language": "hn",
+      "name": "प्रीतम गौड़ा बी",
+      "designation": "राजस्व निरीक्षक",
+      "address": null
+    },
+    {
+      "ward_no": 20,
+      "designation_code": "revenue_inspector",
+      "department_code": "revenue_section",
+      "language": "kn",
+      "name": "ಪ್ರೀಥಮ್ ಗೌಡ ಬಿ",
+      "designation": "ಆದಾಯ ಪರಿಶೀಲಕ",
+      "address": null
+    },
+    {
+      "ward_no": 21,
+      "designation_code": "bill_collector",
+      "department_code": "revenue_section",
+      "language": "hn",
+      "name": "राघवेंद्र आर",
+      "designation": "बिल कलेक्टर",
+      "address": null
+    },
+    {
+      "ward_no": 21,
+      "designation_code": "bill_collector",
+      "department_code": "revenue_section",
+      "language": "kn",
+      "name": "ರಾಘವೇಂದ್ರ ಆರ್",
+      "designation": "ಬಿಲ್ ಸಂಗ್ರಾಹಕ",
+      "address": null
+    },
+    {
+      "ward_no": 22,
+      "designation_code": "bill_collector",
+      "department_code": "revenue_section",
+      "language": "hn",
+      "name": "राघवेंद्र आर",
+      "designation": "बिल कलेक्टर",
+      "address": null
+    },
+    {
+      "ward_no": 22,
+      "designation_code": "bill_collector",
+      "department_code": "revenue_section",
+      "language": "kn",
+      "name": "ರಾಘವೇಂದ್ರ ಆರ್",
+      "designation": "ಬಿಲ್ ಸಂಗ್ರಾಹಕ",
+      "address": null
+    },
+    {
+      "ward_no": 23,
+      "designation_code": "bill_collector",
+      "department_code": "revenue_section",
+      "language": "hn",
+      "name": "राघवेंद्र आर",
+      "designation": "बिल कलेक्टर",
+      "address": null
+    },
+    {
+      "ward_no": 23,
+      "designation_code": "bill_collector",
+      "department_code": "revenue_section",
+      "language": "kn",
+      "name": "ರಾಘವೇಂದ್ರ ಆರ್",
+      "designation": "ಬಿಲ್ ಸಂಗ್ರಾಹಕ",
+      "address": null
+    },
+    {
+      "ward_no": 24,
+      "designation_code": "bill_collector",
+      "department_code": "revenue_section",
+      "language": "hn",
+      "name": "राघवेंद्र आर",
+      "designation": "बिल कलेक्टर",
+      "address": null
+    },
+    {
+      "ward_no": 24,
+      "designation_code": "bill_collector",
+      "department_code": "revenue_section",
+      "language": "kn",
+      "name": "ರಾಘವೇಂದ್ರ ಆರ್",
+      "designation": "ಬಿಲ್ ಸಂಗ್ರಾಹಕ",
+      "address": null
+    },
+    {
+      "ward_no": 25,
+      "designation_code": "bill_collector",
+      "department_code": "revenue_section",
+      "language": "hn",
+      "name": "राघवेंद्र आर",
+      "designation": "बिल कलेक्टर",
+      "address": null
+    },
+    {
+      "ward_no": 25,
+      "designation_code": "bill_collector",
+      "department_code": "revenue_section",
+      "language": "kn",
+      "name": "ರಾಘವೇಂದ್ರ ಆರ್",
+      "designation": "ಬಿಲ್ ಸಂಗ್ರಾಹಕ",
+      "address": null
+    },
+    {
+      "ward_no": 26,
+      "designation_code": "bill_collector",
+      "department_code": "revenue_section",
+      "language": "hn",
+      "name": "राघवेंद्र आर",
+      "designation": "बिल कलेक्टर",
+      "address": null
+    },
+    {
+      "ward_no": 26,
+      "designation_code": "bill_collector",
+      "department_code": "revenue_section",
+      "language": "kn",
+      "name": "ರಾಘವೇಂದ್ರ ಆರ್",
+      "designation": "ಬಿಲ್ ಸಂಗ್ರಾಹಕ",
+      "address": null
+    },
+    {
+      "ward_no": 27,
+      "designation_code": "bill_collector",
+      "department_code": "revenue_section",
+      "language": "hn",
+      "name": "राघवेंद्र आर",
+      "designation": "बिल कलेक्टर",
+      "address": null
+    },
+    {
+      "ward_no": 27,
+      "designation_code": "bill_collector",
+      "department_code": "revenue_section",
+      "language": "kn",
+      "name": "ರಾಘವೇಂದ್ರ ಆರ್",
+      "designation": "ಬಿಲ್ ಸಂಗ್ರಾಹಕ",
+      "address": null
+    },
+    {
+      "ward_no": 28,
+      "designation_code": "bill_collector",
+      "department_code": "revenue_section",
+      "language": "hn",
+      "name": "राघवेंद्र आर",
+      "designation": "बिल कलेक्टर",
+      "address": null
+    },
+    {
+      "ward_no": 28,
+      "designation_code": "bill_collector",
+      "department_code": "revenue_section",
+      "language": "kn",
+      "name": "ರಾಘವೇಂದ್ರ ಆರ್",
+      "designation": "ಬಿಲ್ ಸಂಗ್ರಾಹಕ",
+      "address": null
+    },
+    {
+      "ward_no": 29,
+      "designation_code": "bill_collector",
+      "department_code": "revenue_section",
+      "language": "hn",
+      "name": "राघवेंद्र आर",
+      "designation": "बिल कलेक्टर",
+      "address": null
+    },
+    {
+      "ward_no": 29,
+      "designation_code": "bill_collector",
+      "department_code": "revenue_section",
+      "language": "kn",
+      "name": "ರಾಘವೇಂದ್ರ ಆರ್",
+      "designation": "ಬಿಲ್ ಸಂಗ್ರಾಹಕ",
+      "address": null
+    },
+    {
+      "ward_no": 30,
+      "designation_code": "bill_collector",
+      "department_code": "revenue_section",
+      "language": "hn",
+      "name": "राघवेंद्र आर",
+      "designation": "बिल कलेक्टर",
+      "address": null
+    },
+    {
+      "ward_no": 30,
+      "designation_code": "bill_collector",
+      "department_code": "revenue_section",
+      "language": "kn",
+      "name": "ರಾಘವೇಂದ್ರ ಆರ್",
+      "designation": "ಬಿಲ್ ಸಂಗ್ರಾಹಕ",
+      "address": null
+    },
+    {
+      "ward_no": 31,
+      "designation_code": "bill_collector",
+      "department_code": "revenue_section",
+      "language": "hn",
+      "name": "राघवेंद्र आर",
+      "designation": "बिल कलेक्टर",
+      "address": null
+    },
+    {
+      "ward_no": 31,
+      "designation_code": "bill_collector",
+      "department_code": "revenue_section",
+      "language": "kn",
+      "name": "ರಾಘವೇಂದ್ರ ಆರ್",
+      "designation": "ಬಿಲ್ ಸಂಗ್ರಾಹಕ",
+      "address": null
+    },
+    {
+      "ward_no": 1,
+      "designation_code": "junior_engineer",
+      "department_code": "technical_section",
+      "language": "hn",
+      "name": "प्रतिमा एम",
+      "designation": "कनिष्ठ अभियंता",
+      "address": null
+    },
+    {
+      "ward_no": 1,
+      "designation_code": "junior_engineer",
+      "department_code": "technical_section",
+      "language": "kn",
+      "name": "ಪ್ರತಿಮಾ ಎಂ",
+      "designation": "ಕಿರಿಯ ಇಂಜಿನಿಯರ್",
+      "address": null
+    },
+    {
+      "ward_no": 2,
+      "designation_code": "junior_engineer",
+      "department_code": "technical_section",
+      "language": "hn",
+      "name": "प्रतिमा एम",
+      "designation": "कनिष्ठ अभियंता",
+      "address": null
+    },
+    {
+      "ward_no": 2,
+      "designation_code": "junior_engineer",
+      "department_code": "technical_section",
+      "language": "kn",
+      "name": "ಪ್ರತಿಮಾ ಎಂ",
+      "designation": "ಕಿರಿಯ ಇಂಜಿನಿಯರ್",
+      "address": null
+    },
+    {
+      "ward_no": 3,
+      "designation_code": "junior_engineer",
+      "department_code": "technical_section",
+      "language": "hn",
+      "name": "प्रतिमा एम",
+      "designation": "कनिष्ठ अभियंता",
+      "address": null
+    },
+    {
+      "ward_no": 3,
+      "designation_code": "junior_engineer",
+      "department_code": "technical_section",
+      "language": "kn",
+      "name": "ಪ್ರತಿಮಾ ಎಂ",
+      "designation": "ಕಿರಿಯ ಇಂಜಿನಿಯರ್",
+      "address": null
+    },
+    {
+      "ward_no": 4,
+      "designation_code": "junior_engineer",
+      "department_code": "technical_section",
+      "language": "hn",
+      "name": "प्रतिमा एम",
+      "designation": "कनिष्ठ अभियंता",
+      "address": null
+    },
+    {
+      "ward_no": 4,
+      "designation_code": "junior_engineer",
+      "department_code": "technical_section",
+      "language": "kn",
+      "name": "ಪ್ರತಿಮಾ ಎಂ",
+      "designation": "ಕಿರಿಯ ಇಂಜಿನಿಯರ್",
+      "address": null
+    },
+    {
+      "ward_no": 5,
+      "designation_code": "junior_engineer",
+      "department_code": "technical_section",
+      "language": "hn",
+      "name": "प्रतिमा एम",
+      "designation": "कनिष्ठ अभियंता",
+      "address": null
+    },
+    {
+      "ward_no": 5,
+      "designation_code": "junior_engineer",
+      "department_code": "technical_section",
+      "language": "kn",
+      "name": "ಪ್ರತಿಮಾ ಎಂ",
+      "designation": "ಕಿರಿಯ ಇಂಜಿನಿಯರ್",
+      "address": null
+    },
+    {
+      "ward_no": 6,
+      "designation_code": "junior_engineer",
+      "department_code": "technical_section",
+      "language": "hn",
+      "name": "प्रतिमा एम",
+      "designation": "कनिष्ठ अभियंता",
+      "address": null
+    },
+    {
+      "ward_no": 6,
+      "designation_code": "junior_engineer",
+      "department_code": "technical_section",
+      "language": "kn",
+      "name": "ಪ್ರತಿಮಾ ಎಂ",
+      "designation": "ಕಿರಿಯ ಇಂಜಿನಿಯರ್",
+      "address": null
+    },
+    {
+      "ward_no": 7,
+      "designation_code": "junior_engineer",
+      "department_code": "technical_section",
+      "language": "hn",
+      "name": "प्रतिमा एम",
+      "designation": "कनिष्ठ अभियंता",
+      "address": null
+    },
+    {
+      "ward_no": 7,
+      "designation_code": "junior_engineer",
+      "department_code": "technical_section",
+      "language": "kn",
+      "name": "ಪ್ರತಿಮಾ ಎಂ",
+      "designation": "ಕಿರಿಯ ಇಂಜಿನಿಯರ್",
+      "address": null
+    },
+    {
+      "ward_no": 8,
+      "designation_code": "junior_engineer",
+      "department_code": "technical_section",
+      "language": "hn",
+      "name": "प्रतिमा एम",
+      "designation": "कनिष्ठ अभियंता",
+      "address": null
+    },
+    {
+      "ward_no": 8,
+      "designation_code": "junior_engineer",
+      "department_code": "technical_section",
+      "language": "kn",
+      "name": "ಪ್ರತಿಮಾ ಎಂ",
+      "designation": "ಕಿರಿಯ ಇಂಜಿನಿಯರ್",
+      "address": null
+    },
+    {
+      "ward_no": 9,
+      "designation_code": "junior_engineer",
+      "department_code": "technical_section",
+      "language": "hn",
+      "name": "प्रतिमा एम",
+      "designation": "कनिष्ठ अभियंता",
+      "address": null
+    },
+    {
+      "ward_no": 9,
+      "designation_code": "junior_engineer",
+      "department_code": "technical_section",
+      "language": "kn",
+      "name": "ಪ್ರತಿಮಾ ಎಂ",
+      "designation": "ಕಿರಿಯ ಇಂಜಿನಿಯರ್",
+      "address": null
+    },
+    {
+      "ward_no": 10,
+      "designation_code": "junior_engineer",
+      "department_code": "technical_section",
+      "language": "hn",
+      "name": "प्रतिमा एम",
+      "designation": "कनिष्ठ अभियंता",
+      "address": null
+    },
+    {
+      "ward_no": 10,
+      "designation_code": "junior_engineer",
+      "department_code": "technical_section",
+      "language": "kn",
+      "name": "ಪ್ರತಿಮಾ ಎಂ",
+      "designation": "ಕಿರಿಯ ಇಂಜಿನಿಯರ್",
+      "address": null
+    },
+    {
+      "ward_no": 11,
+      "designation_code": "junior_engineer",
+      "department_code": "technical_section",
+      "language": "hn",
+      "name": "प्रतिमा एम",
+      "designation": "कनिष्ठ अभियंता",
+      "address": null
+    },
+    {
+      "ward_no": 11,
+      "designation_code": "junior_engineer",
+      "department_code": "technical_section",
+      "language": "kn",
+      "name": "ಪ್ರತಿಮಾ ಎಂ",
+      "designation": "ಕಿರಿಯ ಇಂಜಿನಿಯರ್",
+      "address": null
+    },
+    {
+      "ward_no": 12,
+      "designation_code": "junior_engineer",
+      "department_code": "technical_section",
+      "language": "hn",
+      "name": "प्रतिमा एम",
+      "designation": "कनिष्ठ अभियंता",
+      "address": null
+    },
+    {
+      "ward_no": 12,
+      "designation_code": "junior_engineer",
+      "department_code": "technical_section",
+      "language": "kn",
+      "name": "ಪ್ರತಿಮಾ ಎಂ",
+      "designation": "ಕಿರಿಯ ಇಂಜಿನಿಯರ್",
+      "address": null
+    },
+    {
+      "ward_no": 13,
+      "designation_code": "junior_engineer",
+      "department_code": "technical_section",
+      "language": "hn",
+      "name": "प्रतिमा एम",
+      "designation": "कनिष्ठ अभियंता",
+      "address": null
+    },
+    {
+      "ward_no": 13,
+      "designation_code": "junior_engineer",
+      "department_code": "technical_section",
+      "language": "kn",
+      "name": "ಪ್ರತಿಮಾ ಎಂ",
+      "designation": "ಕಿರಿಯ ಇಂಜಿನಿಯರ್",
+      "address": null
+    },
+    {
+      "ward_no": 14,
+      "designation_code": "junior_engineer",
+      "department_code": "technical_section",
+      "language": "hn",
+      "name": "प्रतिमा एम",
+      "designation": "कनिष्ठ अभियंता",
+      "address": null
+    },
+    {
+      "ward_no": 14,
+      "designation_code": "junior_engineer",
+      "department_code": "technical_section",
+      "language": "kn",
+      "name": "ಪ್ರತಿಮಾ ಎಂ",
+      "designation": "ಕಿರಿಯ ಇಂಜಿನಿಯರ್",
+      "address": null
+    },
+    {
+      "ward_no": 15,
+      "designation_code": "junior_engineer",
+      "department_code": "technical_section",
+      "language": "hn",
+      "name": "प्रतिमा एम",
+      "designation": "कनिष्ठ अभियंता",
+      "address": null
+    },
+    {
+      "ward_no": 15,
+      "designation_code": "junior_engineer",
+      "department_code": "technical_section",
+      "language": "kn",
+      "name": "ಪ್ರತಿಮಾ ಎಂ",
+      "designation": "ಕಿರಿಯ ಇಂಜಿನಿಯರ್",
+      "address": null
+    },
+    {
+      "ward_no": 16,
+      "designation_code": "junior_engineer",
+      "department_code": "technical_section",
+      "language": "hn",
+      "name": "प्रतिमा एम",
+      "designation": "कनिष्ठ अभियंता",
+      "address": null
+    },
+    {
+      "ward_no": 16,
+      "designation_code": "junior_engineer",
+      "department_code": "technical_section",
+      "language": "kn",
+      "name": "ಪ್ರತಿಮಾ ಎಂ",
+      "designation": "ಕಿರಿಯ ಇಂಜಿನಿಯರ್",
+      "address": null
+    },
+    {
+      "ward_no": 17,
+      "designation_code": "junior_engineer",
+      "department_code": "technical_section",
+      "language": "hn",
+      "name": "प्रतिमा एम",
+      "designation": "कनिष्ठ अभियंता",
+      "address": null
+    },
+    {
+      "ward_no": 17,
+      "designation_code": "junior_engineer",
+      "department_code": "technical_section",
+      "language": "kn",
+      "name": "ಪ್ರತಿಮಾ ಎಂ",
+      "designation": "ಕಿರಿಯ ಇಂಜಿನಿಯರ್",
+      "address": null
+    },
+    {
+      "ward_no": 18,
+      "designation_code": "junior_engineer",
+      "department_code": "technical_section",
+      "language": "hn",
+      "name": "प्रतिमा एम",
+      "designation": "कनिष्ठ अभियंता",
+      "address": null
+    },
+    {
+      "ward_no": 18,
+      "designation_code": "junior_engineer",
+      "department_code": "technical_section",
+      "language": "kn",
+      "name": "ಪ್ರತಿಮಾ ಎಂ",
+      "designation": "ಕಿರಿಯ ಇಂಜಿನಿಯರ್",
+      "address": null
+    },
+    {
+      "ward_no": 19,
+      "designation_code": "junior_engineer",
+      "department_code": "technical_section",
+      "language": "hn",
+      "name": "प्रतिमा एम",
+      "designation": "कनिष्ठ अभियंता",
+      "address": null
+    },
+    {
+      "ward_no": 19,
+      "designation_code": "junior_engineer",
+      "department_code": "technical_section",
+      "language": "kn",
+      "name": "ಪ್ರತಿಮಾ ಎಂ",
+      "designation": "ಕಿರಿಯ ಇಂಜಿನಿಯರ್",
+      "address": null
+    },
+    {
+      "ward_no": 20,
+      "designation_code": "junior_engineer",
+      "department_code": "technical_section",
+      "language": "hn",
+      "name": "प्रतिमा एम",
+      "designation": "कनिष्ठ अभियंता",
+      "address": null
+    },
+    {
+      "ward_no": 20,
+      "designation_code": "junior_engineer",
+      "department_code": "technical_section",
+      "language": "kn",
+      "name": "ಪ್ರತಿಮಾ ಎಂ",
+      "designation": "ಕಿರಿಯ ಇಂಜಿನಿಯರ್",
+      "address": null
+    },
+    {
+      "ward_no": 21,
+      "designation_code": "junior_engineer",
+      "department_code": "technical_section",
+      "language": "hn",
+      "name": "प्रतिमा एम",
+      "designation": "कनिष्ठ अभियंता",
+      "address": null
+    },
+    {
+      "ward_no": 21,
+      "designation_code": "junior_engineer",
+      "department_code": "technical_section",
+      "language": "kn",
+      "name": "ಪ್ರತಿಮಾ ಎಂ",
+      "designation": "ಕಿರಿಯ ಇಂಜಿನಿಯರ್",
+      "address": null
+    },
+    {
+      "ward_no": 22,
+      "designation_code": "junior_engineer",
+      "department_code": "technical_section",
+      "language": "hn",
+      "name": "प्रतिमा एम",
+      "designation": "कनिष्ठ अभियंता",
+      "address": null
+    },
+    {
+      "ward_no": 22,
+      "designation_code": "junior_engineer",
+      "department_code": "technical_section",
+      "language": "kn",
+      "name": "ಪ್ರತಿಮಾ ಎಂ",
+      "designation": "ಕಿರಿಯ ಇಂಜಿನಿಯರ್",
+      "address": null
+    },
+    {
+      "ward_no": 23,
+      "designation_code": "junior_engineer",
+      "department_code": "technical_section",
+      "language": "hn",
+      "name": "प्रतिमा एम",
+      "designation": "कनिष्ठ अभियंता",
+      "address": null
+    },
+    {
+      "ward_no": 23,
+      "designation_code": "junior_engineer",
+      "department_code": "technical_section",
+      "language": "kn",
+      "name": "ಪ್ರತಿಮಾ ಎಂ",
+      "designation": "ಕಿರಿಯ ಇಂಜಿನಿಯರ್",
+      "address": null
+    },
+    {
+      "ward_no": 24,
+      "designation_code": "junior_engineer",
+      "department_code": "technical_section",
+      "language": "hn",
+      "name": "प्रतिमा एम",
+      "designation": "कनिष्ठ अभियंता",
+      "address": null
+    },
+    {
+      "ward_no": 24,
+      "designation_code": "junior_engineer",
+      "department_code": "technical_section",
+      "language": "kn",
+      "name": "ಪ್ರತಿಮಾ ಎಂ",
+      "designation": "ಕಿರಿಯ ಇಂಜಿನಿಯರ್",
+      "address": null
+    },
+    {
+      "ward_no": 25,
+      "designation_code": "junior_engineer",
+      "department_code": "technical_section",
+      "language": "hn",
+      "name": "प्रतिमा एम",
+      "designation": "कनिष्ठ अभियंता",
+      "address": null
+    },
+    {
+      "ward_no": 25,
+      "designation_code": "junior_engineer",
+      "department_code": "technical_section",
+      "language": "kn",
+      "name": "ಪ್ರತಿಮಾ ಎಂ",
+      "designation": "ಕಿರಿಯ ಇಂಜಿನಿಯರ್",
+      "address": null
+    },
+    {
+      "ward_no": 26,
+      "designation_code": "junior_engineer",
+      "department_code": "technical_section",
+      "language": "hn",
+      "name": "प्रतिमा एम",
+      "designation": "कनिष्ठ अभियंता",
+      "address": null
+    },
+    {
+      "ward_no": 26,
+      "designation_code": "junior_engineer",
+      "department_code": "technical_section",
+      "language": "kn",
+      "name": "ಪ್ರತಿಮಾ ಎಂ",
+      "designation": "ಕಿರಿಯ ಇಂಜಿನಿಯರ್",
+      "address": null
+    },
+    {
+      "ward_no": 27,
+      "designation_code": "junior_engineer",
+      "department_code": "technical_section",
+      "language": "hn",
+      "name": "प्रतिमा एम",
+      "designation": "कनिष्ठ अभियंता",
+      "address": null
+    },
+    {
+      "ward_no": 27,
+      "designation_code": "junior_engineer",
+      "department_code": "technical_section",
+      "language": "kn",
+      "name": "ಪ್ರತಿಮಾ ಎಂ",
+      "designation": "ಕಿರಿಯ ಇಂಜಿನಿಯರ್",
+      "address": null
+    },
+    {
+      "ward_no": 28,
+      "designation_code": "junior_engineer",
+      "department_code": "technical_section",
+      "language": "hn",
+      "name": "प्रतिमा एम",
+      "designation": "कनिष्ठ अभियंता",
+      "address": null
+    },
+    {
+      "ward_no": 28,
+      "designation_code": "junior_engineer",
+      "department_code": "technical_section",
+      "language": "kn",
+      "name": "ಪ್ರತಿಮಾ ಎಂ",
+      "designation": "ಕಿರಿಯ ಇಂಜಿನಿಯರ್",
+      "address": null
+    },
+    {
+      "ward_no": 29,
+      "designation_code": "junior_engineer",
+      "department_code": "technical_section",
+      "language": "hn",
+      "name": "प्रतिमा एम",
+      "designation": "कनिष्ठ अभियंता",
+      "address": null
+    },
+    {
+      "ward_no": 29,
+      "designation_code": "junior_engineer",
+      "department_code": "technical_section",
+      "language": "kn",
+      "name": "ಪ್ರತಿಮಾ ಎಂ",
+      "designation": "ಕಿರಿಯ ಇಂಜಿನಿಯರ್",
+      "address": null
+    },
+    {
+      "ward_no": 30,
+      "designation_code": "junior_engineer",
+      "department_code": "technical_section",
+      "language": "hn",
+      "name": "प्रतिमा एम",
+      "designation": "कनिष्ठ अभियंता",
+      "address": null
+    },
+    {
+      "ward_no": 30,
+      "designation_code": "junior_engineer",
+      "department_code": "technical_section",
+      "language": "kn",
+      "name": "ಪ್ರತಿಮಾ ಎಂ",
+      "designation": "ಕಿರಿಯ ಇಂಜಿನಿಯರ್",
+      "address": null
+    },
+    {
+      "ward_no": 31,
+      "designation_code": "junior_engineer",
+      "department_code": "technical_section",
+      "language": "hn",
+      "name": "प्रतिमा एम",
+      "designation": "कनिष्ठ अभियंता",
+      "address": null
+    },
+    {
+      "ward_no": 31,
+      "designation_code": "junior_engineer",
+      "department_code": "technical_section",
+      "language": "kn",
+      "name": "ಪ್ರತಿಮಾ ಎಂ",
+      "designation": "ಕಿರಿಯ ಇಂಜಿನಿಯರ್",
+      "address": null
+    },
+    {
+      "ward_no": 1,
+      "designation_code": "assistant_engineer",
+      "department_code": "technical_section",
+      "language": "hn",
+      "name": "शामन्थ कुमार एच आर",
+      "designation": "सहायक अभियंता",
+      "address": null
+    },
+    {
+      "ward_no": 1,
+      "designation_code": "assistant_engineer",
+      "department_code": "technical_section",
+      "language": "kn",
+      "name": "ಶಾಮಂತ್ ಕುಮಾರ ಎಚ್ ಆರ್",
+      "designation": "ಸಹಾಯಕ ಇಂಜಿನಿಯರ್",
+      "address": null
+    },
+    {
+      "ward_no": 2,
+      "designation_code": "assistant_engineer",
+      "department_code": "technical_section",
+      "language": "hn",
+      "name": "शामन्थ कुमार एच आर",
+      "designation": "सहायक अभियंता",
+      "address": null
+    },
+    {
+      "ward_no": 2,
+      "designation_code": "assistant_engineer",
+      "department_code": "technical_section",
+      "language": "kn",
+      "name": "ಶಾಮಂತ್ ಕುಮಾರ ಎಚ್ ಆರ್",
+      "designation": "ಸಹಾಯಕ ಇಂಜಿನಿಯರ್",
+      "address": null
+    },
+    {
+      "ward_no": 3,
+      "designation_code": "assistant_engineer",
+      "department_code": "technical_section",
+      "language": "hn",
+      "name": "शामन्थ कुमार एच आर",
+      "designation": "सहायक अभियंता",
+      "address": null
+    },
+    {
+      "ward_no": 3,
+      "designation_code": "assistant_engineer",
+      "department_code": "technical_section",
+      "language": "kn",
+      "name": "ಶಾಮಂತ್ ಕುಮಾರ ಎಚ್ ಆರ್",
+      "designation": "ಸಹಾಯಕ ಇಂಜಿನಿಯರ್",
+      "address": null
+    },
+    {
+      "ward_no": 4,
+      "designation_code": "assistant_engineer",
+      "department_code": "technical_section",
+      "language": "hn",
+      "name": "शामन्थ कुमार एच आर",
+      "designation": "सहायक अभियंता",
+      "address": null
+    },
+    {
+      "ward_no": 4,
+      "designation_code": "assistant_engineer",
+      "department_code": "technical_section",
+      "language": "kn",
+      "name": "ಶಾಮಂತ್ ಕುಮಾರ ಎಚ್ ಆರ್",
+      "designation": "ಸಹಾಯಕ ಇಂಜಿನಿಯರ್",
+      "address": null
+    },
+    {
+      "ward_no": 5,
+      "designation_code": "assistant_engineer",
+      "department_code": "technical_section",
+      "language": "hn",
+      "name": "शामन्थ कुमार एच आर",
+      "designation": "सहायक अभियंता",
+      "address": null
+    },
+    {
+      "ward_no": 5,
+      "designation_code": "assistant_engineer",
+      "department_code": "technical_section",
+      "language": "kn",
+      "name": "ಶಾಮಂತ್ ಕುಮಾರ ಎಚ್ ಆರ್",
+      "designation": "ಸಹಾಯಕ ಇಂಜಿನಿಯರ್",
+      "address": null
+    },
+    {
+      "ward_no": 6,
+      "designation_code": "assistant_engineer",
+      "department_code": "technical_section",
+      "language": "hn",
+      "name": "शामन्थ कुमार एच आर",
+      "designation": "सहायक अभियंता",
+      "address": null
+    },
+    {
+      "ward_no": 6,
+      "designation_code": "assistant_engineer",
+      "department_code": "technical_section",
+      "language": "kn",
+      "name": "ಶಾಮಂತ್ ಕುಮಾರ ಎಚ್ ಆರ್",
+      "designation": "ಸಹಾಯಕ ಇಂಜಿನಿಯರ್",
+      "address": null
+    },
+    {
+      "ward_no": 7,
+      "designation_code": "assistant_engineer",
+      "department_code": "technical_section",
+      "language": "hn",
+      "name": "शामन्थ कुमार एच आर",
+      "designation": "सहायक अभियंता",
+      "address": null
+    },
+    {
+      "ward_no": 7,
+      "designation_code": "assistant_engineer",
+      "department_code": "technical_section",
+      "language": "kn",
+      "name": "ಶಾಮಂತ್ ಕುಮಾರ ಎಚ್ ಆರ್",
+      "designation": "ಸಹಾಯಕ ಇಂಜಿನಿಯರ್",
+      "address": null
+    },
+    {
+      "ward_no": 8,
+      "designation_code": "assistant_engineer",
+      "department_code": "technical_section",
+      "language": "hn",
+      "name": "शामन्थ कुमार एच आर",
+      "designation": "सहायक अभियंता",
+      "address": null
+    },
+    {
+      "ward_no": 8,
+      "designation_code": "assistant_engineer",
+      "department_code": "technical_section",
+      "language": "kn",
+      "name": "ಶಾಮಂತ್ ಕುಮಾರ ಎಚ್ ಆರ್",
+      "designation": "ಸಹಾಯಕ ಇಂಜಿನಿಯರ್",
+      "address": null
+    },
+    {
+      "ward_no": 9,
+      "designation_code": "assistant_engineer",
+      "department_code": "technical_section",
+      "language": "hn",
+      "name": "शामन्थ कुमार एच आर",
+      "designation": "सहायक अभियंता",
+      "address": null
+    },
+    {
+      "ward_no": 9,
+      "designation_code": "assistant_engineer",
+      "department_code": "technical_section",
+      "language": "kn",
+      "name": "ಶಾಮಂತ್ ಕುಮಾರ ಎಚ್ ಆರ್",
+      "designation": "ಸಹಾಯಕ ಇಂಜಿನಿಯರ್",
+      "address": null
+    },
+    {
+      "ward_no": 10,
+      "designation_code": "assistant_engineer",
+      "department_code": "technical_section",
+      "language": "hn",
+      "name": "शामन्थ कुमार एच आर",
+      "designation": "सहायक अभियंता",
+      "address": null
+    },
+    {
+      "ward_no": 10,
+      "designation_code": "assistant_engineer",
+      "department_code": "technical_section",
+      "language": "kn",
+      "name": "ಶಾಮಂತ್ ಕುಮಾರ ಎಚ್ ಆರ್",
+      "designation": "ಸಹಾಯಕ ಇಂಜಿನಿಯರ್",
+      "address": null
+    },
+    {
+      "ward_no": 11,
+      "designation_code": "assistant_engineer",
+      "department_code": "technical_section",
+      "language": "hn",
+      "name": "शामन्थ कुमार एच आर",
+      "designation": "सहायक अभियंता",
+      "address": null
+    },
+    {
+      "ward_no": 11,
+      "designation_code": "assistant_engineer",
+      "department_code": "technical_section",
+      "language": "kn",
+      "name": "ಶಾಮಂತ್ ಕುಮಾರ ಎಚ್ ಆರ್",
+      "designation": "ಸಹಾಯಕ ಇಂಜಿನಿಯರ್",
+      "address": null
+    },
+    {
+      "ward_no": 12,
+      "designation_code": "assistant_engineer",
+      "department_code": "technical_section",
+      "language": "hn",
+      "name": "शामन्थ कुमार एच आर",
+      "designation": "सहायक अभियंता",
+      "address": null
+    },
+    {
+      "ward_no": 12,
+      "designation_code": "assistant_engineer",
+      "department_code": "technical_section",
+      "language": "kn",
+      "name": "ಶಾಮಂತ್ ಕುಮಾರ ಎಚ್ ಆರ್",
+      "designation": "ಸಹಾಯಕ ಇಂಜಿನಿಯರ್",
+      "address": null
+    },
+    {
+      "ward_no": 13,
+      "designation_code": "assistant_engineer",
+      "department_code": "technical_section",
+      "language": "hn",
+      "name": "शामन्थ कुमार एच आर",
+      "designation": "सहायक अभियंता",
+      "address": null
+    },
+    {
+      "ward_no": 13,
+      "designation_code": "assistant_engineer",
+      "department_code": "technical_section",
+      "language": "kn",
+      "name": "ಶಾಮಂತ್ ಕುಮಾರ ಎಚ್ ಆರ್",
+      "designation": "ಸಹಾಯಕ ಇಂಜಿನಿಯರ್",
+      "address": null
+    },
+    {
+      "ward_no": 14,
+      "designation_code": "assistant_engineer",
+      "department_code": "technical_section",
+      "language": "hn",
+      "name": "शामन्थ कुमार एच आर",
+      "designation": "सहायक अभियंता",
+      "address": null
+    },
+    {
+      "ward_no": 14,
+      "designation_code": "assistant_engineer",
+      "department_code": "technical_section",
+      "language": "kn",
+      "name": "ಶಾಮಂತ್ ಕುಮಾರ ಎಚ್ ಆರ್",
+      "designation": "ಸಹಾಯಕ ಇಂಜಿನಿಯರ್",
+      "address": null
+    },
+    {
+      "ward_no": 15,
+      "designation_code": "assistant_engineer",
+      "department_code": "technical_section",
+      "language": "hn",
+      "name": "शामन्थ कुमार एच आर",
+      "designation": "सहायक अभियंता",
+      "address": null
+    },
+    {
+      "ward_no": 15,
+      "designation_code": "assistant_engineer",
+      "department_code": "technical_section",
+      "language": "kn",
+      "name": "ಶಾಮಂತ್ ಕುಮಾರ ಎಚ್ ಆರ್",
+      "designation": "ಸಹಾಯಕ ಇಂಜಿನಿಯರ್",
+      "address": null
+    },
+    {
+      "ward_no": 16,
+      "designation_code": "assistant_engineer",
+      "department_code": "technical_section",
+      "language": "hn",
+      "name": "शामन्थ कुमार एच आर",
+      "designation": "सहायक अभियंता",
+      "address": null
+    },
+    {
+      "ward_no": 16,
+      "designation_code": "assistant_engineer",
+      "department_code": "technical_section",
+      "language": "kn",
+      "name": "ಶಾಮಂತ್ ಕುಮಾರ ಎಚ್ ಆರ್",
+      "designation": "ಸಹಾಯಕ ಇಂಜಿನಿಯರ್",
+      "address": null
+    },
+    {
+      "ward_no": 17,
+      "designation_code": "assistant_engineer",
+      "department_code": "technical_section",
+      "language": "hn",
+      "name": "शामन्थ कुमार एच आर",
+      "designation": "सहायक अभियंता",
+      "address": null
+    },
+    {
+      "ward_no": 17,
+      "designation_code": "assistant_engineer",
+      "department_code": "technical_section",
+      "language": "kn",
+      "name": "ಶಾಮಂತ್ ಕುಮಾರ ಎಚ್ ಆರ್",
+      "designation": "ಸಹಾಯಕ ಇಂಜಿನಿಯರ್",
+      "address": null
+    },
+    {
+      "ward_no": 18,
+      "designation_code": "assistant_engineer",
+      "department_code": "technical_section",
+      "language": "hn",
+      "name": "शामन्थ कुमार एच आर",
+      "designation": "सहायक अभियंता",
+      "address": null
+    },
+    {
+      "ward_no": 18,
+      "designation_code": "assistant_engineer",
+      "department_code": "technical_section",
+      "language": "kn",
+      "name": "ಶಾಮಂತ್ ಕುಮಾರ ಎಚ್ ಆರ್",
+      "designation": "ಸಹಾಯಕ ಇಂಜಿನಿಯರ್",
+      "address": null
+    },
+    {
+      "ward_no": 19,
+      "designation_code": "assistant_engineer",
+      "department_code": "technical_section",
+      "language": "hn",
+      "name": "शामन्थ कुमार एच आर",
+      "designation": "सहायक अभियंता",
+      "address": null
+    },
+    {
+      "ward_no": 19,
+      "designation_code": "assistant_engineer",
+      "department_code": "technical_section",
+      "language": "kn",
+      "name": "ಶಾಮಂತ್ ಕುಮಾರ ಎಚ್ ಆರ್",
+      "designation": "ಸಹಾಯಕ ಇಂಜಿನಿಯರ್",
+      "address": null
+    },
+    {
+      "ward_no": 20,
+      "designation_code": "assistant_engineer",
+      "department_code": "technical_section",
+      "language": "hn",
+      "name": "शामन्थ कुमार एच आर",
+      "designation": "सहायक अभियंता",
+      "address": null
+    },
+    {
+      "ward_no": 20,
+      "designation_code": "assistant_engineer",
+      "department_code": "technical_section",
+      "language": "kn",
+      "name": "ಶಾಮಂತ್ ಕುಮಾರ ಎಚ್ ಆರ್",
+      "designation": "ಸಹಾಯಕ ಇಂಜಿನಿಯರ್",
+      "address": null
+    },
+    {
+      "ward_no": 21,
+      "designation_code": "assistant_engineer",
+      "department_code": "technical_section",
+      "language": "hn",
+      "name": "शामन्थ कुमार एच आर",
+      "designation": "सहायक अभियंता",
+      "address": null
+    },
+    {
+      "ward_no": 21,
+      "designation_code": "assistant_engineer",
+      "department_code": "technical_section",
+      "language": "kn",
+      "name": "ಶಾಮಂತ್ ಕುಮಾರ ಎಚ್ ಆರ್",
+      "designation": "ಸಹಾಯಕ ಇಂಜಿನಿಯರ್",
+      "address": null
+    },
+    {
+      "ward_no": 22,
+      "designation_code": "assistant_engineer",
+      "department_code": "technical_section",
+      "language": "hn",
+      "name": "शामन्थ कुमार एच आर",
+      "designation": "सहायक अभियंता",
+      "address": null
+    },
+    {
+      "ward_no": 22,
+      "designation_code": "assistant_engineer",
+      "department_code": "technical_section",
+      "language": "kn",
+      "name": "ಶಾಮಂತ್ ಕುಮಾರ ಎಚ್ ಆರ್",
+      "designation": "ಸಹಾಯಕ ಇಂಜಿನಿಯರ್",
+      "address": null
+    },
+    {
+      "ward_no": 23,
+      "designation_code": "assistant_engineer",
+      "department_code": "technical_section",
+      "language": "hn",
+      "name": "शामन्थ कुमार एच आर",
+      "designation": "सहायक अभियंता",
+      "address": null
+    },
+    {
+      "ward_no": 23,
+      "designation_code": "assistant_engineer",
+      "department_code": "technical_section",
+      "language": "kn",
+      "name": "ಶಾಮಂತ್ ಕುಮಾರ ಎಚ್ ಆರ್",
+      "designation": "ಸಹಾಯಕ ಇಂಜಿನಿಯರ್",
+      "address": null
+    },
+    {
+      "ward_no": 24,
+      "designation_code": "assistant_engineer",
+      "department_code": "technical_section",
+      "language": "hn",
+      "name": "शामन्थ कुमार एच आर",
+      "designation": "सहायक अभियंता",
+      "address": null
+    },
+    {
+      "ward_no": 24,
+      "designation_code": "assistant_engineer",
+      "department_code": "technical_section",
+      "language": "kn",
+      "name": "ಶಾಮಂತ್ ಕುಮಾರ ಎಚ್ ಆರ್",
+      "designation": "ಸಹಾಯಕ ಇಂಜಿನಿಯರ್",
+      "address": null
+    },
+    {
+      "ward_no": 25,
+      "designation_code": "assistant_engineer",
+      "department_code": "technical_section",
+      "language": "hn",
+      "name": "शामन्थ कुमार एच आर",
+      "designation": "सहायक अभियंता",
+      "address": null
+    },
+    {
+      "ward_no": 25,
+      "designation_code": "assistant_engineer",
+      "department_code": "technical_section",
+      "language": "kn",
+      "name": "ಶಾಮಂತ್ ಕುಮಾರ ಎಚ್ ಆರ್",
+      "designation": "ಸಹಾಯಕ ಇಂಜಿನಿಯರ್",
+      "address": null
+    },
+    {
+      "ward_no": 26,
+      "designation_code": "assistant_engineer",
+      "department_code": "technical_section",
+      "language": "hn",
+      "name": "शामन्थ कुमार एच आर",
+      "designation": "सहायक अभियंता",
+      "address": null
+    },
+    {
+      "ward_no": 26,
+      "designation_code": "assistant_engineer",
+      "department_code": "technical_section",
+      "language": "kn",
+      "name": "ಶಾಮಂತ್ ಕುಮಾರ ಎಚ್ ಆರ್",
+      "designation": "ಸಹಾಯಕ ಇಂಜಿನಿಯರ್",
+      "address": null
+    },
+    {
+      "ward_no": 27,
+      "designation_code": "assistant_engineer",
+      "department_code": "technical_section",
+      "language": "hn",
+      "name": "शामन्थ कुमार एच आर",
+      "designation": "सहायक अभियंता",
+      "address": null
+    },
+    {
+      "ward_no": 27,
+      "designation_code": "assistant_engineer",
+      "department_code": "technical_section",
+      "language": "kn",
+      "name": "ಶಾಮಂತ್ ಕುಮಾರ ಎಚ್ ಆರ್",
+      "designation": "ಸಹಾಯಕ ಇಂಜಿನಿಯರ್",
+      "address": null
+    },
+    {
+      "ward_no": 28,
+      "designation_code": "assistant_engineer",
+      "department_code": "technical_section",
+      "language": "hn",
+      "name": "शामन्थ कुमार एच आर",
+      "designation": "सहायक अभियंता",
+      "address": null
+    },
+    {
+      "ward_no": 28,
+      "designation_code": "assistant_engineer",
+      "department_code": "technical_section",
+      "language": "kn",
+      "name": "ಶಾಮಂತ್ ಕುಮಾರ ಎಚ್ ಆರ್",
+      "designation": "ಸಹಾಯಕ ಇಂಜಿನಿಯರ್",
+      "address": null
+    },
+    {
+      "ward_no": 29,
+      "designation_code": "assistant_engineer",
+      "department_code": "technical_section",
+      "language": "hn",
+      "name": "शामन्थ कुमार एच आर",
+      "designation": "सहायक अभियंता",
+      "address": null
+    },
+    {
+      "ward_no": 29,
+      "designation_code": "assistant_engineer",
+      "department_code": "technical_section",
+      "language": "kn",
+      "name": "ಶಾಮಂತ್ ಕುಮಾರ ಎಚ್ ಆರ್",
+      "designation": "ಸಹಾಯಕ ಇಂಜಿನಿಯರ್",
+      "address": null
+    },
+    {
+      "ward_no": 30,
+      "designation_code": "assistant_engineer",
+      "department_code": "technical_section",
+      "language": "hn",
+      "name": "शामन्थ कुमार एच आर",
+      "designation": "सहायक अभियंता",
+      "address": null
+    },
+    {
+      "ward_no": 30,
+      "designation_code": "assistant_engineer",
+      "department_code": "technical_section",
+      "language": "kn",
+      "name": "ಶಾಮಂತ್ ಕುಮಾರ ಎಚ್ ಆರ್",
+      "designation": "ಸಹಾಯಕ ಇಂಜಿನಿಯರ್",
+      "address": null
+    },
+    {
+      "ward_no": 31,
+      "designation_code": "assistant_engineer",
+      "department_code": "technical_section",
+      "language": "hn",
+      "name": "शामन्थ कुमार एच आर",
+      "designation": "सहायक अभियंता",
+      "address": null
+    },
+    {
+      "ward_no": 31,
+      "designation_code": "assistant_engineer",
+      "department_code": "technical_section",
+      "language": "kn",
+      "name": "ಶಾಮಂತ್ ಕುಮಾರ ಎಚ್ ಆರ್",
+      "designation": "ಸಹಾಯಕ ಇಂಜಿನಿಯರ್",
+      "address": null
+    },
+    {
+      "ward_no": 1,
+      "designation_code": "community_resource_person",
+      "department_code": "day_nulm_section",
+      "language": "hn",
+      "name": "सुवर्णम्मा",
+      "designation": "समुदाय संसाधन व्यक्ति",
+      "address": null
+    },
+    {
+      "ward_no": 1,
+      "designation_code": "community_resource_person",
+      "department_code": "day_nulm_section",
+      "language": "kn",
+      "name": "ಸುವರ್ಣಮ್ಮ",
+      "designation": "ಸಮುದಾಯ ಸಂಪನ್ಮೂಲ ವ್ಯಕ್ತಿ",
+      "address": null
+    },
+    {
+      "ward_no": 2,
+      "designation_code": "community_resource_person",
+      "department_code": "day_nulm_section",
+      "language": "hn",
+      "name": "सुवर्णम्मा",
+      "designation": "समुदाय संसाधन व्यक्ति",
+      "address": null
+    },
+    {
+      "ward_no": 2,
+      "designation_code": "community_resource_person",
+      "department_code": "day_nulm_section",
+      "language": "kn",
+      "name": "ಸುವರ್ಣಮ್ಮ",
+      "designation": "ಸಮುದಾಯ ಸಂಪನ್ಮೂಲ ವ್ಯಕ್ತಿ",
+      "address": null
+    },
+    {
+      "ward_no": 3,
+      "designation_code": "community_resource_person",
+      "department_code": "day_nulm_section",
+      "language": "hn",
+      "name": "सुवर्णम्मा",
+      "designation": "समुदाय संसाधन व्यक्ति",
+      "address": null
+    },
+    {
+      "ward_no": 3,
+      "designation_code": "community_resource_person",
+      "department_code": "day_nulm_section",
+      "language": "kn",
+      "name": "ಸುವರ್ಣಮ್ಮ",
+      "designation": "ಸಮುದಾಯ ಸಂಪನ್ಮೂಲ ವ್ಯಕ್ತಿ",
+      "address": null
+    },
+    {
+      "ward_no": 4,
+      "designation_code": "community_resource_person",
+      "department_code": "day_nulm_section",
+      "language": "hn",
+      "name": "सुवर्णम्मा",
+      "designation": "समुदाय संसाधन व्यक्ति",
+      "address": null
+    },
+    {
+      "ward_no": 4,
+      "designation_code": "community_resource_person",
+      "department_code": "day_nulm_section",
+      "language": "kn",
+      "name": "ಸುವರ್ಣಮ್ಮ",
+      "designation": "ಸಮುದಾಯ ಸಂಪನ್ಮೂಲ ವ್ಯಕ್ತಿ",
+      "address": null
+    },
+    {
+      "ward_no": 5,
+      "designation_code": "community_resource_person",
+      "department_code": "day_nulm_section",
+      "language": "hn",
+      "name": "सुवर्णम्मा",
+      "designation": "समुदाय संसाधन व्यक्ति",
+      "address": null
+    },
+    {
+      "ward_no": 5,
+      "designation_code": "community_resource_person",
+      "department_code": "day_nulm_section",
+      "language": "kn",
+      "name": "ಸುವರ್ಣಮ್ಮ",
+      "designation": "ಸಮುದಾಯ ಸಂಪನ್ಮೂಲ ವ್ಯಕ್ತಿ",
+      "address": null
+    },
+    {
+      "ward_no": 6,
+      "designation_code": "community_resource_person",
+      "department_code": "day_nulm_section",
+      "language": "hn",
+      "name": "सुवर्णम्मा",
+      "designation": "समुदाय संसाधन व्यक्ति",
+      "address": null
+    },
+    {
+      "ward_no": 6,
+      "designation_code": "community_resource_person",
+      "department_code": "day_nulm_section",
+      "language": "kn",
+      "name": "ಸುವರ್ಣಮ್ಮ",
+      "designation": "ಸಮುದಾಯ ಸಂಪನ್ಮೂಲ ವ್ಯಕ್ತಿ",
+      "address": null
+    },
+    {
+      "ward_no": 7,
+      "designation_code": "community_resource_person",
+      "department_code": "day_nulm_section",
+      "language": "hn",
+      "name": "सुवर्णम्मा",
+      "designation": "समुदाय संसाधन व्यक्ति",
+      "address": null
+    },
+    {
+      "ward_no": 7,
+      "designation_code": "community_resource_person",
+      "department_code": "day_nulm_section",
+      "language": "kn",
+      "name": "ಸುವರ್ಣಮ್ಮ",
+      "designation": "ಸಮುದಾಯ ಸಂಪನ್ಮೂಲ ವ್ಯಕ್ತಿ",
+      "address": null
+    },
+    {
+      "ward_no": 8,
+      "designation_code": "community_resource_person",
+      "department_code": "day_nulm_section",
+      "language": "hn",
+      "name": "सुवर्णम्मा",
+      "designation": "समुदाय संसाधन व्यक्ति",
+      "address": null
+    },
+    {
+      "ward_no": 8,
+      "designation_code": "community_resource_person",
+      "department_code": "day_nulm_section",
+      "language": "kn",
+      "name": "ಸುವರ್ಣಮ್ಮ",
+      "designation": "ಸಮುದಾಯ ಸಂಪನ್ಮೂಲ ವ್ಯಕ್ತಿ",
+      "address": null
+    },
+    {
+      "ward_no": 9,
+      "designation_code": "community_resource_person",
+      "department_code": "day_nulm_section",
+      "language": "hn",
+      "name": "सुवर्णम्मा",
+      "designation": "समुदाय संसाधन व्यक्ति",
+      "address": null
+    },
+    {
+      "ward_no": 9,
+      "designation_code": "community_resource_person",
+      "department_code": "day_nulm_section",
+      "language": "kn",
+      "name": "ಸುವರ್ಣಮ್ಮ",
+      "designation": "ಸಮುದಾಯ ಸಂಪನ್ಮೂಲ ವ್ಯಕ್ತಿ",
+      "address": null
+    },
+    {
+      "ward_no": 10,
+      "designation_code": "community_resource_person",
+      "department_code": "day_nulm_section",
+      "language": "hn",
+      "name": "सुवर्णम्मा",
+      "designation": "समुदाय संसाधन व्यक्ति",
+      "address": null
+    },
+    {
+      "ward_no": 10,
+      "designation_code": "community_resource_person",
+      "department_code": "day_nulm_section",
+      "language": "kn",
+      "name": "ಸುವರ್ಣಮ್ಮ",
+      "designation": "ಸಮುದಾಯ ಸಂಪನ್ಮೂಲ ವ್ಯಕ್ತಿ",
+      "address": null
+    },
+    {
+      "ward_no": 1,
+      "designation_code": "first_division_assistant",
+      "department_code": "day_nulm_section",
+      "language": "hn",
+      "name": "शफिउल्ला",
+      "designation": "प्रथम श्रेणी सहायक",
+      "address": null
+    },
+    {
+      "ward_no": 1,
+      "designation_code": "first_division_assistant",
+      "department_code": "day_nulm_section",
+      "language": "kn",
+      "name": "ಶಫಿಯುಲ್ಲಾ",
+      "designation": "ಪ್ರಥಮ ದರ್ಜೆ ಸಹಾಯಕ",
+      "address": null
+    },
+    {
+      "ward_no": 2,
+      "designation_code": "first_division_assistant",
+      "department_code": "day_nulm_section",
+      "language": "hn",
+      "name": "शफिउल्ला",
+      "designation": "प्रथम श्रेणी सहायक",
+      "address": null
+    },
+    {
+      "ward_no": 2,
+      "designation_code": "first_division_assistant",
+      "department_code": "day_nulm_section",
+      "language": "kn",
+      "name": "ಶಫಿಯುಲ್ಲಾ",
+      "designation": "ಪ್ರಥಮ ದರ್ಜೆ ಸಹಾಯಕ",
+      "address": null
+    },
+    {
+      "ward_no": 3,
+      "designation_code": "first_division_assistant",
+      "department_code": "day_nulm_section",
+      "language": "hn",
+      "name": "शफिउल्ला",
+      "designation": "प्रथम श्रेणी सहायक",
+      "address": null
+    },
+    {
+      "ward_no": 3,
+      "designation_code": "first_division_assistant",
+      "department_code": "day_nulm_section",
+      "language": "kn",
+      "name": "ಶಫಿಯುಲ್ಲಾ",
+      "designation": "ಪ್ರಥಮ ದರ್ಜೆ ಸಹಾಯಕ",
+      "address": null
+    },
+    {
+      "ward_no": 4,
+      "designation_code": "first_division_assistant",
+      "department_code": "day_nulm_section",
+      "language": "hn",
+      "name": "शफिउल्ला",
+      "designation": "प्रथम श्रेणी सहायक",
+      "address": null
+    },
+    {
+      "ward_no": 4,
+      "designation_code": "first_division_assistant",
+      "department_code": "day_nulm_section",
+      "language": "kn",
+      "name": "ಶಫಿಯುಲ್ಲಾ",
+      "designation": "ಪ್ರಥಮ ದರ್ಜೆ ಸಹಾಯಕ",
+      "address": null
+    },
+    {
+      "ward_no": 5,
+      "designation_code": "first_division_assistant",
+      "department_code": "day_nulm_section",
+      "language": "hn",
+      "name": "शफिउल्ला",
+      "designation": "प्रथम श्रेणी सहायक",
+      "address": null
+    },
+    {
+      "ward_no": 5,
+      "designation_code": "first_division_assistant",
+      "department_code": "day_nulm_section",
+      "language": "kn",
+      "name": "ಶಫಿಯುಲ್ಲಾ",
+      "designation": "ಪ್ರಥಮ ದರ್ಜೆ ಸಹಾಯಕ",
+      "address": null
+    },
+    {
+      "ward_no": 6,
+      "designation_code": "first_division_assistant",
+      "department_code": "day_nulm_section",
+      "language": "hn",
+      "name": "शफिउल्ला",
+      "designation": "प्रथम श्रेणी सहायक",
+      "address": null
+    },
+    {
+      "ward_no": 6,
+      "designation_code": "first_division_assistant",
+      "department_code": "day_nulm_section",
+      "language": "kn",
+      "name": "ಶಫಿಯುಲ್ಲಾ",
+      "designation": "ಪ್ರಥಮ ದರ್ಜೆ ಸಹಾಯಕ",
+      "address": null
+    },
+    {
+      "ward_no": 7,
+      "designation_code": "first_division_assistant",
+      "department_code": "day_nulm_section",
+      "language": "hn",
+      "name": "शफिउल्ला",
+      "designation": "प्रथम श्रेणी सहायक",
+      "address": null
+    },
+    {
+      "ward_no": 7,
+      "designation_code": "first_division_assistant",
+      "department_code": "day_nulm_section",
+      "language": "kn",
+      "name": "ಶಫಿಯುಲ್ಲಾ",
+      "designation": "ಪ್ರಥಮ ದರ್ಜೆ ಸಹಾಯಕ",
+      "address": null
+    },
+    {
+      "ward_no": 8,
+      "designation_code": "first_division_assistant",
+      "department_code": "day_nulm_section",
+      "language": "hn",
+      "name": "शफिउल्ला",
+      "designation": "प्रथम श्रेणी सहायक",
+      "address": null
+    },
+    {
+      "ward_no": 8,
+      "designation_code": "first_division_assistant",
+      "department_code": "day_nulm_section",
+      "language": "kn",
+      "name": "ಶಫಿಯುಲ್ಲಾ",
+      "designation": "ಪ್ರಥಮ ದರ್ಜೆ ಸಹಾಯಕ",
+      "address": null
+    },
+    {
+      "ward_no": 9,
+      "designation_code": "first_division_assistant",
+      "department_code": "day_nulm_section",
+      "language": "hn",
+      "name": "शफिउल्ला",
+      "designation": "प्रथम श्रेणी सहायक",
+      "address": null
+    },
+    {
+      "ward_no": 9,
+      "designation_code": "first_division_assistant",
+      "department_code": "day_nulm_section",
+      "language": "kn",
+      "name": "ಶಫಿಯುಲ್ಲಾ",
+      "designation": "ಪ್ರಥಮ ದರ್ಜೆ ಸಹಾಯಕ",
+      "address": null
+    },
+    {
+      "ward_no": 10,
+      "designation_code": "first_division_assistant",
+      "department_code": "day_nulm_section",
+      "language": "hn",
+      "name": "शफिउल्ला",
+      "designation": "प्रथम श्रेणी सहायक",
+      "address": null
+    },
+    {
+      "ward_no": 10,
+      "designation_code": "first_division_assistant",
+      "department_code": "day_nulm_section",
+      "language": "kn",
+      "name": "ಶಫಿಯುಲ್ಲಾ",
+      "designation": "ಪ್ರಥಮ ದರ್ಜೆ ಸಹಾಯಕ",
+      "address": null
+    },
+    {
+      "ward_no": 11,
+      "designation_code": "community_resource_person",
+      "department_code": "day_nulm_section",
+      "language": "hn",
+      "name": "लोकेश्वरी",
+      "designation": "समुदाय संसाधन व्यक्ति",
+      "address": null
+    },
+    {
+      "ward_no": 11,
+      "designation_code": "community_resource_person",
+      "department_code": "day_nulm_section",
+      "language": "kn",
+      "name": "ಲೋಕೇಶ್ವರಿ",
+      "designation": "ಸಮುದಾಯ ಸಂಪನ್ಮೂಲ ವ್ಯಕ್ತಿ",
+      "address": null
+    },
+    {
+      "ward_no": 12,
+      "designation_code": "community_resource_person",
+      "department_code": "day_nulm_section",
+      "language": "hn",
+      "name": "लोकेश्वरी",
+      "designation": "समुदाय संसाधन व्यक्ति",
+      "address": null
+    },
+    {
+      "ward_no": 12,
+      "designation_code": "community_resource_person",
+      "department_code": "day_nulm_section",
+      "language": "kn",
+      "name": "ಲೋಕೇಶ್ವರಿ",
+      "designation": "ಸಮುದಾಯ ಸಂಪನ್ಮೂಲ ವ್ಯಕ್ತಿ",
+      "address": null
+    },
+    {
+      "ward_no": 13,
+      "designation_code": "community_resource_person",
+      "department_code": "day_nulm_section",
+      "language": "hn",
+      "name": "लोकेश्वरी",
+      "designation": "समुदाय संसाधन व्यक्ति",
+      "address": null
+    },
+    {
+      "ward_no": 13,
+      "designation_code": "community_resource_person",
+      "department_code": "day_nulm_section",
+      "language": "kn",
+      "name": "ಲೋಕೇಶ್ವರಿ",
+      "designation": "ಸಮುದಾಯ ಸಂಪನ್ಮೂಲ ವ್ಯಕ್ತಿ",
+      "address": null
+    },
+    {
+      "ward_no": 14,
+      "designation_code": "community_resource_person",
+      "department_code": "day_nulm_section",
+      "language": "hn",
+      "name": "लोकेश्वरी",
+      "designation": "समुदाय संसाधन व्यक्ति",
+      "address": null
+    },
+    {
+      "ward_no": 14,
+      "designation_code": "community_resource_person",
+      "department_code": "day_nulm_section",
+      "language": "kn",
+      "name": "ಲೋಕೇಶ್ವರಿ",
+      "designation": "ಸಮುದಾಯ ಸಂಪನ್ಮೂಲ ವ್ಯಕ್ತಿ",
+      "address": null
+    },
+    {
+      "ward_no": 15,
+      "designation_code": "community_resource_person",
+      "department_code": "day_nulm_section",
+      "language": "hn",
+      "name": "लोकेश्वरी",
+      "designation": "समुदाय संसाधन व्यक्ति",
+      "address": null
+    },
+    {
+      "ward_no": 15,
+      "designation_code": "community_resource_person",
+      "department_code": "day_nulm_section",
+      "language": "kn",
+      "name": "ಲೋಕೇಶ್ವರಿ",
+      "designation": "ಸಮುದಾಯ ಸಂಪನ್ಮೂಲ ವ್ಯಕ್ತಿ",
+      "address": null
+    },
+    {
+      "ward_no": 16,
+      "designation_code": "community_resource_person",
+      "department_code": "day_nulm_section",
+      "language": "hn",
+      "name": "लोकेश्वरी",
+      "designation": "समुदाय संसाधन व्यक्ति",
+      "address": null
+    },
+    {
+      "ward_no": 16,
+      "designation_code": "community_resource_person",
+      "department_code": "day_nulm_section",
+      "language": "kn",
+      "name": "ಲೋಕೇಶ್ವರಿ",
+      "designation": "ಸಮುದಾಯ ಸಂಪನ್ಮೂಲ ವ್ಯಕ್ತಿ",
+      "address": null
+    },
+    {
+      "ward_no": 17,
+      "designation_code": "community_resource_person",
+      "department_code": "day_nulm_section",
+      "language": "hn",
+      "name": "लोकेश्वरी",
+      "designation": "समुदाय संसाधन व्यक्ति",
+      "address": null
+    },
+    {
+      "ward_no": 17,
+      "designation_code": "community_resource_person",
+      "department_code": "day_nulm_section",
+      "language": "kn",
+      "name": "ಲೋಕೇಶ್ವರಿ",
+      "designation": "ಸಮುದಾಯ ಸಂಪನ್ಮೂಲ ವ್ಯಕ್ತಿ",
+      "address": null
+    },
+    {
+      "ward_no": 18,
+      "designation_code": "community_resource_person",
+      "department_code": "day_nulm_section",
+      "language": "hn",
+      "name": "लोकेश्वरी",
+      "designation": "समुदाय संसाधन व्यक्ति",
+      "address": null
+    },
+    {
+      "ward_no": 18,
+      "designation_code": "community_resource_person",
+      "department_code": "day_nulm_section",
+      "language": "kn",
+      "name": "ಲೋಕೇಶ್ವರಿ",
+      "designation": "ಸಮುದಾಯ ಸಂಪನ್ಮೂಲ ವ್ಯಕ್ತಿ",
+      "address": null
+    },
+    {
+      "ward_no": 19,
+      "designation_code": "community_resource_person",
+      "department_code": "day_nulm_section",
+      "language": "hn",
+      "name": "लोकेश्वरी",
+      "designation": "समुदाय संसाधन व्यक्ति",
+      "address": null
+    },
+    {
+      "ward_no": 19,
+      "designation_code": "community_resource_person",
+      "department_code": "day_nulm_section",
+      "language": "kn",
+      "name": "ಲೋಕೇಶ್ವರಿ",
+      "designation": "ಸಮುದಾಯ ಸಂಪನ್ಮೂಲ ವ್ಯಕ್ತಿ",
+      "address": null
+    },
+    {
+      "ward_no": 20,
+      "designation_code": "community_resource_person",
+      "department_code": "day_nulm_section",
+      "language": "hn",
+      "name": "लोकेश्वरी",
+      "designation": "समुदाय संसाधन व्यक्ति",
+      "address": null
+    },
+    {
+      "ward_no": 20,
+      "designation_code": "community_resource_person",
+      "department_code": "day_nulm_section",
+      "language": "kn",
+      "name": "ಲೋಕೇಶ್ವರಿ",
+      "designation": "ಸಮುದಾಯ ಸಂಪನ್ಮೂಲ ವ್ಯಕ್ತಿ",
+      "address": null
+    },
+    {
+      "ward_no": 21,
+      "designation_code": "community_resource_person",
+      "department_code": "day_nulm_section",
+      "language": "hn",
+      "name": "वअतसअलअ",
+      "designation": "समुदाय संसाधन व्यक्ति",
+      "address": null
+    },
+    {
+      "ward_no": 21,
+      "designation_code": "community_resource_person",
+      "department_code": "day_nulm_section",
+      "language": "kn",
+      "name": "ವಅತಸಅಲಅ",
+      "designation": "ಸಮುದಾಯ ಸಂಪನ್ಮೂಲ ವ್ಯಕ್ತಿ",
+      "address": null
+    },
+    {
+      "ward_no": 22,
+      "designation_code": "community_resource_person",
+      "department_code": "day_nulm_section",
+      "language": "hn",
+      "name": "वअतसअलअ",
+      "designation": "समुदाय संसाधन व्यक्ति",
+      "address": null
+    },
+    {
+      "ward_no": 22,
+      "designation_code": "community_resource_person",
+      "department_code": "day_nulm_section",
+      "language": "kn",
+      "name": "ವಅತಸಅಲಅ",
+      "designation": "ಸಮುದಾಯ ಸಂಪನ್ಮೂಲ ವ್ಯಕ್ತಿ",
+      "address": null
+    },
+    {
+      "ward_no": 23,
+      "designation_code": "community_resource_person",
+      "department_code": "day_nulm_section",
+      "language": "hn",
+      "name": "वअतसअलअ",
+      "designation": "समुदाय संसाधन व्यक्ति",
+      "address": null
+    },
+    {
+      "ward_no": 23,
+      "designation_code": "community_resource_person",
+      "department_code": "day_nulm_section",
+      "language": "kn",
+      "name": "ವಅತಸಅಲಅ",
+      "designation": "ಸಮುದಾಯ ಸಂಪನ್ಮೂಲ ವ್ಯಕ್ತಿ",
+      "address": null
+    },
+    {
+      "ward_no": 24,
+      "designation_code": "community_resource_person",
+      "department_code": "day_nulm_section",
+      "language": "hn",
+      "name": "वअतसअलअ",
+      "designation": "समुदाय संसाधन व्यक्ति",
+      "address": null
+    },
+    {
+      "ward_no": 24,
+      "designation_code": "community_resource_person",
+      "department_code": "day_nulm_section",
+      "language": "kn",
+      "name": "ವಅತಸಅಲಅ",
+      "designation": "ಸಮುದಾಯ ಸಂಪನ್ಮೂಲ ವ್ಯಕ್ತಿ",
+      "address": null
+    },
+    {
+      "ward_no": 25,
+      "designation_code": "community_resource_person",
+      "department_code": "day_nulm_section",
+      "language": "hn",
+      "name": "वअतसअलअ",
+      "designation": "समुदाय संसाधन व्यक्ति",
+      "address": null
+    },
+    {
+      "ward_no": 25,
+      "designation_code": "community_resource_person",
+      "department_code": "day_nulm_section",
+      "language": "kn",
+      "name": "ವಅತಸಅಲಅ",
+      "designation": "ಸಮುದಾಯ ಸಂಪನ್ಮೂಲ ವ್ಯಕ್ತಿ",
+      "address": null
+    },
+    {
+      "ward_no": 26,
+      "designation_code": "community_resource_person",
+      "department_code": "day_nulm_section",
+      "language": "hn",
+      "name": "वअतसअलअ",
+      "designation": "समुदाय संसाधन व्यक्ति",
+      "address": null
+    },
+    {
+      "ward_no": 26,
+      "designation_code": "community_resource_person",
+      "department_code": "day_nulm_section",
+      "language": "kn",
+      "name": "ವಅತಸಅಲಅ",
+      "designation": "ಸಮುದಾಯ ಸಂಪನ್ಮೂಲ ವ್ಯಕ್ತಿ",
+      "address": null
+    },
+    {
+      "ward_no": 27,
+      "designation_code": "community_resource_person",
+      "department_code": "day_nulm_section",
+      "language": "hn",
+      "name": "वअतसअलअ",
+      "designation": "समुदाय संसाधन व्यक्ति",
+      "address": null
+    },
+    {
+      "ward_no": 27,
+      "designation_code": "community_resource_person",
+      "department_code": "day_nulm_section",
+      "language": "kn",
+      "name": "ವಅತಸಅಲಅ",
+      "designation": "ಸಮುದಾಯ ಸಂಪನ್ಮೂಲ ವ್ಯಕ್ತಿ",
+      "address": null
+    },
+    {
+      "ward_no": 28,
+      "designation_code": "community_resource_person",
+      "department_code": "day_nulm_section",
+      "language": "hn",
+      "name": "वअतसअलअ",
+      "designation": "समुदाय संसाधन व्यक्ति",
+      "address": null
+    },
+    {
+      "ward_no": 28,
+      "designation_code": "community_resource_person",
+      "department_code": "day_nulm_section",
+      "language": "kn",
+      "name": "ವಅತಸಅಲಅ",
+      "designation": "ಸಮುದಾಯ ಸಂಪನ್ಮೂಲ ವ್ಯಕ್ತಿ",
+      "address": null
+    },
+    {
+      "ward_no": 29,
+      "designation_code": "community_resource_person",
+      "department_code": "day_nulm_section",
+      "language": "hn",
+      "name": "वअतसअलअ",
+      "designation": "समुदाय संसाधन व्यक्ति",
+      "address": null
+    },
+    {
+      "ward_no": 29,
+      "designation_code": "community_resource_person",
+      "department_code": "day_nulm_section",
+      "language": "kn",
+      "name": "ವಅತಸಅಲಅ",
+      "designation": "ಸಮುದಾಯ ಸಂಪನ್ಮೂಲ ವ್ಯಕ್ತಿ",
+      "address": null
+    },
+    {
+      "ward_no": 30,
+      "designation_code": "community_resource_person",
+      "department_code": "day_nulm_section",
+      "language": "hn",
+      "name": "वअतसअलअ",
+      "designation": "समुदाय संसाधन व्यक्ति",
+      "address": null
+    },
+    {
+      "ward_no": 30,
+      "designation_code": "community_resource_person",
+      "department_code": "day_nulm_section",
+      "language": "kn",
+      "name": "ವಅತಸಅಲಅ",
+      "designation": "ಸಮುದಾಯ ಸಂಪನ್ಮೂಲ ವ್ಯಕ್ತಿ",
+      "address": null
+    },
+    {
+      "ward_no": 31,
+      "designation_code": "community_resource_person",
+      "department_code": "day_nulm_section",
+      "language": "hn",
+      "name": "वअतसअलअ",
+      "designation": "समुदाय संसाधन व्यक्ति",
+      "address": null
+    },
+    {
+      "ward_no": 31,
+      "designation_code": "community_resource_person",
+      "department_code": "day_nulm_section",
+      "language": "kn",
+      "name": "ವಅತಸಅಲಅ",
+      "designation": "ಸಮುದಾಯ ಸಂಪನ್ಮೂಲ ವ್ಯಕ್ತಿ",
+      "address": null
+    },
+    {
+      "ward_no": 16,
+      "designation_code": "councillor",
+      "department_code": "councillor",
+      "language": "hn",
+      "name": "श्री सरइकअनतअ एन",
+      "designation": "पार्षद",
+      "address": "Nanjangud"
+    },
+    {
+      "ward_no": 16,
+      "designation_code": "councillor",
+      "department_code": "councillor",
+      "language": "kn",
+      "name": "ಶ್ರೀ ಸರಇಕಅನತಅ ಎನ್",
+      "designation": "ಸಭಾಸದ",
+      "address": "Nanjangud"
+    },
+    {
+      "ward_no": 18,
+      "designation_code": "councillor",
+      "department_code": "councillor",
+      "language": "hn",
+      "name": "श्रीमती रइयअनअ बअनउ",
+      "designation": "पार्षद",
+      "address": "Nanjangud"
+    },
+    {
+      "ward_no": 18,
+      "designation_code": "councillor",
+      "department_code": "councillor",
+      "language": "kn",
+      "name": "ಶ್ರೀಮತಿ ರಇಯಅನಅ ಬಅನಉ",
+      "designation": "ಸಭಾಸದ",
+      "address": "Nanjangud"
+    },
+    {
+      "ward_no": 1,
+      "designation_code": "councillor",
+      "department_code": "councillor",
+      "language": "hn",
+      "name": "श्री गइरइश कउमअर टी एम",
+      "designation": "पार्षद",
+      "address": "Nanjangud"
+    },
+    {
+      "ward_no": 1,
+      "designation_code": "councillor",
+      "department_code": "councillor",
+      "language": "kn",
+      "name": "ಶ್ರೀ ಗಇರಇಶ ಕಉಮಅರ ಟೀ ಎಂ",
+      "designation": "ಸಭಾಸದ",
+      "address": "Nanjangud"
+    },
+    {
+      "ward_no": 2,
+      "designation_code": "councillor",
+      "department_code": "councillor",
+      "language": "hn",
+      "name": "श्रीमती नअनदइनइ एच सी",
+      "designation": "पार्षद",
+      "address": "Nanjangud"
+    },
+    {
+      "ward_no": 2,
+      "designation_code": "councillor",
+      "department_code": "councillor",
+      "language": "kn",
+      "name": "ಶ್ರೀಮತಿ ನಅನದಇನಇ ಎಚ್ ಸೀ",
+      "designation": "ಸಭಾಸದ",
+      "address": "Nanjangud"
+    },
+    {
+      "ward_no": 3,
+      "designation_code": "councillor",
+      "department_code": "councillor",
+      "language": "hn",
+      "name": "श्री बी खअलइद अहअमएद",
+      "designation": "पार्षद",
+      "address": "Nanjangud"
+    },
+    {
+      "ward_no": 3,
+      "designation_code": "councillor",
+      "department_code": "councillor",
+      "language": "kn",
+      "name": "ಶ್ರೀ ಬೀ ಖಅಲಇದ ಅಹಅಮಏದ",
+      "designation": "ಸಭಾಸದ",
+      "address": "Nanjangud"
+    },
+    {
+      "ward_no": 4,
+      "designation_code": "councillor",
+      "department_code": "councillor",
+      "language": "hn",
+      "name": "श्री ई एस कअपइलएश",
+      "designation": "पार्षद",
+      "address": "Nanjangud"
+    },
+    {
+      "ward_no": 4,
+      "designation_code": "councillor",
+      "department_code": "councillor",
+      "language": "kn",
+      "name": "ಶ್ರೀ ಈ ಎಸ್ ಕಅಪಇಲಏಶ",
+      "designation": "ಸಭಾಸದ",
+      "address": "Nanjangud"
+    },
+    {
+      "ward_no": 5,
+      "designation_code": "councillor",
+      "department_code": "councillor",
+      "language": "hn",
+      "name": "श्री यओगएशअ एन",
+      "designation": "पार्षद",
+      "address": "Nanjangud"
+    },
+    {
+      "ward_no": 5,
+      "designation_code": "councillor",
+      "department_code": "councillor",
+      "language": "kn",
+      "name": "ಶ್ರೀ ಯಓಗಏಶಅ ಎನ್",
+      "designation": "ಸಭಾಸದ",
+      "address": "Nanjangud"
+    },
+    {
+      "ward_no": 6,
+      "designation_code": "councillor",
+      "department_code": "councillor",
+      "language": "hn",
+      "name": "श्रीमती गअयइथरइ मओहअन",
+      "designation": "पार्षद",
+      "address": "Nanjangud"
+    },
+    {
+      "ward_no": 6,
+      "designation_code": "councillor",
+      "department_code": "councillor",
+      "language": "kn",
+      "name": "ಶ್ರೀಮತಿ ಗಅಯಇಥರಇ ಮಓಹಅನ",
+      "designation": "ಸಭಾಸದ",
+      "address": "Nanjangud"
+    },
+    {
+      "ward_no": 7,
+      "designation_code": "councillor",
+      "department_code": "councillor",
+      "language": "hn",
+      "name": "श्री मअहअदएवअपरअसअद जी",
+      "designation": "पार्षद",
+      "address": "Nanjangud"
+    },
+    {
+      "ward_no": 7,
+      "designation_code": "councillor",
+      "department_code": "councillor",
+      "language": "kn",
+      "name": "ಶ್ರೀ ಮಅಹಅದಏವಅಪರಅಸಅದ ಜೀ",
+      "designation": "ಸಭಾಸದ",
+      "address": "Nanjangud"
+    },
+    {
+      "ward_no": 8,
+      "designation_code": "councillor",
+      "department_code": "councillor",
+      "language": "hn",
+      "name": "श्रीमती वअसअनथअ",
+      "designation": "पार्षद",
+      "address": "Nanjangud"
+    },
+    {
+      "ward_no": 8,
+      "designation_code": "councillor",
+      "department_code": "councillor",
+      "language": "kn",
+      "name": "ಶ್ರೀಮತಿ ವಅಸಅನಥಅ",
+      "designation": "ಸಭಾಸದ",
+      "address": "Nanjangud"
+    },
+    {
+      "ward_no": 9,
+      "designation_code": "councillor",
+      "department_code": "councillor",
+      "language": "hn",
+      "name": "श्रीमती रएहअनअबअनउ",
+      "designation": "पार्षद",
+      "address": "Nanjangud"
+    },
+    {
+      "ward_no": 9,
+      "designation_code": "councillor",
+      "department_code": "councillor",
+      "language": "kn",
+      "name": "ಶ್ರೀಮತಿ ರಏಹಅನಅಬಅನಉ",
+      "designation": "ಸಭಾಸದ",
+      "address": "Nanjangud"
+    },
+    {
+      "ward_no": 10,
+      "designation_code": "councillor",
+      "department_code": "councillor",
+      "language": "hn",
+      "name": "श्री दएवअ पी",
+      "designation": "पार्षद",
+      "address": "Nanjangud"
+    },
+    {
+      "ward_no": 10,
+      "designation_code": "councillor",
+      "department_code": "councillor",
+      "language": "kn",
+      "name": "ಶ್ರೀ ದಏವಅ ಪೀ",
+      "designation": "ಸಭಾಸದ",
+      "address": "Nanjangud"
+    },
+    {
+      "ward_no": 11,
+      "designation_code": "councillor",
+      "department_code": "councillor",
+      "language": "hn",
+      "name": "श्री एस गअनगअधअर",
+      "designation": "पार्षद",
+      "address": "Nanjangud"
+    },
+    {
+      "ward_no": 11,
+      "designation_code": "councillor",
+      "department_code": "councillor",
+      "language": "kn",
+      "name": "ಶ್ರೀ ಎಸ್ ಗಅನಗಅಧಅರ",
+      "designation": "ಸಭಾಸದ",
+      "address": "Nanjangud"
+    },
+    {
+      "ward_no": 12,
+      "designation_code": "councillor",
+      "department_code": "councillor",
+      "language": "hn",
+      "name": "श्रीमती गअयइथरइ",
+      "designation": "पार्षद",
+      "address": "Nanjangud"
+    },
+    {
+      "ward_no": 12,
+      "designation_code": "councillor",
+      "department_code": "councillor",
+      "language": "kn",
+      "name": "ಶ್ರೀಮತಿ ಗಅಯಇಥರಇ",
+      "designation": "ಸಭಾಸದ",
+      "address": "Nanjangud"
+    },
+    {
+      "ward_no": 13,
+      "designation_code": "councillor",
+      "department_code": "councillor",
+      "language": "hn",
+      "name": "श्रीमती सवएथअलअकशमइ एस",
+      "designation": "पार्षद",
+      "address": "Nanjangud"
+    },
+    {
+      "ward_no": 13,
+      "designation_code": "councillor",
+      "department_code": "councillor",
+      "language": "kn",
+      "name": "ಶ್ರೀಮತಿ ಸವಏಥಅಲಅಕಶಮಇ ಎಸ್",
+      "designation": "ಸಭಾಸದ",
+      "address": "Nanjangud"
+    },
+    {
+      "ward_no": 14,
+      "designation_code": "councillor",
+      "department_code": "councillor",
+      "language": "hn",
+      "name": "श्री एम परअदईप",
+      "designation": "पार्षद",
+      "address": "Nanjangud"
+    },
+    {
+      "ward_no": 14,
+      "designation_code": "councillor",
+      "department_code": "councillor",
+      "language": "kn",
+      "name": "ಶ್ರೀ ಎಂ ಪರಅದಈಪ",
+      "designation": "ಸಭಾಸದ",
+      "address": "Nanjangud"
+    },
+    {
+      "ward_no": 15,
+      "designation_code": "councillor",
+      "department_code": "councillor",
+      "language": "hn",
+      "name": "श्रीमती मअहअदएवअममअ",
+      "designation": "पार्षद",
+      "address": "Nanjangud"
+    },
+    {
+      "ward_no": 15,
+      "designation_code": "councillor",
+      "department_code": "councillor",
+      "language": "kn",
+      "name": "ಶ್ರೀಮತಿ ಮಅಹಅದಏವಅಮಮಅ",
+      "designation": "ಸಭಾಸದ",
+      "address": "Nanjangud"
+    },
+    {
+      "ward_no": 17,
+      "designation_code": "councillor",
+      "department_code": "councillor",
+      "language": "hn",
+      "name": "श्री सइददइक",
+      "designation": "पार्षद",
+      "address": "Nanjangud"
+    },
+    {
+      "ward_no": 17,
+      "designation_code": "councillor",
+      "department_code": "councillor",
+      "language": "kn",
+      "name": "ಶ್ರೀ ಸಇದದಇಕ",
+      "designation": "ಸಭಾಸದ",
+      "address": "Nanjangud"
+    },
+    {
+      "ward_no": 19,
+      "designation_code": "councillor",
+      "department_code": "councillor",
+      "language": "hn",
+      "name": "श्रीमती मअनजउलअ",
+      "designation": "पार्षद",
+      "address": "Nanjangud"
+    },
+    {
+      "ward_no": 19,
+      "designation_code": "councillor",
+      "department_code": "councillor",
+      "language": "kn",
+      "name": "ಶ್ರೀಮತಿ ಮಅನಜಉಲಅ",
+      "designation": "ಸಭಾಸದ",
+      "address": "Nanjangud"
+    },
+    {
+      "ward_no": 20,
+      "designation_code": "councillor",
+      "department_code": "councillor",
+      "language": "hn",
+      "name": "श्री मअहएश हअततइखअनए",
+      "designation": "पार्षद",
+      "address": "Nanjangud"
+    },
+    {
+      "ward_no": 20,
+      "designation_code": "councillor",
+      "department_code": "councillor",
+      "language": "kn",
+      "name": "ಶ್ರೀ ಮಅಹಏಶ ಹಅತತಇಖಅನಏ",
+      "designation": "ಸಭಾಸದ",
+      "address": "Nanjangud"
+    },
+    {
+      "ward_no": 21,
+      "designation_code": "councillor",
+      "department_code": "councillor",
+      "language": "hn",
+      "name": "श्री एस पी मअहएश",
+      "designation": "पार्षद",
+      "address": "Nanjangud"
+    },
+    {
+      "ward_no": 21,
+      "designation_code": "councillor",
+      "department_code": "councillor",
+      "language": "kn",
+      "name": "ಶ್ರೀ ಎಸ್ ಪೀ ಮಅಹಏಶ",
+      "designation": "ಸಭಾಸದ",
+      "address": "Nanjangud"
+    },
+    {
+      "ward_no": 22,
+      "designation_code": "councillor",
+      "department_code": "councillor",
+      "language": "hn",
+      "name": "श्रीमती आर मईनअकशइ",
+      "designation": "पार्षद",
+      "address": "Nanjangud"
+    },
+    {
+      "ward_no": 22,
+      "designation_code": "councillor",
+      "department_code": "councillor",
+      "language": "kn",
+      "name": "ಶ್ರೀಮತಿ ಆರ್ ಮಈನಅಕಶಇ",
+      "designation": "ಸಭಾಸದ",
+      "address": "Nanjangud"
+    },
+    {
+      "ward_no": 23,
+      "designation_code": "councillor",
+      "department_code": "councillor",
+      "language": "hn",
+      "name": "श्री एन एस यओगएश",
+      "designation": "पार्षद",
+      "address": "Nanjangud"
+    },
+    {
+      "ward_no": 23,
+      "designation_code": "councillor",
+      "department_code": "councillor",
+      "language": "kn",
+      "name": "ಶ್ರೀ ಎನ್ ಎಸ್ ಯಓಗಏಶ",
+      "designation": "ಸಭಾಸದ",
+      "address": "Nanjangud"
+    },
+    {
+      "ward_no": 24,
+      "designation_code": "councillor",
+      "department_code": "councillor",
+      "language": "hn",
+      "name": "श्री एच एस मअहअदएवअसवअमय",
+      "designation": "पार्षद",
+      "address": "Nanjangud"
+    },
+    {
+      "ward_no": 24,
+      "designation_code": "councillor",
+      "department_code": "councillor",
+      "language": "kn",
+      "name": "ಶ್ರೀ ಎಚ್ ಎಸ್ ಮಅಹಅದಏವಅಸವಅಮಯ",
+      "designation": "ಸಭಾಸದ",
+      "address": "Nanjangud"
+    },
+    {
+      "ward_no": 25,
+      "designation_code": "councillor",
+      "department_code": "councillor",
+      "language": "hn",
+      "name": "श्रीमती मअनगअलअममअ",
+      "designation": "पार्षद",
+      "address": "Nanjangud"
+    },
+    {
+      "ward_no": 25,
+      "designation_code": "councillor",
+      "department_code": "councillor",
+      "language": "kn",
+      "name": "ಶ್ರೀಮತಿ ಮಅನಗಅಲಅಮಮಅ",
+      "designation": "ಸಭಾಸದ",
+      "address": "Nanjangud"
+    },
+    {
+      "ward_no": 26,
+      "designation_code": "councillor",
+      "department_code": "councillor",
+      "language": "hn",
+      "name": "श्री के गइरइश बअबउ",
+      "designation": "पार्षद",
+      "address": "Nanjangud"
+    },
+    {
+      "ward_no": 26,
+      "designation_code": "councillor",
+      "department_code": "councillor",
+      "language": "kn",
+      "name": "ಶ್ರೀ ಕೆ ಗಇರಇಶ ಬಅಬಉ",
+      "designation": "ಸಭಾಸದ",
+      "address": "Nanjangud"
+    },
+    {
+      "ward_no": 27,
+      "designation_code": "councillor",
+      "department_code": "councillor",
+      "language": "hn",
+      "name": "श्रीमती वइजअयअलअकशमइ एस",
+      "designation": "पार्षद",
+      "address": "Nanjangud"
+    },
+    {
+      "ward_no": 27,
+      "designation_code": "councillor",
+      "department_code": "councillor",
+      "language": "kn",
+      "name": "ಶ್ರೀಮತಿ ವಇಜಅಯಅಲಅಕಶಮಇ ಎಸ್",
+      "designation": "ಸಭಾಸದ",
+      "address": "Nanjangud"
+    },
+    {
+      "ward_no": 28,
+      "designation_code": "councillor",
+      "department_code": "councillor",
+      "language": "hn",
+      "name": "श्री सइददअरअजउ एस",
+      "designation": "पार्षद",
+      "address": "Nanjangud"
+    },
+    {
+      "ward_no": 28,
+      "designation_code": "councillor",
+      "department_code": "councillor",
+      "language": "kn",
+      "name": "ಶ್ರೀ ಸಇದದಅರಅಜಉ ಎಸ್",
+      "designation": "ಸಭಾಸದ",
+      "address": "Nanjangud"
+    },
+    {
+      "ward_no": 29,
+      "designation_code": "councillor",
+      "department_code": "councillor",
+      "language": "hn",
+      "name": "श्रीमती शअशइकअलअ",
+      "designation": "पार्षद",
+      "address": "Nanjangud"
+    },
+    {
+      "ward_no": 29,
+      "designation_code": "councillor",
+      "department_code": "councillor",
+      "language": "kn",
+      "name": "ಶ್ರೀಮತಿ ಶಅಶಇಕಅಲಅ",
+      "designation": "ಸಭಾಸದ",
+      "address": "Nanjangud"
+    },
+    {
+      "ward_no": 30,
+      "designation_code": "councillor",
+      "department_code": "councillor",
+      "language": "hn",
+      "name": "श्रीमती सओवमय रअनगअसवअमय",
+      "designation": "पार्षद",
+      "address": "Nanjangud"
+    },
+    {
+      "ward_no": 30,
+      "designation_code": "councillor",
+      "department_code": "councillor",
+      "language": "kn",
+      "name": "ಶ್ರೀಮತಿ ಸಓವಮಯ ರಅನಗಅಸವಅಮಯ",
+      "designation": "ಸಭಾಸದ",
+      "address": "Nanjangud"
+    },
+    {
+      "ward_no": 31,
+      "designation_code": "councillor",
+      "department_code": "councillor",
+      "language": "hn",
+      "name": "श्रीमती नअगअमअनइ",
+      "designation": "पार्षद",
+      "address": "Nanjangud"
+    },
+    {
+      "ward_no": 31,
+      "designation_code": "councillor",
+      "department_code": "councillor",
+      "language": "kn",
+      "name": "ಶ್ರೀಮತಿ ನಅಗಅಮಅನಇ",
+      "designation": "ಸಭಾಸದ",
+      "address": "Nanjangud"
+    },
+    {
+      "ward_no": 1,
+      "designation_code": "councillor",
+      "department_code": "councillor",
+      "language": "hn",
+      "name": "श्रीमती सओवभअगयअ",
+      "designation": "पार्षद",
+      "address": "Nanjangud"
+    },
+    {
+      "ward_no": 1,
+      "designation_code": "councillor",
+      "department_code": "councillor",
+      "language": "kn",
+      "name": "ಶ್ರೀಮತಿ ಸಓವಭಅಗಯಅ",
+      "designation": "ಸಭಾಸದ",
+      "address": "Nanjangud"
+    },
+    {
+      "ward_no": 2,
+      "designation_code": "councillor",
+      "department_code": "councillor",
+      "language": "hn",
+      "name": "श्री बअसअवअरअजउ",
+      "designation": "पार्षद",
+      "address": "Nanjangud"
+    },
+    {
+      "ward_no": 2,
+      "designation_code": "councillor",
+      "department_code": "councillor",
+      "language": "kn",
+      "name": "ಶ್ರೀ ಬಅಸಅವಅರಅಜಉ",
+      "designation": "ಸಭಾಸದ",
+      "address": "Nanjangud"
+    },
+    {
+      "ward_no": 3,
+      "designation_code": "councillor",
+      "department_code": "councillor",
+      "language": "hn",
+      "name": "श्री रअवइ एस",
+      "designation": "पार्षद",
+      "address": "Nanjangud"
+    },
+    {
+      "ward_no": 3,
+      "designation_code": "councillor",
+      "department_code": "councillor",
+      "language": "kn",
+      "name": "ಶ್ರೀ ರಅವಇ ಎಸ್",
+      "designation": "ಸಭಾಸದ",
+      "address": "Nanjangud"
+    },
+    {
+      "ward_no": 4,
+      "designation_code": "councillor",
+      "department_code": "councillor",
+      "language": "hn",
+      "name": "श्री रअमएश",
+      "designation": "पार्षद",
+      "address": "Nanjangud"
+    },
+    {
+      "ward_no": 4,
+      "designation_code": "councillor",
+      "department_code": "councillor",
+      "language": "kn",
+      "name": "ಶ್ರೀ ರಅಮಏಶ",
+      "designation": "ಸಭಾಸದ",
+      "address": "Nanjangud"
+    },
+    {
+      "ward_no": 5,
+      "designation_code": "councillor",
+      "department_code": "councillor",
+      "language": "hn",
+      "name": "श्री दईपउ एस",
+      "designation": "पार्षद",
+      "address": "Nanjangud"
+    },
+    {
+      "ward_no": 5,
+      "designation_code": "councillor",
+      "department_code": "councillor",
+      "language": "kn",
+      "name": "ಶ್ರೀ ದಈಪಉ ಎಸ್",
+      "designation": "ಸಭಾಸದ",
+      "address": "Nanjangud"
+    }
+  ]
+}
