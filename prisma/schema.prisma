@@ -1,0 +1,395 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model states {
+  id           Int                  @id @default(autoincrement())
+  code         String               @unique
+  name         String
+  created_at   DateTime             @default(now())
+  cities       cities[]
+  translations state_translations[]
+
+  @@index([code])
+  @@index([name])
+}
+
+model cities {
+  id              Int                 @id @default(autoincrement())
+  state_id        Int
+  code            String?             @unique
+  name            String
+  created_at      DateTime            @default(now())
+  boundary_sets   boundary_sets[]
+  state           states              @relation(fields: [state_id], references: [id], onDelete: Cascade)
+  translations    city_translations[]
+  departments     departments[]
+  official        official[]
+  ward_boundaries ward_boundaries[]
+  wards           wards[]
+
+  @@index([state_id])
+  @@index([name])
+}
+
+model wards {
+  id                 Int                    @id @default(autoincrement())
+  city_id            Int
+  ward_no            Int
+  name               String?
+  created_at         DateTime               @default(now())
+  issues             issues[]
+  officials          official[]
+  official_localized official_localized[]
+  boundaries         ward_boundaries[]
+  caches             ward_directory_cache[]
+  translations       ward_translations[]
+  city               cities                 @relation(fields: [city_id], references: [id], onDelete: Cascade)
+
+  @@unique([city_id, ward_no])
+  @@index([city_id, ward_no])
+  @@index([city_id])
+}
+
+model ward_translations {
+  id         Int      @id @default(autoincrement())
+  ward_id    Int
+  language   String
+  name       String
+  created_at DateTime @default(now())
+  updated_at DateTime @updatedAt
+  ward       wards    @relation(fields: [ward_id], references: [id], onDelete: Cascade)
+
+  @@unique([ward_id, language])
+  @@index([language])
+  @@index([ward_id])
+}
+
+model boundary_sets {
+  id              Int               @id @default(autoincrement())
+  city_id         Int
+  code            String
+  name            String
+  description     String?
+  srid            Int?
+  source          String?
+  vintage_year    Int?
+  effective_from  DateTime?
+  effective_to    DateTime?
+  created_at      DateTime          @default(now())
+  updated_at      DateTime          @updatedAt
+  city            cities            @relation(fields: [city_id], references: [id], onDelete: Cascade)
+  ward_boundaries ward_boundaries[]
+
+  @@unique([city_id, code])
+  @@index([city_id])
+  @@index([vintage_year])
+  @@index([effective_from])
+  @@index([effective_to])
+}
+
+model ward_boundaries {
+  id              Int           @id @default(autoincrement())
+  city_id         Int
+  ward_id         Int
+  boundary_set_id Int
+  geom            String?
+  bbox            String?
+  centroid        String?
+  created_at      DateTime      @default(now())
+  updated_at      DateTime      @updatedAt
+  boundary_set    boundary_sets @relation(fields: [boundary_set_id], references: [id], onDelete: Cascade)
+  city            cities        @relation(fields: [city_id], references: [id], onDelete: Cascade)
+  ward            wards         @relation(fields: [ward_id], references: [id], onDelete: Cascade)
+
+  @@unique([ward_id, boundary_set_id])
+  @@index([city_id, boundary_set_id])
+  @@index([city_id, ward_id])
+  @@index([boundary_set_id])
+  @@index([ward_id])
+}
+
+model supported_languages {
+  code        String   @id
+  name        String
+  native_name String
+  is_active   Boolean  @default(true)
+  created_at  DateTime @default(now())
+
+  @@index([is_active])
+  @@index([created_at])
+}
+
+model departments {
+  id                 Int                       @id @default(autoincrement())
+  city_id            Int
+  code               String
+  is_active          Boolean                   @default(true)
+  created_at         DateTime                  @default(now())
+  updated_at         DateTime                  @updatedAt
+  translations       department_translations[]
+  city               cities                    @relation(fields: [city_id], references: [id], onDelete: Cascade)
+  issues             issues[]
+  officials          official[]
+  official_localized official_localized[]
+
+  @@unique([city_id, code])
+  @@index([city_id])
+  @@index([code])
+  @@index([is_active])
+  @@index([created_at])
+}
+
+model department_translations {
+  id            Int         @id @default(autoincrement())
+  department_id Int
+  language      String
+  name          String
+  description   String?
+  created_at    DateTime    @default(now())
+  updated_at    DateTime    @updatedAt
+  department    departments @relation(fields: [department_id], references: [id], onDelete: Cascade)
+
+  @@unique([department_id, language])
+  @@index([department_id])
+  @@index([language])
+  @@index([created_at])
+}
+
+model designations {
+  code               String                     @id
+  created_at         DateTime                   @default(now())
+  translations       designation_translations[]
+  officials          official[]
+  official_localized official_localized[]
+}
+
+model designation_translations {
+  id          Int          @id @default(autoincrement())
+  code        String
+  language    String
+  title       String
+  created_at  DateTime     @default(now())
+  updated_at  DateTime     @updatedAt
+  designation designations @relation(fields: [code], references: [code], onDelete: Cascade)
+
+  @@unique([code, language])
+  @@index([code])
+  @@index([language])
+}
+
+model official {
+  id               Int                     @id @default(autoincrement())
+  city_id          Int
+  ward_id          Int
+  department_id    Int
+  designation_code String
+  name             String
+  address          String?
+  phone_number     String?
+  email            String?
+  party            String?
+  pincode          String?
+  is_active        Boolean                 @default(true)
+  created_at       DateTime                @default(now())
+  updated_at       DateTime                @default(now())
+  assigned_issues  issues[]                @relation("AssignedOfficial")
+  city             cities                  @relation(fields: [city_id], references: [id], onDelete: Cascade)
+  department       departments             @relation(fields: [department_id], references: [id], onDelete: Cascade)
+  designation      designations            @relation(fields: [designation_code], references: [code])
+  ward             wards                   @relation(fields: [ward_id], references: [id], onDelete: Cascade)
+  localized_rows   official_localized[]
+  translations     official_translations[]
+
+  @@unique([ward_id, department_id, designation_code])
+  @@index([city_id, ward_id])
+  @@index([department_id])
+  @@index([designation_code, city_id])
+  @@index([ward_id, designation_code])
+  @@index([party, city_id])
+  @@index([is_active])
+  @@index([created_at])
+  @@index([updated_at])
+  @@index([pincode])
+  @@index([city_id, ward_id, department_id, is_active])
+  @@index([city_id, ward_id, department_id, designation_code, is_active])
+  @@index([ward_id, is_active, department_id, designation_code])
+}
+
+model official_translations {
+  id          Int      @id @default(autoincrement())
+  official_id Int
+  language    String
+  name        String
+  designation String
+  address     String?
+  created_at  DateTime @default(now())
+  updated_at  DateTime @updatedAt
+  official    official @relation(fields: [official_id], references: [id], onDelete: Cascade)
+
+  @@unique([official_id, language])
+  @@index([official_id])
+  @@index([language])
+  @@index([created_at])
+}
+
+model ward_directory_cache {
+  id         Int      @id @default(autoincrement())
+  ward_id    Int
+  language   String
+  payload    Json
+  version    BigInt   @default(0)
+  updated_at DateTime @updatedAt
+  created_at DateTime @default(now())
+  ward       wards    @relation(fields: [ward_id], references: [id], onDelete: Cascade)
+
+  @@unique([ward_id, language])
+  @@index([language])
+  @@index([updated_at])
+}
+
+model official_localized {
+  id                Int          @id @default(autoincrement())
+  official_id       Int
+  ward_id           Int
+  department_id     Int
+  designation_code  String
+  language          String
+  designation_title String
+  name              String
+  address           String?
+  phone_number      String?
+  email             String?
+  party             String?
+  is_active         Boolean
+  updated_at        DateTime     @updatedAt
+  created_at        DateTime     @default(now())
+  department        departments  @relation(fields: [department_id], references: [id], onDelete: Cascade)
+  designation       designations @relation(fields: [designation_code], references: [code])
+  official          official     @relation(fields: [official_id], references: [id], onDelete: Cascade)
+  ward              wards        @relation(fields: [ward_id], references: [id], onDelete: Cascade)
+
+  @@unique([official_id, language])
+  @@index([ward_id, language, department_id, designation_code, is_active])
+}
+
+model issues {
+  id                   Int                  @id @default(autoincrement())
+  ward_id              Int
+  department_id        Int?
+  ip                   String
+  location             String?
+  message              String
+  resolved             Boolean              @default(false)
+  resolved_at          DateTime?
+  created_at           DateTime             @default(now())
+  issueId              String               @unique @db.VarChar(12)
+  priority             Priority             @default(medium)
+  category             String?
+  assigned_official_id Int?
+  city                 String?
+  ward_name            String?
+  designation          String?
+  translations         issue_translations[]
+  assigned_official    official?            @relation("AssignedOfficial", fields: [assigned_official_id], references: [id])
+  department           departments?         @relation(fields: [department_id], references: [id])
+  ward                 wards                @relation(fields: [ward_id], references: [id], onDelete: Cascade)
+
+  @@index([ward_id, resolved])
+  @@index([created_at])
+  @@index([resolved, created_at])
+  @@index([department_id])
+  @@index([priority, created_at])
+  @@index([category, department_id])
+  @@index([city], map: "idx_issues_city")
+  @@index([ward_name], map: "idx_issues_ward_name")
+}
+
+model issue_translations {
+  id         Int      @id @default(autoincrement())
+  issue_id   Int
+  language   String
+  message    String
+  created_at DateTime @default(now())
+  updated_at DateTime @updatedAt
+  issue      issues   @relation(fields: [issue_id], references: [id], onDelete: Cascade)
+
+  @@unique([issue_id, language])
+  @@index([issue_id])
+  @@index([language])
+  @@index([created_at])
+}
+
+model analytics {
+  id         Int      @id @default(autoincrement())
+  ward_no    Int
+  ward_name  String
+  city       String
+  created_at DateTime @default(now())
+  device     String?
+  browser    String?
+  os         String?
+
+  @@index([city, ward_no])
+  @@index([created_at])
+  @@index([city, created_at])
+  @@index([ward_no, created_at])
+  @@index([device, created_at])
+  @@index([browser, created_at])
+}
+
+model Test {
+  id    Int    @id
+  value String
+}
+
+model ward_geom {
+  gid       Int     @id
+  ward_no   Int?
+  ward_name String? @db.VarChar(255)
+  city      String? @db.VarChar(255)
+  geom      String?
+
+  @@index([city, ward_no], map: "idx_ward_geom_city_ward")
+  @@index([gid], map: "idx_ward_geom_gid")
+}
+
+model city_translations {
+  id         Int      @id @default(autoincrement())
+  city_id    Int
+  language   String
+  name       String
+  created_at DateTime @default(now())
+  updated_at DateTime @updatedAt
+  city       cities   @relation(fields: [city_id], references: [id], onDelete: Cascade)
+
+  @@unique([city_id, language])
+  @@index([city_id])
+  @@index([language])
+}
+
+model state_translations {
+  id         Int      @id @default(autoincrement())
+  state_id   Int
+  language   String
+  name       String
+  created_at DateTime @default(now())
+  updated_at DateTime @updatedAt
+  state      states   @relation(fields: [state_id], references: [id], onDelete: Cascade)
+
+  @@unique([state_id, language])
+  @@index([language])
+  @@index([state_id])
+}
+
+enum Priority {
+  low
+  medium
+  high
+  urgent
+}
