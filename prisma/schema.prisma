@@ -126,17 +126,18 @@ model supported_languages {
 }
 
 model departments {
-  id                 Int                       @id @default(autoincrement())
-  city_id            Int
-  code               String
-  is_active          Boolean                   @default(true)
-  created_at         DateTime                  @default(now())
-  updated_at         DateTime                  @updatedAt
-  translations       department_translations[]
-  city               cities                    @relation(fields: [city_id], references: [id], onDelete: Cascade)
-  issues             issues[]
-  officials          official[]
-  official_localized official_localized[]
+  id                   Int                       @id @default(autoincrement())
+  city_id              Int
+  code                 String
+  is_active            Boolean                   @default(true)
+  created_at           DateTime                  @default(now())
+  updated_at           DateTime                  @updatedAt
+  translations         department_translations[]
+  city                 cities                    @relation(fields: [city_id], references: [id], onDelete: Cascade)
+  issues               issues[]
+  officials            official[]
+  official_localized   official_localized[]
+  complaint_categories complaint_categories[]
 
   @@unique([city_id, code])
   @@index([city_id])
@@ -392,4 +393,73 @@ enum Priority {
   medium
   high
   urgent
+}
+
+model complaint_categories {
+  id            Int                               @id @default(autoincrement())
+  department_id Int
+  code          String
+  name          String
+  color         String?
+  priority      Int                               @default(1)
+  is_active     Boolean                           @default(true)
+  created_at    DateTime                          @default(now())
+  updated_at    DateTime                          @updatedAt
+  department    departments                       @relation(fields: [department_id], references: [id], onDelete: Cascade)
+  complaints    complaints[]
+  translations  complaint_category_translations[]
+
+  @@unique([department_id, code])
+  @@index([department_id])
+  @@index([code])
+  @@index([is_active])
+  @@index([priority])
+}
+
+model complaint_category_translations {
+  id                    Int                  @id @default(autoincrement())
+  complaint_category_id Int
+  language              String
+  name                  String
+  description           String?
+  created_at            DateTime             @default(now())
+  updated_at            DateTime             @updatedAt
+  complaint_category    complaint_categories @relation(fields: [complaint_category_id], references: [id], onDelete: Cascade)
+
+  @@unique([complaint_category_id, language])
+  @@index([complaint_category_id])
+  @@index([language])
+}
+
+model complaints {
+  id                    Int                      @id @default(autoincrement())
+  complaint_category_id Int
+  code                  String
+  priority              Int                      @default(1)
+  is_active             Boolean                  @default(true)
+  created_at            DateTime                 @default(now())
+  updated_at            DateTime                 @updatedAt
+  complaint_category    complaint_categories     @relation(fields: [complaint_category_id], references: [id], onDelete: Cascade)
+  translations          complaint_translations[]
+
+  @@unique([complaint_category_id, code])
+  @@index([complaint_category_id])
+  @@index([code])
+  @@index([is_active])
+  @@index([priority])
+}
+
+model complaint_translations {
+  id           Int        @id @default(autoincrement())
+  complaint_id Int
+  language     String
+  title        String
+  description  String?
+  created_at   DateTime   @default(now())
+  updated_at   DateTime   @updatedAt
+  complaint    complaints @relation(fields: [complaint_id], references: [id], onDelete: Cascade)
+
+  @@unique([complaint_id, language])
+  @@index([complaint_id])
+  @@index([language])
 }

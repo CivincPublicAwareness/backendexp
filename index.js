@@ -7,6 +7,21 @@ const app = express();
 const prisma = new PrismaClient();
 const PORT = process.env.PORT || 3000;
 
+// Load structured complaints data for O(1) lookup
+let structuredComplaints = {};
+let departmentMapping = {};
+
+try {
+  structuredComplaints = require("./structured_complaints.json");
+  departmentMapping = require("./department_mapping.json");
+  console.log(
+    "Structured complaints and department mapping loaded successfully"
+  );
+} catch (error) {
+  console.error("Error loading structured complaints:", error);
+  console.log("Falling back to database queries for complaints");
+}
+
 // CORS configuration - MUST be first!
 app.use(
   cors({
@@ -45,7 +60,9 @@ app.get("/", (req, res) => {
 
 const wardCache = new Map();
 
-const CACHE_TTL = 5 * 60 * 1000;
+// Cache TTL: 5 minutes for general data, but ward data NEVER expires
+const CACHE_TTL = 5 * 60 * 1000; // 5 minutes
+const WARD_CACHE_TTL = Number.MAX_SAFE_INTEGER; // Effectively never expires - stays in memory indefinitely
 
 // Memory protection limits
 const MAX_CACHE_ENTRIES = 1000;
@@ -73,31 +90,56 @@ const generateCacheKey = (city, ward_no, language) => {
 };
 
 // Helper function to check if cache entry is valid
-const isCacheValid = (cacheEntry) => {
-  return cacheEntry && Date.now() - cacheEntry.timestamp < CACHE_TTL;
+const isCacheValid = (cacheEntry, isWardData = false) => {
+  if (isWardData) {
+    // Ward data NEVER expires - always valid
+    return cacheEntry && cacheEntry.data;
+  }
+  // General data uses TTL
+  const ttl = CACHE_TTL;
+  return cacheEntry && Date.now() - cacheEntry.timestamp < ttl;
 };
 
 // Helper function to get from cache
-const getFromCache = (city, ward_no, language) => {
+const getFromCache = (city, ward_no, language, isWardData = false) => {
   const key = generateCacheKey(city, ward_no, language);
   const cacheEntry = wardCache.get(key);
 
-  if (isCacheValid(cacheEntry)) {
-    console.log(`Cache HIT for key: ${key}`);
+  console.log(`\n=== CACHE GET ===`);
+  console.log(
+    `Key: ${key} | Requested as: ${isWardData ? "WARD" : "GENERAL"} data`
+  );
+  if (cacheEntry) {
+    console.log(
+      `Found entry: isWardData: ${cacheEntry.isWardData} | timestamp: ${cacheEntry.timestamp}`
+    );
+  } else {
+    console.log(`No entry found`);
+  }
+
+  if (isCacheValid(cacheEntry, isWardData)) {
+    console.log(
+      `Cache HIT for key: ${key} (${isWardData ? "WARD" : "GENERAL"} data)`
+    );
     return cacheEntry.data;
   }
 
   if (cacheEntry) {
-    console.log(`Cache EXPIRED for key: ${key}`);
+    console.log(
+      `Cache EXPIRED for key: ${key} (${isWardData ? "WARD" : "GENERAL"} data)`
+    );
     wardCache.delete(key);
   }
 
-  console.log(`Cache MISS for key: ${key}`);
+  console.log(
+    `Cache MISS for key: ${key} (${isWardData ? "WARD" : "GENERAL"} data)`
+  );
+  console.log(`=== CACHE GET END ===\n`);
   return null;
 };
 
 // Helper function to set cache
-const setCache = (city, ward_no, language, data) => {
+const setCache = (city, ward_no, language, data, isWardData = false) => {
   const key = generateCacheKey(city, ward_no, language);
 
   // Check entry size limit
@@ -133,34 +175,113 @@ const setCache = (city, ward_no, language, data) => {
   wardCache.set(key, {
     data: data,
     timestamp: Date.now(),
+    isWardData: isWardData, // Mark this as ward data
   });
-  console.log(`Cache SET for key: ${key} (${entrySizeKB.toFixed(2)} KB)`);
+
+  // Explicit debugging to verify the flag is set
+  console.log(`\n=== CACHE SET DEBUG ===`);
+  console.log(`Key: ${key}`);
+  console.log(`isWardData parameter: ${isWardData}`);
+  console.log(`Entry size: ${entrySizeKB.toFixed(2)} KB`);
+  console.log(
+    `Cache entry created with isWardData: ${wardCache.get(key).isWardData}`
+  );
+  console.log(`=== CACHE SET DEBUG END ===\n`);
+
+  console.log(
+    `Cache SET for key: ${key} (${entrySizeKB.toFixed(2)} KB, ${
+      isWardData ? "WARD" : "GENERAL"
+    } data) | isWardData: ${isWardData}`
+  );
   return true;
 };
 
 // Helper function to clear oldest cache entries
 const clearOldestEntries = (count) => {
   const entries = Array.from(wardCache.entries());
-  entries.sort((a, b) => a[1].timestamp - b[1].timestamp); // Sort by timestamp (oldest first)
 
-  const toRemove = entries.slice(0, count);
-  toRemove.forEach(([key]) => {
-    wardCache.delete(key);
-    console.log(`Cleared old cache entry: ${key}`);
+  // Sort by priority: ward data first (NEVER cleared), then by timestamp (oldest first)
+  entries.sort((a, b) => {
+    // Ward data (isWardData: true) should NEVER be cleared
+    if (a[1].isWardData && !b[1].isWardData) return -1;
+    if (!a[1].isWardData && b[1].isWardData) return 1;
+
+    // If both are same type, sort by timestamp (oldest first)
+    return a[1].timestamp - b[1].timestamp;
   });
 
-  console.log(`Cleared ${toRemove.length} oldest cache entries`);
+  // Only clear non-ward entries - ward data is NEVER cleared automatically
+  const nonWardEntries = entries.filter((entry) => !entry[1].isWardData);
+
+  // Clear the specified number of oldest non-ward entries
+  const entriesToClear = Math.min(count, nonWardEntries.length);
+  for (let i = 0; i < entriesToClear; i++) {
+    const key = nonWardEntries[i][0];
+    wardCache.delete(key);
+    console.log(`Cleared old cache entry: ${key}`);
+  }
+
+  if (entriesToClear > 0) {
+    console.log(
+      `Cleared ${entriesToClear} old cache entries (WARD data preserved - never expires)`
+    );
+  } else {
+    console.log(
+      `No non-ward entries to clear. WARD data is preserved indefinitely.`
+    );
+  }
 };
 
 // Helper function to clear expired cache entries
 const cleanupExpiredCache = () => {
   const now = Date.now();
+  let cleanedCount = 0;
+  let wardDataCount = 0;
+  let generalDataCount = 0;
+
+  console.log(`\n=== CACHE CLEANUP START ===`);
+  console.log(`Total cache entries: ${wardCache.size}`);
+
   for (const [key, entry] of wardCache.entries()) {
-    if (now - entry.timestamp > CACHE_TTL) {
-      wardCache.delete(key);
-      console.log(`Cleaned up expired cache entry: ${key}`);
+    console.log(
+      `Entry: ${key} | isWardData: ${entry.isWardData} | timestamp: ${
+        entry.timestamp
+      } | age: ${((now - entry.timestamp) / 1000 / 60).toFixed(2)} minutes`
+    );
+
+    if (entry.isWardData) {
+      wardDataCount++;
+      console.log(`  → WARD DATA: Never expires, preserving`);
+    } else {
+      generalDataCount++;
+      if (now - entry.timestamp > CACHE_TTL) {
+        wardCache.delete(key);
+        console.log(`  → GENERAL DATA: Expired, cleaning up`);
+        cleanedCount++;
+      } else {
+        console.log(`  → GENERAL DATA: Still valid, preserving`);
+      }
     }
   }
+
+  console.log(`\n=== CACHE CLEANUP SUMMARY ===`);
+  console.log(`Ward data entries: ${wardDataCount} (preserved)`);
+  console.log(
+    `General data entries: ${generalDataCount} (${cleanedCount} cleaned, ${
+      generalDataCount - cleanedCount
+    } preserved)`
+  );
+
+  if (cleanedCount > 0) {
+    console.log(
+      `Cleanup completed: ${cleanedCount} expired GENERAL entries removed. WARD data preserved.`
+    );
+  } else {
+    console.log(
+      `Cleanup completed: No expired entries found. WARD data preserved indefinitely.`
+    );
+  }
+  console.log(`=== CACHE CLEANUP END ===\n`);
 };
 
 // Clean up expired cache entries every 10 minutes
@@ -171,33 +292,36 @@ app.get("/api/cache/stats", (req, res) => {
   const now = Date.now();
   let validEntries = 0;
   let expiredEntries = 0;
+  let wardDataEntries = 0;
+  let generalDataEntries = 0;
 
   for (const [key, entry] of wardCache.entries()) {
-    if (now - entry.timestamp < CACHE_TTL) {
+    if (entry.isWardData) {
+      wardDataEntries++;
+      // Ward data never expires
       validEntries++;
     } else {
-      expiredEntries++;
+      generalDataEntries++;
+      if (now - entry.timestamp < CACHE_TTL) {
+        validEntries++;
+      } else {
+        expiredEntries++;
+      }
     }
   }
-
-  const currentSizeMB = getCacheSizeMB();
 
   res.json({
     total_entries: wardCache.size,
     valid_entries: validEntries,
     expired_entries: expiredEntries,
+    ward_data_entries: wardDataEntries,
+    general_data_entries: generalDataEntries,
+    cache_size_mb: getCacheSizeMB().toFixed(2),
+    max_cache_size_mb: MAX_CACHE_SIZE_MB,
+    max_entries: MAX_CACHE_ENTRIES,
     cache_ttl_minutes: CACHE_TTL / (60 * 1000),
-    memory_usage: {
-      current_mb: currentSizeMB.toFixed(2),
-      max_mb: MAX_CACHE_SIZE_MB,
-      usage_percent: ((currentSizeMB / MAX_CACHE_SIZE_MB) * 100).toFixed(2),
-    },
-    entry_limits: {
-      current: wardCache.size,
-      max: MAX_CACHE_ENTRIES,
-      max_entry_size_kb: MAX_ENTRY_SIZE_KB,
-    },
-    cache_keys: Array.from(wardCache.keys()),
+    ward_cache_ttl: "NEVER EXPIRES",
+    note: "Ward data NEVER expires and stays in memory indefinitely until manually cleared or server shutdown",
   });
 });
 
@@ -261,7 +385,7 @@ app.get("/api/fetchWardWithLocation", async (req, res) => {
     const wardNo = wardGeom.ward_no || 1;
 
     // Check cache first
-    const cachedData = getFromCache(cityName, wardNo, effectiveLanguage);
+    const cachedData = getFromCache(cityName, wardNo, effectiveLanguage, true);
     if (cachedData) {
       console.log(
         `Serving from cache for fetchWardWithLocation with key: ${generateCacheKey(
@@ -327,7 +451,8 @@ app.get("/api/fetchWardWithLocation", async (req, res) => {
       return res.status(404).json({ error: "Ward not found" });
     }
 
-    const departments = await prisma.departments.findMany({
+    // Get all departments for the city
+    const allDepartments = await prisma.departments.findMany({
       where: {
         city_id: cityRecord.id,
         is_active: true,
@@ -339,8 +464,16 @@ app.get("/api/fetchWardWithLocation", async (req, res) => {
       },
     });
 
-    const departmentsWithOfficials = await Promise.all(
-      departments.map(async (dept) => {
+    // Filter out IT, ADMIN, ACCOUNTS departments
+    const excludedDepartments = ["it", "admin", "accounts", "administration"];
+    const filteredDepartments = allDepartments.filter(
+      (dept) => !excludedDepartments.includes(dept.code.toLowerCase())
+    );
+
+    // Get departments with officials and complaints
+    const departmentsWithData = await Promise.all(
+      filteredDepartments.map(async (dept) => {
+        // Get officials for this department in this ward
         const officials = await prisma.official.findMany({
           where: {
             city_id: cityRecord.id,
@@ -362,6 +495,195 @@ app.get("/api/fetchWardWithLocation", async (req, res) => {
           },
         });
 
+        // Get complaints for this department with intelligent mapping
+        let complaints = [];
+
+        // Map complaints based on department similarity
+        if (dept.code === "health_section" || dept.code === "health") {
+          // Health-related complaints
+          complaints = await prisma.complaints.findMany({
+            where: {
+              complaint_category: {
+                department_id: 20, // health department
+              },
+              is_active: true,
+            },
+            include: {
+              translations: {
+                where: { language: effectiveLanguage },
+              },
+              complaint_category: {
+                include: {
+                  translations: {
+                    where: { language: effectiveLanguage },
+                  },
+                },
+              },
+            },
+            orderBy: {
+              priority: "asc",
+            },
+          });
+        } else if (
+          dept.code === "technical_section" ||
+          dept.code === "technical"
+        ) {
+          // Technical complaints (infrastructure, roads, etc.)
+          complaints = await prisma.complaints.findMany({
+            where: {
+              complaint_category: {
+                department_id: 20, // health department (for now, as it has most categories)
+                code: {
+                  in: [
+                    "road_maintenance",
+                    "street_light",
+                    "electrical",
+                    "building_construction",
+                    "underground_drainage",
+                  ],
+                },
+              },
+              is_active: true,
+            },
+            include: {
+              translations: {
+                where: { language: effectiveLanguage },
+              },
+              complaint_category: {
+                include: {
+                  translations: {
+                    where: { language: effectiveLanguage },
+                  },
+                },
+              },
+            },
+            orderBy: {
+              priority: "asc",
+            },
+          });
+        } else if (dept.code === "revenue_section" || dept.code === "revenue") {
+          // Revenue-related complaints
+          complaints = await prisma.complaints.findMany({
+            where: {
+              complaint_category: {
+                department_id: 20, // health department (for now)
+                code: {
+                  in: ["voter_id", "property_tax", "water_tax"],
+                },
+              },
+              is_active: true,
+            },
+            include: {
+              translations: {
+                where: { language: effectiveLanguage },
+              },
+              complaint_category: {
+                include: {
+                  translations: {
+                    where: { language: effectiveLanguage },
+                  },
+                },
+              },
+            },
+            orderBy: {
+              priority: "asc",
+            },
+          });
+        } else if (dept.code === "day_nulm_section" || dept.code === "nulm") {
+          // NULM-related complaints
+          complaints = await prisma.complaints.findMany({
+            where: {
+              complaint_category: {
+                department_id: 20, // health department (for now)
+                code: {
+                  in: [
+                    "social_welfare",
+                    "livelihood_support",
+                    "community_development",
+                  ],
+                },
+              },
+              is_active: true,
+            },
+            include: {
+              translations: {
+                where: { language: effectiveLanguage },
+              },
+              complaint_category: {
+                include: {
+                  translations: {
+                    where: { language: effectiveLanguage },
+                  },
+                },
+              },
+            },
+            orderBy: {
+              priority: "asc",
+            },
+          });
+        } else if (dept.code === "water_supply") {
+          // Water supply complaints
+          complaints = await prisma.complaints.findMany({
+            where: {
+              complaint_category: {
+                department_id: 20, // health department (for now)
+                code: {
+                  in: [
+                    "water_supply_main",
+                    "water_quality",
+                    "water_connection",
+                  ],
+                },
+              },
+              is_active: true,
+            },
+            include: {
+              translations: {
+                where: { language: effectiveLanguage },
+              },
+              complaint_category: {
+                include: {
+                  translations: {
+                    where: { language: effectiveLanguage },
+                  },
+                },
+              },
+            },
+            orderBy: {
+              priority: "asc",
+            },
+          });
+        } else if (dept.code === "housing") {
+          // Housing complaints
+          complaints = await prisma.complaints.findMany({
+            where: {
+              complaint_category: {
+                department_id: 20, // health department (for now)
+                code: {
+                  in: ["general_housing", "building_permit", "house_repair"],
+                },
+              },
+              is_active: true,
+            },
+            include: {
+              translations: {
+                where: { language: effectiveLanguage },
+              },
+              complaint_category: {
+                include: {
+                  translations: {
+                    where: { language: effectiveLanguage },
+                  },
+                },
+              },
+            },
+            orderBy: {
+              priority: "asc",
+            },
+          });
+        }
+
+        // Group officials by designation
         const designationsMap = {};
         officials.forEach((official) => {
           const designationCode = official.designation_code;
@@ -391,17 +713,41 @@ app.get("/api/fetchWardWithLocation", async (req, res) => {
 
         const designations = Object.values(designationsMap);
 
+        // Format complaints with categories
+        const formattedComplaints = complaints.map((complaint) => ({
+          id: complaint.id,
+          code: complaint.code,
+          priority: complaint.priority,
+          is_active: complaint.is_active,
+          title: complaint.translations[0]?.title || complaint.code,
+          description: complaint.translations[0]?.description,
+          category: {
+            id: complaint.complaint_category.id,
+            code: complaint.complaint_category.code,
+            name:
+              complaint.complaint_category.translations[0]?.name ||
+              complaint.complaint_category.name,
+            description:
+              complaint.complaint_category.translations[0]?.description,
+            color: complaint.complaint_category.color,
+            priority: complaint.complaint_category.priority,
+          },
+        }));
+
         return {
           id: dept.id,
           code: dept.code,
           name: dept.translations[0]?.name || dept.code,
           description: dept.translations[0]?.description,
           designations,
+          complaints: formattedComplaints,
+          complaints_count: formattedComplaints.length,
         };
       })
     );
 
-    const filteredDepartments = departmentsWithOfficials.filter(
+    // Only include departments that have designations (officials assigned)
+    const departmentsWithOfficials = departmentsWithData.filter(
       (dept) => dept.designations.length > 0
     );
 
@@ -413,11 +759,16 @@ app.get("/api/fetchWardWithLocation", async (req, res) => {
     };
 
     const response = {
-      departments: filteredDepartments,
+      departments: departmentsWithOfficials,
       ward_info: wardInfo,
+      total_departments: departmentsWithOfficials.length,
+      total_complaints: departmentsWithOfficials.reduce(
+        (sum, dept) => sum + dept.complaints_count,
+        0
+      ),
     };
 
-    setCache(cityName, wardNo, effectiveLanguage, response);
+    setCache(cityName, wardNo, effectiveLanguage, response, true);
     res.json(response);
   } catch (error) {
     console.error("Error fetching ward with location:", error);
@@ -1077,6 +1428,51 @@ app.post("/api/createIssue", async (req, res) => {
   }
 });
 
+// Endpoint to fetch all departments with their complaints
+app.get("/api/departments", async (req, res) => {
+  try {
+    const { language = "en" } = req.query;
+
+    // Map 'hi' to 'hn' for Hindi translations since our seed data uses 'hn'
+    const effectiveLanguage = language === "hi" ? "hn" : language;
+
+    const response = {
+      departments: {},
+      total_departments: 0,
+      total_complaints: 0,
+    };
+
+    // Use structured complaints data for O(1) lookup
+    Object.keys(structuredComplaints).forEach((deptCode) => {
+      if (structuredComplaints[deptCode][effectiveLanguage]) {
+        const deptData = structuredComplaints[deptCode][effectiveLanguage];
+        const deptName =
+          departmentMapping[deptCode]?.[effectiveLanguage] || deptCode;
+
+        response.departments[deptCode] = {
+          code: deptCode,
+          name: deptName,
+          complaint_categories: deptData.complaint_categories,
+          total_categories: deptData.complaint_categories.length,
+          total_complaints: deptData.complaint_categories.reduce(
+            (sum, cat) => sum + cat.complaints.length,
+            0
+          ),
+        };
+
+        response.total_departments++;
+        response.total_complaints +=
+          response.departments[deptCode].total_complaints;
+      }
+    });
+
+    res.json(response);
+  } catch (error) {
+    console.error("Error fetching departments:", error);
+    res.status(500).json({ error: "Internal server error" });
+  }
+});
+
 app.get("/api/fetchWard", async (req, res) => {
   try {
     const { ward_no, city, language = "en" } = req.query;
@@ -1088,7 +1484,8 @@ app.get("/api/fetchWard", async (req, res) => {
       return res.status(400).json({ error: "ward_no and city are required" });
     }
 
-    const cachedData = getFromCache(city, ward_no, effectiveLanguage);
+    // Check cache first (ward data never expires)
+    const cachedData = getFromCache(city, ward_no, effectiveLanguage, true);
     if (cachedData) {
       console.log(
         `Serving from cache for fetchWard with key: ${generateCacheKey(
@@ -1154,7 +1551,8 @@ app.get("/api/fetchWard", async (req, res) => {
       return res.status(404).json({ error: "Ward not found" });
     }
 
-    const departments = await prisma.departments.findMany({
+    // Get all departments for the city
+    const allDepartments = await prisma.departments.findMany({
       where: {
         city_id: cityRecord.id,
         is_active: true,
@@ -1166,8 +1564,16 @@ app.get("/api/fetchWard", async (req, res) => {
       },
     });
 
-    const departmentsWithOfficials = await Promise.all(
-      departments.map(async (dept) => {
+    // Filter out IT, ADMIN, ACCOUNTS departments
+    const excludedDepartments = ["it", "admin", "accounts", "administration"];
+    const filteredDepartments = allDepartments.filter(
+      (dept) => !excludedDepartments.includes(dept.code.toLowerCase())
+    );
+
+    // Get departments with officials and complaints
+    const departmentsWithData = await Promise.all(
+      filteredDepartments.map(async (dept) => {
+        // Get officials for this department in this ward
         const officials = await prisma.official.findMany({
           where: {
             city_id: cityRecord.id,
@@ -1189,6 +1595,43 @@ app.get("/api/fetchWard", async (req, res) => {
           },
         });
 
+        // Get complaints for this department using O(1) lookup from JSON
+        let complaints = [];
+        let complaintCategories = [];
+
+        // Use structured complaints data for O(1) lookup
+        if (
+          structuredComplaints[dept.code] &&
+          structuredComplaints[dept.code][effectiveLanguage]
+        ) {
+          complaintCategories =
+            structuredComplaints[dept.code][effectiveLanguage]
+              .complaint_categories;
+
+          // Flatten all complaints from all categories
+          complaintCategories.forEach((category) => {
+            category.complaints.forEach((complaint) => {
+              complaints.push({
+                id: complaint.code, // Use code as ID since we don't have DB ID
+                code: complaint.code,
+                priority: 1, // Default priority
+                is_active: true,
+                title: complaint.title,
+                description: complaint.description,
+                category: {
+                  id: category.code,
+                  code: category.code,
+                  name: category.name,
+                  description: null,
+                  color: null,
+                  priority: 1,
+                },
+              });
+            });
+          });
+        }
+
+        // Group officials by designation
         const designationsMap = {};
         officials.forEach((official) => {
           const designationCode = official.designation_code;
@@ -1218,17 +1661,23 @@ app.get("/api/fetchWard", async (req, res) => {
 
         const designations = Object.values(designationsMap);
 
+        // Complaints are already formatted from the JSON lookup
+        const formattedComplaints = complaints;
+
         return {
           id: dept.id,
           code: dept.code,
           name: dept.translations[0]?.name || dept.code,
           description: dept.translations[0]?.description,
           designations,
+          complaints: formattedComplaints,
+          complaints_count: formattedComplaints.length,
         };
       })
     );
 
-    const filteredDepartments = departmentsWithOfficials.filter(
+    // Only include departments that have designations (officials assigned)
+    const departmentsWithOfficials = departmentsWithData.filter(
       (dept) => dept.designations.length > 0
     );
 
@@ -1242,11 +1691,16 @@ app.get("/api/fetchWard", async (req, res) => {
     };
 
     const response = {
-      departments: filteredDepartments,
+      departments: departmentsWithOfficials,
       ward_info: wardInfo,
+      total_departments: departmentsWithOfficials.length,
+      total_complaints: departmentsWithOfficials.reduce(
+        (sum, dept) => sum + dept.complaints_count,
+        0
+      ),
     };
 
-    setCache(city, ward_no, effectiveLanguage, response);
+    setCache(city, ward_no, effectiveLanguage, response, true);
     res.json(response);
   } catch (error) {
     console.error("Error fetching ward data:", error);
