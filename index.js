@@ -720,7 +720,6 @@ app.get("/api/fetchWardWithLocation", async (req, res) => {
           priority: complaint.priority,
           is_active: complaint.is_active,
           title: complaint.translations[0]?.title || complaint.code,
-          description: complaint.translations[0]?.description,
           category: {
             id: complaint.complaint_category.id,
             code: complaint.complaint_category.code,
@@ -1617,7 +1616,6 @@ app.get("/api/fetchWard", async (req, res) => {
                 priority: 1, // Default priority
                 is_active: true,
                 title: complaint.title,
-                description: complaint.description,
                 category: {
                   id: category.code,
                   code: category.code,
