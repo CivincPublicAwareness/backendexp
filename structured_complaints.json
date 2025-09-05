@@ -155,7 +155,7 @@
             },
             {
               "code": "garbage_vehncle_not_arrived",
-              "title": "Garbage vehicle not arrived",
+              "title": "Garbage vehncle not arrived",
               "description": "Garbage collection vehncle has not arrived for collection"
             },
             {
@@ -202,11 +202,6 @@
               "code": "illegal_biomedical_waste",
               "title": "Illegal dumping of Biomedical and Hazardous waste",
               "description": "Biomedical and hazardous waste being dumped illegally"
-            },
-            {
-              "code": "garbage_vehncle_not_arriveds",
-              "title": "Garbage vehncle not arriveds",
-              "description": "Garbage collection vehncle has not arrived (note: original has typo)"
             }
           ]
         },
@@ -369,11 +364,6 @@
               "code": "illegal_biomedical_waste",
               "title": "जैव चिकित्सा और खतरनाक कचरे का अवैध डंपिंग",
               "description": "जैव चिकित्सा और खतरनाक कचरा अवैध रूप से डंप किया जा रहा"
-            },
-            {
-              "code": "garbage_vehncle_not_arriveds",
-              "title": "कचरा वाहन नहीं आया",
-              "description": "कचरा संग्रह वाहन नहीं आया है"
             }
           ]
         },
@@ -536,11 +526,6 @@
               "code": "illegal_biomedical_waste",
               "title": "ಜೈವಿಕ ವೈದ್ಯಕೀಯ ಮತ್ತು ಅಪಾಯಕಾರಿ ತ್ಯಾಜ್ಯದ ಅಕ್ರಮ ಡಂಪಿಂಗ್",
               "description": "ಜೈವಿಕ ವೈದ್ಯಕೀಯ ಮತ್ತು ಅಪಾಯಕಾರಿ ತ್ಯಾಜ್ಯವನ್ನು ಅಕ್ರಮವಾಗಿ ಡಂಪ್ ಮಾಡಲಾಗುತ್ತಿದೆ"
-            },
-            {
-              "code": "garbage_vehncle_not_arriveds",
-              "title": "ಕಸದ ವಾಹನ ಬಂದಿಲ್ಲ (ಮೂಲದಲ್ಲಿ ಟೈಪೋ)",
-              "description": "ಕಸ ಸಂಗ್ರಹ ವಾಹನ ಬಂದಿಲ್ಲ"
             }
           ]
         },
