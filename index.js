@@ -10,15 +10,17 @@ const PORT = process.env.PORT || 3000;
 // Load structured complaints data for O(1) lookup
 let structuredComplaints = {};
 let departmentMapping = {};
+let supportedLanguages = {};
 
 try {
   structuredComplaints = require("./structured_complaints.json");
   departmentMapping = require("./department_mapping.json");
+  supportedLanguages = require("./supported_languages.json");
   console.log(
-    "Structured complaints and department mapping loaded successfully"
+    "Structured complaints, department mapping, and supported languages loaded successfully"
   );
 } catch (error) {
-  console.error("Error loading structured complaints:", error);
+  console.error("Error loading configuration files:", error);
   console.log("Falling back to database queries for complaints");
 }
 
@@ -53,6 +55,29 @@ app.use((req, res, next) => {
 
 // Parse JSON bodies
 app.use(express.json());
+
+// Language validation function
+const validateLanguage = (language) => {
+  // Check if language is provided and is a string
+  if (!language || typeof language !== "string") {
+    return { valid: false, error: "Language parameter is required" };
+  }
+
+  // Check if language length is exactly 2 characters
+  if (language.length !== 2) {
+    return {
+      valid: false,
+      error: "Language code must be exactly 2 characters",
+    };
+  }
+
+  // Check if language exists in supported languages (O(1) lookup)
+  if (!supportedLanguages[language]) {
+    return { valid: false, error: "we don't have this language yet" };
+  }
+
+  return { valid: true };
+};
 
 app.get("/", (req, res) => {
   res.json({ message: "Express backend running" });
@@ -352,6 +377,12 @@ app.get("/api/fetchWardWithLocation", async (req, res) => {
   try {
     const { lat, lon, language = "en" } = req.query;
 
+    // Validate language parameter
+    const languageValidation = validateLanguage(language);
+    if (!languageValidation.valid) {
+      return res.status(404).json({ error: languageValidation.error });
+    }
+
     // Map 'hi' to 'hn' for Hindi translations since our seed data uses 'hn'
     const effectiveLanguage = language === "hi" ? "hn" : language;
 
@@ -381,8 +412,8 @@ app.get("/api/fetchWardWithLocation", async (req, res) => {
       return res.status(404).json({ error: "No ward geometry found" });
     }
 
-    const cityName = wardGeom.city || "Delhi";
-    const wardNo = wardGeom.ward_no || 1;
+    const cityName = wardGeom.city;
+    const wardNo = wardGeom.ward_no;
 
     // Check cache first
     const cachedData = getFromCache(cityName, wardNo, effectiveLanguage, true);
@@ -1085,6 +1116,12 @@ app.post("/api/createIssue", async (req, res) => {
       language = "en",
     } = req.body;
 
+    // Validate language parameter
+    const languageValidation = validateLanguage(language);
+    if (!languageValidation.valid) {
+      return res.status(404).json({ error: languageValidation.error });
+    }
+
     console.log("Received issue data:", req.body);
     console.log(`Creating issue in language: ${language}`);
     console.log(
@@ -1432,6 +1469,12 @@ app.get("/api/departments", async (req, res) => {
   try {
     const { language = "en" } = req.query;
 
+    // Validate language parameter
+    const languageValidation = validateLanguage(language);
+    if (!languageValidation.valid) {
+      return res.status(404).json({ error: languageValidation.error });
+    }
+
     // Map 'hi' to 'hn' for Hindi translations since our seed data uses 'hn'
     const effectiveLanguage = language === "hi" ? "hn" : language;
 
@@ -1475,6 +1518,12 @@ app.get("/api/departments", async (req, res) => {
 app.get("/api/fetchWard", async (req, res) => {
   try {
     const { ward_no, city, language = "en" } = req.query;
+
+    // Validate language parameter
+    const languageValidation = validateLanguage(language);
+    if (!languageValidation.valid) {
+      return res.status(404).json({ error: languageValidation.error });
+    }
 
     // Map 'hi' to 'hn' for Hindi translations since our seed data uses 'hn'
     const effectiveLanguage = language === "hi" ? "hn" : language;

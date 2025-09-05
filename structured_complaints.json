@@ -1,26 +1,4 @@
 {
-  "accounts": {
-    "en": {
-      "complaint_categories": []
-    },
-    "hn": {
-      "complaint_categories": []
-    },
-    "kn": {
-      "complaint_categories": []
-    }
-  },
-  "administration": {
-    "en": {
-      "complaint_categories": []
-    },
-    "hn": {
-      "complaint_categories": []
-    },
-    "kn": {
-      "complaint_categories": []
-    }
-  },
   "day_nulm_section": {
     "en": {
       "complaint_categories": [
@@ -177,7 +155,7 @@
             },
             {
               "code": "garbage_vehncle_not_arrived",
-              "title": "Garbage vehncle not arrived",
+              "title": "Garbage vehicle not arrived",
               "description": "Garbage collection vehncle has not arrived for collection"
             },
             {
@@ -308,7 +286,7 @@
         },
         {
           "code": "general_health",
-          "name": "General",
+          "name": "General health",
           "description": "General health related issues",
           "complaints": [
             {
@@ -394,7 +372,7 @@
             },
             {
               "code": "garbage_vehncle_not_arriveds",
-              "title": "कचरा वाहन नहीं आया (मूल में टाइपो)",
+              "title": "कचरा वाहन नहीं आया",
               "description": "कचरा संग्रह वाहन नहीं आया है"
             }
           ]
@@ -475,7 +453,7 @@
         },
         {
           "code": "general_health",
-          "name": "सामान्य",
+          "name": "सस्वास्थ्य समस्याएँ",
           "description": "सामान्य स्वास्थ्य से संबंधित मुद्दे",
           "complaints": [
             {
@@ -642,7 +620,7 @@
         },
         {
           "code": "general_health",
-          "name": "ಸಾಮಾನ್ಯ",
+          "name": "ಆರೋಗ್ಯ ಸಮಸ್ಯೆ",
           "description": "ಸಾಮಾನ್ಯ ಆರೋಗ್ಯ ಸಂಬಂಧಿತ ಸಮಸ್ಯೆಗಳು",
           "complaints": [
             {
@@ -660,13 +638,13 @@
       ]
     }
   },
-  "housing": {
+  "housing_section": {
     "en": {
       "complaint_categories": [
         {
           "code": "general_housing",
-          "name": "General",
-          "description": "General housing related issues",
+          "name": "housing related issues ",
+          "description": "housing related issues",
           "complaints": [
             {
               "code": "scheme_related_information_housing",
@@ -686,7 +664,7 @@
       "complaint_categories": [
         {
           "code": "general_housing",
-          "name": "सामान्य",
+          "name": "आवास संबंधी मुद्दे",
           "description": "सामान्य आवास से संबंधित मुद्दे",
           "complaints": [
             {
@@ -707,7 +685,7 @@
       "complaint_categories": [
         {
           "code": "general_housing",
-          "name": "ಸಾಮಾನ್ಯ",
+          "name": "ವಸತಿ ಸಮಸ್ಯೆಗಳು",
           "description": "ಸಾಮಾನ್ಯ ವಸತಿ ಸಂಬಂಧಿತ ಸಮಸ್ಯೆಗಳು",
           "complaints": [
             {
@@ -725,45 +703,12 @@
       ]
     }
   },
-  "it": {
-    "en": {
-      "complaint_categories": []
-    },
-    "hn": {
-      "complaint_categories": []
-    },
-    "kn": {
-      "complaint_categories": []
-    }
-  },
-  "nulm": {
-    "en": {
-      "complaint_categories": []
-    },
-    "hn": {
-      "complaint_categories": []
-    },
-    "kn": {
-      "complaint_categories": []
-    }
-  },
-  "revenue": {
-    "en": {
-      "complaint_categories": []
-    },
-    "hn": {
-      "complaint_categories": []
-    },
-    "kn": {
-      "complaint_categories": []
-    }
-  },
   "revenue_section": {
     "en": {
       "complaint_categories": [
         {
           "code": "associated_complaints",
-          "name": "Associated Complaints",
+          "name": "Revenue Related Complaints",
           "description": "Revenue and property related complaints",
           "complaints": [
             {
@@ -831,7 +776,7 @@
       "complaint_categories": [
         {
           "code": "associated_complaints",
-          "name": "संबंधित शिकायतें",
+          "name": "राजस्व संबंधित शिकायतें",
           "description": "राजस्व और संपत्ति से संबंधित शिकायतें",
           "complaints": [
             {
@@ -899,7 +844,7 @@
       "complaint_categories": [
         {
           "code": "associated_complaints",
-          "name": "ಸಂಬಂಧಿತ ದೂರುಗಳು",
+          "name": "ರೆವಿನ್ಯೂ ಸಂಬಂಧಿತ ದೂರುಗಳು",
           "description": "ರೆವಿನ್ಯೂ ಮತ್ತು ಆಸ್ತಿ ಸಂಬಂಧಿತ ದೂರುಗಳು",
           "complaints": [
             {
@@ -964,17 +909,7 @@
       ]
     }
   },
-  "technical": {
-    "en": {
-      "complaint_categories": []
-    },
-    "hn": {
-      "complaint_categories": []
-    },
-    "kn": {
-      "complaint_categories": []
-    }
-  },
+
   "technical_section": {
     "en": {
       "complaint_categories": [
@@ -1246,7 +1181,7 @@
         },
         {
           "code": "general_technical",
-          "name": "General",
+          "name": "General technical",
           "description": "General technical infrastructure issues",
           "complaints": [
             {
@@ -1543,7 +1478,7 @@
         },
         {
           "code": "general_technical",
-          "name": "सामान्य",
+          "name": "तकनीकी_समस्याएं",
           "description": "सामान्य तकनीकी बुनियादी ढांचे के मुद्दे",
           "complaints": [
             {
@@ -1840,7 +1775,7 @@
         },
         {
           "code": "general_technical",
-          "name": "ಸಾಮಾನ್ಯ",
+          "name": "ಸಾಮಾನ್ಯ_ತಾಂತ್ರಿಕ",
           "description": "ಸಾಮಾನ್ಯ ತಾಂತ್ರಿಕ ಮೂಲಸೌಕರ್ಯ ಸಮಸ್ಯೆಗಳು",
           "complaints": [
             {
@@ -1868,7 +1803,7 @@
       ]
     }
   },
-  "water_supply": {
+  "water_supply_section": {
     "en": {
       "complaint_categories": [
         {
