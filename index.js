@@ -5,7 +5,7 @@ const wkx = require("wkx");
 
 const app = express();
 const prisma = new PrismaClient();
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3001;
 
 // Load structured complaints data for O(1) lookup
 let structuredComplaints = {};

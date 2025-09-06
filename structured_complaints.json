@@ -1797,6 +1797,72 @@
           "description": "Water supply and distribution issues",
           "complaints": [
             {
+              "code": "borewell_repair",
+              "title": "Borewell Repair",
+              "description": "Borewell needs repair and maintenance"
+            },
+            {
+              "code": "non_supply_potable_water",
+              "title": "Non Supply of potable drinking water",
+              "description": "Potable drinking water is not being supplied to the area"
+            }
+          ]
+        }
+      ]
+    },
+    "hn": {
+      "complaint_categories": [
+        {
+          "code": "water_supply_main",
+          "name": "जल आपूर्ति",
+          "description": "जल आपूर्ति और वितरण के मुद्दे",
+          "complaints": [
+            {
+              "code": "borewell_repair",
+              "title": "बोरवेल की मरम्मत",
+              "description": "बोरवेल की मरम्मत और रखरखाव की आवश्यकता"
+            },
+            {
+              "code": "non_supply_potable_water",
+              "title": "पीने योग्य पानी की आपूर्ति नहीं",
+              "description": "क्षेत्र में पीने योग्य पानी की आपूर्ति नहीं हो रही"
+            }
+          ]
+        }
+      ]
+    },
+    "kn": {
+      "complaint_categories": [
+        {
+          "code": "water_supply_main",
+          "name": "ನೀರಿನ ಪೂರೈಕೆ",
+          "description": "ನೀರಿನ ಪೂರೈಕೆ ಮತ್ತು ವಿತರಣೆ ಸಮಸ್ಯೆಗಳು",
+          "complaints": [
+
+            {
+              "code": "borewell_repair",
+              "title": "ಬೋರ್‌ವೆಲ್ ದುರಸ್ತಿ",
+              "description": "ಬೋರ್‌ವೆಲ್ ದುರಸ್ತಿ ಮತ್ತು ನಿರ್ವಹಣೆ ಅಗತ್ಯವಿದೆ"
+            },
+            {
+              "code": "non_supply_potable_water",
+              "title": "ಕುಡಿಯಬಹುದಾದ ನೀರಿನ ಪೂರೈಕೆ ಇಲ್ಲ",
+              "description": "ಪ್ರದೇಶಕ್ಕೆ ಕುಡಿಯಬಹುದಾದ ನೀರಿನ ಪೂರೈಕೆ ಮಾಡಲಾಗುತ್ತಿಲ್ಲ"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "water_supply_leak": {
+    "en": {
+      "complaint_categories": [
+        {
+          "code": "water_supply_leak",
+          "name": "Water Leakage",
+          "description": "Water supply and distribution issues",
+          "complaints": [
+            {
               "code": "valve_leakage",
               "title": "Valve Leakage",
               "description": "Water supply valve is leaking and needs repair"
@@ -1810,16 +1876,6 @@
               "code": "water_tank_cleaning",
               "title": "Water tank cleaning",
               "description": "Water storage tanks need cleaning and maintenance"
-            },
-            {
-              "code": "borewell_repair",
-              "title": "Borewell Repair",
-              "description": "Borewell needs repair and maintenance"
-            },
-            {
-              "code": "non_supply_potable_water",
-              "title": "Non Supply of potable drinking water",
-              "description": "Potable drinking water is not being supplied to the area"
             }
           ]
         }
@@ -1846,16 +1902,6 @@
               "code": "water_tank_cleaning",
               "title": "जल टैंक की सफाई",
               "description": "जल भंडारण टैंकों की सफाई और रखरखाव की आवश्यकता"
-            },
-            {
-              "code": "borewell_repair",
-              "title": "बोरवेल की मरम्मत",
-              "description": "बोरवेल की मरम्मत और रखरखाव की आवश्यकता"
-            },
-            {
-              "code": "non_supply_potable_water",
-              "title": "पीने योग्य पानी की आपूर्ति नहीं",
-              "description": "क्षेत्र में पीने योग्य पानी की आपूर्ति नहीं हो रही"
             }
           ]
         }
@@ -1882,16 +1928,6 @@
               "code": "water_tank_cleaning",
               "title": "ನೀರಿನ ಟ್ಯಾಂಕ್ ಸ್ವಚ್ಛತೆ",
               "description": "ನೀರಿನ ಸಂಗ್ರಹ ಟ್ಯಾಂಕ್‌ಗಳ ಸ್ವಚ್ಛತೆ ಮತ್ತು ನಿರ್ವಹಣೆ ಅಗತ್ಯವಿದೆ"
-            },
-            {
-              "code": "borewell_repair",
-              "title": "ಬೋರ್‌ವೆಲ್ ದುರಸ್ತಿ",
-              "description": "ಬೋರ್‌ವೆಲ್ ದುರಸ್ತಿ ಮತ್ತು ನಿರ್ವಹಣೆ ಅಗತ್ಯವಿದೆ"
-            },
-            {
-              "code": "non_supply_potable_water",
-              "title": "ಕುಡಿಯಬಹುದಾದ ನೀರಿನ ಪೂರೈಕೆ ಇಲ್ಲ",
-              "description": "ಪ್ರದೇಶಕ್ಕೆ ಕುಡಿಯಬಹುದಾದ ನೀರಿನ ಪೂರೈಕೆ ಮಾಡಲಾಗುತ್ತಿಲ್ಲ"
             }
           ]
         }
