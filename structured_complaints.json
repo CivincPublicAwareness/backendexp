@@ -1788,12 +1788,12 @@
       ]
     }
   },
-  "water_supply_section": {
+  "water_supply_valve": {
     "en": {
       "complaint_categories": [
         {
-          "code": "water_supply_main",
-          "name": "Water Supply",
+          "code": "water_supply_valve",
+          "name": "Water valve",
           "description": "Water supply and distribution issues",
           "complaints": [
             {
