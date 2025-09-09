@@ -296,6 +296,11 @@ model issues {
   city                 String?
   ward_name            String?
   designation          String?
+  // New fields for simplified issue reporting
+  name_wrong           Boolean              @default(false)
+  number_wrong         Boolean              @default(false)
+  address_wrong        Boolean              @default(false)
+  comments             String?              @db.VarChar(50)
   translations         issue_translations[]
   assigned_official    official?            @relation("AssignedOfficial", fields: [assigned_official_id], references: [id])
   department           departments?         @relation(fields: [department_id], references: [id])
