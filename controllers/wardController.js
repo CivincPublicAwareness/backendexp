@@ -12,10 +12,14 @@ try {
   console.error("Error loading configuration files:", error);
 }
 
-// Common function to fetch ward data by city and ward number
 const fetchWardData = async (cityName, wardNo, effectiveLanguage) => {
   // Check cache first
-  const cachedData = getFromCache(cityName, wardNo, effectiveLanguage, true);
+  const cachedData = await getFromCache(
+    cityName,
+    wardNo,
+    effectiveLanguage,
+    true
+  );
   if (cachedData) {
     return cachedData;
   }
@@ -206,7 +210,7 @@ const fetchWardData = async (cityName, wardNo, effectiveLanguage) => {
     ),
   };
 
-  setCache(cityName, wardNo, effectiveLanguage, response, true);
+  await setCache(cityName, wardNo, effectiveLanguage, response, true);
   return response;
 };
 

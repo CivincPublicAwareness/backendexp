@@ -43,7 +43,9 @@ app.get("/", (req, res) => {
 });
 
 // Cache cleanup
-setInterval(cleanupExpiredCache, 10 * 60 * 1000);
+setInterval(async () => {
+  await cleanupExpiredCache();
+}, 10 * 60 * 1000);
 
 app.get("/api/ward-boundaries", async (req, res) => {
   try {
