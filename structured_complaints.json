@@ -135,6 +135,7 @@
       "complaint_categories": []
     }
   },
+  
   "health_section": {
     "en": {
       "complaint_categories": [
@@ -279,20 +280,46 @@
             }
           ]
         },
+
         {
-          "code": "general_health",
+         "code": "general_health",
           "name": "General health",
           "description": "General health related issues",
           "complaints": [
             {
-              "code": "scheme_related_information",
-              "title": "For scheme related information",
-              "description": "Information about health schemes and programs"
+              "code": "new_trade_licence",
+              "title": "New Trade Licence",
+              "description": "Application for new trade license"
             },
             {
-              "code": "subsidy_amount_distribution",
-              "title": "Issues related to distribution of subsidy amount",
-              "description": "Problems with health subsidy distribution and disbursement"
+              "code": "trade_licence_renewal",
+              "title": "Trade Licence Renewal",
+              "description": "Renewal of existing trade license"
+            },
+            {
+              "code": "removal_dead_fallen_trees",
+              "title": "Removal of dead/fallen trees",
+              "description": "Request for removal of dead or fallen trees"
+            },
+            {
+              "code": "obstruction_trees_branches",
+              "title": "Obstruction by trees or branches",
+              "description": "Trees or branches causing obstruction to traffic or pedestrians"
+            },
+            {
+              "code": "unauthorised_flex_banners",
+              "title": "Unauthorised flex and banners",
+              "description": "Unauthorized display of flex boards and banners in public areas"
+            },
+            {
+              "code": "unsafe_hoardings",
+              "title": "Unsafe hoardings",
+              "description": "Hoardings that pose safety risks to public"
+            },
+            {
+              "code": "grass_cutting",
+              "title": "Grass cutting",
+              "description": "Request for grass cutting and maintenance of public spaces"
             }
           ]
         }
@@ -441,20 +468,46 @@
             }
           ]
         },
+
         {
           "code": "general_health",
           "name": "सस्वास्थ्य समस्याएँ",
           "description": "सामान्य स्वास्थ्य से संबंधित मुद्दे",
           "complaints": [
             {
-              "code": "scheme_related_information",
-              "title": "योजना से संबंधित जानकारी के लिए",
-              "description": "स्वास्थ्य योजनाओं और कार्यक्रमों के बारे में जानकारी"
+              "code": "new_trade_licence",
+              "title": "नया व्यापार लाइसेंस",
+              "description": "नए व्यापार लाइसेंस के लिए आवेदन"
             },
             {
-              "code": "subsidy_amount_distribution",
-              "title": "सब्सिडी राशि के वितरण से संबंधित मुद्दे",
-              "description": "स्वास्थ्य सब्सिडी वितरण और भुगतान में समस्याएं"
+              "code": "trade_licence_renewal",
+              "title": "व्यापार लाइसेंस नवीनीकरण",
+              "description": "मौजूदा व्यापार लाइसेंस का नवीनीकरण"
+            },
+            {
+              "code": "removal_dead_fallen_trees",
+              "title": "मृत/गिरे हुए पेड़ों को हटाना",
+              "description": "मृत या गिरे हुए पेड़ों को हटाने का अनुरोध"
+            },
+            {
+              "code": "obstruction_trees_branches",
+              "title": "पेड़ों या शाखाओं द्वारा बाधा",
+              "description": "यातायात या पैदल चलने वालों के लिए पेड़ या शाखाएं बाधा डाल रही हैं"
+            },
+            {
+              "code": "unauthorised_flex_banners",
+              "title": "अनधिकृत फ्लेक्स और बैनर",
+              "description": "सार्वजनिक क्षेत्रों में फ्लेक्स बोर्ड और बैनर का अनधिकृत प्रदर्शन"
+            },
+            {
+              "code": "unsafe_hoardings",
+              "title": "असुरक्षित होर्डिंग",
+              "description": "जनता के लिए सुरक्षा जोखिम पैदा करने वाले होर्डिंग"
+            },
+            {
+              "code": "grass_cutting",
+              "title": "घास काटना",
+              "description": "घास काटने और सार्वजनिक स्थानों के रखरखाव का अनुरोध"
             }
           ]
         }
@@ -603,26 +656,54 @@
             }
           ]
         },
+
         {
-          "code": "general_health",
+         "code": "general_health",
           "name": "ಆರೋಗ್ಯ ಸಮಸ್ಯೆ",
           "description": "ಸಾಮಾನ್ಯ ಆರೋಗ್ಯ ಸಂಬಂಧಿತ ಸಮಸ್ಯೆಗಳು",
           "complaints": [
             {
-              "code": "scheme_related_information",
-              "title": "ಯೋಜನೆ ಸಂಬಂಧಿತ ಮಾಹಿತಿಗಾಗಿ",
-              "description": "ಆರೋಗ್ಯ ಯೋಜನೆಗಳು ಮತ್ತು ಕಾರ್ಯಕ್ರಮಗಳ ಬಗ್ಗೆ ಮಾಹಿತಿ"
+              "code": "new_trade_licence",
+              "title": "ಹೊಸ ವ್ಯಾಪಾರ ಪರವಾನಗಿ",
+              "description": "ಹೊಸ ವ್ಯಾಪಾರ ಪರವಾನಗಿಗೆ ಅರ್ಜಿ"
             },
             {
-              "code": "subsidy_amount_distribution",
-              "title": "ಸಬ್ಸಿಡಿ ಮೊತ್ತದ ವಿತರಣೆ ಸಂಬಂಧಿತ ಸಮಸ್ಯೆಗಳು",
-              "description": "ಆರೋಗ್ಯ ಸಬ್ಸಿಡಿ ವಿತರಣೆ ಮತ್ತು ಪಾವತಿಯಲ್ಲಿ ಸಮಸ್ಯೆಗಳು"
+              "code": "trade_licence_renewal",
+              "title": "ವ್ಯಾಪಾರ ಪರವಾನಗಿ ನವೀಕರಣ",
+              "description": "ಅಸ್ತಿತ್ವದಲ್ಲಿರುವ ವ್ಯಾಪಾರ ಪರವಾನಗಿಯ ನವೀಕರಣ"
+            },
+            {
+              "code": "removal_dead_fallen_trees",
+              "title": "ಸತ್ತ/ಬಿದ್ದ ಮರಗಳ ತೆಗೆದುಹಾಕುವಿಕೆ",
+              "description": "ಸತ್ತ ಅಥವಾ ಬಿದ್ದ ಮರಗಳನ್ನು ತೆಗೆದುಹಾಕುವ ಅನುರೋಧ"
+            },
+            {
+              "code": "obstruction_trees_branches",
+              "title": "ಮರಗಳು ಅಥವಾ ಕೊಂಬೆಗಳಿಂದ ಅಡಚಣೆ",
+              "description": "ಸಂಚಾರ ಅಥವಾ ಪಾದಚಾರಿಗಳಿಗೆ ಮರಗಳು ಅಥವಾ ಕೊಂಬೆಗಳು ಅಡಚಣೆ ಉಂಟುಮಾಡುತ್ತಿವೆ"
+            },
+            {
+              "code": "unauthorised_flex_banners",
+              "title": "ಅನಧಿಕೃತ ಫ್ಲೆಕ್ಸ್ ಮತ್ತು ಬ್ಯಾನರ್‌ಗಳು",
+              "description": "ಸಾರ್ವಜನಿಕ ಪ್ರದೇಶಗಳಲ್ಲಿ ಫ್ಲೆಕ್ಸ್ ಬೋರ್ಡ್‌ಗಳು ಮತ್ತು ಬ್ಯಾನರ್‌ಗಳ ಅನಧಿಕೃತ ಪ್ರದರ್ಶನ"
+            },
+            {
+              "code": "unsafe_hoardings",
+              "title": "ಅಸುರಕ್ಷಿತ ಹೋರ್ಡಿಂಗ್‌ಗಳು",
+              "description": "ಸಾರ್ವಜನಿಕರಿಗೆ ಸುರಕ್ಷತೆಯ ಅಪಾಯವನ್ನು ಉಂಟುಮಾಡುವ ಹೋರ್ಡಿಂಗ್‌ಗಳು"
+            },
+            {
+              "code": "grass_cutting",
+              "title": "ಹುಲ್ಲು ಕತ್ತರಿಸುವುದು",
+              "description": "ಹುಲ್ಲು ಕತ್ತರಿಸುವುದು ಮತ್ತು ಸಾರ್ವಜನಿಕ ಸ್ಥಳಗಳ ನಿರ್ವಹಣೆಯ ಅನುರೋಧ"
             }
           ]
         }
       ]
     }
-  },
+  }
+
+ ,
   "housing_section": {
     "en": {
       "complaint_categories": [
@@ -1792,8 +1873,74 @@
     "en": {
       "complaint_categories": [
         {
-          "code": "water_supply_valve",
-          "name": "Water valve",
+          "code": "water_supply",
+          "name": "Water Supply",
+          "description": "Water supply and distribution issues",
+          "complaints": [
+            {
+              "code": "borewell_repair",
+              "title": "Borewell Repair",
+              "description": "Borewell needs repair and maintenance"
+            },
+            {
+              "code": "non_supply_potable_water",
+              "title": "Non Supply of potable drinking water",
+              "description": "Potable drinking water is not being supplied to the area"
+            }
+          ]
+        }
+      ]
+    },
+    "hn": {
+      "complaint_categories": [
+        {
+          "code": "water_supply_main",
+          "name": "जल आपूर्ति",
+          "description": "जल आपूर्ति और वितरण के मुद्दे",
+          "complaints": [
+            {
+              "code": "borewell_repair",
+              "title": "बोरवेल की मरम्मत",
+              "description": "बोरवेल की मरम्मत और रखरखाव की आवश्यकता"
+            },
+            {
+              "code": "non_supply_potable_water",
+              "title": "पीने योग्य पानी की आपूर्ति नहीं",
+              "description": "क्षेत्र में पीने योग्य पानी की आपूर्ति नहीं हो रही"
+            }
+          ]
+        }
+      ]
+    },
+    "kn": {
+      "complaint_categories": [
+        {
+          "code": "water_supply_main",
+          "name": "ನೀರಿನ ಪೂರೈಕೆ",
+          "description": "ನೀರಿನ ಪೂರೈಕೆ ಮತ್ತು ವಿತರಣೆ ಸಮಸ್ಯೆಗಳು",
+          "complaints": [
+
+            {
+              "code": "borewell_repair",
+              "title": "ಬೋರ್‌ವೆಲ್ ದುರಸ್ತಿ",
+              "description": "ಬೋರ್‌ವೆಲ್ ದುರಸ್ತಿ ಮತ್ತು ನಿರ್ವಹಣೆ ಅಗತ್ಯವಿದೆ"
+            },
+            {
+              "code": "non_supply_potable_water",
+              "title": "ಕುಡಿಯಬಹುದಾದ ನೀರಿನ ಪೂರೈಕೆ ಇಲ್ಲ",
+              "description": "ಪ್ರದೇಶಕ್ಕೆ ಕುಡಿಯಬಹುದಾದ ನೀರಿನ ಪೂರೈಕೆ ಮಾಡಲಾಗುತ್ತಿಲ್ಲ"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "water_supply_leak": {
+    "en": {
+      "complaint_categories": [
+        {
+          "code": "water_supply",
+          "name": "Water Supply",
           "description": "Water supply and distribution issues",
           "complaints": [
             {
@@ -1810,16 +1957,6 @@
               "code": "water_tank_cleaning",
               "title": "Water tank cleaning",
               "description": "Water storage tanks need cleaning and maintenance"
-            },
-            {
-              "code": "borewell_repair",
-              "title": "Borewell Repair",
-              "description": "Borewell needs repair and maintenance"
-            },
-            {
-              "code": "non_supply_potable_water",
-              "title": "Non Supply of potable drinking water",
-              "description": "Potable drinking water is not being supplied to the area"
             }
           ]
         }
@@ -1846,16 +1983,6 @@
               "code": "water_tank_cleaning",
               "title": "जल टैंक की सफाई",
               "description": "जल भंडारण टैंकों की सफाई और रखरखाव की आवश्यकता"
-            },
-            {
-              "code": "borewell_repair",
-              "title": "बोरवेल की मरम्मत",
-              "description": "बोरवेल की मरम्मत और रखरखाव की आवश्यकता"
-            },
-            {
-              "code": "non_supply_potable_water",
-              "title": "पीने योग्य पानी की आपूर्ति नहीं",
-              "description": "क्षेत्र में पीने योग्य पानी की आपूर्ति नहीं हो रही"
             }
           ]
         }
@@ -1882,16 +2009,6 @@
               "code": "water_tank_cleaning",
               "title": "ನೀರಿನ ಟ್ಯಾಂಕ್ ಸ್ವಚ್ಛತೆ",
               "description": "ನೀರಿನ ಸಂಗ್ರಹ ಟ್ಯಾಂಕ್‌ಗಳ ಸ್ವಚ್ಛತೆ ಮತ್ತು ನಿರ್ವಹಣೆ ಅಗತ್ಯವಿದೆ"
-            },
-            {
-              "code": "borewell_repair",
-              "title": "ಬೋರ್‌ವೆಲ್ ದುರಸ್ತಿ",
-              "description": "ಬೋರ್‌ವೆಲ್ ದುರಸ್ತಿ ಮತ್ತು ನಿರ್ವಹಣೆ ಅಗತ್ಯವಿದೆ"
-            },
-            {
-              "code": "non_supply_potable_water",
-              "title": "ಕುಡಿಯಬಹುದಾದ ನೀರಿನ ಪೂರೈಕೆ ಇಲ್ಲ",
-              "description": "ಪ್ರದೇಶಕ್ಕೆ ಕುಡಿಯಬಹುದಾದ ನೀರಿನ ಪೂರೈಕೆ ಮಾಡಲಾಗುತ್ತಿಲ್ಲ"
             }
           ]
         }
