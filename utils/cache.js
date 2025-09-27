@@ -74,8 +74,8 @@ const setCache = async (city, ward_no, language, data, isWardData = false) => {
       // Never expires - use set instead of setEx
       await redisClient.set(key, JSON.stringify(data));
     } else {
-      // Has TTL - use setEx
-      await redisClient.setEx(key, ttl, JSON.stringify(data));
+      // Has TTL - use setEx (convert TTL to string)
+      await redisClient.setEx(key, ttl.toString(), JSON.stringify(data));
     }
 
     return true;
@@ -87,8 +87,19 @@ const setCache = async (city, ward_no, language, data, isWardData = false) => {
 
 const clearOldestEntries = async (count) => {
   try {
-    // Get all keys with our prefix
-    const keys = await redisClient.keys(`${REDIS_KEY_PREFIX}*`);
+    // Use SCAN instead of KEYS to avoid blocking Redis
+    const keys = [];
+    let cursor = 0;
+
+    do {
+      const result = await redisClient.scan(cursor, {
+        MATCH: `${REDIS_KEY_PREFIX}*`,
+        COUNT: "100",
+      });
+
+      cursor = result.cursor;
+      keys.push(...result.keys);
+    } while (cursor !== 0);
 
     if (keys.length === 0) {
       console.log("No cache entries to clear");
@@ -116,8 +127,19 @@ const cleanupExpiredCache = async () => {
   try {
     console.log(`\n=== CACHE CLEANUP START ===`);
 
-    // Get all keys with our prefix
-    const keys = await redisClient.keys(`${REDIS_KEY_PREFIX}*`);
+    // Use SCAN instead of KEYS to avoid blocking Redis
+    const keys = [];
+    let cursor = 0;
+
+    do {
+      const result = await redisClient.scan(cursor, {
+        MATCH: `${REDIS_KEY_PREFIX}*`,
+        COUNT: "100", // Process 100 keys at a time - must be string
+      });
+
+      cursor = result.cursor;
+      keys.push(...result.keys);
+    } while (cursor !== 0);
 
     if (keys.length === 0) {
       console.log("No cache entries found");
@@ -128,18 +150,27 @@ const cleanupExpiredCache = async () => {
     let wardDataCount = 0;
     let generalDataCount = 0;
 
-    for (const key of keys) {
-      const ttl = await redisClient.ttl(key);
+    // Process keys in batches to avoid overwhelming Redis
+    const batchSize = 50;
+    for (let i = 0; i < keys.length; i += batchSize) {
+      const batch = keys.slice(i, i + batchSize);
 
-      const isWardData = ttl === -1; // Never expires
+      // Get TTL for batch of keys
+      const ttlPromises = batch.map((key) => redisClient.ttl(key));
+      const ttls = await Promise.all(ttlPromises);
 
-      if (isWardData) {
-        wardDataCount++;
-        console.log(`Entry: ${key} | WARD DATA: TTL=${ttl}s (preserved)`);
-      } else {
-        generalDataCount++;
-        console.log(`Entry: ${key} | GENERAL DATA: TTL=${ttl}s`);
-      }
+      batch.forEach((key, index) => {
+        const ttl = ttls[index];
+        const isWardData = ttl === -1; // Never expires
+
+        if (isWardData) {
+          wardDataCount++;
+          console.log(`Entry: ${key} | WARD DATA: TTL=${ttl}s (preserved)`);
+        } else {
+          generalDataCount++;
+          console.log(`Entry: ${key} | GENERAL DATA: TTL=${ttl}s`);
+        }
+      });
     }
 
     console.log(`\n=== CACHE CLEANUP SUMMARY ===`);
@@ -159,28 +190,50 @@ const cleanupExpiredCache = async () => {
 // Get cache statistics
 const getCacheStats = async () => {
   try {
-    const keys = await redisClient.keys(`${REDIS_KEY_PREFIX}*`);
+    // Use SCAN instead of KEYS to avoid blocking Redis
+    const keys = [];
+    let cursor = 0;
+
+    do {
+      const result = await redisClient.scan(cursor, {
+        MATCH: `${REDIS_KEY_PREFIX}*`,
+        COUNT: "100",
+      });
+
+      cursor = result.cursor;
+      keys.push(...result.keys);
+    } while (cursor !== 0);
+
     let wardDataEntries = 0;
     let generalDataEntries = 0;
     const cacheEntries = [];
 
-    for (const key of keys) {
-      const ttl = await redisClient.ttl(key);
+    // Process keys in batches
+    const batchSize = 50;
+    for (let i = 0; i < keys.length; i += batchSize) {
+      const batch = keys.slice(i, i + batchSize);
 
-      const isWardData = ttl === -1;
+      // Get TTL for batch of keys
+      const ttlPromises = batch.map((key) => redisClient.ttl(key));
+      const ttls = await Promise.all(ttlPromises);
 
-      cacheEntries.push({
-        key,
-        isWardData,
-        ttl_seconds: ttl,
-        ttl_human: ttl === -1 ? "Never expires" : `${ttl}s`,
+      batch.forEach((key, index) => {
+        const ttl = ttls[index];
+        const isWardData = ttl === -1;
+
+        cacheEntries.push({
+          key,
+          isWardData,
+          ttl_seconds: ttl,
+          ttl_human: ttl === -1 ? "Never expires" : `${ttl}s`,
+        });
+
+        if (isWardData) {
+          wardDataEntries++;
+        } else {
+          generalDataEntries++;
+        }
       });
-
-      if (isWardData) {
-        wardDataEntries++;
-      } else {
-        generalDataEntries++;
-      }
     }
 
     const cacheSizeMB = await getCacheSizeMB();
@@ -212,11 +265,29 @@ const getCacheStats = async () => {
 // Clear all cache
 const clearAllCache = async () => {
   try {
-    const keys = await redisClient.keys(`${REDIS_KEY_PREFIX}*`);
+    // Use SCAN instead of KEYS to avoid blocking Redis
+    const keys = [];
+    let cursor = 0;
+
+    do {
+      const result = await redisClient.scan(cursor, {
+        MATCH: `${REDIS_KEY_PREFIX}*`,
+        COUNT: "100",
+      });
+
+      cursor = result.cursor;
+      keys.push(...result.keys);
+    } while (cursor !== 0);
+
     const beforeSize = keys.length;
 
     if (keys.length > 0) {
-      await redisClient.del(keys);
+      // Delete keys in batches to avoid overwhelming Redis
+      const batchSize = 100;
+      for (let i = 0; i < keys.length; i += batchSize) {
+        const batch = keys.slice(i, i + batchSize);
+        await redisClient.del(batch);
+      }
     }
 
     return {
@@ -236,7 +307,20 @@ const clearAllCache = async () => {
 const clearExpiredCache = async () => {
   try {
     await cleanupExpiredCache();
-    const keys = await redisClient.keys(`${REDIS_KEY_PREFIX}*`);
+
+    // Use SCAN to count remaining entries
+    const keys = [];
+    let cursor = 0;
+
+    do {
+      const result = await redisClient.scan(cursor, {
+        MATCH: `${REDIS_KEY_PREFIX}*`,
+        COUNT: "100",
+      });
+
+      cursor = result.cursor;
+      keys.push(...result.keys);
+    } while (cursor !== 0);
 
     return {
       message: "Cache cleanup completed",

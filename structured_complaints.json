@@ -124,17 +124,6 @@
       ]
     }
   },
-  "health": {
-    "en": {
-      "complaint_categories": []
-    },
-    "hn": {
-      "complaint_categories": []
-    },
-    "kn": {
-      "complaint_categories": []
-    }
-  },
   "health_section": {
     "en": {
       "complaint_categories": [
@@ -894,7 +883,6 @@
       ]
     }
   },
-
   "technical_section": {
     "en": {
       "complaint_categories": [

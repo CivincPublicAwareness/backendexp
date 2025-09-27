@@ -24,86 +24,48 @@ const fetchWardData = async (cityName, wardNo, effectiveLanguage) => {
     return cachedData;
   }
 
-  // Find city by name, prefer the one with more wards if multiple matches
-  let cityRecord = await prisma.cities.findFirst({
-    where: { name: cityName },
-    include: {
-      translations: {
-        where: { language: effectiveLanguage },
-      },
-      _count: {
-        select: { wards: true },
-      },
-    },
-  });
-
-  if (cityRecord) {
-    const allCitiesWithSameName = await prisma.cities.findMany({
-      where: { name: cityName },
-      include: {
-        translations: {
-          where: { language: effectiveLanguage },
-        },
-        _count: {
-          select: { wards: true },
-        },
-      },
-    });
-
-    if (allCitiesWithSameName.length > 1) {
-      allCitiesWithSameName.sort((a, b) => b._count.wards - a._count.wards);
-      cityRecord = allCitiesWithSameName[0];
-    }
-  }
-
-  if (!cityRecord) {
-    throw new Error("City not found");
-  }
-
-  const wardRecord = await prisma.wards.findFirst({
+  // OPTIMIZED: Get ward with city info first
+  const wardData = await prisma.wards.findFirst({
     where: {
-      city_id: cityRecord.id,
       ward_no: parseInt(wardNo),
+      city: {
+        name: cityName,
+      },
     },
     include: {
+      city: {
+        include: {
+          translations: {
+            where: { language: effectiveLanguage },
+          },
+        },
+      },
       translations: {
         where: { language: effectiveLanguage },
       },
     },
   });
 
-  if (!wardRecord) {
+  if (!wardData) {
     throw new Error("Ward not found");
   }
 
-  // Get active departments for the city
+  // OPTIMIZED: Single query to get all departments with officials for this ward
   const allDepartments = await prisma.departments.findMany({
     where: {
-      city_id: cityRecord.id,
+      city_id: wardData.city_id,
       is_active: true,
+      code: {
+        notIn: ["it", "admin", "accounts", "administration"],
+      },
     },
     include: {
       translations: {
         where: { language: effectiveLanguage },
       },
-    },
-  });
-
-  // Filter out excluded departments
-  const excludedDepartments = ["it", "admin", "accounts", "administration"];
-  const filteredDepartments = allDepartments.filter(
-    (dept) => !excludedDepartments.includes(dept.code.toLowerCase())
-  );
-
-  // Process departments with officials and complaints
-  const departmentsWithData = await Promise.all(
-    filteredDepartments.map(async (dept) => {
-      // Get officials for this department in this ward
-      const officials = await prisma.official.findMany({
+      officials: {
         where: {
-          city_id: cityRecord.id,
-          ward_id: wardRecord.id,
-          department_id: dept.id,
+          ward_id: wardData.id,
           is_active: true,
         },
         include: {
@@ -118,8 +80,13 @@ const fetchWardData = async (cityName, wardNo, effectiveLanguage) => {
             where: { language: effectiveLanguage },
           },
         },
-      });
+      },
+    },
+  });
 
+  // Process departments with officials and complaints
+  const departmentsWithData = await Promise.all(
+    allDepartments.map(async (dept) => {
       // Get complaints from structured data
       let complaints = [];
       if (
@@ -153,7 +120,7 @@ const fetchWardData = async (cityName, wardNo, effectiveLanguage) => {
 
       // Group officials by designation
       const designationsMap = {};
-      officials.forEach((official) => {
+      dept.officials.forEach((official) => {
         const designationCode = official.designation_code;
         const designationTitle =
           official.designation.translations[0]?.title || designationCode;
@@ -198,10 +165,10 @@ const fetchWardData = async (cityName, wardNo, effectiveLanguage) => {
   const response = {
     departments: departmentsWithOfficials,
     ward_info: {
-      city: cityRecord.translations[0]?.name || cityName,
+      city: wardData.city.translations[0]?.name || cityName,
       ward_no: parseInt(wardNo),
       ward_name:
-        wardRecord.translations[0]?.name || wardRecord.name || `Ward ${wardNo}`,
+        wardData.translations[0]?.name || wardData.name || `Ward ${wardNo}`,
     },
     total_departments: departmentsWithOfficials.length,
     total_complaints: departmentsWithOfficials.reduce(
@@ -264,8 +231,6 @@ const fetchWardWithLocation = async (req, res) => {
       return res.status(400).json({ error: "lat and lon are required" });
     }
 
-    // Find the ward geometry that contains the given coordinates
-    // Using spatial query to find the ward that contains the point
     const wardGeom = await prisma.ward_geom.findFirst({
       where: {
         geom: {
