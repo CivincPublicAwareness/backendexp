@@ -468,3 +468,26 @@ model complaint_translations {
   @@index([complaint_id])
   @@index([language])
 }
+
+model phone_interaction_analytics {
+  id             Int      @id @default(autoincrement())
+  ip             String
+  ward_no        Int
+  city           String
+  designation    String
+  complaint      String? // Legacy field - keeping for backward compatibility
+  complaint_code String? // New standardized field - stores English complaint code
+  department     String
+  action_type    String // "copied" or "tapped"
+  phone_number   String
+  created_at     DateTime @default(now())
+
+  @@index([ip, created_at])
+  @@index([ward_no, created_at])
+  @@index([city, created_at])
+  @@index([action_type, created_at])
+  @@index([department, created_at])
+  @@index([designation, created_at])
+  @@index([complaint_code, created_at])
+  @@index([created_at])
+}

@@ -92,14 +92,14 @@ const clearOldestEntries = async (count) => {
     let cursor = 0;
 
     do {
-      const result = await redisClient.scan(cursor, {
+      const result = await redisClient.scan(cursor.toString(), {
         MATCH: `${REDIS_KEY_PREFIX}*`,
         COUNT: "100",
       });
 
       cursor = result.cursor;
       keys.push(...result.keys);
-    } while (cursor !== 0);
+    } while (cursor !== "0");
 
     if (keys.length === 0) {
       console.log("No cache entries to clear");
@@ -132,14 +132,14 @@ const cleanupExpiredCache = async () => {
     let cursor = 0;
 
     do {
-      const result = await redisClient.scan(cursor, {
+      const result = await redisClient.scan(cursor.toString(), {
         MATCH: `${REDIS_KEY_PREFIX}*`,
         COUNT: "100", // Process 100 keys at a time - must be string
       });
 
       cursor = result.cursor;
       keys.push(...result.keys);
-    } while (cursor !== 0);
+    } while (cursor !== "0");
 
     if (keys.length === 0) {
       console.log("No cache entries found");
@@ -195,14 +195,14 @@ const getCacheStats = async () => {
     let cursor = 0;
 
     do {
-      const result = await redisClient.scan(cursor, {
+      const result = await redisClient.scan(cursor.toString(), {
         MATCH: `${REDIS_KEY_PREFIX}*`,
         COUNT: "100",
       });
 
       cursor = result.cursor;
       keys.push(...result.keys);
-    } while (cursor !== 0);
+    } while (cursor !== "0");
 
     let wardDataEntries = 0;
     let generalDataEntries = 0;
@@ -270,14 +270,14 @@ const clearAllCache = async () => {
     let cursor = 0;
 
     do {
-      const result = await redisClient.scan(cursor, {
+      const result = await redisClient.scan(cursor.toString(), {
         MATCH: `${REDIS_KEY_PREFIX}*`,
         COUNT: "100",
       });
 
       cursor = result.cursor;
       keys.push(...result.keys);
-    } while (cursor !== 0);
+    } while (cursor !== "0");
 
     const beforeSize = keys.length;
 
@@ -313,14 +313,14 @@ const clearExpiredCache = async () => {
     let cursor = 0;
 
     do {
-      const result = await redisClient.scan(cursor, {
+      const result = await redisClient.scan(cursor.toString(), {
         MATCH: `${REDIS_KEY_PREFIX}*`,
         COUNT: "100",
       });
 
       cursor = result.cursor;
       keys.push(...result.keys);
-    } while (cursor !== 0);
+    } while (cursor !== "0");
 
     return {
       message: "Cache cleanup completed",

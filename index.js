@@ -14,9 +14,10 @@ const prisma = require("./utils/prisma");
 const wardRoutes = require("./routes/wardRoutes");
 const cacheRoutes = require("./routes/cacheRoutes");
 const issueRoutes = require("./routes/issueRoutes");
+const analyticsRoutes = require("./routes/analyticsRoutes");
 
 const app = express();
-const PORT = 3001;
+const PORT = 3000;
 
 // Load configuration files
 try {
@@ -37,6 +38,7 @@ app.use(express.json());
 app.use("/api", wardRoutes);
 app.use("/api/cache", cacheRoutes);
 app.use("/api", issueRoutes);
+app.use("/api/analytics", analyticsRoutes);
 
 app.get("/", (req, res) => {
   res.json({ message: "Express backend running" });

@@ -12,6 +12,52 @@ try {
   console.error("Error loading configuration files:", error);
 }
 
+// Request-level cache to prevent duplicate calls within the same request cycle
+const requestCache = new Map();
+const REQUEST_CACHE_TTL = 5000; // 5 seconds
+
+// Helper function to generate request cache key
+const generateRequestCacheKey = (city, wardNo, language) => {
+  return `req_${city}_${wardNo}_${language}`;
+};
+
+// Helper function to get from request cache
+const getFromRequestCache = (city, wardNo, language) => {
+  const key = generateRequestCacheKey(city, wardNo, language);
+  const cached = requestCache.get(key);
+
+  if (cached && Date.now() - cached.timestamp < REQUEST_CACHE_TTL) {
+    console.log("Returning from request cache:", key);
+    return cached.data;
+  }
+
+  // Remove expired entry
+  if (cached) {
+    requestCache.delete(key);
+  }
+
+  return null;
+};
+
+// Helper function to set request cache
+const setRequestCache = (city, wardNo, language, data) => {
+  const key = generateRequestCacheKey(city, wardNo, language);
+  requestCache.set(key, {
+    data: data,
+    timestamp: Date.now(),
+  });
+
+  // Clean up expired entries periodically
+  if (requestCache.size > 100) {
+    const now = Date.now();
+    for (const [k, v] of requestCache.entries()) {
+      if (now - v.timestamp > REQUEST_CACHE_TTL) {
+        requestCache.delete(k);
+      }
+    }
+  }
+};
+
 const fetchWardData = async (cityName, wardNo, effectiveLanguage) => {
   // Check cache first
   const cachedData = await getFromCache(
@@ -199,7 +245,21 @@ const fetchWard = async (req, res) => {
       return res.status(400).json({ error: "ward_no and city are required" });
     }
 
+    // Check request cache first to prevent duplicate calls
+    const requestCachedData = getFromRequestCache(
+      city,
+      ward_no,
+      effectiveLanguage
+    );
+    if (requestCachedData) {
+      return res.json(requestCachedData);
+    }
+
     const response = await fetchWardData(city, ward_no, effectiveLanguage);
+
+    // Store in request cache
+    setRequestCache(city, ward_no, effectiveLanguage, response);
+
     res.json(response);
   } catch (error) {
     console.error("Error fetching ward data:", error);
@@ -249,7 +309,21 @@ const fetchWardWithLocation = async (req, res) => {
     const cityName = wardGeom.city;
     const wardNo = wardGeom.ward_no;
 
+    // Check request cache first to prevent duplicate calls
+    const requestCachedData = getFromRequestCache(
+      cityName,
+      wardNo,
+      effectiveLanguage
+    );
+    if (requestCachedData) {
+      return res.json(requestCachedData);
+    }
+
     const response = await fetchWardData(cityName, wardNo, effectiveLanguage);
+
+    // Store in request cache
+    setRequestCache(cityName, wardNo, effectiveLanguage, response);
+
     res.json(response);
   } catch (error) {
     console.error("Error fetching ward with location:", error);
