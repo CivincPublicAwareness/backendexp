@@ -14,9 +14,6 @@
     "hn": "डे-एनयूएलएम अनुभाग",
     "kn": "ಡೇ-ಎನ್‌ಯುಎಲ್‌ಎಂ ವಿಭಾಗ"
   },
-  "health": {
-    "en": "health"
-  },
   "health_section": {
     "en": "health_section",
     "hn": "स्वास्थ्य अनुभाग",
@@ -42,9 +39,6 @@
     "en": "revenue_section",
     "hn": "राजस्व अनुभाग",
     "kn": "ಆದಾಯ ವಿಭಾಗ"
-  },
-  "technical": {
-    "en": "technical"
   },
   "technical_section": {
     "en": "technical_section",
