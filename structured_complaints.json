@@ -125,572 +125,342 @@
     }
   },
 
-  "health_section": {
-    "en": {
-      "complaint_categories": [
+"health_section": {
+  "en": {
+    "complaint_categories": [
+      {
+        "code": "garbage_and_sanitation",
+        "name": "Garbage and Sanitation",
+        "description": "Garbage collection and sanitation related issues",
+        "complaints": [
+          { "code": "public_dustbins_not_cleaned", "title": "Public dustbins not cleaned", "description": "Public dustbins are not being cleaned regularly" },
+          { "code": "garbage_dump", "title": "Garbage dump", "description": "Unauthorized garbage dumping in public areas" },
+          { "code": "garbage_vehicle_not_arrived", "title": "Garbage vehicle not arrived", "description": "Garbage collection vehicle has not arrived for collection" },
+          { "code": "sweeping_not_done", "title": "Sweeping not done", "description": "Street sweeping and cleaning not performed" },
+          { "code": "drains_not_cleaned", "title": "Drains not cleaned/ blockage in drains", "description": "Drainage system is blocked or not cleaned" },
+          { "code": "burning_garbage_open", "title": "Burning of garbage in open spaces", "description": "Garbage is being burned in open areas causing pollution" },
+          { "code": "garbage_dumping_open_sites", "title": "Garbage dumping in open sites", "description": "Garbage is being dumped in unauthorized open areas" },
+          { "code": "stagnant_water_road", "title": "Stagnant Water on the Road", "description": "Water is accumulating and stagnating on roads" },
+          { "code": "urination_public", "title": "Urination in public/Open defecation (OD)", "description": "Public urination and open defecation in public areas" },
+          { "code": "littering", "title": "Littering", "description": "Waste materials scattered in public areas" },
+          { "code": "non_segregation_waste", "title": "Non segregation of waste", "description": "Waste is not being segregated as per guidelines" },
+          { "code": "illegal_biomedical_waste", "title": "Illegal dumping of Biomedical and Hazardous waste", "description": "Biomedical and hazardous waste being dumped illegally" }
+        ]
+      },
+      {
+        "code": "animal_control",
+        "name": "Animal Control",
+        "description": "Animal control and management related issues",
+        "complaints": [
+          { "code": "dog_bite", "title": "Dog Bite", "description": "Incidents of dog bites in the area" },
+          { "code": "nuisance_stray_animals", "title": "Nuisance by stray animals", "description": "Stray animals causing disturbance and nuisance" },
+          { "code": "dead_animals", "title": "Removal of Dead animal(s)", "description": "Dead animals found in public areas" },
+          { "code": "neutering_street_dogs", "title": "Neutering of street dogs", "description": "Street dogs need to be neutered for population control" },
+          { "code": "anti_rabies_vaccination", "title": "Anti-rabies vaccination of street dogs", "description": "Anti-rabies vaccination required for street dogs" }
+        ]
+      },
+      {
+        "code": "health_services",
+        "name": "Health",
+        "description": "Health services and facilities related issues",
+        "complaints": [
+          { "code": "mosquito_control", "title": "Mosquito Control", "description": "Mosquito control measures needed in the area" },
+          { "code": "air_noise_pollution", "title": "Issues related to air/noise pollution", "description": "Air and noise pollution problems in the area" },
+          { "code": "fogging_issues", "title": "Issues related to fogging", "description": "Mosquito fogging operations not being conducted properly" },
+          { "code": "spraying_treatment", "title": "Issues related to spraying treatments", "description": "Spraying or chemical treatments not being carried out properly" },
+          { "code": "unhygienic_mutton_stalls", "title": "Non-maintenance of hygiene at mutton/chicken/fish stall", "description": "Food stalls not maintaining proper hygiene standards" },
+          { "code": "unhygienic_hotel_premises", "title": "Unhygienic premises in hotel", "description": "Hotels and restaurants not maintaining hygiene standards" }
+        ]
+      },
+      {
+        "code": "birth_death_certificates",
+        "name": "Birth/Death Certificates",
+        "description": "Certificate related issues",
+        "complaints": [
+          { "code": "birth_certificate_issue", "title": "Issue related to birth certificate", "description": "Problems related to birth certificate issuance" }
+          ,{
+          "code": "death_certificate_issue",
+          "title": "Issue related to death certificate",
+          "description": "Problems related to death certificate issuance"
+        }        
+        ]
+      },
+      {
+      "code": "trade_licence",
+      "name": "Trade Licence",
+      "description": "Trade licence related issues",
+      "complaints": [
         {
-          "code": "garbage_and_sanitation",
-          "name": "Garbage and Sanitation",
-          "description": "Garbage collection and sanitation related issues",
-          "complaints": [
-            {
-              "code": "public_dustbins_not_cleaned",
-              "title": "Public dustbins not cleaned",
-              "description": "Public dustbins are not being cleaned regularly"
-            },
-            {
-              "code": "garbage_dump",
-              "title": "Garbage dump",
-              "description": "Unauthorized garbage dumping in public areas"
-            },
-            {
-              "code": "garbage_vehncle_not_arrived",
-              "title": "Garbage vehncle not arrived",
-              "description": "Garbage collection vehncle has not arrived for collection"
-            },
-            {
-              "code": "sweeping_not_done",
-              "title": "Sweeping not done",
-              "description": "Street sweeping and cleaning not performed"
-            },
-            {
-              "code": "drains_not_cleaned",
-              "title": "Drains not cleaned/ blockage in drains",
-              "description": "Drainage system is blocked or not cleaned"
-            },
-            {
-              "code": "burning_garbage_open",
-              "title": "Burning of garbage in open spaces",
-              "description": "Garbage is being burned in open areas causing pollution"
-            },
-            {
-              "code": "garbage_dumping_open_sites",
-              "title": "Garbage dumping in open sites",
-              "description": "Garbage is being dumped in unauthorized open areas"
-            },
-            {
-              "code": "stagnant_water_road",
-              "title": "Stagnant Water on the Road",
-              "description": "Water is accumulating and stagnating on roads"
-            },
-            {
-              "code": "urination_public",
-              "title": "Urination in public/Open defecation (OD)",
-              "description": "Public urination and open defecation in public areas"
-            },
-            {
-              "code": "littering",
-              "title": "Littering",
-              "description": "Waste materials scattered in public areas"
-            },
-            {
-              "code": "non_segregation_waste",
-              "title": "Non segregation of waste",
-              "description": "Waste is not being segregated as per guidelines"
-            },
-            {
-              "code": "illegal_biomedical_waste",
-              "title": "Illegal dumping of Biomedical and Hazardous waste",
-              "description": "Biomedical and hazardous waste being dumped illegally"
-            }
-          ]
+          "code": "new_trade_licence",
+          "title": "New Trade Licence",
+          "description": "Apply for new trade licence"
         },
         {
-          "code": "animal_control",
-          "name": "Animal Control",
-          "description": "Animal control and management related issues",
-          "complaints": [
-            {
-              "code": "dog_bites",
-              "title": "Dog Bites",
-              "description": "Incidents of dog bites in the area"
-            },
-            {
-              "code": "nuisance_stray_animals",
-              "title": "Nuisance by stray animals",
-              "description": "Stray animals causing disturbance and nuisance"
-            },
-            {
-              "code": "dead_animals",
-              "title": "Dead animal(s)",
-              "description": "Dead animals found in public areas"
-            },
-            {
-              "code": "neutering_street_dogs",
-              "title": "Neutering of street dogs",
-              "description": "Street dogs need to be neutered for population control"
-            },
-            {
-              "code": "mosquito_control",
-              "title": "Mosquito Control",
-              "description": "Mosquito control measures needed in the area"
-            }
-          ]
-        },
-        {
-          "code": "health_services",
-          "name": "Health",
-          "description": "Health services and facilities related issues",
-          "complaints": [
-            {
-              "code": "birth_death_registration",
-              "title": "Birth & Death Registration",
-              "description": "Issues related to birth and death certificate registration"
-            },
-            {
-              "code": "drugs_vaccines_not_available",
-              "title": "Drugs/Vaccines not available",
-              "description": "Essential medicines and vaccines not available in health centers"
-            },
-            {
-              "code": "hospital_premises_not_maintained",
-              "title": "Hospital premises not maintained well",
-              "description": "Hospital infrastructure and premises not properly maintained"
-            },
-            {
-              "code": "air_noise_pollution",
-              "title": "Issues related to air/noise pollution",
-              "description": "Air and noise pollution problems in the area"
-            },
-            {
-              "code": "fogging_issues",
-              "title": "Issues related to fogging",
-              "description": "Mosquito fogging operations not being conducted properly"
-            },
-            {
-              "code": "unhygienic_mutton_stalls",
-              "title": "Non-maintenance of hygiene at mutton/chncken/fish stall",
-              "description": "Food stalls not maintaining proper hygiene standards"
-            },
-            {
-              "code": "unhygienic_hotel_premises",
-              "title": "Unhygienic premises in hotel",
-              "description": "Hotels and restaurants not maintaining hygiene standards"
-            }
-          ]
-        },
-
-        {
-          "code": "general_health",
-          "name": "General health",
-          "description": "General health related issues",
-          "complaints": [
-            {
-              "code": "new_trade_licence",
-              "title": "New Trade Licence",
-              "description": "Application for new trade license"
-            },
-            {
-              "code": "trade_licence_renewal",
-              "title": "Trade Licence Renewal",
-              "description": "Renewal of existing trade license"
-            },
-            {
-              "code": "removal_dead_fallen_trees",
-              "title": "Removal of dead/fallen trees",
-              "description": "Request for removal of dead or fallen trees"
-            },
-            {
-              "code": "obstruction_trees_branches",
-              "title": "Obstruction by trees or branches",
-              "description": "Trees or branches causing obstruction to traffic or pedestrians"
-            },
-            {
-              "code": "unauthorised_flex_banners",
-              "title": "Unauthorised flex and banners",
-              "description": "Unauthorized display of flex boards and banners in public areas"
-            },
-            {
-              "code": "unsafe_hoardings",
-              "title": "Unsafe hoardings",
-              "description": "Hoardings that pose safety risks to public"
-            },
-            {
-              "code": "grass_cutting",
-              "title": "Grass cutting",
-              "description": "Request for grass cutting and maintenance of public spaces"
-            }
-          ]
+          "code": "trade_licence_renewal",
+          "title": "Trade Licence Renewal",
+          "description": "Renewal of existing trade licence"
         }
       ]
     },
-    "hn": {
-      "complaint_categories": [
+    {
+      "code": "public_safety",
+      "name": "Public Safety",
+      "description": "Public safety and infrastructure related issues",
+      "complaints": [
         {
-          "code": "garbage_and_sanitation",
-          "name": "कचरा और स्वच्छता",
-          "description": "कचरा संग्रह और स्वच्छता से संबंधित मुद्दे",
-          "complaints": [
-            {
-              "code": "public_dustbins_not_cleaned",
-              "title": "सार्वजनिक कूड़ेदान साफ नहीं किए गए",
-              "description": "सार्वजनिक कूड़ेदान नियमित रूप से साफ नहीं किए जा रहे हैं"
-            },
-            {
-              "code": "garbage_dump",
-              "title": "कचरा डंप",
-              "description": "सार्वजनिक स्थानों में अनधिकृत कचरा डंपिंग"
-            },
-            {
-              "code": "garbage_vehncle_not_arrived",
-              "title": "कचरा वाहन नहीं आया",
-              "description": "कचरा संग्रह वाहन संग्रह के लिए नहीं आया है"
-            },
-            {
-              "code": "sweeping_not_done",
-              "title": "झाड़ू नहीं लगाया गया",
-              "description": "सड़क की झाड़ू और सफाई नहीं की गई"
-            },
-            {
-              "code": "drains_not_cleaned",
-              "title": "नालियां साफ नहीं की गईं/ नालियों में रुकावट",
-              "description": "जल निकासी प्रणाली अवरुद्ध है या साफ नहीं की गई"
-            },
-            {
-              "code": "burning_garbage_open",
-              "title": "खुले स्थानों में कचरा जलाना",
-              "description": "खुले क्षेत्रों में कचरा जलाया जा रहा है जो प्रदूषण का कारण बन रहा है"
-            },
-            {
-              "code": "garbage_dumping_open_sites",
-              "title": "खुले स्थलों में कचरा डंपिंग",
-              "description": "अनधिकृत खुले क्षेत्रों में कचरा डंप किया जा रहा है"
-            },
-            {
-              "code": "stagnant_water_road",
-              "title": "सड़क पर ठहरा हुआ पानी",
-              "description": "सड़कों पर पानी जमा हो रहा है और ठहर रहा है"
-            },
-            {
-              "code": "urination_public",
-              "title": "सार्वजनिक स्थानों में पेशाब/खुले में शौच (OD)",
-              "description": "सार्वजनिक स्थानों में सार्वजनिक पेशाब और खुले में शौच"
-            },
-            {
-              "code": "littering",
-              "title": "कूड़ा फैलाना",
-              "description": "सार्वजनिक क्षेत्रों में कचरा बिखरा हुआ"
-            },
-            {
-              "code": "non_segregation_waste",
-              "title": "कचरे का अलगाव नहीं",
-              "description": "दिशानिर्देशों के अनुसार कचरे का अलगाव नहीं किया जा रहा"
-            },
-            {
-              "code": "illegal_biomedical_waste",
-              "title": "जैव चिकित्सा और खतरनाक कचरे का अवैध डंपिंग",
-              "description": "जैव चिकित्सा और खतरनाक कचरा अवैध रूप से डंप किया जा रहा"
-            }
-          ]
+          "code": "removal_dead_fallen_trees",
+          "title": "Removal of dead/fallen trees",
+          "description": "Dead or fallen trees need to be removed from public areas"
         },
         {
-          "code": "animal_control",
-          "name": "पशु नियंत्रण",
-          "description": "पशु नियंत्रण और प्रबंधन से संबंधित मुद्दे",
-          "complaints": [
-            {
-              "code": "dog_bites",
-              "title": "कुत्ते के काटने",
-              "description": "क्षेत्र में कुत्ते के काटने की घटनाएं"
-            },
-            {
-              "code": "nuisance_stray_animals",
-              "title": "आवारा जानवरों द्वारा उत्पात",
-              "description": "आवारा जानवर परेशानी और उत्पात पैदा कर रहे हैं"
-            },
-            {
-              "code": "dead_animals",
-              "title": "मृत जानवर",
-              "description": "सार्वजनिक क्षेत्रों में मृत जानवर मिले"
-            },
-            {
-              "code": "neutering_street_dogs",
-              "title": "सड़क के कुत्तों का नसबंदी",
-              "description": "जनसंख्या नियंत्रण के लिए सड़क के कुत्तों का नसबंदी करना आवश्यक"
-            },
-            {
-              "code": "mosquito_control",
-              "title": "मच्छर नियंत्रण",
-              "description": "क्षेत्र में मच्छर नियंत्रण के उपायों की आवश्यकता"
-            }
-          ]
+          "code": "obstruction_trees_branches",
+          "title": "Obstruction by trees or branches",
+          "description": "Trees or branches obstructing roads and walkways"
         },
         {
-          "code": "health_services",
-          "name": "स्वास्थ्य",
-          "description": "स्वास्थ्य सेवाओं और सुविधाओं से संबंधित मुद्दे",
-          "complaints": [
-            {
-              "code": "birth_death_registration",
-              "title": "जन्म और मृत्यु पंजीकरण",
-              "description": "जन्म और मृत्यु प्रमाणपत्र पंजीकरण से संबंधित मुद्दे"
-            },
-            {
-              "code": "drugs_vaccines_not_available",
-              "title": "दवाएं/टीके उपलब्ध नहीं",
-              "description": "स्वास्थ्य केंद्रों में आवश्यक दवाएं और टीके उपलब्ध नहीं"
-            },
-            {
-              "code": "hospital_premises_not_maintained",
-              "title": "अस्पताल के परिसर अच्छी तरह से बनाए नहीं गए",
-              "description": "अस्पताल के बुनियादी ढांचे और परिसरों का उचित रखरखाव नहीं"
-            },
-            {
-              "code": "air_noise_pollution",
-              "title": "वायु/ध्वनि प्रदूषण से संबंधित मुद्दे",
-              "description": "क्षेत्र में वायु और ध्वनि प्रदूषण की समस्याएं"
-            },
-            {
-              "code": "fogging_issues",
-              "title": "फॉगिंग से संबंधित मुद्दे",
-              "description": "मच्छर फॉगिंग अभियान सही ढंग से नहीं चलाए जा रहे"
-            },
-            {
-              "code": "unhygienic_mutton_stalls",
-              "title": "मटन/चिकन/मछली स्टॉल पर स्वच्छता का रखरखाव नहीं",
-              "description": "खाद्य स्टॉल उचित स्वच्छता मानकों को बनाए नहीं रख रहे"
-            },
-            {
-              "code": "unhygienic_hotel_premises",
-              "title": "होटल में अस्वच्छ परिसर",
-              "description": "होटल और रेस्तरां स्वच्छता मानकों को बनाए नहीं रख रहे"
-            }
-          ]
-        },
-
-        {
-          "code": "general_health",
-          "name": "सस्वास्थ्य समस्याएँ",
-          "description": "सामान्य स्वास्थ्य से संबंधित मुद्दे",
-          "complaints": [
-            {
-              "code": "new_trade_licence",
-              "title": "नया व्यापार लाइसेंस",
-              "description": "नए व्यापार लाइसेंस के लिए आवेदन"
-            },
-            {
-              "code": "trade_licence_renewal",
-              "title": "व्यापार लाइसेंस नवीनीकरण",
-              "description": "मौजूदा व्यापार लाइसेंस का नवीनीकरण"
-            },
-            {
-              "code": "removal_dead_fallen_trees",
-              "title": "मृत/गिरे हुए पेड़ों को हटाना",
-              "description": "मृत या गिरे हुए पेड़ों को हटाने का अनुरोध"
-            },
-            {
-              "code": "obstruction_trees_branches",
-              "title": "पेड़ों या शाखाओं द्वारा बाधा",
-              "description": "यातायात या पैदल चलने वालों के लिए पेड़ या शाखाएं बाधा डाल रही हैं"
-            },
-            {
-              "code": "unauthorised_flex_banners",
-              "title": "अनधिकृत फ्लेक्स और बैनर",
-              "description": "सार्वजनिक क्षेत्रों में फ्लेक्स बोर्ड और बैनर का अनधिकृत प्रदर्शन"
-            },
-            {
-              "code": "unsafe_hoardings",
-              "title": "असुरक्षित होर्डिंग",
-              "description": "जनता के लिए सुरक्षा जोखिम पैदा करने वाले होर्डिंग"
-            },
-            {
-              "code": "grass_cutting",
-              "title": "घास काटना",
-              "description": "घास काटने और सार्वजनिक स्थानों के रखरखाव का अनुरोध"
-            }
-          ]
-        }
-      ]
-    },
-    "kn": {
-      "complaint_categories": [
-        {
-          "code": "garbage_and_sanitation",
-          "name": "ಕಸ ಮತ್ತು ನೈರ್ಮಲ್ಯ",
-          "description": "ಕಸ ಸಂಗ್ರಹ ಮತ್ತು ಸ್ವಚ್ಛತೆ ಸಂಬಂಧಿತ ಸಮಸ್ಯೆಗಳು",
-          "complaints": [
-            {
-              "code": "public_dustbins_not_cleaned",
-              "title": "ಸ್ವಚ್ಛಗೊಳಿಸದ ಸಾರ್ವಜನಿಕ ಕಸದ ಬುಟ್ಟಿಗಳು",
-              "description": "ಸಾರ್ವಜನಿಕ ಕಸದ ತೊಟ್ಟಿಗಳನ್ನು ನಿಯಮಿತವಾಗಿ ಸ್ವಚ್ಛಗೊಳಿಸಲಾಗುತ್ತಿಲ್ಲ"
-            },
-            {
-              "code": "garbage_dump",
-              "title": "ಕಸದ ರಾಶಿ ತೆರವುಗೊಳಿಸುವುದು",
-              "description": "ಸಾರ್ವಜನಿಕ ಪ್ರದೇಶಗಳಲ್ಲಿ ಅನಧಿಕೃತ ಕಸದ ಡಂಪಿಂಗ್"
-            },
-            {
-              "code": "garbage_vehncle_not_arrived",
-              "title": "ಕಸ ಸಂಗ್ರಹಣಾ ವಾಹನ ಬಂದಿಲ್ಲ",
-              "description": "ಕಸ ಸಂಗ್ರಹ ವಾಹನ ಸಂಗ್ರಹಕ್ಕಾಗಿ ಬಂದಿಲ್ಲ"
-            },
-            {
-              "code": "sweeping_not_done",
-              "title": "ರಸ್ತೆ/ಬೀದಿಯ ಕಸ ಗುಡಿಸಿರುವುದಿಲ್ಲ",
-              "description": "ರಸ್ತೆ ಸಾರಣೆ ಮತ್ತು ಸ್ವಚ್ಛತೆ ಮಾಡಲಾಗಿಲ್ಲ"
-            },
-            {
-              "code": "drains_not_cleaned",
-              "title": "ಕಸ ಕಡ್ಡಿಗಳಿಂದ ತುಂಬಿರುವ/ ಕಟ್ಟಿಕೊಂಡಿರುವ ಚರಂಡಿಗಳನ್ನು ಸ್ವಚ್ಛಗೊಳಿಸದಿರುವುದು",
-              "description": "ಜಲನಿಕಾಸ ವ್ಯವಸ್ಥೆ ತಡೆಹಿಡಿದಿದೆ ಅಥವಾ ಸ್ವಚ್ಛಗೊಳಿಸಲಾಗಿಲ್ಲ"
-            },
-            {
-              "code": "burning_garbage_open",
-              "title": "ತೆರೆದ ಸ್ಥಳಗಳಲ್ಲಿ ಕಸವನ್ನು ಸುಡುವುದು",
-              "description": "ಮುಕ್ತ ಪ್ರದೇಶಗಳಲ್ಲಿ ಕಸ ಸುಡಲಾಗುತ್ತಿದೆ ಇದು ಮಾಲಿನ್ಯಕ್ಕೆ ಕಾರಣವಾಗುತ್ತಿದೆ"
-            },
-            {
-              "code": "garbage_dumping_open_sites",
-              "title": "ತೆರೆದ ಸ್ಥಳಗಳಲ್ಲಿ ಕಸ ಸುರಿಯುವುದು/ ರಾಶಿ ಹಾಕುವುದು",
-              "description": "ಅನಧಿಕೃತ ಮುಕ್ತ ಪ್ರದೇಶಗಳಲ್ಲಿ ಕಸ ಡಂಪ್ ಮಾಡಲಾಗುತ್ತಿದೆ"
-            },
-            {
-              "code": "stagnant_water_road",
-              "title": "ರಸ್ತೆಯಲ್ಲಿ ನಿಂತ ನೀರು",
-              "description": "ರಸ್ತೆಗಳಲ್ಲಿ ನೀರು ಸಂಗ್ರಹವಾಗುತ್ತಿದೆ ಮತ್ತು ನಿಂತಿದೆ"
-            },
-            {
-              "code": "urination_public",
-              "title": "ಸಾರ್ವಜನಿಕ ಸ್ಥಳಗಳಲ್ಲಿ ಮೂತ್ರ ವಿಸರ್ಜನೆ/ಮಲವಿಸರ್ಜನೆ (OD)",
-              "description": "ಸಾರ್ವಜನಿಕ ಪ್ರದೇಶಗಳಲ್ಲಿ ಸಾರ್ವಜನಿಕ ಮೂತ್ರ ಮತ್ತು ಮುಕ್ತ ಶೌಚ"
-            },
-            {
-              "code": "littering",
-              "title": "ಎಲ್ಲೆಂದರಲ್ಲಿ ಕಸ ಹಾಕುವುದು",
-              "description": "ಸಾರ್ವಜನಿಕ ಪ್ರದೇಶಗಳಲ್ಲಿ ತ್ಯಾಜ್ಯ ವಸ್ತುಗಳು ಚೆಲ್ಲಾಡಿವೆ"
-            },
-            {
-              "code": "non_segregation_waste",
-              "title": "ತ್ಯಾಜ್ಯವನ್ನು ಮೂಲದಲ್ಲಿಯೆ ಬೇರ್ಪಡಿಸದಿರುವುದು",
-              "description": "ಮಾರ್ಗದರ್ಶನಗಳ ಪ್ರಕಾರ ತ್ಯಾಜ್ಯವನ್ನು ವರ್ಗೀಕರಿಸಲಾಗುತ್ತಿಲ್ಲ"
-            },
-            {
-              "code": "illegal_biomedical_waste",
-              "title": "ವೈದ್ಯಕೀಯ ಮತ್ತು ಅಪಾಯಕಾರಿ ತ್ಯಾಜ್ಯವನ್ನು ಅಕ್ರಮವಾಗಿ ಎಲ್ಲೆಂದರಲ್ಲಿ ಸುರಿಯುವುದು",
-              "description": "ಜೈವಿಕ ವೈದ್ಯಕೀಯ ಮತ್ತು ಅಪಾಯಕಾರಿ ತ್ಯಾಜ್ಯವನ್ನು ಅಕ್ರಮವಾಗಿ ಡಂಪ್ ಮಾಡಲಾಗುತ್ತಿದೆ"
-            }
-          ]
+          "code": "unauthorised_flex_banners",
+          "title": "Unauthorised flex and banners",
+          "description": "Illegal flex boards and banners causing obstruction"
         },
         {
-          "code": "animal_control",
-          "name": "ಪ್ರಾಣಿಗಳ ನಿಯಂತ್ರಣ",
-          "description": "ಪ್ರಾಣಿ ನಿಯಂತ್ರಣ ಮತ್ತು ನಿರ್ವಹಣೆ ಸಂಬಂಧಿತ ಸಮಸ್ಯೆಗಳು",
-          "complaints": [
-            {
-              "code": "dog_bites",
-              "title": "ನಾಯಿ ಕಡಿತ",
-              "description": "ಪ್ರದೇಶದಲ್ಲಿ ನಾಯಿ ಕಚ್ಚುವಿಕೆಯ ಘಟನೆಗಳು"
-            },
-            {
-              "code": "nuisance_stray_animals",
-              "title": "ಬೀಡಾಡಿ ಪ್ರಾಣಿಗಳ ಉಪದ್ರವ",
-              "description": "ಆವಾರಾ ಪ್ರಾಣಿಗಳು ತೊಂದರೆ ಮತ್ತು ಕಿರುಕುಳ ಉಂಟುಮಾಡುತ್ತಿವೆ"
-            },
-            {
-              "code": "dead_animals",
-              "title": "ಸತ್ತ ಪ್ರಾಣಿ(ಗಳು) ತೆರವುಗೊಳಿಸುವುದು",
-              "description": "ಸಾರ್ವಜನಿಕ ಪ್ರದೇಶಗಳಲ್ಲಿ ಸತ್ತ ಪ್ರಾಣಿಗಳು ಕಂಡುಬಂದಿವೆ"
-            },
-            {
-              "code": "neutering_street_dogs",
-              "title": "ಬೀದಿ ನಾಯಿಗಳ ಸಂತಾನಹರಣ (ABC)",
-              "description": "ಜನಸಂಖ್ಯೆ ನಿಯಂತ್ರಣಕ್ಕಾಗಿ ರಸ್ತೆ ನಾಯಿಗಳನ್ನು ನಿರ್ವೀರ್ಯೀಕರಣ ಮಾಡುವುದು ಅಗತ್ಯ"
-            },
-            {
-              "code": "mosquito_control",
-              "title": "ಬೀದಿ ನಾಯಿಗಳಿಗೆ ಆ್ಯಂಟಿ-ರೇಬೀಸ್ ಲಸಿಕೆ ಹಾಕುವುದು",
-              "description": "ಪ್ರದೇಶದಲ್ಲಿ ಸೊಳ್ಳೆ ನಿಯಂತ್ರಣ ಕ್ರಮಗಳ ಅಗತ್ಯತೆ"
-            }
-          ]
+          "code": "unsafe_hoardings",
+          "title": "Unsafe hoardings",
+          "description": "Unstable or unsafe advertising hoardings"
         },
         {
-          "code": "health_services",
-          "name": "ಆರೋಗ್ಯ",
-          "description": "ಆರೋಗ್ಯ ಸೇವೆಗಳು ಮತ್ತು ಸೌಕರ್ಯಗಳ ಸಂಬಂಧಿತ ಸಮಸ್ಯೆಗಳು",
-          "complaints": [
-            {
-              "code": "birth_death_registration",
-              "title": "ಜನನ/ಮರಣ ಪ್ರಮಾಣಪತ್ರಗಳು",
-              "description": "ಜನನ ಮತ್ತು ಮರಣ ಪ್ರಮಾಣಪತ್ರ ನೋಂದಣಿ ಸಂಬಂಧಿತ ಸಮಸ್ಯೆಗಳು"
-            },
-            {
-              "code": "drugs_vaccines_not_available",
-              "title": "ಔಷಧಿಗಳು/ವ್ಯಾಕ್ಸಿನ್‌ಗಳು ಲಭ್ಯವಿಲ್ಲ",
-              "description": "ಆರೋಗ್ಯ ಕೇಂದ್ರಗಳಲ್ಲಿ ಅಗತ್ಯ ಔಷಧಿಗಳು ಮತ್ತು ವ್ಯಾಕ್ಸಿನ್‌ಗಳು ಲಭ್ಯವಿಲ್ಲ"
-            },
-            {
-              "code": "hospital_premises_not_maintained",
-              "title": "ಆಸ್ಪತ್ರೆಯ ಆವರಣಗಳನ್ನು ಚೆನ್ನಾಗಿ ನಿರ್ವಹಿಸಲಾಗಿಲ್ಲ",
-              "description": "ಆಸ್ಪತ್ರೆಯ ಮೂಲಸೌಕರ್ಯ ಮತ್ತು ಆವರಣಗಳನ್ನು ಸರಿಯಾಗಿ ನಿರ್ವಹಿಸಲಾಗಿಲ್ಲ"
-            },
-            {
-              "code": "air_noise_pollution",
-              "title": "ವಾಯು/ಶಬ್ದ ಮಾಲಿನ್ಯಕ್ಕೆ ಸಂಬಂಧಿಸಿದ ಸಮಸ್ಯೆಗಳು",
-              "description": "ಪ್ರದೇಶದಲ್ಲಿ ವಾಯು ಮತ್ತು ಧ್ವನಿ ಮಾಲಿನ್ಯದ ಸಮಸ್ಯೆಗಳು"
-            },
-            {
-              "code": "fogging_issues",
-              "title": "ಫಾಗಿಂಗ್‌ಗೆ ಸಂಬಂಧಿಸಿದ ಸಮಸ್ಯೆಗಳು",
-              "description": "ಸೊಳ್ಳೆ ಫಾಗಿಂಗ್ ಕಾರ್ಯಾಚರಣೆಗಳನ್ನು ಸರಿಯಾಗಿ ನಡೆಸಲಾಗುತ್ತಿಲ್ಲ"
-            },
-            {
-              "code": "unhygienic_mutton_stalls",
-              "title": "ಮಟನ್/ಕೋಳಿ/ಮೀನು ಅಂಗಡಿಗಳಲ್ಲಿ ನೈರ್ಮಲ್ಯವನ್ನು ಕಾಪಾಡಿಕೊಳ್ಳದಿರುವುದು",
-              "description": "ಆಹಾರ ಅಂಗಡಿಗಳು ಸರಿಯಾದ ಸ್ವಚ್ಛತೆ ಮಾನದಂಡಗಳನ್ನು ಕಾಯ್ದುಕೊಳ್ಳುತ್ತಿಲ್ಲ"
-            },
-            {
-              "code": "unhygienic_hotel_premises",
-              "title": "ಹೋಟೆಲ್‌ನಲ್ಲಿ ಅನೈರ್ಮಲ್ಯ ಆವರಣ/ವಾತಾವರಣ",
-              "description": "ಹೋಟೆಲ್‌ಗಳು ಮತ್ತು ರೆಸ್ಟೋರೆಂಟ್‌ಗಳು ಸ್ವಚ್ಛತೆ ಮಾನದಂಡಗಳನ್ನು ಕಾಯ್ದುಕೊಳ್ಳುತ್ತಿಲ್ಲ"
-            }
-          ]
-        },
-
-        {
-          "code": "general_health",
-          "name": "ಆರೋಗ್ಯ ಸಮಸ್ಯೆ",
-          "description": "ಸಾಮಾನ್ಯ ಆರೋಗ್ಯ ಸಂಬಂಧಿತ ಸಮಸ್ಯೆಗಳು",
-          "complaints": [
-            {
-              "code": "new_trade_licence",
-              "title": "ಹೊಸ ವ್ಯಾಪಾರ ಪರವಾನಗಿ ಪಡೆಯಲು",
-              "description": "ಹೊಸ ವ್ಯಾಪಾರ ಪರವಾನಗಿಗೆ ಅರ್ಜಿ"
-            },
-            {
-              "code": "trade_licence_renewal",
-              "title": "ವ್ಯಾಪಾರ ಪರವಾನಗಿ ನವೀಕರಣ ಮಾಡಲು",
-              "description": "ಅಸ್ತಿತ್ವದಲ್ಲಿರುವ ವ್ಯಾಪಾರ ಪರವಾನಗಿಯ ನವೀಕರಣ"
-            },
-            {
-              "code": "removal_dead_fallen_trees",
-              "title": "ಮರಗಳ ರೆಂಭೆ/ಕೊಂಬೆ ತೆಗೆಯುವುದು",
-              "description": "ಸತ್ತ ಅಥವಾ ಬಿದ್ದ ಮರಗಳನ್ನು ತೆಗೆದುಹಾಕುವ ಅನುರೋಧ"
-            },
-            {
-              "code": "obstruction_trees_branches",
-              "title": "ಮರಗಳು ಅಥವಾ ಕೊಂಬೆಗಳಿಂದ ಉಂಟಾಗುವ ಅಡಚಣೆ",
-              "description": "ಸಂಚಾರ ಅಥವಾ ಪಾದಚಾರಿಗಳಿಗೆ ಮರಗಳು ಅಥವಾ ಕೊಂಬೆಗಳು ಅಡಚಣೆ ಉಂಟುಮಾಡುತ್ತಿವೆ"
-            },
-            {
-              "code": "unauthorised_flex_banners",
-              "title": "ಅನಧಿಕೃತ ಪ್ಲೆಕ್ಸ್ ಮತ್ತು ಬ್ಯಾನರ್‌ಗಳು",
-              "description": "ಸಾರ್ವಜನಿಕ ಪ್ರದೇಶಗಳಲ್ಲಿ ಫ್ಲೆಕ್ಸ್ ಬೋರ್ಡ್‌ಗಳು ಮತ್ತು ಬ್ಯಾನರ್‌ಗಳ ಅನಧಿಕೃತ ಪ್ರದರ್ಶನ"
-            },
-            {
-              "code": "unsafe_hoardings",
-              "title": "ಅಸುರಕ್ಷಿತ ಹೋರ್ಡಿಂಗ್‌ಗಳು",
-              "description": "ಸಾರ್ವಜನಿಕರಿಗೆ ಸುರಕ್ಷತೆಯ ಅಪಾಯವನ್ನು ಉಂಟುಮಾಡುವ ಹೋರ್ಡಿಂಗ್‌ಗಳು"
-            },
-            {
-              "code": "grass_cutting",
-              "title": "ರಸ್ತೆ/ಚರಂಡಿಗಳ ಬದಿಯಲ್ಲಿ ಬೆಳೆದಿರುವ ಹುಲ್ಲು ಕತ್ತರಿಸುವುದು",
-              "description": "ಹುಲ್ಲು ಕತ್ತರಿಸುವುದು ಮತ್ತು ಸಾರ್ವಜನಿಕ ಸ್ಥಳಗಳ ನಿರ್ವಹಣೆಯ ಅನುರೋಧ"
-            }
-          ]
+          "code": "grass_cutting",
+          "title": "Grass cutting",
+          "description": "Grass on roadsides and medians needs to be cut"
         }
       ]
     }
+      
+    ]
   },
+  "kn": {
+    "complaint_categories": [
+      {
+        "code": "garbage_and_sanitation",
+        "name": "ಕಸ ಮತ್ತು ನೈರ್ಮಲ್ಯ",
+        "description": "ಕಸ ಸಂಗ್ರಹ ಮತ್ತು ಸ್ವಚ್ಛತೆ ಸಂಬಂಧಿತ ಸಮಸ್ಯೆಗಳು",
+        "complaints": [
+          { "code": "public_dustbins_not_cleaned", "title": "ಸ್ವಚ್ಛಗೊಳಿಸದ ಸಾರ್ವಜನಿಕ ಕಸದ ಬುಟ್ಟಿಗಳು", "description": "ಸಾರ್ವಜನಿಕ ಕಸದ ತೊಟ್ಟಿಗಳನ್ನು ನಿಯಮಿತವಾಗಿ ಸ್ವಚ್ಛಗೊಳಿಸಲಾಗುತ್ತಿಲ್ಲ" },
+          { "code": "garbage_dump", "title": "ಕಸದ ರಾಶಿ ತೆರವುಗೊಳಿಸುವುದು", "description": "ಸಾರ್ವಜನಿಕ ಪ್ರದೇಶಗಳಲ್ಲಿ ಅನಧಿಕೃತ ಕಸದ ಡಂಪಿಂಗ್" },
+          { "code": "garbage_vehicle_not_arrived", "title": "ಕಸ ಸಂಗ್ರಹಣಾ ವಾಹನ ಬಂದಿಲ್ಲ", "description": "ಕಸ ಸಂಗ್ರಹ ವಾಹನ ಸಂಗ್ರಹಕ್ಕಾಗಿ ಬಂದಿಲ್ಲ" },
+          { "code": "sweeping_not_done", "title": "ರಸ್ತೆ/ಬೀದಿಯ ಕಸ ಗುಡಿಸಿರುವುದಿಲ್ಲ", "description": "ರಸ್ತೆ ಸಾರಣೆ ಮತ್ತು ಸ್ವಚ್ಛತೆ ಮಾಡಲಾಗಿಲ್ಲ" },
+          { "code": "drains_not_cleaned", "title": "ಕಸ ಕಡ್ಡಿಗಳಿಂದ ತುಂಬಿರುವ/ ಕಟ್ಟಿಕೊಂಡಿರುವ ಚರಂಡಿಗಳನ್ನು ಸ್ವಚ್ಛಗೊಳಿಸದಿರುವುದು", "description": "ಜಲನಿಕಾಸ ವ್ಯವಸ್ಥೆ ತಡೆಹಿಡಿದಿದೆ ಅಥವಾ ಸ್ವಚ್ಛಗೊಳಿಸಲಾಗಿಲ್ಲ" },
+          { "code": "burning_garbage_open", "title": "ತೆರೆದ ಸ್ಥಳಗಳಲ್ಲಿ ಕಸವನ್ನು ಸುಡುವುದು", "description": "ಮುಕ್ತ ಪ್ರದೇಶಗಳಲ್ಲಿ ಕಸ ಸುಡಲಾಗುತ್ತಿದೆ ಇದು ಮಾಲಿನ್ಯಕ್ಕೆ ಕಾರಣವಾಗುತ್ತಿದೆ" },
+          { "code": "garbage_dumping_open_sites", "title": "ತೆರೆದ ಸ್ಥಳಗಳಲ್ಲಿ ಕಸ ಸುರಿಯುವುದು/ ರಾಶಿ ಹಾಕುವುದು", "description": "ಅನಧಿಕೃತ ಮುಕ್ತ ಪ್ರದೇಶಗಳಲ್ಲಿ ಕಸ ಡಂಪ್ ಮಾಡಲಾಗುತ್ತಿದೆ" },
+          { "code": "stagnant_water_road", "title": "ರಸ್ತೆಯಲ್ಲಿ ನಿಂತ ನೀರು", "description": "ರಸ್ತೆಗಳಲ್ಲಿ ನೀರು ಸಂಗ್ರಹವಾಗುತ್ತಿದೆ ಮತ್ತು ನಿಂತಿದೆ" },
+          { "code": "urination_public", "title": "ಸಾರ್ವಜನಿಕ ಸ್ಥಳಗಳಲ್ಲಿ ಮೂತ್ರ ವಿಸರ್ಜನೆ/ಮಲವಿಸರ್ಜನೆ (OD)", "description": "ಸಾರ್ವಜನಿಕ ಪ್ರದೇಶಗಳಲ್ಲಿ ಸಾರ್ವಜನಿಕ ಮೂತ್ರ ಮತ್ತು ಮುಕ್ತ ಶೌಚ" },
+          { "code": "littering", "title": "ಎಲ್ಲೆಂದರಲ್ಲಿ ಕಸ ಹಾಕುವುದು", "description": "ಸಾರ್ವಜನಿಕ ಪ್ರದೇಶಗಳಲ್ಲಿ ತ್ಯಾಜ್ಯ ವಸ್ತುಗಳು ಚೆಲ್ಲಾಡಿವೆ" },
+          { "code": "non_segregation_waste", "title": "ತ್ಯಾಜ್ಯವನ್ನು ಮೂಲದಲ್ಲಿಯೆ ಬೇರ್ಪಡಿಸದಿರುವುದು", "description": "ಮಾರ್ಗದರ್ಶನಗಳ ಪ್ರಕಾರ ತ್ಯಾಜ್ಯವನ್ನು ವರ್ಗೀಕರಿಸಲಾಗುತ್ತಿಲ್ಲ" },
+          { "code": "illegal_biomedical_waste", "title": "ವೈದ್ಯಕೀಯ ಮತ್ತು ಅಪಾಯಕಾರಿ ತ್ಯಾಜ್ಯವನ್ನು ಅಕ್ರಮವಾಗಿ ಎಲ್ಲೆಂದರಲ್ಲಿ ಸುರಿಯುವುದು", "description": "ಜೈವಿಕ ವೈದ್ಯಕೀಯ ಮತ್ತು ಅಪಾಯಕಾರಿ ತ್ಯಾಜ್ಯವನ್ನು ಅಕ್ರಮವಾಗಿ ಡಂಪ್ ಮಾಡಲಾಗುತ್ತಿದೆ" }
+        ]
+      },
+      {
+        "code": "animal_control",
+        "name": "ಪ್ರಾಣಿಗಳ ನಿಯಂತ್ರಣ",
+        "description": "ಪ್ರಾಣಿ ನಿಯಂತ್ರಣ ಮತ್ತು ನಿರ್ವಹಣೆ ಸಂಬಂಧಿತ ಸಮಸ್ಯೆಗಳು",
+        "complaints": [
+          { "code": "dog_bite", "title": "ನಾಯಿ ಕಡಿತ", "description": "ಪ್ರದೇಶದಲ್ಲಿ ನಾಯಿ ಕಚ್ಚುವಿಕೆಯ ಘಟನೆಗಳು" },
+          { "code": "nuisance_stray_animals", "title": "ಬೀಡಾಡಿ ಪ್ರಾಣಿಗಳ ಉಪದ್ರವ", "description": "ಆವಾರಾ ಪ್ರಾಣಿಗಳು ತೊಂದರೆ ಮತ್ತು ಕಿರುಕುಳ ಉಂಟುಮಾಡುತ್ತಿವೆ" },
+          { "code": "dead_animals", "title": "ಸತ್ತ ಪ್ರಾಣಿ(ಗಳು) ತೆರವುಗೊಳಿಸುವುದು", "description": "ಸಾರ್ವಜನಿಕ ಪ್ರದೇಶಗಳಲ್ಲಿ ಸತ್ತ ಪ್ರಾಣಿಗಳು ಕಂಡುಬಂದಿವೆ" },
+          { "code": "neutering_street_dogs", "title": "ಬೀದಿ ನಾಯಿಗಳ ಸಂತಾನಹರಣ", "description": "ಜನಸಂಖ್ಯೆ ನಿಯಂತ್ರಣಕ್ಕಾಗಿ ರಸ್ತೆ ನಾಯಿಗಳನ್ನು ನಿರ್ವೀರ್ಯೀಕರಣ ಮಾಡುವುದು ಅಗತ್ಯ" },
+          { "code": "anti_rabies_vaccination", "title": "ಬೀದಿ ನಾಯಿಗಳಿಗೆ ಆ್ಯಂಟಿ-ರೇಬೀಸ್ ಲಸಿಕೆ ಹಾಕುವುದು", "description": "ಬೀದಿ ನಾಯಿಗಳಿಗೆ ಆ್ಯಂಟಿ-ರೇಬೀಸ್ ಲಸಿಕೆ ಅಗತ್ಯವಿದೆ" }
+        ]
+      },
+      {
+        "code": "health_services",
+        "name": "ಆರೋಗ್ಯ",
+        "description": "ಆರೋಗ್ಯ ಸೇವೆಗಳು ಮತ್ತು ಸೌಕರ್ಯಗಳ ಸಂಬಂಧಿತ ಸಮಸ್ಯೆಗಳು",
+        "complaints": [
+          { "code": "mosquito_control", "title": "ಸೊಳ್ಳೆ ನಿಯಂತ್ರಣ", "description": "ಪ್ರದೇಶದಲ್ಲಿ ಸೊಳ್ಳೆ ನಿಯಂತ್ರಣ ಕ್ರಮಗಳ ಅಗತ್ಯತೆ" },
+          { "code": "air_noise_pollution", "title": "ವಾಯು/ಶಬ್ದ ಮಾಲಿನ್ಯಕ್ಕೆ ಸಂಬಂಧಿಸಿದ ಸಮಸ್ಯೆಗಳು", "description": "ಪ್ರದೇಶದಲ್ಲಿ ವಾಯು ಮತ್ತು ಧ್ವನಿ ಮಾಲಿನ್ಯದ ಸಮಸ್ಯೆಗಳು" },
+          { "code": "fogging_issues", "title": "ಫಾಗಿಂಗ್‌ಗೆ ಸಂಬಂಧಿಸಿದ ಸಮಸ್ಯೆಗಳು", "description": "ಸೊಳ್ಳೆ ಫಾಗಿಂಗ್ ಕಾರ್ಯಾಚರಣೆಗಳನ್ನು ಸರಿಯಾಗಿ ನಡೆಸಲಾಗುತ್ತಿಲ್ಲ" },
+          { "code": "spraying_treatment", "title": "ರಸ್ತೆ/ಚರಂಡಿಗಳಿಗೆ ರಸಾಯನಿಕ ಔಷಧಿ ಸಿಂಪಡಣೆಗೆ ಸಂಬಂಧಿಸಿದ ಸಮಸ್ಯೆಗಳು", "description": "ರಸಾಯನಿಕ ಸಿಂಪಡಣಾ ಕಾರ್ಯಗಳು ಸರಿಯಾಗಿ ನಡೆಯುತ್ತಿಲ್ಲ" },
+          { "code": "unhygienic_mutton_stalls", "title": "ಮಟನ್/ಕೋಳಿ/ಮೀನು ಅಂಗಡಿಗಳಲ್ಲಿ ನೈರ್ಮಲ್ಯವನ್ನು ಕಾಪಾಡಿಕೊಳ್ಳದಿರುವುದು", "description": "ಆಹಾರ ಅಂಗಡಿಗಳು ಸರಿಯಾದ ಸ್ವಚ್ಛತೆ ಮಾನದಂಡಗಳನ್ನು ಕಾಯ್ದುಕೊಳ್ಳುತ್ತಿಲ್ಲ" },
+          { "code": "unhygienic_hotel_premises", "title": "ಹೋಟೆಲ್‌ನಲ್ಲಿ ಅನೈರ್ಮಲ್ಯ ಆವರಣ/ವಾತಾವರಣ", "description": "ಹೋಟೆಲ್‌ಗಳು ಮತ್ತು ರೆಸ್ಟೋರೆಂಟ್‌ಗಳು ಸ್ವಚ್ಛತೆ ಮಾನದಂಡಗಳನ್ನು ಕಾಯ್ದುಕೊಳ್ಳುತ್ತಿಲ್ಲ" }
+        ]
+      },
+      {
+        "code": "birth_death_certificates",
+        "name": "ಜನನ/ಮರಣ ಪ್ರಮಾಣಪತ್ರಗಳು",
+        "description": "ಪ್ರಮಾಣಪತ್ರ ಸಂಬಂಧಿತ ಸಮಸ್ಯೆಗಳು",
+        "complaints": [
+          { "code": "birth_certificate_issue", "title": "ಜನನ ಪ್ರಮಾಣ ಪತ್ರ ವಿತರಣೆ ಸಂಬಂಧಿತ ಸಮಸ್ಯೆ", "description": "ಜನನ ಪ್ರಮಾಣಪತ್ರ ವಿತರಣೆ ಸಂಬಂಧಿತ ಸಮಸ್ಯೆಗಳು" }
+        ,
+        {
+          "code": "death_certificate_issue",
+          "title": "ಮರಣ ಪ್ರಮಾಣ ಪತ್ರ ವಿತರಣೆ ಸಂಬಂಧಿತ ಸಮಸ್ಯೆ",
+          "description": "ಮರಣ ಪ್ರಮಾಣಪತ್ರ ವಿತರಣೆ ಸಂಬಂಧಿತ ಸಮಸ್ಯೆಗಳು"
+        }
+        ]
+      },
+      {
+      "code": "trade_licence",
+      "name": "ವ್ಯಾಪಾರ ಪರವಾನಗಿ",
+      "description": "ವ್ಯಾಪಾರ ಪರವಾನಗಿ ಸಂಬಂಧಿತ ಸಮಸ್ಯೆಗಳು",
+      "complaints": [
+        {
+          "code": "new_trade_licence",
+          "title": "ಹೊಸ ವ್ಯಾಪಾರ ಪರವಾನಗಿ ಪಡೆಯಲು",
+          "description": "ಹೊಸ ವ್ಯಾಪಾರ ಪರವಾನಗಿಗೆ ಅರ್ಜಿ ಸಲ್ಲಿಸುವುದು"
+        },
+        {
+          "code": "trade_licence_renewal",
+          "title": "ವ್ಯಾಪಾರ ಪರವಾನಗಿ ನವೀಕರಣ ಮಾಡಲು",
+          "description": "ಹಿಂದಿನ ವ್ಯಾಪಾರ ಪರವಾನಗಿಯನ್ನು ನವೀಕರಣ ಮಾಡುವುದು"
+        }
+      ]
+    },
+    {
+      "code": "public_safety",
+      "name": "ಸಾರ್ವಜನಿಕ ಸುರಕ್ಷತೆ",
+      "description": "ಸಾರ್ವಜನಿಕ ಸುರಕ್ಷತೆ ಮತ್ತು ಮೂಲಸೌಕರ್ಯ ಸಂಬಂಧಿತ ಸಮಸ್ಯೆಗಳು",
+      "complaints": [
+        {
+          "code": "removal_dead_fallen_trees",
+          "title": "ಮರಗಳ ರೆಂಭೆ/ಕೊಂಭೆ ತೆಗೆಯುವುದು",
+          "description": "ಸಾರ್ವಜನಿಕ ಪ್ರದೇಶಗಳಿಂದ ಸತ್ತ ಅಥವಾ ಬಿದ್ದ ಮರಗಳನ್ನು ತೆಗೆದುಹಾಕಬೇಕು"
+        },
+        {
+          "code": "obstruction_trees_branches",
+          "title": "ಮರಗಳು ಅಥವಾ ಕೊಂಬೆಗಳಿಂದ ಉಂಟಾಗುವ ಅಡಚಣೆ",
+          "description": "ಮರಗಳು ಅಥವಾ ಕೊಂಬೆಗಳು ರಸ್ತೆಗಳು ಮತ್ತು ದಾರಿಗಳನ್ನು ತಡೆದುಕೊಂಡಿವೆ"
+        },
+        {
+          "code": "unauthorised_flex_banners",
+          "title": "ಅನಧಿಕೃತ ಫ್ಲೆಕ್ಸ್ ಮತ್ತು ಬ್ಯಾನರ್‌ಗಳು",
+          "description": "ಅವೈಧ ಫ್ಲೆಕ್ಸ್ ಬೋರ್ಡ್‌ಗಳು ಮತ್ತು ಬ್ಯಾನರ್‌ಗಳು ಅಡಚಣೆಯನ್ನು ಸೃಷ್ಟಿ ಮಾಡುತ್ತಿವೆ"
+        },
+        {
+          "code": "unsafe_hoardings",
+          "title": "ಅಸುರಕ್ಷಿತ ಹೋರ್ಡಿಂಗ್‌ಗಳು",
+          "description": "ಅಸ್ಥಿರ ಅಥವಾ ಅಸುರಕ್ಷಿತ ಜಾಹೀರಾತು ಹೋರ್ಡಿಂಗ್‌ಗಳು"
+        },
+        {
+          "code": "grass_cutting",
+          "title": "ರಸ್ತೆ/ಚರಂಡಿಗಳ ಬದಿಯಲ್ಲಿ ಬೆಳೆದಿರುವ ಹುಲ್ಲು ಕತ್ತರಿಸುವುದು",
+          "description": "ರಸ್ತೆ ಪಕ್ಕದ ಮತ್ತು ಮಧ್ಯದಲ್ಲಿ ಬೆಳೆದ ಹುಲ್ಲನ್ನು ಕತ್ತರಿಸಬೇಕು"
+        }
+      ]
+    }
+    ]
+  },
+  "hn": {
+    "complaint_categories": [
+      {
+        "code": "garbage_and_sanitation",
+        "name": "कचरा और स्वच्छता",
+        "description": "कचरा संग्रहण और स्वच्छता से संबंधित समस्याएँ",
+        "complaints": [
+          { "code": "public_dustbins_not_cleaned", "title": "सार्वजनिक डस्टबिन साफ नहीं किए गए", "description": "सार्वजनिक डस्टबिन नियमित रूप से साफ नहीं किए जा रहे हैं" },
+          { "code": "garbage_dump", "title": "कचरे का ढेर", "description": "सार्वजनिक क्षेत्रों में अवैध रूप से कचरा डाला जा रहा है" },
+          { "code": "garbage_vehicle_not_arrived", "title": "कचरा वाहन नहीं आया", "description": "कचरा संग्रहण वाहन समय पर नहीं आया है" },
+          { "code": "sweeping_not_done", "title": "सफाई नहीं की गई", "description": "सड़क की झाड़ू और सफाई का कार्य नहीं किया गया है" },
+          { "code": "drains_not_cleaned", "title": "नालियां साफ नहीं की गईं / जाम हैं", "description": "जल निकासी प्रणाली जाम है या साफ नहीं की गई है" },
+          { "code": "burning_garbage_open", "title": "खुले में कचरा जलाया जा रहा है", "description": "खुले क्षेत्रों में कचरा जलाया जा रहा है जिससे प्रदूषण हो रहा है" },
+          { "code": "garbage_dumping_open_sites", "title": "खुले स्थानों में कचरा फेंकना", "description": "अनधिकृत खुले स्थानों पर कचरा फेंका जा रहा है" },
+          { "code": "stagnant_water_road", "title": "सड़क पर जमा पानी", "description": "सड़कों पर पानी जमा होकर रुका हुआ है" },
+          { "code": "urination_public", "title": "सार्वजनिक स्थानों पर पेशाब/खुले में शौच", "description": "सार्वजनिक स्थानों पर खुले में पेशाब और शौच की समस्या" },
+          { "code": "littering", "title": "कचरा फैलाना", "description": "सार्वजनिक स्थानों पर कचरा फैला हुआ है" },
+          { "code": "non_segregation_waste", "title": "कचरे का पृथक्करण नहीं", "description": "निर्देशों के अनुसार कचरे को अलग नहीं किया जा रहा है" },
+          { "code": "illegal_biomedical_waste", "title": "बायोमेडिकल और खतरनाक कचरे का अवैध निस्तारण", "description": "जैव-चिकित्सीय और खतरनाक कचरा अवैध रूप से डाला जा रहा है" }
+        ]
+      },
+      {
+        "code": "animal_control",
+        "name": "पशु नियंत्रण",
+        "description": "पशु नियंत्रण और प्रबंधन से संबंधित समस्याएँ",
+        "complaints": [
+          { "code": "dog_bite", "title": "कुत्ते के काटने की घटना", "description": "क्षेत्र में कुत्ते के काटने की घटनाएँ हुई हैं" },
+          { "code": "nuisance_stray_animals", "title": "आवारा पशुओं द्वारा परेशानी", "description": "आवारा पशु लोगों को परेशान कर रहे हैं" },
+          { "code": "dead_animals", "title": "मरे हुए पशुओं को हटाना", "description": "सार्वजनिक क्षेत्रों में मरे हुए पशु पाए गए हैं" },
+          { "code": "neutering_street_dogs", "title": "सड़क के कुत्तों का नसबंदी", "description": "जनसंख्या नियंत्रण के लिए सड़क के कुत्तों की नसबंदी आवश्यक है" },
+          { "code": "anti_rabies_vaccination", "title": "सड़क के कुत्तों का एंटी-रेबीज टीकाकरण", "description": "सड़क के कुत्तों को एंटी-रेबीज टीका लगाना आवश्यक है" }
+        ]
+      },
+      {
+        "code": "health_services",
+        "name": "स्वास्थ्य",
+        "description": "स्वास्थ्य सेवाओं और सुविधाओं से संबंधित समस्याएँ",
+        "complaints": [
+          { "code": "mosquito_control", "title": "मच्छर नियंत्रण", "description": "क्षेत्र में मच्छर नियंत्रण के उपायों की आवश्यकता है" },
+          { "code": "air_noise_pollution", "title": "वायु/ध्वनि प्रदूषण से संबंधित समस्याएँ", "description": "क्षेत्र में वायु और ध्वनि प्रदूषण की समस्या है" },
+          { "code": "fogging_issues", "title": "फॉगिंग से संबंधित समस्याएँ", "description": "मच्छर फॉगिंग कार्य ठीक से नहीं किया जा रहा है" },
+          { "code": "spraying_treatment", "title": "स्प्रे/रासायनिक उपचार से संबंधित समस्याएँ", "description": "रासायनिक स्प्रे या उपचार सही तरीके से नहीं किए जा रहे हैं" },
+          { "code": "unhygienic_mutton_stalls", "title": "मटन/चिकन/मछली की दुकानों में स्वच्छता नहीं", "description": "खाद्य दुकानों में स्वच्छता के मानक बनाए नहीं रखे जा रहे हैं" },
+          { "code": "unhygienic_hotel_premises", "title": "अस्वच्छ होटल परिसर", "description": "होटल और रेस्टोरेंट में स्वच्छता मानकों का पालन नहीं हो रहा है" }
+        ]
+      },
+      {
+        "code": "birth_death_certificates",
+        "name": "जन्म/मृत्यु प्रमाणपत्र",
+        "description": "प्रमाणपत्र से संबंधित समस्याएँ",
+        "complaints": [
+          { "code": "birth_certificate_issue", "title": "जन्म प्रमाणपत्र से संबंधित समस्या", "description": "जन्म प्रमाणपत्र जारी करने से जुड़ी समस्याएँ" }
+          ,{
+          "code": "death_certificate_issue",
+          "title": "मृत्यु प्रमाणपत्र से संबंधित समस्या",
+          "description": "मृत्यु प्रमाणपत्र जारी करने से जुड़ी समस्याएँ"
+        }
+        ]
+      },
+      {
+      "code": "trade_licence",
+      "name": "व्यापार लाइसेंस",
+      "description": "व्यापार लाइसेंस से संबंधित समस्याएँ",
+      "complaints": [
+        {
+          "code": "new_trade_licence",
+          "title": "नया व्यापार लाइसेंस",
+          "description": "नए व्यापार लाइसेंस के लिए आवेदन करें"
+        },
+        {
+          "code": "trade_licence_renewal",
+          "title": "व्यापार लाइसेंस नवीकरण",
+          "description": "मौजूदा व्यापार लाइसेंस का नवीकरण"
+        }
+      ]
+    },
+    {
+      "code": "public_safety",
+      "name": "सार्वजनिक सुरक्षा",
+      "description": "सार्वजनिक सुरक्षा और बुनियादी ढांचे से संबंधित समस्याएँ",
+      "complaints": [
+        {
+          "code": "removal_dead_fallen_trees",
+          "title": "मरे हुए/गिरे हुए पेड़ों को हटाना",
+          "description": "सार्वजनिक क्षेत्रों से मरे हुए या गिरे हुए पेड़ों को हटाया जाना चाहिए"
+        },
+        {
+          "code": "obstruction_trees_branches",
+          "title": "पेड़ों या शाखाओं द्वारा रुकावट",
+          "description": "पेड़ या शाखाएँ सड़कों और पैदल रास्तों को अवरुद्ध कर रहे हैं"
+        },
+        {
+          "code": "unauthorised_flex_banners",
+          "title": "अनधिकृत फ्लेक्स और बैनर",
+          "description": "अवैध फ्लेक्स बोर्ड और बैनर रुकावट पैदा कर रहे हैं"
+        },
+        {
+          "code": "unsafe_hoardings",
+          "title": "असुरक्षित होर्डिंग",
+          "description": "अस्थिर या असुरक्षित विज्ञापन होर्डिंग"
+        },
+        {
+          "code": "grass_cutting",
+          "title": "घास काटना",
+          "description": "सड़क के किनारों और मध्य अवरोधों पर घास काटनी चाहिए"
+        }
+      ]
+    }
+  
+    ]
+  }
+},
+
 
   "housing_section": {
     "en": {
@@ -964,7 +734,7 @@
     }
   },
 
-  "technical_section": {
+"technical_section": {
     "en": {
       "complaint_categories": [
         {
@@ -976,6 +746,11 @@
               "code": "no_electricity_public_toilets",
               "title": "No electricity in public toilet(s)",
               "description": "Public toilets have no electricity supply"
+            },
+            {
+              "code": "no_water_supply_public_toilets",
+              "title": "No water supply in public toilet(s)",
+              "description": "Public toilets have no water supply"
             },
             {
               "code": "public_toilets_blockage",
@@ -1018,6 +793,77 @@
               "code": "cleaning_septic_tanks",
               "title": "Cleaning Of septic Tanks",
               "description": "Septic tanks need cleaning and maintenance"
+            }
+          ]
+        },
+        {
+          "code": "street_light",
+          "name": "Street Light",
+          "description": "Street lighting maintenance and issues",
+          "complaints": [
+            {
+              "code": "no_street_lights",
+              "title": "No Street Lights",
+              "description": "Street lights are not installed in the area"
+            },
+            {
+              "code": "street_light_repair",
+              "title": "Street Light Repair",
+              "description": "Street lights need repair and maintenance"
+            },
+            {
+              "code": "street_light_day_time",
+              "title": "Street light switched on during day time",
+              "description": "Street lights are on during daylight hours"
+            },
+            {
+              "code": "electrical_connection_new_street_light",
+              "title": "Electrical connection not provided for new street light",
+              "description": "New street light lacks electrical connection"
+            }
+          ]
+        },
+        {
+          "code": "electrical",
+          "name": "Electrical",
+          "description": "Electrical infrastructure and safety issues",
+          "complaints": [
+            {
+              "code": "earthing_issue_electric_pole",
+              "title": "Earthing issue related to electric pole/panel boards",
+              "description": "Electrical earthing problems with poles and panels"
+            },
+            {
+              "code": "electrical_junction_box_open",
+              "title": "Electrical junction box kept open",
+              "description": "Electrical junction boxes are left open and unsafe"
+            },
+            {
+              "code": "park_lights_not_working",
+              "title": "Park lights not working",
+              "description": "Park lighting system is not functioning"
+            }
+          ]
+        },
+        {
+          "code": "building_licence",
+          "name": "Building Licence",
+          "description": "Building licence issuance and renewal",
+          "complaints": [
+            {
+              "code": "issuance_building_licence",
+              "title": "Issuance of building licence",
+              "description": "Building licence issuance process"
+            },
+            {
+              "code": "renewal_building_licence",
+              "title": "Renewal of building licence",
+              "description": "Building licence renewal process"
+            },
+            {
+              "code": "issue_licence_application",
+              "title": "Issue with licence application submission or processing",
+              "description": "Problems with building licence application submission or processing"
             }
           ]
         },
@@ -1080,12 +926,12 @@
             },
             {
               "code": "insufficient_lake_security",
-              "title": "Insufficient lake security personnel",
+              "title": "Insuffucient lake security personnel",
               "description": "Lake area lacks adequate security personnel"
             },
             {
               "code": "lake_encroachment",
-              "title": "Encroachment",
+              "title": "Encrochment",
               "description": "Lake area is being encroached upon"
             },
             {
@@ -1095,7 +941,7 @@
             },
             {
               "code": "lake_gates_timing_issue",
-              "title": "Lake gates are not opened as per the prescribed timing",
+              "title": "Lake gates are not opend as per the prescribed timing",
               "description": "Lake gates not following scheduled opening times"
             },
             {
@@ -1111,62 +957,13 @@
           ]
         },
         {
-          "code": "street_light",
-          "name": "Street Light",
-          "description": "Street lighting maintenance and issues",
-          "complaints": [
-            {
-              "code": "no_street_lights",
-              "title": "No Street Lights",
-              "description": "Street lights are not installed in the area"
-            },
-            {
-              "code": "street_light_repair",
-              "title": "Street Light Repair",
-              "description": "Street lights need repair and maintenance"
-            },
-            {
-              "code": "street_light_day_time",
-              "title": "Street light switched on during day time",
-              "description": "Street lights are on during daylight hours"
-            },
-            {
-              "code": "electrical_connection_new_street_light",
-              "title": "Electrical connection not provided for new street light",
-              "description": "New street light lacks electrical connection"
-            }
-          ]
-        },
-        {
-          "code": "electrical",
-          "name": "Electrical",
-          "description": "Electrical infrastructure and safety issues",
-          "complaints": [
-            {
-              "code": "earthnng_issue_electric_pole",
-              "title": "Earthnng issue related to electric pole/panel boards",
-              "description": "Electrical earthnng problems with poles and panels"
-            },
-            {
-              "code": "electrical_junction_box_open",
-              "title": "Electrical junction box kept open",
-              "description": "Electrical junction boxes are left open and unsafe"
-            },
-            {
-              "code": "park_lights_not_working",
-              "title": "Park lights not working",
-              "description": "Park lighting system is not functioning"
-            }
-          ]
-        },
-        {
           "code": "road_maintenance",
           "name": "Road Maintenance",
           "description": "Road maintenance and infrastructure issues",
           "complaints": [
             {
               "code": "footpath_encroachment",
-              "title": "Foot path encroachment issue",
+              "title": "Foot path encrochment issue",
               "description": "Footpaths are being encroached upon"
             },
             {
@@ -1235,7 +1032,7 @@
         },
         {
           "code": "general_technical",
-          "name": "General technical",
+          "name": "General",
           "description": "General technical infrastructure issues",
           "complaints": [
             {
@@ -1273,6 +1070,11 @@
               "code": "no_electricity_public_toilets",
               "title": "सार्वजनिक शौचालय में बिजली नहीं",
               "description": "सार्वजनिक शौचालय में बिजली की आपूर्ति नहीं है"
+            },
+            {
+              "code": "no_water_supply_public_toilets",
+              "title": "सार्वजनिक शौचालय में पानी की आपूर्ति नहीं है",
+              "description": "सार्वजनिक शौचालय में पानी की आपूर्ति नहीं है"
             },
             {
               "code": "public_toilets_blockage",
@@ -1315,6 +1117,77 @@
               "code": "cleaning_septic_tanks",
               "title": "सेप्टिक टैंक की सफाई",
               "description": "सेप्टिक टैंक की सफाई और रखरखाव की आवश्यकता"
+            }
+          ]
+        },
+        {
+          "code": "street_light",
+          "name": "सड़क प्रकाश",
+          "description": "सड़क प्रकाश व्यवस्था का रखरखाव और मुद्दे",
+          "complaints": [
+            {
+              "code": "no_street_lights",
+              "title": "सड़क प्रकाश नहीं",
+              "description": "क्षेत्र में सड़क प्रकाश स्थापित नहीं"
+            },
+            {
+              "code": "street_light_repair",
+              "title": "सड़क प्रकाश की मरम्मत",
+              "description": "सड़क प्रकाश की मरम्मत और रखरखाव की आवश्यकता"
+            },
+            {
+              "code": "street_light_day_time",
+              "title": "दिन के समय सड़क प्रकाश चालू",
+              "description": "दिन के समय सड़क प्रकाश चालू हैं"
+            },
+            {
+              "code": "electrical_connection_new_street_light",
+              "title": "नए सड़क प्रकाश के लिए विद्युत कनेक्शन नहीं",
+              "description": "नए सड़क प्रकाश में विद्युत कनेक्शन की कमी"
+            }
+          ]
+        },
+        {
+          "code": "electrical",
+          "name": "विद्युत",
+          "description": "विद्युत बुनियादी ढांचे और सुरक्षा के मुद्दे",
+          "complaints": [
+            {
+              "code": "earthing_issue_electric_pole",
+              "title": "विद्युत खंभे/पैनल बोर्ड से संबंधित अर्थिंग समस्या",
+              "description": "खंभों और पैनलों में विद्युत अर्थिंग की समस्याएं"
+            },
+            {
+              "code": "electrical_junction_box_open",
+              "title": "विद्युत जंक्शन बॉक्स खुला रखा गया",
+              "description": "विद्युत जंक्शन बॉक्स खुले और असुरक्षित छोड़े गए"
+            },
+            {
+              "code": "park_lights_not_working",
+              "title": "पार्क के प्रकाश काम नहीं कर रहे",
+              "description": "पार्क प्रकाश व्यवस्था काम नहीं कर रही"
+            }
+          ]
+        },
+        {
+          "code": "building_licence",
+          "name": "भवन परवाना",
+          "description": "भवन परवाना जारी करना और नवीनीकरण",
+          "complaints": [
+            {
+              "code": "issuance_building_licence",
+              "title": "भवन परवाने का जारी करना",
+              "description": "भवन परवाने की जारी करने की प्रक्रिया"
+            },
+            {
+              "code": "renewal_building_licence",
+              "title": "भवन परवाने का नवीनीकरण",
+              "description": "भवन परवाने की नवीनीकरण प्रक्रिया"
+            },
+            {
+              "code": "issue_licence_application",
+              "title": "परवाना आवेदन जमा करने या प्रसंस्करण में समस्या",
+              "description": "भवन परवाना आवेदन जमा करने या प्रसंस्करण में समस्याएं"
             }
           ]
         },
@@ -1408,55 +1281,6 @@
           ]
         },
         {
-          "code": "street_light",
-          "name": "सड़क प्रकाश",
-          "description": "सड़क प्रकाश व्यवस्था का रखरखाव और मुद्दे",
-          "complaints": [
-            {
-              "code": "no_street_lights",
-              "title": "सड़क प्रकाश नहीं",
-              "description": "क्षेत्र में सड़क प्रकाश स्थापित नहीं"
-            },
-            {
-              "code": "street_light_repair",
-              "title": "सड़क प्रकाश की मरम्मत",
-              "description": "सड़क प्रकाश की मरम्मत और रखरखाव की आवश्यकता"
-            },
-            {
-              "code": "street_light_day_time",
-              "title": "दिन के समय सड़क प्रकाश चालू",
-              "description": "दिन के समय सड़क प्रकाश चालू हैं"
-            },
-            {
-              "code": "electrical_connection_new_street_light",
-              "title": "नए सड़क प्रकाश के लिए विद्युत कनेक्शन नहीं",
-              "description": "नए सड़क प्रकाश में विद्युत कनेक्शन की कमी"
-            }
-          ]
-        },
-        {
-          "code": "electrical",
-          "name": "विद्युत",
-          "description": "विद्युत बुनियादी ढांचे और सुरक्षा के मुद्दे",
-          "complaints": [
-            {
-              "code": "earthnng_issue_electric_pole",
-              "title": "विद्युत खंभे/पैनल बोर्ड से संबंधित अर्थिंग समस्या",
-              "description": "खंभों और पैनलों में विद्युत अर्थिंग की समस्याएं"
-            },
-            {
-              "code": "electrical_junction_box_open",
-              "title": "विद्युत जंक्शन बॉक्स खुला रखा गया",
-              "description": "विद्युत जंक्शन बॉक्स खुले और असुरक्षित छोड़े गए"
-            },
-            {
-              "code": "park_lights_not_working",
-              "title": "पार्क के प्रकाश काम नहीं कर रहे",
-              "description": "पार्क प्रकाश व्यवस्था काम नहीं कर रही"
-            }
-          ]
-        },
-        {
           "code": "road_maintenance",
           "name": "सड़क रखरखाव",
           "description": "सड़क रखरखाव और बुनियादी ढांचे के मुद्दे",
@@ -1532,7 +1356,7 @@
         },
         {
           "code": "general_technical",
-          "name": "तकनीकी समस्याएं",
+          "name": "सामान्य समस्याएं",
           "description": "सामान्य तकनीकी बुनियादी ढांचे के मुद्दे",
           "complaints": [
             {
@@ -1547,7 +1371,7 @@
             },
             {
               "code": "permission_mobile_tower_erection",
-              "title": "मोबाइल टावर स्थापना के लिए अनुमति/अनुमोदन/नवीनीकरण",
+              "title": "मोबाइल टावर स्थापना के लिए अनुमति/अनुमोदन/नवीकरण",
               "description": "मोबाइल टावर स्थापना या नवीनीकरण के लिए अनुमति आवश्यक"
             },
             {
@@ -1559,7 +1383,7 @@
         }
       ]
     },
-    "kn": {
+ "kn": {
       "complaint_categories": [
         {
           "code": "public_toilets",
@@ -1570,6 +1394,11 @@
               "code": "no_electricity_public_toilets",
               "title": "ಸಾರ್ವಜನಿಕ/ಸಮುದಾಯ ಶೌಚಾಲಯಗಳಲ್ಲಿ ವಿದ್ಯುತ್ ಇಲ್ಲ",
               "description": "ಸಾರ್ವಜನಿಕ ಶೌಚಾಲಯಗಳಲ್ಲಿ ವಿದ್ಯುತ್ ಪೂರೈಕೆ ಇಲ್ಲ"
+            },
+            {
+              "code": "no_water_supply_public_toilets",
+              "title": "ಸಾರ್ವಜನಿಕ/ಸಮುದಾಯ ಶೌಚಾಲಯಗಳಲ್ಲಿ ನೀರು ಸರಬರಾಜು ಇಲ್ಲ",
+              "description": "ಸಾರ್ವಜನಿಕ ಶೌಚಾಲಯಗಳಲ್ಲಿ ನೀರಿನ ಪೂರೈಕೆ ಇಲ್ಲ"
             },
             {
               "code": "public_toilets_blockage",
@@ -1585,7 +1414,7 @@
         },
         {
           "code": "underground_drainage",
-          "name": "ಭೂಗತ ಜಲನಿಕಾಸ",
+          "name": "ಒಳಚರಂಡಿ ವ್ಯವಸ್ಥೆ",
           "description": "ಭೂಗತ ಜಲನಿಕಾಸ ವ್ಯವಸ್ಥೆಯ ಸಮಸ್ಯೆಗಳು",
           "complaints": [
             {
@@ -1616,6 +1445,77 @@
           ]
         },
         {
+          "code": "street_light",
+          "name": "ಬೀದಿ ದೀಪ ನಿರ್ವಹಣೆ",
+          "description": "ರಸ್ತೆ ದೀಪಗಳ ನಿರ್ವಹಣೆ ಮತ್ತು ಸಮಸ್ಯೆಗಳು",
+          "complaints": [
+            {
+              "code": "no_street_lights",
+              "title": "ಬೀದಿ ದೀಪಗಳಿಲ್ಲ",
+              "description": "ಪ್ರದೇಶದಲ್ಲಿ ರಸ್ತೆ ದೀಪಗಳನ್ನು ಸ್ಥಾಪಿಸಲಾಗಿಲ್ಲ"
+            },
+            {
+              "code": "street_light_repair",
+              "title": "ಬೀದಿ ದೀಪ ದುರಸ್ತಿ",
+              "description": "ರಸ್ತೆ ದೀಪಗಳ ದುರಸ್ತಿ ಮತ್ತು ನಿರ್ವಹಣೆ ಅಗತ್ಯವಿದೆ"
+            },
+            {
+              "code": "street_light_day_time",
+              "title": "ಹಗಲು ಹೊತ್ತಿನಲ್ಲಿ ಬೀದಿ ದೀಪ ಆನ್ ಆಗುತ್ತದೆ",
+              "description": "ಹಗಲು ಸಮಯದಲ್ಲಿ ರಸ್ತೆ ದೀಪಗಳು ಚಾಲುವಾಗಿವೆ"
+            },
+            {
+              "code": "electrical_connection_new_street_light",
+              "title": "ಹೊಸ ಬೀದಿ ದೀಪಕ್ಕೆ ವಿದ್ಯುತ್ ಸಂಪರ್ಕ ಒದಗಿಸಿಲ್ಲ",
+              "description": "ಹೊಸ ರಸ್ತೆ ದೀಪದಲ್ಲಿ ವಿದ್ಯುತ್ ಸಂಪರ್ಕದ ಕೊರತೆ"
+            }
+          ]
+        },
+        {
+          "code": "electrical",
+          "name": "ವಿದ್ಯುತ್",
+          "description": "ವಿದ್ಯುತ್ ಮೂಲಸೌಕರ್ಯ ಮತ್ತು ಸುರಕ್ಷತೆ ಸಮಸ್ಯೆಗಳು",
+          "complaints": [
+            {
+              "code": "earthing_issue_electric_pole",
+              "title": "ವಿದ್ಯುತ್ ಕಂಬ/ಫಲಕ ಫಲಕಗಳಿಗೆ ಸಂಬಂಧಿಸಿದ ಅರ್ಥಿಂಗ್ ಸಮಸ್ಯೆ",
+              "description": "ಕಂಬಗಳು ಮತ್ತು ಪ್ಯಾನೆಲ್‌ಗಳಲ್ಲಿ ವಿದ್ಯುತ್ ಅರ್ಥಿಂಗ್ ಸಮಸ್ಯೆಗಳು"
+            },
+            {
+              "code": "electrical_junction_box_open",
+              "title": "ವಿದ್ಯುತ್ ಜಂಕ್ಷನ್ ಬಾಕ್ಸ್ ತೆರೆದಿಡಲಾಗಿದೆ",
+              "description": "ವಿದ್ಯುತ್ ಜಂಕ್ಷನ್ ಬಾಕ್ಸ್‌ಗಳನ್ನು ತೆರೆದಿಡಲಾಗಿದೆ ಮತ್ತು ಅಸುರಕ್ಷಿತವಾಗಿವೆ"
+            },
+            {
+              "code": "park_lights_not_working",
+              "title": "ಪಾರ್ಕ್ ದೀಪಗಳು ಕಾರ್ಯನಿರ್ವಹಿಸುತ್ತಿಲ್ಲ",
+              "description": "ಪಾರ್ಕ್ ಬೆಳಗುವ ವ್ಯವಸ್ಥೆ ಕೆಲಸ ಮಾಡುತ್ತಿಲ್ಲ"
+            }
+          ]
+        },
+        {
+          "code": "building_licence",
+          "name": "ಕಟ್ಟಡ ಪರವಾನಗಿ",
+          "description": "ಕಟ್ಟಡ ಪರವಾನಗಿ ಜಾರೀ ಮಾಡುವುದು ಮತ್ತು ನವೀಕರಣ",
+          "complaints": [
+            {
+              "code": "issuance_building_licence",
+              "title": "ಕಟ್ಟಡ ಪರವಾನಗಿ ನೀಡಿಕೆ",
+              "description": "ಕಟ್ಟಡ ಪರವಾನಗಿ ನೀಡುವ ಪ್ರಕ್ರಿಯೆ"
+            },
+            {
+              "code": "renewal_building_licence",
+              "title": "ಕಟ್ಟಡ ಪರವಾನಗಿ ನವೀಕರಣ",
+              "description": "ಕಟ್ಟಡ ಪರವಾನಗಿ ನವೀಕರಣ ಪ್ರಕ್ರಿಯೆ"
+            },
+            {
+              "code": "issue_licence_application",
+              "title": "ಕಟ್ಟಡ ಪರವಾನಗಿ ಅರ್ಜಿ ಸಲ್ಲಿಸುವಾಗ ಉಂಟಾಗುವ ಸಮಸ್ಯೆಗಳಿಗೆ",
+              "description": "ಕಟ್ಟಡ ಪರವಾನಗಿ ಅರ್ಜಿ ಸಲ್ಲಿಸುವುದರಲ್ಲಿ ಅಥವಾ ಪ್ರಕ್ರಿಯೆಗೊಳಿಸುವಲ್ಲಿ ಸಮಸ್ಯೆಗಳು"
+            }
+          ]
+        },
+        {
           "code": "building_construction",
           "name": "ಕಟ್ಟಡ ನಿರ್ಮಾಣ",
           "description": "ಕಟ್ಟಡ ನಿರ್ಮಾಣ ಮತ್ತು ಅನುಮತಿಗಳ ಸಂಬಂಧಿತ ಸಮಸ್ಯೆಗಳು",
@@ -1627,7 +1527,7 @@
             },
             {
               "code": "construction_not_as_per_plan",
-              "title": "ಅನುಮೋದನಾ ಯೋಜನೆಯ ಪ್ರಕಾರ ನಿರ್ಮಾಣ ಪೂರ್ಣಗೊಳಿಸಲಾಗಿಲ್ಲ",
+              "title": "ಅನುಮೋದನಾ ಯೋಜನೆಯ ಪ್ರಕಾರ ನಿರ್ಮಾಣ ಪೂರ್ಣಗೊಂಡಿಲ್ಲ",
               "description": "ಕಟ್ಟಡ ನಿರ್ಮಾಣ ಅನುಮೋದಿತ ಯೋಜನೆಯ ಪ್ರಕಾರ ನಡೆಯುತ್ತಿಲ್ಲ"
             },
             {
@@ -1705,55 +1605,6 @@
           ]
         },
         {
-          "code": "street_light",
-          "name": "ಬೀದಿ ದೀಪ ನಿರ್ವಹಣೆ",
-          "description": "ರಸ್ತೆ ದೀಪಗಳ ನಿರ್ವಹಣೆ ಮತ್ತು ಸಮಸ್ಯೆಗಳು",
-          "complaints": [
-            {
-              "code": "no_street_lights",
-              "title": "ಬೀದಿ ದೀಪಗಳಿಲ್ಲ",
-              "description": "ಪ್ರದೇಶದಲ್ಲಿ ರಸ್ತೆ ದೀಪಗಳನ್ನು ಸ್ಥಾಪಿಸಲಾಗಿಲ್ಲ"
-            },
-            {
-              "code": "street_light_repair",
-              "title": "ಬೀದಿ ದೀಪ ದುರಸ್ತಿ",
-              "description": "ರಸ್ತೆ ದೀಪಗಳ ದುರಸ್ತಿ ಮತ್ತು ನಿರ್ವಹಣೆ ಅಗತ್ಯವಿದೆ"
-            },
-            {
-              "code": "street_light_day_time",
-              "title": "ಹಗಲು ಹೊತ್ತಿನಲ್ಲಿ ಬೀದಿ ದೀಪ ಆನ್ ಆಗುತ್ತದೆ",
-              "description": "ಹಗಲು ಸಮಯದಲ್ಲಿ ರಸ್ತೆ ದೀಪಗಳು ಚಾಲುವಾಗಿವೆ"
-            },
-            {
-              "code": "electrical_connection_new_street_light",
-              "title": "ಹೊಸ ಬೀದಿ ದೀಪಕ್ಕೆ ವಿದ್ಯುತ್ ಸಂಪರ್ಕ ಒದಗಿಸಿಲ್ಲ",
-              "description": "ಹೊಸ ರಸ್ತೆ ದೀಪದಲ್ಲಿ ವಿದ್ಯುತ್ ಸಂಪರ್ಕದ ಕೊರತೆ"
-            }
-          ]
-        },
-        {
-          "code": "electrical",
-          "name": "ವಿದ್ಯುತ್",
-          "description": "ವಿದ್ಯುತ್ ಮೂಲಸೌಕರ್ಯ ಮತ್ತು ಸುರಕ್ಷತೆ ಸಮಸ್ಯೆಗಳು",
-          "complaints": [
-            {
-              "code": "earthnng_issue_electric_pole",
-              "title": "ವಿದ್ಯುತ್ ಕಂಬ/ಫಲಕ ಫಲಕಗಳಿಗೆ ಸಂಬಂಧಿಸಿದ ಅರ್ಥಿಂಗ್ ಸಮಸ್ಯೆ",
-              "description": "ಕಂಬಗಳು ಮತ್ತು ಪ್ಯಾನೆಲ್‌ಗಳಲ್ಲಿ ವಿದ್ಯುತ್ ಅರ್ಥಿಂಗ್ ಸಮಸ್ಯೆಗಳು"
-            },
-            {
-              "code": "electrical_junction_box_open",
-              "title": "ವಿದ್ಯುತ್ ಜಂಕ್ಷನ್ ಬಾಕ್ಸ್ ತೆರೆದಿಡಲಾಗಿದೆ",
-              "description": "ವಿದ್ಯುತ್ ಜಂಕ್ಷನ್ ಬಾಕ್ಸ್‌ಗಳನ್ನು ತೆರೆದಿಡಲಾಗಿದೆ ಮತ್ತು ಅಸುರಕ್ಷಿತವಾಗಿವೆ"
-            },
-            {
-              "code": "park_lights_not_working",
-              "title": "ಪಾರ್ಕ್ ದೀಪಗಳು ಕಾರ್ಯನಿರ್ವಹಿಸುತ್ತಿಲ್ಲ",
-              "description": "ಪಾರ್ಕ್ ಬೆಳಗುವ ವ್ಯವಸ್ಥೆ ಕೆಲಸ ಮಾಡುತ್ತಿಲ್ಲ"
-            }
-          ]
-        },
-        {
           "code": "road_maintenance",
           "name": "ರಸ್ತೆ ನಿರ್ವಹಣೆ",
           "description": "ರಸ್ತೆ ನಿರ್ವಹಣೆ ಮತ್ತು ಮೂಲಸೌಕರ್ಯ ಸಮಸ್ಯೆಗಳು",
@@ -1775,7 +1626,7 @@
             },
             {
               "code": "overhanging_cables",
-              "title": "ನೇತಾಡುವ ಎಲೆಕ್ನಿಕ್ ಕೇಬಲ್‌ಗಳು",
+              "title": "ನೇತಾಡುವ ಎಲೆಕ್ಟ್ರಿಕ್ ಕೇಬಲ್‌ಗಳು",
               "description": "ಕೇಬಲ್‌ಗಳು ರಸ್ತೆಗಳ ಮೇಲೆ ಅಪಾಯಕಾರಿಯಾಗಿ ತೂಗಾಡುತ್ತಿವೆ"
             },
             {
@@ -1829,7 +1680,7 @@
         },
         {
           "code": "general_technical",
-          "name": "ಸಾಮಾನ್ಯ_ತಾಂತ್ರಿಕ",
+          "name": "ಸಾಮಾನ್ಯ ದೂರುಗಳು",
           "description": "ಸಾಮಾನ್ಯ ತಾಂತ್ರಿಕ ಮೂಲಸೌಕರ್ಯ ಸಮಸ್ಯೆಗಳು",
           "complaints": [
             {
@@ -1857,7 +1708,7 @@
       ]
     }
   },
-  "water_supply_valve": {
+"water_supply_valve": {
     "en": {
       "complaint_categories": [
         {
