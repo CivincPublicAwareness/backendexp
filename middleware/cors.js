@@ -3,11 +3,13 @@ const cors = require("cors");
 // CORS configuration for development
 const corsOptions = {
   origin: function (origin, callback) {
-    // Allow requests with no origin (like mobile apps or curl requests)
-    if (!origin) return callback(null, true);
+    // Allow requests only from localhost:5173 and civinc.in
+    if (origin === "http://localhost:5173" || origin === "https://civinc.in") {
+      return callback(null, true);
+    }
 
-    // Allow all origins in development
-    return callback(null, true);
+    // Reject all other origins
+    return callback(new Error("Not allowed by CORS"), false);
   },
   credentials: true,
   methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS", "PATCH"],
