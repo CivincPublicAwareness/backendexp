@@ -4,7 +4,11 @@ const cors = require("cors");
 const corsOptions = {
   origin: function (origin, callback) {
     // Allow requests only from localhost:5173 and civinc.in
-    if (origin === "http://localhost:5173" || origin === "https://civinc.in") {
+    if (
+      !origin ||
+      origin === "http://localhost:5173" ||
+      origin === "https://civinc.in"
+    ) {
       return callback(null, true);
     }
 

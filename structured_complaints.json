@@ -462,12 +462,12 @@
 },
 
 
-  "housing_section": {
+  "housing": {
     "en": {
       "complaint_categories": [
         {
           "code": "general_housing",
-          "name": "housing related issues ",
+          "name": "Housing Related Issues ",
           "description": "housing related issues",
           "complaints": [
             {
