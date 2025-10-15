@@ -50,6 +50,7 @@ model wards {
   caches             ward_directory_cache[]
   translations       ward_translations[]
   city               cities                 @relation(fields: [city_id], references: [id], onDelete: Cascade)
+  citizen_feedback   citizen_feedback[]
 
   @@unique([city_id, ward_no])
   @@index([city_id, ward_no])
@@ -490,4 +491,38 @@ model phone_interaction_analytics {
   @@index([designation, created_at])
   @@index([complaint_code, created_at])
   @@index([created_at])
+}
+
+model citizen_feedback {
+  id                  Int       @id @default(autoincrement())
+  name                String
+  mobile              String    @db.VarChar(15)
+  address             String    @db.Text
+  city                String
+  state               String
+  ward_number         Int
+  ward_id             Int?
+  complaint_type      Int
+  date_spoken         DateTime? // only for type 2
+  officer_id          String? // Reference to officer from officers.json
+  officer_name        String? // Officer's name at time of submission (nullable for existing records)
+  officer_designation String // Officer's designation at time of submission
+  officer_phone       String // Officer's phone at time of submission
+  issue_type          String? // Issue type from issues.json
+  photo_urls          String[] // Array of imgbb URLs
+  issue_location      String    @db.Text
+  comments            String?   @db.Text
+  language            String    @default("en") @db.VarChar(5)
+  ip                  String
+  created_at          DateTime  @default(now())
+  updated_at          DateTime  @updatedAt
+  ward                wards?    @relation(fields: [ward_id], references: [id], onDelete: SetNull)
+
+  @@index([city, ward_number])
+  @@index([complaint_type])
+  @@index([created_at])
+  @@index([ward_id])
+  @@index([officer_designation])
+  @@index([officer_name])
+  @@index([mobile])
 }

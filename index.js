@@ -15,6 +15,7 @@ const wardRoutes = require("./routes/wardRoutes");
 const cacheRoutes = require("./routes/cacheRoutes");
 const issueRoutes = require("./routes/issueRoutes");
 const analyticsRoutes = require("./routes/analyticsRoutes");
+const feedbackRoutes = require("./routes/feedbackRoutes");
 
 const app = express();
 const PORT = 3000;
@@ -39,6 +40,7 @@ app.use("/api", wardRoutes);
 app.use("/api/cache", cacheRoutes);
 app.use("/api", issueRoutes);
 app.use("/api/analytics", analyticsRoutes);
+app.use("/api/feedback", feedbackRoutes);
 
 app.get("/", (req, res) => {
   res.json({ message: "Express backend running" });
