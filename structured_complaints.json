@@ -467,7 +467,7 @@
       "complaint_categories": [
         {
           "code": "general_housing",
-          "name": "Housing Related Issues ",
+          "name": "Housing Scheme Information",
           "description": "housing related issues",
           "complaints": [
             {
@@ -532,7 +532,7 @@
       "complaint_categories": [
         {
           "code": "associated_complaints",
-          "name": "Revenue Related Complaints",
+          "name": "Revenue",
           "description": "Revenue and property related complaints",
           "complaints": [
             {
@@ -926,12 +926,12 @@
             },
             {
               "code": "insufficient_lake_security",
-              "title": "Insuffucient lake security personnel",
+              "title": "Insufficient lake security personnel",
               "description": "Lake area lacks adequate security personnel"
             },
             {
               "code": "lake_encroachment",
-              "title": "Encrochment",
+              "title": "Encroachment",
               "description": "Lake area is being encroached upon"
             },
             {
@@ -941,7 +941,7 @@
             },
             {
               "code": "lake_gates_timing_issue",
-              "title": "Lake gates are not opend as per the prescribed timing",
+              "title": "Lake gates are not opened as per the prescribed timing",
               "description": "Lake gates not following scheduled opening times"
             },
             {
@@ -963,7 +963,7 @@
           "complaints": [
             {
               "code": "footpath_encroachment",
-              "title": "Foot path encrochment issue",
+              "title": "Footpath encroachment issue",
               "description": "Footpaths are being encroached upon"
             },
             {
@@ -973,7 +973,7 @@
             },
             {
               "code": "footpath_maintenance",
-              "title": "Foot path maintenance",
+              "title": "Footpath maintenance",
               "description": "Footpaths need maintenance and repair"
             },
             {
@@ -1733,7 +1733,7 @@
     "hn": {
       "complaint_categories": [
         {
-          "code": "water_supply_main",
+          "code": "water_supply",
           "name": "जल आपूर्ति",
           "description": "जल आपूर्ति और वितरण के मुद्दे",
           "complaints": [
@@ -1754,7 +1754,7 @@
     "kn": {
       "complaint_categories": [
         {
-          "code": "water_supply_main",
+          "code": "water_supply",
           "name": "ನೀರಿನ ಪೂರೈಕೆ",
           "description": "ನೀರಿನ ಪೂರೈಕೆ ಮತ್ತು ವಿತರಣೆ ಸಮಸ್ಯೆಗಳು",
           "complaints": [
@@ -1803,7 +1803,7 @@
     "hn": {
       "complaint_categories": [
         {
-          "code": "water_supply_main",
+          "code": "water_supply",
           "name": "जल आपूर्ति",
           "description": "जल आपूर्ति और वितरण के मुद्दे",
           "complaints": [
@@ -1829,7 +1829,7 @@
     "kn": {
       "complaint_categories": [
         {
-          "code": "water_supply_main",
+          "code": "water_supply",
           "name": "ನೀರಿನ ಪೂರೈಕೆ",
           "description": "ನೀರಿನ ಪೂರೈಕೆ ಮತ್ತು ವಿತರಣೆ ಸಮಸ್ಯೆಗಳು",
           "complaints": [
