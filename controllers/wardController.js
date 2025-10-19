@@ -337,7 +337,153 @@ const fetchWardWithLocation = async (req, res) => {
   }
 };
 
+// Fetch all unique officers from all wards in a city
+const fetchCityOfficers = async (req, res) => {
+  try {
+    const { city, language = "en" } = req.query;
+
+    // Validate language parameter
+    const languageValidation = validateLanguage(language);
+    if (!languageValidation.valid) {
+      return res.status(404).json({ error: languageValidation.error });
+    }
+
+    const effectiveLanguage = normalizeLanguage(language);
+
+    if (!city) {
+      return res.status(400).json({ error: "city is required" });
+    }
+
+    // Find the city
+    const cityData = await prisma.cities.findFirst({
+      where: { name: city },
+    });
+
+    if (!cityData) {
+      return res.status(404).json({ error: "City not found" });
+    }
+
+    // Get all wards for this city
+    const allWards = await prisma.wards.findMany({
+      where: {
+        city_id: cityData.id,
+      },
+      select: {
+        id: true,
+        ward_no: true,
+      },
+    });
+
+    // Get all departments with officials for this city
+    const allDepartments = await prisma.departments.findMany({
+      where: {
+        city_id: cityData.id,
+        is_active: true,
+        code: {
+          notIn: ["it", "admin", "accounts", "administration"],
+        },
+      },
+      include: {
+        translations: {
+          where: { language: effectiveLanguage },
+        },
+        officials: {
+          where: {
+            ward_id: {
+              in: allWards.map((w) => w.id),
+            },
+            is_active: true,
+          },
+          include: {
+            designation: {
+              include: {
+                translations: {
+                  where: { language: effectiveLanguage },
+                },
+              },
+            },
+            translations: {
+              where: { language: effectiveLanguage },
+            },
+          },
+        },
+      },
+    });
+
+    // Collect unique officers (deduplicate by name and phone number)
+    const uniqueOfficersMap = new Map();
+    const allIssues = [];
+
+    allDepartments.forEach((dept) => {
+      // Get complaints from structured data
+      if (
+        structuredComplaints[dept.code] &&
+        structuredComplaints[dept.code][effectiveLanguage]
+      ) {
+        const complaintCategories =
+          structuredComplaints[dept.code][effectiveLanguage]
+            .complaint_categories;
+
+        complaintCategories.forEach((category) => {
+          category.complaints.forEach((complaint) => {
+            // Avoid duplicates
+            if (!allIssues.find((c) => c.code === complaint.code)) {
+              allIssues.push({
+                id: complaint.code,
+                code: complaint.code,
+                title: complaint.title,
+                category: {
+                  code: category.code,
+                  name: category.name,
+                },
+              });
+            }
+          });
+        });
+      }
+
+      // Process officials
+      dept.officials.forEach((official) => {
+        const key = `${official.name}_${official.phone_number}`;
+
+        if (!uniqueOfficersMap.has(key)) {
+          uniqueOfficersMap.set(key, {
+            id: official.id,
+            name: official.translations[0]?.name || official.name,
+            phone_number: official.phone_number,
+            designation:
+              official.designation.translations[0]?.title ||
+              official.designation_code,
+            designation_code: official.designation_code,
+            department: dept.translations[0]?.name || dept.code,
+            department_code: dept.code,
+          });
+        }
+      });
+    });
+
+    const uniqueOfficers = Array.from(uniqueOfficersMap.values());
+
+    const response = {
+      officers: uniqueOfficers,
+      issues: allIssues,
+      city_info: {
+        city: city,
+        total_wards: allWards.length,
+      },
+      total_officers: uniqueOfficers.length,
+      total_issues: allIssues.length,
+    };
+
+    res.json(response);
+  } catch (error) {
+    console.error("Error fetching city officers:", error);
+    res.status(500).json({ error: "Internal server error" });
+  }
+};
+
 module.exports = {
   fetchWard,
   fetchWardWithLocation,
+  fetchCityOfficers,
 };
