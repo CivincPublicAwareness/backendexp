@@ -1,0 +1,33 @@
+name: Deploy Node.js Backend to Droplet
+
+on:
+  push:
+    branches:
+      - release  
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up SSH
+        uses: webfactory/ssh-agent@v0.8.0
+        with:
+          ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
+
+      - name: Deploy to Droplet
+        run: |
+          ssh -o StrictHostKeyChecking=no ${{ secrets.REMOTE_USER }}@${{ secrets.REMOTE_HOST }} "
+            cd ${{ secrets.REMOTE_PATH }} &&
+            echo '📦 Pulling latest code from GitHub...' &&
+            git pull origin release &&
+            echo '📦 Installing dependencies...' &&
+            npm install --production &&
+            echo '🚀 Restarting PM2...' &&
+            pm2 reload all &&
+            echo '🔁 Reloading OpenResty...' &&
+            sudo /usr/local/openresty/bin/openresty -s reload
+          "
