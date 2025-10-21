@@ -7,6 +7,7 @@ const corsOptions = {
     if (
       !origin ||
       origin === "http://localhost:5173" ||
+      origin === "http://localhost:4173" ||
       origin === "https://civinc.in"
     ) {
       return callback(null, true);
