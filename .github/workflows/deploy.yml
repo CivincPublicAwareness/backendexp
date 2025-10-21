@@ -47,6 +47,6 @@ jobs:
             pm2 list
 
             echo '🔁 Reloading OpenResty...'
-            sudo /usr/local/openresty/bin/openresty -s reload
+            echo '${{ secrets.SUDO_PASSWORD }}' | sudo -S /usr/local/openresty/bin/openresty -s reload
 
             echo '✅ Deployment completed successfully!'
