@@ -1,4 +1,4 @@
-name: Deploy Node.js Backend to Droplet
+name: Deploy Node.js Backend to Droplets
 
 on:
   push:
@@ -8,20 +8,32 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        droplet: [1, 2]
+      fail-fast: false # Continue deploying to other droplets even if one fails
 
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Deploy via SSH
+      - name: Set droplet variables
+        id: vars
+        run: |
+          if [ "${{ matrix.droplet }}" == "1" ]; then
+            echo "host=${{ secrets.REMOTE_HOST }}" >> $GITHUB_OUTPUT
+          else
+            echo "host=${{ secrets.REMOTE_HOST_2 }}" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Deploy to Droplet ${{ matrix.droplet }}
         uses: appleboy/ssh-action@v1.0.3
         with:
-          host: ${{ secrets.REMOTE_HOST }}
+          host: ${{ steps.vars.outputs.host }}
           username: ${{ secrets.REMOTE_USER }}
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           port: 22
           command_timeout: 30m
-          debug: true
           script: |
             set -e
 
@@ -41,7 +53,7 @@ jobs:
             npm install --production
 
             echo '🚀 Restarting PM2...'
-              pm2 reload all
+            pm2 reload all
 
             echo '✅ PM2 status:'
             pm2 list
@@ -49,4 +61,4 @@ jobs:
             echo '🔁 Reloading OpenResty...'
             echo '${{ secrets.SUDO_PASSWORD }}' | sudo -S /usr/local/openresty/bin/openresty -s reload
 
-            echo '✅ Deployment completed successfully!'
+            echo '✅ Deployment completed successfully on Droplet ${{ matrix.droplet }}!'
