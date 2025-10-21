@@ -21,8 +21,17 @@ jobs:
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           port: 22
           command_timeout: 30m
+          debug: true
           script: |
             set -e
+
+            # Load Node.js environment
+            export NVM_DIR="$HOME/.nvm"
+            [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+
+            # Ensure npm and pm2 are in PATH
+            export PATH="$HOME/.npm-global/bin:$PATH"
+
             cd ${{ secrets.REMOTE_PATH }}
 
             echo '📦 Pulling latest code...'
@@ -32,14 +41,12 @@ jobs:
             npm install --production
 
             echo '🚀 Restarting PM2...'
-
               pm2 reload all
-
 
             echo '✅ PM2 status:'
             pm2 list
 
             echo '🔁 Reloading OpenResty...'
-            echo '${{ secrets.SUDO_PASSWORD }}' | sudo -S /usr/local/openresty/bin/openresty -s reload
+            sudo /usr/local/openresty/bin/openresty -s reload
 
             echo '✅ Deployment completed successfully!'
