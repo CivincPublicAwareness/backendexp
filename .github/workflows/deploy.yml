@@ -13,21 +13,33 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Set up SSH
-        uses: webfactory/ssh-agent@v0.8.0
+      - name: Deploy via SSH
+        uses: appleboy/ssh-action@v1.0.3
         with:
-          ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
+          host: ${{ secrets.REMOTE_HOST }}
+          username: ${{ secrets.REMOTE_USER }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          port: 22
+          command_timeout: 30m
+          script: |
+            set -e
+            cd ${{ secrets.REMOTE_PATH }}
 
-      - name: Deploy to Droplet
-        run: |
-          ssh -o StrictHostKeyChecking=no ${{ secrets.REMOTE_USER }}@${{ secrets.REMOTE_HOST }} "
-            cd ${{ secrets.REMOTE_PATH }} &&
-            echo '📦 Pulling latest code from GitHub...' &&
-            git pull origin release &&
-            echo '📦 Installing dependencies...' &&
-            npm install --production &&
-            echo '🚀 Restarting PM2...' &&
-            pm2 reload all || pm2 start ecosystem.config.js --env production &&
-            echo '🔁 Reloading OpenResty...' &&
-            sudo /usr/local/openresty/bin/openresty -s reload
-          "
+            echo '📦 Pulling latest code...'
+            git pull origin release
+
+            echo '📦 Installing dependencies...'
+            npm install --production
+
+            echo '🚀 Restarting PM2...'
+
+              pm2 reload all
+
+
+            echo '✅ PM2 status:'
+            pm2 list
+
+            echo '🔁 Reloading OpenResty...'
+            echo '${{ secrets.SUDO_PASSWORD }}' | sudo -S /usr/local/openresty/bin/openresty -s reload
+
+            echo '✅ Deployment completed successfully!'
