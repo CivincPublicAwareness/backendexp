@@ -86,7 +86,7 @@
       "complaint_categories": [
         {
           "code": "social_welfare",
-          "name": "ಸಾಮಾಜಿಕ ಕಲ್ಯಾಣ",
+          "name": "ಸಮಾಜ ಕಲ್ಯಾಣ",
           "description": "ಸಾಮಾಜಿಕ ಕಲ್ಯಾಣ ಯೋಜನೆಗಳು ಮತ್ತು ಕಾರ್ಯಕ್ರಮಗಳು",
           "complaints": [
             {
@@ -509,7 +509,7 @@
       "complaint_categories": [
         {
           "code": "general_housing",
-          "name": "ವಸತಿ ಸಮಸ್ಯೆಗಳು",
+          "name": "ವಸತಿ ಯೋಜನೆ",
           "description": "ಸಾಮಾನ್ಯ ವಸತಿ ಸಂಬಂಧಿತ ಸಮಸ್ಯೆಗಳು",
           "complaints": [
             {
@@ -668,7 +668,7 @@
       "complaint_categories": [
         {
           "code": "associated_complaints",
-          "name": "ರೆವಿನ್ಯೂ ಸಂಬಂಧಿತ ದೂರುಗಳು",
+          "name": "ಕಂದಾಯ",
           "description": "ರೆವಿನ್ಯೂ ಮತ್ತು ಆಸ್ತಿ ಸಂಬಂಧಿತ ದೂರುಗಳು",
           "complaints": [
             {
@@ -1755,7 +1755,7 @@
       "complaint_categories": [
         {
           "code": "water_supply",
-          "name": "ನೀರಿನ ಪೂರೈಕೆ",
+          "name": "ನೀರು ಸರಬರಾಜು",
           "description": "ನೀರಿನ ಪೂರೈಕೆ ಮತ್ತು ವಿತರಣೆ ಸಮಸ್ಯೆಗಳು",
           "complaints": [
             {
@@ -1830,7 +1830,7 @@
       "complaint_categories": [
         {
           "code": "water_supply",
-          "name": "ನೀರಿನ ಪೂರೈಕೆ",
+          "name": "ನೀರು ಸರಬರಾಜು",
           "description": "ನೀರಿನ ಪೂರೈಕೆ ಮತ್ತು ವಿತರಣೆ ಸಮಸ್ಯೆಗಳು",
           "complaints": [
             {
