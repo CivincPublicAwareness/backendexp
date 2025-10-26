@@ -187,18 +187,18 @@
       },
       {
       "code": "trade_licence",
-      "name": "Trade Licence",
+      "name": "Trade License",
       "description": "Trade licence related issues",
       "complaints": [
         {
           "code": "new_trade_licence",
-          "title": "New Trade Licence",
+          "title": "New Trade License",
           "description": "Apply for new trade licence"
         },
         {
           "code": "trade_licence_renewal",
-          "title": "Trade Licence Renewal",
-          "description": "Renewal of existing trade licence"
+          "title": "Trade License Renewal",
+          "description": "Renewal of existing trade license"
         }
       ]
     },
@@ -847,22 +847,22 @@
         },
         {
           "code": "building_licence",
-          "name": "Building Licence",
+          "name": "Building License",
           "description": "Building licence issuance and renewal",
           "complaints": [
             {
               "code": "issuance_building_licence",
-              "title": "Issuance of building licence",
+              "title": "Issuance of building license",
               "description": "Building licence issuance process"
             },
             {
               "code": "renewal_building_licence",
-              "title": "Renewal of building licence",
+              "title": "Renewal of building license",
               "description": "Building licence renewal process"
             },
             {
               "code": "issue_licence_application",
-              "title": "Issue with licence application submission or processing",
+              "title": "Issue with license application submission or processing",
               "description": "Problems with building licence application submission or processing"
             }
           ]
