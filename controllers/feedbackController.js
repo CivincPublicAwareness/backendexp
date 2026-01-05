@@ -1,5 +1,9 @@
 const prisma = require("../utils/prisma");
 const { validateLanguage, normalizeLanguage } = require("../utils/language");
+const {
+  verifyIdToken,
+  extractPhoneNumber,
+} = require("../utils/firebaseAdmin");
 
 /**
  * Sanitize string input to prevent injection attacks
@@ -52,20 +56,37 @@ const submitFeedback = async (req, res) => {
       city,
       state,
       ward_number,
-      complaint_type, // 1 or 2
-      date_spoken, // only for type 2
+      complaint_type,
+      date_spoken,
       officer_id,
       officer_name,
       officer_designation,
       officer_phone,
       issue_type,
-      photo_urls, // Array of URLs
+      photo_urls,
       issue_location,
       comments,
       language = "en",
+      firebase_id_token,
     } = req.body;
 
-    // Validate required fields
+    if (!firebase_id_token) {
+      return res.status(400).json({
+        error: "Firebase ID token is required",
+      });
+    }
+
+    let decodedToken;
+    try {
+      decodedToken = await verifyIdToken(firebase_id_token);
+    } catch (error) {
+      return res.status(401).json({
+        error: "Invalid or expired Firebase ID token",
+      });
+    }
+
+    const verifiedPhone = extractPhoneNumber(decodedToken);
+
     if (
       !name ||
       !mobile ||
@@ -92,11 +113,16 @@ const submitFeedback = async (req, res) => {
       });
     }
 
-    // Validate mobile number (10 digits only)
     const cleanMobile = mobile.trim().replace(/\D/g, "");
     if (cleanMobile.length !== 10) {
       return res.status(400).json({
         error: "Mobile number must be exactly 10 digits",
+      });
+    }
+
+    if (cleanMobile !== verifiedPhone) {
+      return res.status(400).json({
+        error: "Mobile number does not match verified phone number",
       });
     }
 
