@@ -1,23 +1,12 @@
-/**
- * Admin Authentication Controller
- * Hardcoded credentials for admin login
- */
-
-// Hardcoded admin credentials
 const ADMIN_CREDENTIALS = {
   username: "admin",
   password: "civinc@2025",
 };
 
-/**
- * Admin login endpoint
- * POST /api/admin/login
- */
 const adminLogin = async (req, res) => {
   try {
     const { username, password } = req.body;
 
-    // Validate input
     if (!username || !password) {
       return res.status(400).json({
         success: false,
@@ -25,12 +14,10 @@ const adminLogin = async (req, res) => {
       });
     }
 
-    // Check credentials (hardcoded)
     if (
       username === ADMIN_CREDENTIALS.username &&
       password === ADMIN_CREDENTIALS.password
     ) {
-      // Generate a simple token (in production, use JWT)
       const token = Buffer.from(
         JSON.stringify({
           username: username,
@@ -62,10 +49,6 @@ const adminLogin = async (req, res) => {
   }
 };
 
-/**
- * Verify admin token endpoint
- * GET /api/admin/verify
- */
 const verifyAdminToken = async (req, res) => {
   try {
     const authHeader = req.headers.authorization;
@@ -80,10 +63,8 @@ const verifyAdminToken = async (req, res) => {
     const token = authHeader.split(" ")[1];
 
     try {
-      // Decode token
       const decoded = JSON.parse(Buffer.from(token, "base64").toString());
-      
-      // Basic token validation (check if it has required fields)
+
       if (decoded.username && decoded.role === "admin") {
         return res.status(200).json({
           success: true,
@@ -117,4 +98,3 @@ module.exports = {
   adminLogin,
   verifyAdminToken,
 };
-
