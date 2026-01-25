@@ -1,22 +1,17 @@
 const prisma = require("../utils/prisma");
 const { validateLanguage, normalizeLanguage } = require("../utils/language");
 
-/**
- * Sanitize string input to prevent injection attacks
- */
+
 const sanitizeString = (str) => {
   if (typeof str !== "string") return "";
-  // Remove any potential SQL/script injection attempts
+ 
   return str
     .trim()
-    .replace(/[<>]/g, "") // Remove < and >
-    .substring(0, 1000); // Max length limit
+    .replace(/[<>]/g, "") 
+    .substring(0, 1000); 
 };
 
-/**
- * Check for duplicate feedback submission
- * Returns true if duplicate found (same mobile + ward + officer within 24 hours)
- */
+
 const checkDuplicateSubmission = async (
   mobile,
   wardNumber,
@@ -40,9 +35,7 @@ const checkDuplicateSubmission = async (
   return duplicate !== null;
 };
 
-/**
- * Submit citizen feedback
- */
+
 const submitFeedback = async (req, res) => {
   try {
     const {
@@ -157,7 +150,6 @@ const submitFeedback = async (req, res) => {
       }
     }
 
-    // Validate and sanitize officer fields
     const cleanOfficerName = officer_name ? sanitizeString(officer_name) : null;
     const cleanOfficerDesignation = sanitizeString(officer_designation);
     const cleanOfficerPhone = sanitizeString(officer_phone);
@@ -316,7 +308,7 @@ const submitFeedback = async (req, res) => {
       });
     }
 
-    // Create feedback record (Prisma uses parameterized queries - SQL injection safe)
+   
     const feedback = await prisma.citizen_feedback.create({
       data: {
         name: cleanName,
@@ -452,8 +444,47 @@ const getAllFeedbacks = async (req, res) => {
   }
 };
 
+/**
+ * Update feedback status
+ */
+const updateFeedbackStatus = async (req, res) => {
+  try {
+    const { id } = req.params;
+    const { status } = req.body;
+    
+    // Validate status
+    const validStatuses = ["pending", "resolved", "not_seen"];
+    if (!validStatuses.includes(status)) {
+      return res.status(400).json({ error: "Invalid status value" });
+    }
+
+    const feedback = await prisma.citizen_feedback.update({
+      where: {
+        id: parseInt(id),
+      },
+      data: {
+        status: status,
+      },
+    });
+
+    res.json({
+      success: true,
+      message: "Status updated successfully",
+      data: feedback,
+    });
+  } catch (error) {
+    console.error("Error updating feedback status:", error);
+    if (error.code === 'P2025') {
+       return res.status(404).json({ error: "Feedback not found" });
+    }
+    res.status(500).json({ error: "Internal server error" });
+  }
+};
+
 module.exports = {
   submitFeedback,
   getFeedback,
   getAllFeedbacks,
+  updateFeedbackStatus,
 };
+
