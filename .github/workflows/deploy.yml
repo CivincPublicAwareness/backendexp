@@ -52,6 +52,9 @@ jobs:
             echo '📦 Installing dependencies...'
             npm install --production
 
+            echo '🔧 Generating Prisma Client...'
+            npx prisma generate
+
             echo '🚀 Restarting PM2...'
             pm2 reload all
 

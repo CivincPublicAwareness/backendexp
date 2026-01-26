@@ -43,6 +43,7 @@ model wards {
   ward_no            Int
   name               String?
   created_at         DateTime               @default(now())
+  citizen_feedback   citizen_feedback[]
   issues             issues[]
   officials          official[]
   official_localized official_localized[]
@@ -50,7 +51,6 @@ model wards {
   caches             ward_directory_cache[]
   translations       ward_translations[]
   city               cities                 @relation(fields: [city_id], references: [id], onDelete: Cascade)
-  citizen_feedback   citizen_feedback[]
 
   @@unique([city_id, ward_no])
   @@index([city_id, ward_no])
@@ -133,12 +133,12 @@ model departments {
   is_active            Boolean                   @default(true)
   created_at           DateTime                  @default(now())
   updated_at           DateTime                  @updatedAt
+  complaint_categories complaint_categories[]
   translations         department_translations[]
   city                 cities                    @relation(fields: [city_id], references: [id], onDelete: Cascade)
   issues               issues[]
   officials            official[]
   official_localized   official_localized[]
-  complaint_categories complaint_categories[]
 
   @@unique([city_id, code])
   @@index([city_id])
@@ -297,11 +297,10 @@ model issues {
   city                 String?
   ward_name            String?
   designation          String?
-  // New fields for simplified issue reporting
-  name_wrong           Boolean              @default(false)
-  number_wrong         Boolean              @default(false)
   address_wrong        Boolean              @default(false)
   comments             String?              @db.VarChar(50)
+  name_wrong           Boolean              @default(false)
+  number_wrong         Boolean              @default(false)
   translations         issue_translations[]
   assigned_official    official?            @relation("AssignedOfficial", fields: [assigned_official_id], references: [id])
   department           departments?         @relation(fields: [department_id], references: [id])
@@ -394,13 +393,6 @@ model state_translations {
   @@index([state_id])
 }
 
-enum Priority {
-  low
-  medium
-  high
-  urgent
-}
-
 model complaint_categories {
   id            Int                               @id @default(autoincrement())
   department_id Int
@@ -412,8 +404,8 @@ model complaint_categories {
   created_at    DateTime                          @default(now())
   updated_at    DateTime                          @updatedAt
   department    departments                       @relation(fields: [department_id], references: [id], onDelete: Cascade)
-  complaints    complaints[]
   translations  complaint_category_translations[]
+  complaints    complaints[]
 
   @@unique([department_id, code])
   @@index([department_id])
@@ -445,8 +437,8 @@ model complaints {
   is_active             Boolean                  @default(true)
   created_at            DateTime                 @default(now())
   updated_at            DateTime                 @updatedAt
-  complaint_category    complaint_categories     @relation(fields: [complaint_category_id], references: [id], onDelete: Cascade)
   translations          complaint_translations[]
+  complaint_category    complaint_categories     @relation(fields: [complaint_category_id], references: [id], onDelete: Cascade)
 
   @@unique([complaint_category_id, code])
   @@index([complaint_category_id])
@@ -476,12 +468,12 @@ model phone_interaction_analytics {
   ward_no        Int
   city           String
   designation    String
-  complaint      String? // Legacy field - keeping for backward compatibility
-  complaint_code String? // New standardized field - stores English complaint code
+  complaint      String?
   department     String
-  action_type    String // "copied" or "tapped"
+  action_type    String
   phone_number   String
   created_at     DateTime @default(now())
+  complaint_code String?
 
   @@index([ip, created_at])
   @@index([ward_no, created_at])
@@ -497,26 +489,27 @@ model citizen_feedback {
   id                  Int       @id @default(autoincrement())
   name                String
   mobile              String    @db.VarChar(15)
-  address             String    @db.Text
+  address             String
   city                String
   state               String
   ward_number         Int
   ward_id             Int?
   complaint_type      Int
-  date_spoken         DateTime? // only for type 2
-  officer_id          String? // Reference to officer from officers.json
-  officer_name        String? // Officer's name at time of submission (nullable for existing records)
-  officer_designation String // Officer's designation at time of submission
-  officer_phone       String // Officer's phone at time of submission
-  issue_type          String? // Issue type from issues.json
-  photo_urls          String[] // Array of imgbb URLs
-  issue_location      String    @db.Text
-  comments            String?   @db.Text
+  date_spoken         DateTime?
+  officer_id          String?
+  officer_designation String
+  officer_phone       String
+  issue_type          String?
+  photo_urls          String[]
+  issue_location      String
+  comments            String?
   language            String    @default("en") @db.VarChar(5)
+  status              FeedbackStatus @default(not_seen)
   ip                  String
   created_at          DateTime  @default(now())
   updated_at          DateTime  @updatedAt
-  ward                wards?    @relation(fields: [ward_id], references: [id], onDelete: SetNull)
+  officer_name        String?
+  ward                wards?    @relation(fields: [ward_id], references: [id])
 
   @@index([city, ward_number])
   @@index([complaint_type])
@@ -525,4 +518,17 @@ model citizen_feedback {
   @@index([officer_designation])
   @@index([officer_name])
   @@index([mobile])
+}
+
+enum Priority {
+  low
+  medium
+  high
+  urgent
+}
+
+enum FeedbackStatus {
+  pending
+  resolved
+  not_seen
 }
