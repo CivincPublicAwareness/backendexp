@@ -1,0 +1,20 @@
+{
+  "en": {
+    "code": "en",
+    "name": "English",
+    "native_name": "English",
+    "is_active": true
+  },
+  "hn": {
+    "code": "hn",
+    "name": "Hindi",
+    "native_name": "हिंदी",
+    "is_active": true
+  },
+  "kn": {
+    "code": "kn",
+    "name": "Kannada",
+    "native_name": "ಕನ್ನಡ",
+    "is_active": true
+  }
+}
