@@ -1,6 +1,6 @@
 # Express Backend
 
-Simple Express backend with Prisma and Supabase.
+Simple Express backend with Prisma and Supabase
 
 ## Setup
 
